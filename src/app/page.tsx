@@ -7,6 +7,7 @@ import { Container, Box } from "@mui/material";
 
 // Components
 import Appbar from "@/components/Appbar";
+import CommandBar from "@/components/CommandBar";
 import MDEditor from "@/components/MDEditor";
 import MDPreview from "@/components/MDPreview";
 
@@ -22,6 +23,7 @@ import "@/css/globals.css";
 import "~/remark-github-blockquote-alert/alert.css"; // Styles for alert markdown
 
 export default function Home() {
+  const [markdownTitle, setMarkdownTitle] = useState("untitled");
   const [markdown, setMarkdown] = useState("# Hello, World!");
 
   return (
@@ -36,20 +38,27 @@ export default function Home() {
       }}
     >
       <Box>
-        <Appbar />
+        <Appbar title={markdownTitle} />
       </Box>
+
+      <Box
+        margin="10px 35px"
+      >
+        <CommandBar />
+      </Box>
+
       <Box
         display="flex"
         flexGrow={1}
         flexDirection="row"
         justifyContent="center"
-        alignItems="flex-start"
+        alignItems="center"
         gap={5}
         sx={{
-        backgroundColor: "#ffd700"
-      }}>
+          backgroundColor: "#ffd700"
+        }}>
         <Box
-          maxHeight={700}
+          maxHeight={780}
           minHeight={700}
           maxWidth={600}
           flexGrow={1}
@@ -71,7 +80,7 @@ export default function Home() {
           />
         </Box>
         <Box
-          maxHeight={700}
+          maxHeight={780}
           minHeight={700}
           maxWidth={600}
           flexGrow={1}

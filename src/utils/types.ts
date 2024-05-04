@@ -30,3 +30,7 @@ export type MDPreviewOptions = {
     height?: string,
     width?: string,
 }
+
+export type AppbarType = {
+    title: string
+}
