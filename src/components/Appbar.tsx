@@ -1,6 +1,10 @@
 // MUI Components
 import { Toolbar, AppBar, Typography, Container, Box } from "@mui/material";
-import type { AppbarType } from "@/utils/types";
+
+// Component types
+export type AppbarType = {
+    title: string
+}
 
 export default function Appbar({ title }: AppbarType) {
     return (

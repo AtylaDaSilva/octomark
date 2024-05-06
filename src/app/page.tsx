@@ -5,6 +5,9 @@ import { useState } from "react";
 // MUI Components
 import { Container, Box } from "@mui/material";
 
+// Classes]
+import { TextSelector } from "@/classes";
+
 // Components
 import Appbar from "@/components/Appbar";
 import CommandBar from "@/components/CommandBar";
@@ -23,8 +26,24 @@ import "@/css/globals.css";
 import "~/remark-github-blockquote-alert/alert.css"; // Styles for alert markdown
 
 export default function Home() {
-  const [markdownTitle, setMarkdownTitle] = useState("untitled");
+  // State
+  const [markdownTitle, setMarkdownTitle] = useState("untitled markdown");
   const [markdown, setMarkdown] = useState("# Hello, World!");
+
+  // Event handlers
+  /**
+   * Handles mouse up and double click mouse events on a textarea element.
+   * @param target Textarea HTML element reference.
+   * @returns void or null.
+   */
+  const handleMouseUpAndDoubleClick = ({ target }: any) => {
+    // Ignores single click mouse events
+    if (target.selectionStart === target.selectionEnd) return null;
+
+    const selector = new TextSelector(target, markdown);
+    const selection = selector.getSelectedText();
+    console.log(selection);
+  }
 
   return (
     <Container
@@ -71,9 +90,11 @@ export default function Home() {
           <MDEditor
             markdown={markdown}
             handleChange={setMarkdown}
+            handleTextareaMouseEvent={handleMouseUpAndDoubleClick}
             editorOptions={{
               rows: 30,
               fullWidth: true,
+              autoFocus: true,
               placeholder: "Type your markdown here.",
               variant: "filled",
             }}
