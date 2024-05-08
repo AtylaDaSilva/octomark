@@ -1,7 +1,14 @@
-import { TextSelector } from "@/classes";
+// Types
+import { selectedTextType } from "@/classes";
 
-export function bold () {
+export function bold (selectionState : selectedTextType) {
     console.log("function 'bold' invoked");
-    const selector = new TextSelector();
-    selector.getSelectedText();
+    console.log(selectionState);
+    const newSelection : selectedTextType = {
+        ...selectionState,
+        text: `**${selectionState.text}**`
+    };
+    console.log("New selection = ");
+    console.log(newSelection);
+    return newSelection;
 }

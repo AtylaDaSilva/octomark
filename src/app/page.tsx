@@ -29,6 +29,14 @@ export default function Home() {
   // State
   const [markdownTitle, setMarkdownTitle] = useState("untitled markdown");
   const [markdown, setMarkdown] = useState("# Hello, World!");
+  const [selection, setSelection] = useState({
+    text: "",
+    startPosition: -1,
+    endPosition: -1
+  });
+
+  console.log(`Selection state = `);
+  console.log(selection);
 
   // Event handlers
   /**
@@ -37,12 +45,14 @@ export default function Home() {
    * @returns void or null.
    */
   const handleMouseUpAndDoubleClick = ({ target }: any) => {
+    console.log("Event handler 'handleMouseUpAndDoubleClick' invoked");
     // Ignores single click mouse events
     if (target.selectionStart === target.selectionEnd) return null;
 
     const selector = new TextSelector(target, markdown);
-    const selection = selector.getSelectedText();
-    console.log(selection);
+    const sel = selector.getSelectedText();
+    console.log(`Selection = '${selection.text}'`);
+    setSelection(sel);
   }
 
   return (
@@ -63,7 +73,12 @@ export default function Home() {
       <Box
         margin="10px 35px"
       >
-        <CommandBar />
+        <CommandBar
+          selection={selection}
+          setSelection={setSelection}
+          markdown={markdown}
+          setMarkdown={setMarkdown}
+        />
       </Box>
 
       <Box

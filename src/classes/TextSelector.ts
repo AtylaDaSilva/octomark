@@ -13,7 +13,7 @@ export class TextSelector {
         this.markdown = markdown;
     }
 
-    getSelectedText() {
+    getSelectedText() : selectedTextType {
         const { selectionStart, selectionEnd } = this.eventTarget;
         this.selectedText = {
             text: this.markdown.slice(selectionStart, selectionEnd),
