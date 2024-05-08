@@ -6,7 +6,7 @@ import { useState } from "react";
 import { Container, Box } from "@mui/material";
 
 // Classes]
-import { TextSelector } from "@/classes";
+import { TextSelector, selectedTextType } from "@/classes";
 
 // Components
 import Appbar from "@/components/Appbar";
@@ -27,16 +27,13 @@ import "~/remark-github-blockquote-alert/alert.css"; // Styles for alert markdow
 
 export default function Home() {
   // State
-  const [markdownTitle, setMarkdownTitle] = useState("untitled markdown");
-  const [markdown, setMarkdown] = useState("# Hello, World!");
-  const [selection, setSelection] = useState({
+  const [markdownTitle, setMarkdownTitle] = useState<string>("untitled markdown");
+  const [markdown, setMarkdown] = useState<string>("# Hello, World!");
+  const [selection, setSelection] = useState<selectedTextType>({
     text: "",
     startPosition: -1,
     endPosition: -1
   });
-
-  console.log(`Selection state = `);
-  console.log(selection);
 
   // Event handlers
   /**
@@ -45,13 +42,11 @@ export default function Home() {
    * @returns void or null.
    */
   const handleMouseUpAndDoubleClick = ({ target }: any) => {
-    console.log("Event handler 'handleMouseUpAndDoubleClick' invoked");
     // Ignores single click mouse events
     if (target.selectionStart === target.selectionEnd) return null;
 
     const selector = new TextSelector(target, markdown);
     const sel = selector.getSelectedText();
-    console.log(`Selection = '${selection.text}'`);
     setSelection(sel);
   }
 

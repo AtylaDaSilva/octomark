@@ -29,6 +29,6 @@ export class TextSelector {
 
 export type selectedTextType = {
     text: string,
-    startPosition: number,
-    endPosition: number,
+    startPosition?: number,
+    endPosition?: number,
 }

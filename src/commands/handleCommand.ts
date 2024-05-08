@@ -1,36 +1,36 @@
 // Types
 import { Dispatch, SetStateAction } from "react";
 import { selectedTextType } from "@/classes";
+import type { headingLevelType } from "./heading";
 
+/**
+ * Executes commandFunction, passing selection as argument, and updates selection and markdown states.
+ * @param commandFunction The command function (bold, italics, etc.) to be executed
+ * @param commandFuncArgs Array of arguments to be passed to commandFunction.
+ * @param setSelection Selection state updater.
+ * @param markdown Markdown state. Used to update contents of the TextFied component.
+ * @param setMarkdown Markdown state updater.
+ */
 export function handleCommand(
-    commandFunction : (selectionState : selectedTextType) => selectedTextType,
-    selectionState : selectedTextType,
+    commandFunction : (commandFuncArgs : commandFuncArgsType) => selectedTextType,
+    commandFuncArgs : commandFuncArgsType,
     setSelection: Dispatch<SetStateAction<selectedTextType>>,
-    markdownState : string,
+    markdown : string,
     setMarkdown : Dispatch<SetStateAction<string>>
 ) {
-    console.log("function 'handleCommand' invoked");
-
-    console.log("State BEFORE command = ");
-    console.log(selectionState);
-
-    const sel = commandFunction(selectionState);
-
-    console.log("State After command = ");
-    console.log(sel);
-
-    console.log("Updating selection state...");
+    const sel = commandFunction(commandFuncArgs);
     setSelection(sel);
 
-    console.log("Updating markdown state...");
     let newMarkdown = "";
-    //console.log(markdownState.slice(0, selectionState.startPosition))
-    //console.log(markdownState.slice(selectionState.endPosition))
     newMarkdown = newMarkdown.concat(
-        markdownState.slice(0, selectionState.startPosition),
+        markdown.slice(0, commandFuncArgs?.selection?.startPosition),
         sel.text,
-        markdownState.slice(selectionState.endPosition)
+        markdown.slice(commandFuncArgs?.selection?.endPosition)
     )
-    console.log(newMarkdown);
     setMarkdown(newMarkdown);
+}
+
+export type commandFuncArgsType = {
+    selection?: selectedTextType
+    headingLevel?: headingLevelType
 }

@@ -1,31 +1,20 @@
 // MUI Components
-import { AppBar, Toolbar, IconButton } from "@mui/material";
+import { AppBar, Toolbar } from "@mui/material";
 
-// Placeholders
-import { FormatBold } from "@mui/icons-material";
-
-// Commands
-import { handleCommand, bold } from "@/commands";
+// Command Icons
+import {
+    BoldIcon,
+    ItalicIcon,
+    TitleIcon,
+    StrikethroughIcon,
+    CodeIcon
+} from "./icons";
 
 // Types
 import { Dispatch, SetStateAction } from "react";
 import type { selectedTextType } from "@/classes";
 
-export default function CommandBar(
-    {
-        selection,
-        setSelection,
-        markdown,
-        setMarkdown
-    }
-    :
-    {
-        selection: selectedTextType,
-        setSelection: Dispatch<SetStateAction<selectedTextType>>,
-        markdown : string,
-        setMarkdown : Dispatch<SetStateAction<string>>
-    }
-) {
+export default function CommandBar(props: CommandBarProps) {
     return (
         <AppBar
             position="static"
@@ -34,23 +23,30 @@ export default function CommandBar(
             <Toolbar>
                 <ul className="no-list-style flex flex-row">
                     <li>
-                        <IconButton
-                            aria-label="Undo Action"
-                            onClick={() => {
-                                handleCommand(
-                                    bold,
-                                    selection,
-                                    setSelection,
-                                    markdown,
-                                    setMarkdown
-                                )
-                            }}
-                        >
-                            <FormatBold />
-                        </IconButton>
+                        <TitleIcon {...props} />
+                    </li>
+                    <li>
+                        <BoldIcon {...props} />
+                    </li>
+                    <li>
+                        <ItalicIcon {...props} />
+                    </li>
+                    <li>
+                        <StrikethroughIcon {...props} />
+                    </li>
+                    <li>
+                        <CodeIcon {...props} />
                     </li>
                 </ul>
             </Toolbar>
         </AppBar>
     );
+}
+
+// Component types
+export type CommandBarProps = {
+    selection: selectedTextType,
+    setSelection: Dispatch<SetStateAction<selectedTextType>>,
+    markdown: string,
+    setMarkdown: Dispatch<SetStateAction<string>>
 }
