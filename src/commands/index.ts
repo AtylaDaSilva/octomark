@@ -4,6 +4,7 @@ import { italic } from "./italic";
 import { heading } from "./heading";
 import { strikethrough } from "./strikethrough";
 import { code } from "./code";
+import { link } from "./link";
 
 export {
     handleCommand,
@@ -11,5 +12,6 @@ export {
     italic,
     heading,
     strikethrough,
-    code
+    code,
+    link
 }

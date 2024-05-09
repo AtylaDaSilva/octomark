@@ -31,6 +31,7 @@ export function handleCommand(
 }
 
 export type commandFuncArgsType = {
-    selection?: selectedTextType
-    headingLevel?: headingLevelType
+    selection?: selectedTextType,
+    headingLevel?: headingLevelType,
+    uri?: string
 }

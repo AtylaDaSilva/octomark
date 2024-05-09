@@ -7,7 +7,8 @@ import {
     ItalicIcon,
     TitleIcon,
     StrikethroughIcon,
-    CodeIcon
+    CodeIcon,
+    LinkIcon
 } from "./icons";
 
 // Types
@@ -36,6 +37,9 @@ export default function CommandBar(props: CommandBarProps) {
                     </li>
                     <li>
                         <CodeIcon {...props} />
+                    </li>
+                    <li>
+                        <LinkIcon {...props} />
                     </li>
                 </ul>
             </Toolbar>
