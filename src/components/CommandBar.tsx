@@ -8,7 +8,10 @@ import {
     TitleIcon,
     StrikethroughIcon,
     CodeIcon,
-    LinkIcon
+    LinkIcon,
+    ImageIcon,
+    BulletedListIcon,
+    NumberedListIcon
 } from "./icons";
 
 // Types
@@ -41,6 +44,15 @@ export default function CommandBar(props: CommandBarProps) {
                     <li>
                         <LinkIcon {...props} />
                     </li>
+                    <li>
+                        <ImageIcon {...props} />
+                    </li>
+                    <li>
+                        <BulletedListIcon {...props} />
+                    </li>
+                    <li>
+                        <NumberedListIcon {...props} />
+                    </li>
                 </ul>
             </Toolbar>
         </AppBar>
@@ -52,5 +64,7 @@ export type CommandBarProps = {
     selection: selectedTextType,
     setSelection: Dispatch<SetStateAction<selectedTextType>>,
     markdown: string,
-    setMarkdown: Dispatch<SetStateAction<string>>
+    setMarkdown: Dispatch<SetStateAction<string>>,
+    imageAltText: string,
+    setImageAltText: Dispatch<SetStateAction<string>>
 }

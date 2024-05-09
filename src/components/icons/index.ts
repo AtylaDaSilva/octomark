@@ -4,6 +4,9 @@ import TitleIcon from "./TitleIcon";
 import StrikethroughIcon from "./StrikethroughIcon";
 import CodeIcon from "./CodeIcon";
 import LinkIcon from "./LinkIcon";
+import ImageIcon from "./ImageIcon";
+import BulletedListIcon from "./BulletedListIcon";
+import NumberedListIcon from "./NumberedListIcon";
 
 export {
     BoldIcon,
@@ -11,5 +14,8 @@ export {
     TitleIcon,
     StrikethroughIcon,
     CodeIcon,
-    LinkIcon
+    LinkIcon,
+    ImageIcon,
+    BulletedListIcon,
+    NumberedListIcon
 }

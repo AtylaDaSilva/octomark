@@ -8,7 +8,7 @@ import { TextField } from "@mui/material";
 export type MDEditorType = {
     markdown: string,
     handleChange: Dispatch<SetStateAction<string>>,
-    handleTextareaMouseEvent: (event: React.SyntheticEvent) => void,
+    handleEditorEvent: (event: React.SyntheticEvent) => void,
     editorOptions?: MDEditorOptions
 }
 
@@ -27,7 +27,12 @@ export type MDEditorOptions = {
 
 // Default export
 export default function MDEditor(
-    { markdown, handleChange, handleTextareaMouseEvent, editorOptions } : MDEditorType
+    {
+        markdown,
+        handleChange,
+        handleEditorEvent,
+        editorOptions
+    } : MDEditorType
 ) {
 
     return (
@@ -42,8 +47,8 @@ export default function MDEditor(
             color={editorOptions?.color || "primary"}
             value={markdown}
             onChange={(event) => handleChange(event.target.value)}
-            onMouseUp={handleTextareaMouseEvent}
-            onDoubleClick={handleTextareaMouseEvent}
+            onClick={handleEditorEvent}
+            onKeyUp={handleEditorEvent}
         />
     );
 }

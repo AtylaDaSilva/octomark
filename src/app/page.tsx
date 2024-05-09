@@ -34,20 +34,19 @@ export default function Home() {
     startPosition: -1,
     endPosition: -1
   });
+  const [imageAltText, setImageAltText] = useState("");
 
   // Event handlers
   /**
-   * Handles mouse up and double click mouse events on a textarea element.
+   * Handles user events on a textarea element.
    * @param target Textarea HTML element reference.
    * @returns void or null.
    */
-  const handleMouseUpAndDoubleClick = ({ target }: any) => {
-    // Ignores single click mouse events
-    if (target.selectionStart === target.selectionEnd) return null;
-
+  const handleEditorEvent = ({ target }: any) => {
     const selector = new TextSelector(target, markdown);
     const sel = selector.getSelectedText();
     setSelection(sel);
+    setImageAltText(sel.text);
   }
 
   return (
@@ -73,6 +72,8 @@ export default function Home() {
           setSelection={setSelection}
           markdown={markdown}
           setMarkdown={setMarkdown}
+          imageAltText={imageAltText}
+          setImageAltText={setImageAltText}
         />
       </Box>
 
@@ -100,7 +101,7 @@ export default function Home() {
           <MDEditor
             markdown={markdown}
             handleChange={setMarkdown}
-            handleTextareaMouseEvent={handleMouseUpAndDoubleClick}
+            handleEditorEvent={handleEditorEvent}
             editorOptions={{
               rows: 30,
               fullWidth: true,

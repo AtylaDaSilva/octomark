@@ -13,6 +13,10 @@ export class TextSelector {
         this.markdown = markdown;
     }
 
+    getCursorPosition() : number {
+        return this.eventTarget.selectionStart
+    }
+
     getSelectedText() : selectedTextType {
         const { selectionStart, selectionEnd } = this.eventTarget;
         this.selectedText = {
