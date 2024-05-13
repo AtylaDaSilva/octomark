@@ -1,6 +1,7 @@
 // Types
 import { Dispatch, SetStateAction } from "react";
 import { selectedTextType } from "@/classes";
+import type { alertLevelType } from "./alert";
 import type { headingLevelType } from "./heading";
 
 /**
@@ -33,6 +34,11 @@ export function handleCommand(
 export type commandFuncArgsType = {
     selection?: selectedTextType,
     headingLevel?: headingLevelType,
+    alertLevel?: alertLevelType,
     uri?: string,
-    altText?: string
+    altText?: string,
+    state?: {
+        value: any,
+        updater: Dispatch<SetStateAction<any>>
+    }
 }

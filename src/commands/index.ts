@@ -7,7 +7,11 @@ import { code } from "./code";
 import { link } from "./link";
 import { image } from "./image";
 import { bulletedList } from "./bulletedList";
-import { numberedList } from "./numberedList"
+import { numberedList } from "./numberedList";
+import { taskList } from "./taskList";
+import { footnote } from "./footnote";
+import { comment } from "./comment";
+import { alert } from "./alert";
 
 export {
     handleCommand,
@@ -19,5 +23,9 @@ export {
     link,
     image,
     bulletedList,
-    numberedList
+    numberedList,
+    taskList,
+    footnote,
+    comment,
+    alert
 }

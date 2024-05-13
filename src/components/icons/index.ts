@@ -7,6 +7,10 @@ import LinkIcon from "./LinkIcon";
 import ImageIcon from "./ImageIcon";
 import BulletedListIcon from "./BulletedListIcon";
 import NumberedListIcon from "./NumberedListIcon";
+import TaskListIcon from "./TaskListIcon";
+import FootnoteIcon from "./FootnoteIcon";
+import CommentIcon from "./CommentIcon";
+import AlertIcon from "./AlertIcon";
 
 export {
     BoldIcon,
@@ -17,5 +21,9 @@ export {
     LinkIcon,
     ImageIcon,
     BulletedListIcon,
-    NumberedListIcon
+    NumberedListIcon,
+    TaskListIcon,
+    FootnoteIcon,
+    CommentIcon,
+    AlertIcon
 }

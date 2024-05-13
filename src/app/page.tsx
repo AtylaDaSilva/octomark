@@ -34,7 +34,8 @@ export default function Home() {
     startPosition: -1,
     endPosition: -1
   });
-  const [imageAltText, setImageAltText] = useState("");
+  const [imageAltText, setImageAltText] = useState<string>("");
+  const [footnoteCount, setFootnoteCount] = useState<number>(0);
 
   // Event handlers
   /**
@@ -47,6 +48,7 @@ export default function Home() {
     const sel = selector.getSelectedText();
     setSelection(sel);
     setImageAltText(sel.text);
+    if (markdown === "") setFootnoteCount(0);
   }
 
   return (
@@ -74,6 +76,8 @@ export default function Home() {
           setMarkdown={setMarkdown}
           imageAltText={imageAltText}
           setImageAltText={setImageAltText}
+          footnoteCount={footnoteCount}
+          setFootnoteCount={setFootnoteCount}
         />
       </Box>
 

@@ -11,7 +11,11 @@ import {
     LinkIcon,
     ImageIcon,
     BulletedListIcon,
-    NumberedListIcon
+    NumberedListIcon,
+    TaskListIcon,
+    FootnoteIcon,
+    CommentIcon,
+    AlertIcon
 } from "./icons";
 
 // Types
@@ -53,6 +57,18 @@ export default function CommandBar(props: CommandBarProps) {
                     <li>
                         <NumberedListIcon {...props} />
                     </li>
+                    <li>
+                        <TaskListIcon {...props} />
+                    </li>
+                    <li>
+                        <FootnoteIcon {...props} />
+                    </li>
+                    <li>
+                        <CommentIcon {...props} />
+                    </li>
+                    <li>
+                        <AlertIcon {...props} />
+                    </li>
                 </ul>
             </Toolbar>
         </AppBar>
@@ -66,5 +82,7 @@ export type CommandBarProps = {
     markdown: string,
     setMarkdown: Dispatch<SetStateAction<string>>,
     imageAltText: string,
-    setImageAltText: Dispatch<SetStateAction<string>>
+    setImageAltText: Dispatch<SetStateAction<string>>,
+    footnoteCount: number,
+    setFootnoteCount: Dispatch<SetStateAction<number>>
 }
