@@ -21,13 +21,19 @@ export type ModalPropsType = {
 }
 
 export type FormField = {
-    type: string,
-    value?: string,
+    type: "text" | "number" | "select",
+    options?: selectOption[]
+    value?: string | number,
     required?: boolean,
     label: string,
     handleChange?: Dispatch<SetStateAction<any>>
     variant?: "outlined" | "filled" | "standard",
     columns: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12,
+}
+
+export type selectOption = {
+    value: string | number,
+    label: string
 }
 
 export type FormFieldsType = FormField[];

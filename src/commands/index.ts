@@ -12,6 +12,7 @@ import { taskList } from "./taskList";
 import { footnote } from "./footnote";
 import { comment } from "./comment";
 import { alert } from "./alert";
+import { table } from "./table";
 
 export {
     handleCommand,
@@ -27,5 +28,6 @@ export {
     taskList,
     footnote,
     comment,
-    alert
+    alert,
+    table
 }

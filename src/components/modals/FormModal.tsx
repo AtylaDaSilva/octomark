@@ -1,5 +1,5 @@
 // MUI Components
-import { Grid, Modal, Box, Typography, TextField, Button } from "@mui/material";
+import { Grid, Modal, Box, Typography, TextField, MenuItem, Button } from "@mui/material";
 
 // Style
 import { defaultStyle } from "./";
@@ -7,8 +7,12 @@ import { defaultStyle } from "./";
 // Types
 import {
     ModalPropsType,
-    FormField
+    FormField,
+    selectOption
 } from "./";
+
+// Utility functions
+import { capitalize } from "@/functions/capitalize";
 
 export default function FormModal({
     isOpen,
@@ -21,6 +25,7 @@ export default function FormModal({
         try {
             switch (field.type.toLowerCase()) {
                 case "text":
+                case "number":
                     return (
                         <Grid
                             item
@@ -29,7 +34,8 @@ export default function FormModal({
                         >
                             <TextField
                                 variant={field?.variant || "standard"}
-                                label={field.label}
+                                type={field.type}
+                                label={capitalize(field.label)}
                                 required={field.required}
                                 value={field.value}
                                 onChange={(event) => {
@@ -39,6 +45,43 @@ export default function FormModal({
                                 }}
                                 fullWidth
                             />
+                        </Grid>
+                    )
+
+                case "select":
+                    return (
+                        <Grid
+                            item
+                            xs={field.columns}
+                            key={index}
+                        >
+                            <TextField
+                                variant={field?.variant || "standard"}
+                                select
+                                type={field.type}
+                                label={capitalize(field.label)}
+                                required={field.required}
+                                value={field.value}
+                                onChange={(event) => {
+                                    if (field.handleChange) {
+                                        field.handleChange(event.target.value);
+                                    }
+                                }}
+                                fullWidth
+                            >
+                                {
+                                    field.options?.map((option: selectOption) => {
+                                        return (
+                                            <MenuItem
+                                                key={option.value}
+                                                value={option.value}
+                                            >
+                                                { capitalize(option.label) }
+                                            </MenuItem>
+                                        );
+                                    })
+                                }
+                            </TextField>
                         </Grid>
                     )
 

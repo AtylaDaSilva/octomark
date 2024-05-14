@@ -11,6 +11,7 @@ import TaskListIcon from "./TaskListIcon";
 import FootnoteIcon from "./FootnoteIcon";
 import CommentIcon from "./CommentIcon";
 import AlertIcon from "./AlertIcon";
+import TableIcon from "./TableIcon";
 
 export {
     BoldIcon,
@@ -25,5 +26,6 @@ export {
     TaskListIcon,
     FootnoteIcon,
     CommentIcon,
-    AlertIcon
+    AlertIcon,
+    TableIcon
 }

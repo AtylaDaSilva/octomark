@@ -17,7 +17,7 @@ import { handleCommand, image } from "@/commands";
 
 export default function ImageIcon(props: CommandBarProps) {
     const [isModalOpen, setIsModalOpen] = useState(false);
-    const [uri, setUri] = useState(undefined);
+    const [uri, setUri] = useState("");
 
     return (
         <>
@@ -34,8 +34,10 @@ export default function ImageIcon(props: CommandBarProps) {
                         image,
                         {
                             selection: props.selection,
-                            uri,
-                            altText: props?.imageAltText
+                            imageProps: {
+                                uri,
+                                altText: props?.imageAltText
+                            }
                         },
                         props.setSelection,
                         props.markdown,

@@ -7,10 +7,16 @@ import { commandFuncArgsType } from "./handleCommand";
  * @param selection Selection state.
  * @returns selectedTextType object
  */
-export function image({ selection, uri, altText } : commandFuncArgsType) {
+export function image({ selection, imageProps } : commandFuncArgsType) {
     const newSelection : selectedTextType = {
         ...selection,
-        text: `![${altText}](${uri})`
+        text: `![${imageProps?.altText}](${imageProps?.uri})`
     };
     return newSelection;
+}
+
+// Component types
+export type imagePropsType = {
+    uri: string,
+    altText: string
 }

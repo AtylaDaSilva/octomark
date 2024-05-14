@@ -3,6 +3,8 @@ import { Dispatch, SetStateAction } from "react";
 import { selectedTextType } from "@/classes";
 import type { alertLevelType } from "./alert";
 import type { headingLevelType } from "./heading";
+import type { imagePropsType } from "./image";
+import type { tablePropsType } from "./table";
 
 /**
  * Executes commandFunction, passing selection as argument, and updates selection and markdown states.
@@ -35,8 +37,8 @@ export type commandFuncArgsType = {
     selection?: selectedTextType,
     headingLevel?: headingLevelType,
     alertLevel?: alertLevelType,
-    uri?: string,
-    altText?: string,
+    tableProps?: tablePropsType,
+    imageProps?: imagePropsType
     state?: {
         value: any,
         updater: Dispatch<SetStateAction<any>>
