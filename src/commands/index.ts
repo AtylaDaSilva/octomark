@@ -13,6 +13,7 @@ import { footnote } from "./footnote";
 import { comment } from "./comment";
 import { alert } from "./alert";
 import { table } from "./table";
+import { emoji } from "./emoji";
 
 export {
     handleCommand,
@@ -29,5 +30,6 @@ export {
     footnote,
     comment,
     alert,
-    table
+    table,
+    emoji
 }

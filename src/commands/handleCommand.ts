@@ -37,6 +37,7 @@ export type commandFuncArgsType = {
     selection?: selectedTextType,
     headingLevel?: headingLevelType,
     alertLevel?: alertLevelType,
+    emojiCode?: string,
     tableProps?: tablePropsType,
     imageProps?: imagePropsType
     state?: {

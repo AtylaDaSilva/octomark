@@ -16,7 +16,8 @@ import {
     FootnoteIcon,
     CommentIcon,
     AlertIcon,
-    TableIcon
+    TableIcon,
+    EmojiIcon
 } from "./icons";
 
 // Types
@@ -72,6 +73,9 @@ export default function CommandBar(props: CommandBarProps) {
                     </li>
                     <li>
                         <TableIcon {...props} />
+                    </li>
+                    <li>
+                        <EmojiIcon {...props} />
                     </li>
                 </ul>
             </Toolbar>

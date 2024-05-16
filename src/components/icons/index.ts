@@ -12,6 +12,7 @@ import FootnoteIcon from "./FootnoteIcon";
 import CommentIcon from "./CommentIcon";
 import AlertIcon from "./AlertIcon";
 import TableIcon from "./TableIcon";
+import EmojiIcon from "./EmojiIcon";
 
 export {
     BoldIcon,
@@ -27,5 +28,6 @@ export {
     FootnoteIcon,
     CommentIcon,
     AlertIcon,
-    TableIcon
+    TableIcon,
+    EmojiIcon
 }
