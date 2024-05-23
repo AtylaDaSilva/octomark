@@ -1,6 +1,3386 @@
 [
-    { "code": ":grinning:", "ico": "😀" },
-    { "code": ":wink:", "ico": "😉" },
-    { "code": ":sweat_smile:", "ico": "😅" },
-    { "code": ":innocent:", "ico": "😇" }
+  {
+    "categoryName": "Smiley And Emotion",
+    "categoryIcon": "😀",
+    "emojis": [
+      {
+        "code": [
+          ":grinning:"
+        ],
+        "ico": "😀"
+      },
+      {
+        "code": [
+          ":smiley:"
+        ],
+        "ico": "😃"
+      },
+      {
+        "code": [
+          ":smile:"
+        ],
+        "ico": "😄"
+      },
+      {
+        "code": [
+          ":grin:"
+        ],
+        "ico": "😁"
+      },
+      {
+        "code": [
+          ":laughing:"
+        ],
+        "ico": "😆"
+      },
+      {
+        "code": [
+          ":sweat_smile:"
+        ],
+        "ico": "😅"
+      },
+      {
+        "code": [
+          ":rofl:"
+        ],
+        "ico": "🤣"
+      },
+      {
+        "code": [
+          ":joy:"
+        ],
+        "ico": "😂"
+      },
+      {
+        "code": [
+          ":slightly_smiling_face:"
+        ],
+        "ico": "🙂"
+      },
+      {
+        "code": [
+          ":upside_down_face:"
+        ],
+        "ico": "🙃"
+      },
+      {
+        "code": [
+          ":wink:"
+        ],
+        "ico": "😉"
+      },
+      {
+        "code": [
+          ":blush:"
+        ],
+        "ico": "😊"
+      },
+      {
+        "code": [
+          ":innocent:"
+        ],
+        "ico": "😇"
+      },
+      {
+        "code": [
+          ":smiling_face_with_three_hearts:"
+        ],
+        "ico": "🥰"
+      },
+      {
+        "code": [
+          ":heart_eyes:"
+        ],
+        "ico": "😍"
+      },
+      {
+        "code": [
+          ":star_struck:"
+        ],
+        "ico": "🤩"
+      },
+      {
+        "code": [
+          ":kissing_heart:"
+        ],
+        "ico": "😘"
+      }
+    ]
+  },
+  {
+    "categoryName": "People And Body",
+    "categoryIcon": "👍",
+    "emojis": [
+      {
+        "code": [
+          ":metal:"
+        ],
+        "ico": "🤘"
+      },
+      {
+        "code": [
+          ":call_me_hand:"
+        ],
+        "ico": "🤙"
+      },
+      {
+        "code": [
+          ":point_left:"
+        ],
+        "ico": "👈"
+      },
+      {
+        "code": [
+          ":point_right:"
+        ],
+        "ico": "👉"
+      },
+      {
+        "code": [
+          ":point_up_2:"
+        ],
+        "ico": "👆"
+      },
+      {
+        "code": [
+          ":fu:"
+        ],
+        "ico": "🖕"
+      },
+      {
+        "code": [
+          ":point_down:"
+        ],
+        "ico": "👇"
+      },
+      {
+        "code": [
+          ":point_up:"
+        ],
+        "ico": "☝️"
+      },
+      {
+        "code": [
+          ":thumbsup:"
+        ],
+        "ico": "👍"
+      },
+      {
+        "code": [
+          ":thumbsdown:"
+        ],
+        "ico": "👎"
+      },
+      {
+        "code": [
+          ":fist:"
+        ],
+        "ico": "✊"
+      },
+      {
+        "code": [
+          ":facepunch:"
+        ],
+        "ico": "👊"
+      },
+      {
+        "code": [
+          ":fist_left:"
+        ],
+        "ico": "🤛"
+      },
+      {
+        "code": [
+          ":fist_right:"
+        ],
+        "ico": "🤜"
+      },
+      {
+        "code": [
+          ":clap:"
+        ],
+        "ico": "👏"
+      },
+      {
+        "code": [
+          ":raised_hands:"
+        ],
+        "ico": "🙌"
+      },
+      {
+        "code": [
+          ":open_hands:"
+        ],
+        "ico": "👐"
+      },
+      {
+        "code": [
+          ":palms_up_together:"
+        ],
+        "ico": "🤲"
+      },
+      {
+        "code": [
+          ":handshake:"
+        ],
+        "ico": "🤝"
+      },
+      {
+        "code": [
+          ":pray:"
+        ],
+        "ico": "🙏"
+      },
+      {
+        "code": [
+          ":writing_hand:"
+        ],
+        "ico": "✍️"
+      },
+      {
+        "code": [
+          ":nail_care:"
+        ],
+        "ico": "💅"
+      },
+      {
+        "code": [
+          ":selfie:"
+        ],
+        "ico": "🤳"
+      },
+      {
+        "code": [
+          ":muscle:"
+        ],
+        "ico": "💪"
+      },
+      {
+        "code": [
+          ":mechanical_arm:"
+        ],
+        "ico": "🦾"
+      },
+      {
+        "code": [
+          ":mechanical_leg:"
+        ],
+        "ico": "🦿"
+      },
+      {
+        "code": [
+          ":leg:"
+        ],
+        "ico": "🦵"
+      },
+      {
+        "code": [
+          ":foot:"
+        ],
+        "ico": "🦶"
+      },
+      {
+        "code": [
+          ":ear:"
+        ],
+        "ico": "👂"
+      },
+      {
+        "code": [
+          ":ear_with_hearing_aid:"
+        ],
+        "ico": "🦻"
+      },
+      {
+        "code": [
+          ":nose:"
+        ],
+        "ico": "👃"
+      },
+      {
+        "code": [
+          ":brain:"
+        ],
+        "ico": "🧠"
+      },
+      {
+        "code": [
+          ":anatomical_heart:"
+        ],
+        "ico": "🫀"
+      },
+      {
+        "code": [
+          ":lungs:"
+        ],
+        "ico": "🫁"
+      },
+      {
+        "code": [
+          ":tooth:"
+        ],
+        "ico": "🦷"
+      },
+      {
+        "code": [
+          ":bone:"
+        ],
+        "ico": "🦴"
+      },
+      {
+        "code": [
+          ":eyes:"
+        ],
+        "ico": "👀"
+      },
+      {
+        "code": [
+          ":eye:"
+        ],
+        "ico": "👁️"
+      },
+      {
+        "code": [
+          ":tongue:"
+        ],
+        "ico": "👅"
+      },
+      {
+        "code": [
+          ":lips:"
+        ],
+        "ico": "👄"
+      },
+      {
+        "code": [
+          ":baby:"
+        ],
+        "ico": "👶"
+      },
+      {
+        "code": [
+          ":child:"
+        ],
+        "ico": "🧒"
+      },
+      {
+        "code": [
+          ":boy:"
+        ],
+        "ico": "👦"
+      },
+      {
+        "code": [
+          ":girl:"
+        ],
+        "ico": "👧"
+      },
+      {
+        "code": [
+          ":adult:"
+        ],
+        "ico": "🧑"
+      },
+      {
+        "code": [
+          ":blond_haired_person:"
+        ],
+        "ico": "👱"
+      },
+      {
+        "code": [
+          ":man:"
+        ],
+        "ico": "👨"
+      },
+      {
+        "code": [
+          ":bearded_person:"
+        ],
+        "ico": "🧔"
+      },
+      {
+        "code": [
+          ":man_beard:"
+        ],
+        "ico": "🧔‍♂️"
+      },
+      {
+        "code": [
+          ":woman_beard:"
+        ],
+        "ico": "🧔‍♀️"
+      },
+      {
+        "code": [
+          ":red_haired_man:"
+        ],
+        "ico": "👨‍🦰"
+      },
+      {
+        "code": [
+          ":curly_haired_man:"
+        ],
+        "ico": "👨‍🦱"
+      },
+      {
+        "code": [
+          ":white_haired_man:"
+        ],
+        "ico": "👨‍🦳"
+      },
+      {
+        "code": [
+          ":bald_man:"
+        ],
+        "ico": "👨‍🦲"
+      },
+      {
+        "code": [
+          ":woman:"
+        ],
+        "ico": "👩"
+      },
+      {
+        "code": [
+          ":red_haired_woman:"
+        ],
+        "ico": "👩‍🦰"
+      },
+      {
+        "code": [
+          ":person_red_hair:"
+        ],
+        "ico": "🧑‍🦰"
+      },
+      {
+        "code": [
+          ":curly_haired_woman:"
+        ],
+        "ico": "👩‍🦱"
+      },
+      {
+        "code": [
+          ":person_curly_hair:"
+        ],
+        "ico": "🧑‍🦱"
+      },
+      {
+        "code": [
+          ":white_haired_woman:"
+        ],
+        "ico": "👩‍🦳"
+      },
+      {
+        "code": [
+          ":person_white_hair:"
+        ],
+        "ico": "🧑‍🦳"
+      },
+      {
+        "code": [
+          ":bald_woman:"
+        ],
+        "ico": "👩‍🦲"
+      },
+      {
+        "code": [
+          ":person_bald:"
+        ],
+        "ico": "🧑‍🦲"
+      },
+      {
+        "code": [
+          ":blond_haired_woman:"
+        ],
+        "ico": "👱‍♀️"
+      },
+      {
+        "code": [
+          ":blond_haired_man:"
+        ],
+        "ico": "👱‍♂️"
+      },
+      {
+        "code": [
+          ":older_adult:"
+        ],
+        "ico": "🧓"
+      },
+      {
+        "code": [
+          ":older_man:"
+        ],
+        "ico": "👴"
+      },
+      {
+        "code": [
+          ":older_woman:"
+        ],
+        "ico": "👵"
+      },
+      {
+        "code": [
+          ":frowning_person:"
+        ],
+        "ico": "🙍"
+      },
+      {
+        "code": [
+          ":frowning_man:"
+        ],
+        "ico": "🙍‍♂️"
+      },
+      {
+        "code": [
+          ":frowning_woman:"
+        ],
+        "ico": "🙍‍♀️"
+      },
+      {
+        "code": [
+          ":pouting_face:"
+        ],
+        "ico": "🙎"
+      },
+      {
+        "code": [
+          ":pouting_man:"
+        ],
+        "ico": "🙎‍♂️"
+      },
+      {
+        "code": [
+          ":pouting_woman:"
+        ],
+        "ico": "🙎‍♀️"
+      },
+      {
+        "code": [
+          ":no_good:"
+        ],
+        "ico": "🙅"
+      },
+      {
+        "code": [
+          ":ng_man:"
+        ],
+        "ico": "🙅‍♂️"
+      },
+      {
+        "code": [
+          ":ng_woman:"
+        ],
+        "ico": "🙅‍♀️"
+      },
+      {
+        "code": [
+          ":ok_person:"
+        ],
+        "ico": "🙆"
+      },
+      {
+        "code": [
+          ":ok_man:"
+        ],
+        "ico": "🙆‍♂️"
+      },
+      {
+        "code": [
+          ":ok_woman:"
+        ],
+        "ico": "🙆‍♀️"
+      },
+      {
+        "code": [
+          ":information_desk_person:"
+        ],
+        "ico": "💁"
+      },
+      {
+        "code": [
+          ":sassy_man:"
+        ],
+        "ico": "💁‍♂️"
+      },
+      {
+        "code": [
+          ":sassy_woman:"
+        ],
+        "ico": "💁‍♀️"
+      },
+      {
+        "code": [
+          ":raising_hand:"
+        ],
+        "ico": "🙋"
+      },
+      {
+        "code": [
+          ":raising_hand_man:"
+        ],
+        "ico": "🙋‍♂️"
+      },
+      {
+        "code": [
+          ":raising_hand_woman:"
+        ],
+        "ico": "🙋‍♀️"
+      },
+      {
+        "code": [
+          ":deaf_person:"
+        ],
+        "ico": "🧏"
+      },
+      {
+        "code": [
+          ":deaf_man:"
+        ],
+        "ico": "🧏‍♂️"
+      },
+      {
+        "code": [
+          ":deaf_woman:"
+        ],
+        "ico": "🧏‍♀️"
+      },
+      {
+        "code": [
+          ":bow:"
+        ],
+        "ico": "🙇"
+      },
+      {
+        "code": [
+          ":bowing_man:"
+        ],
+        "ico": "🙇‍♂️"
+      },
+      {
+        "code": [
+          ":bowing_woman:"
+        ],
+        "ico": "🙇‍♀️"
+      },
+      {
+        "code": [
+          ":facepalm:"
+        ],
+        "ico": "🤦"
+      },
+      {
+        "code": [
+          ":man_facepalming:"
+        ],
+        "ico": "🤦‍♂️"
+      },
+      {
+        "code": [
+          ":woman_facepalming:"
+        ],
+        "ico": "🤦‍♀️"
+      },
+      {
+        "code": [
+          ":shrug:"
+        ],
+        "ico": "🤷"
+      },
+      {
+        "code": [
+          ":man_shrugging:"
+        ],
+        "ico": "🤷‍♂️"
+      },
+      {
+        "code": [
+          ":woman_shrugging:"
+        ],
+        "ico": "🤷‍♀️"
+      },
+      {
+        "code": [
+          ":health_worker:"
+        ],
+        "ico": "🧑‍⚕️"
+      },
+      {
+        "code": [
+          ":man_health_worker:"
+        ],
+        "ico": "👨‍⚕️"
+      },
+      {
+        "code": [
+          ":woman_health_worker:"
+        ],
+        "ico": "👩‍⚕️"
+      },
+      {
+        "code": [
+          ":student:"
+        ],
+        "ico": "🧑‍🎓"
+      },
+      {
+        "code": [
+          ":man_student:"
+        ],
+        "ico": "👨‍🎓"
+      },
+      {
+        "code": [
+          ":woman_student:"
+        ],
+        "ico": "👩‍🎓"
+      },
+      {
+        "code": [
+          ":teacher:"
+        ],
+        "ico": "🧑‍🏫"
+      },
+      {
+        "code": [
+          ":man_teacher:"
+        ],
+        "ico": "👨‍🏫"
+      },
+      {
+        "code": [
+          ":woman_teacher:"
+        ],
+        "ico": "👩‍🏫"
+      },
+      {
+        "code": [
+          ":judge:"
+        ],
+        "ico": "🧑‍⚖️"
+      },
+      {
+        "code": [
+          ":man_judge:"
+        ],
+        "ico": "👨‍⚖️"
+      },
+      {
+        "code": [
+          ":woman_judge:"
+        ],
+        "ico": "👩‍⚖️"
+      },
+      {
+        "code": [
+          ":farmer:"
+        ],
+        "ico": "🧑‍🌾"
+      },
+      {
+        "code": [
+          ":man_farmer:"
+        ],
+        "ico": "👨‍🌾"
+      },
+      {
+        "code": [
+          ":woman_farmer:"
+        ],
+        "ico": "👩‍🌾"
+      },
+      {
+        "code": [
+          ":cook:"
+        ],
+        "ico": "🧑‍🍳"
+      },
+      {
+        "code": [
+          ":man_cook:"
+        ],
+        "ico": "👨‍🍳"
+      },
+      {
+        "code": [
+          ":woman_cook:"
+        ],
+        "ico": "👩‍🍳"
+      },
+      {
+        "code": [
+          ":mechanic:"
+        ],
+        "ico": "🧑‍🔧"
+      },
+      {
+        "code": [
+          ":man_mechanic:"
+        ],
+        "ico": "👨‍🔧"
+      },
+      {
+        "code": [
+          ":woman_mechanic:"
+        ],
+        "ico": "👩‍🔧"
+      },
+      {
+        "code": [
+          ":factory_worker:"
+        ],
+        "ico": "🧑‍🏭"
+      },
+      {
+        "code": [
+          ":man_factory_worker:"
+        ],
+        "ico": "👨‍🏭"
+      },
+      {
+        "code": [
+          ":woman_factory_worker:"
+        ],
+        "ico": "👩‍🏭"
+      },
+      {
+        "code": [
+          ":office_worker:"
+        ],
+        "ico": "🧑‍💼"
+      },
+      {
+        "code": [
+          ":man_office_worker:"
+        ],
+        "ico": "👨‍💼"
+      },
+      {
+        "code": [
+          ":woman_office_worker:"
+        ],
+        "ico": "👩‍💼"
+      },
+      {
+        "code": [
+          ":scientist:"
+        ],
+        "ico": "🧑‍🔬"
+      },
+      {
+        "code": [
+          ":man_scientist:"
+        ],
+        "ico": "👨‍🔬"
+      },
+      {
+        "code": [
+          ":woman_scientist:"
+        ],
+        "ico": "👩‍🔬"
+      },
+      {
+        "code": [
+          ":technologist:"
+        ],
+        "ico": "🧑‍💻"
+      },
+      {
+        "code": [
+          ":man_technologist:"
+        ],
+        "ico": "👨‍💻"
+      },
+      {
+        "code": [
+          ":woman_technologist:"
+        ],
+        "ico": "👩‍💻"
+      },
+      {
+        "code": [
+          ":singer:"
+        ],
+        "ico": "🧑‍🎤"
+      },
+      {
+        "code": [
+          ":man_singer:"
+        ],
+        "ico": "👨‍🎤"
+      },
+      {
+        "code": [
+          ":woman_singer:"
+        ],
+        "ico": "👩‍🎤"
+      },
+      {
+        "code": [
+          ":artist:"
+        ],
+        "ico": "🧑‍🎨"
+      },
+      {
+        "code": [
+          ":man_artist:"
+        ],
+        "ico": "👨‍🎨"
+      },
+      {
+        "code": [
+          ":woman_artist:"
+        ],
+        "ico": "👩‍🎨"
+      },
+      {
+        "code": [
+          ":astronaut:"
+        ],
+        "ico": "🧑‍🚀"
+      },
+      {
+        "code": [
+          ":man_astronaut:"
+        ],
+        "ico": "👨‍🚀"
+      },
+      {
+        "code": [
+          ":woman_astronaut:"
+        ],
+        "ico": "👩‍🚀"
+      },
+      {
+        "code": [
+          ":firefighter:"
+        ],
+        "ico": "🧑‍🚒"
+      },
+      {
+        "code": [
+          ":man_firefighter:"
+        ],
+        "ico": "👨‍🚒"
+      },
+      {
+        "code": [
+          ":woman_firefighter:"
+        ],
+        "ico": "👩‍🚒"
+      },
+      {
+        "code": [
+          ":cop:"
+        ],
+        "ico": "👮"
+      },
+      {
+        "code": [
+          ":policeman:"
+        ],
+        "ico": "👮‍♂️"
+      },
+      {
+        "code": [
+          ":policewoman:"
+        ],
+        "ico": "👮‍♀️"
+      },
+      {
+        "code": [
+          ":detective:"
+        ],
+        "ico": "🕵️"
+      },
+      {
+        "code": [
+          ":male_detective:"
+        ],
+        "ico": "🕵️‍♂️"
+      },
+      {
+        "code": [
+          ":female_detective:"
+        ],
+        "ico": "🕵️‍♀️"
+      },
+      {
+        "code": [
+          ":guard:"
+        ],
+        "ico": "💂"
+      },
+      {
+        "code": [
+          ":guardsman:"
+        ],
+        "ico": "💂‍♂️"
+      },
+      {
+        "code": [
+          ":guardswoman:"
+        ],
+        "ico": "💂‍♀️"
+      },
+      {
+        "code": [
+          ":ninja:"
+        ],
+        "ico": "🥷"
+      },
+      {
+        "code": [
+          ":construction_worker:"
+        ],
+        "ico": "👷"
+      },
+      {
+        "code": [
+          ":construction_worker_man:"
+        ],
+        "ico": "👷‍♂️"
+      },
+      {
+        "code": [
+          ":construction_worker_woman:"
+        ],
+        "ico": "👷‍♀️"
+      },
+      {
+        "code": [
+          ":prince:"
+        ],
+        "ico": "🤴"
+      },
+      {
+        "code": [
+          ":princess:"
+        ],
+        "ico": "👸"
+      },
+      {
+        "code": [
+          ":person_with_turban:"
+        ],
+        "ico": "👳"
+      },
+      {
+        "code": [
+          ":man_with_turban:"
+        ],
+        "ico": "👳‍♂️"
+      },
+      {
+        "code": [
+          ":woman_with_turban:"
+        ],
+        "ico": "👳‍♀️"
+      },
+      {
+        "code": [
+          ":man_with_gua_pi_mao:"
+        ],
+        "ico": "👲"
+      },
+      {
+        "code": [
+          ":woman_with_headscarf:"
+        ],
+        "ico": "🧕"
+      },
+      {
+        "code": [
+          ":person_in_tuxedo:"
+        ],
+        "ico": "🤵"
+      },
+      {
+        "code": [
+          ":man_in_tuxedo:"
+        ],
+        "ico": "🤵‍♂️"
+      },
+      {
+        "code": [
+          ":woman_in_tuxedo:"
+        ],
+        "ico": "🤵‍♀️"
+      },
+      {
+        "code": [
+          ":person_with_veil:"
+        ],
+        "ico": "👰"
+      },
+      {
+        "code": [
+          ":man_with_veil:"
+        ],
+        "ico": "👰‍♂️"
+      },
+      {
+        "code": [
+          ":bride_with_veil:"
+        ],
+        "ico": "👰‍♀️"
+      },
+      {
+        "code": [
+          ":pregnant_woman:"
+        ],
+        "ico": "🤰"
+      },
+      {
+        "code": [
+          ":breast_feeding:"
+        ],
+        "ico": "🤱"
+      },
+      {
+        "code": [
+          ":woman_feeding_baby:"
+        ],
+        "ico": "👩‍🍼"
+      },
+      {
+        "code": [
+          ":man_feeding_baby:"
+        ],
+        "ico": "👨‍🍼"
+      },
+      {
+        "code": [
+          ":person_feeding_baby:"
+        ],
+        "ico": "🧑‍🍼"
+      },
+      {
+        "code": [
+          ":angel:"
+        ],
+        "ico": "👼"
+      },
+      {
+        "code": [
+          ":santa:"
+        ],
+        "ico": "🎅"
+      },
+      {
+        "code": [
+          ":mrs_claus:"
+        ],
+        "ico": "🤶"
+      },
+      {
+        "code": [
+          ":mx_claus:"
+        ],
+        "ico": "🧑‍🎄"
+      },
+      {
+        "code": [
+          ":superhero:"
+        ],
+        "ico": "🦸"
+      },
+      {
+        "code": [
+          ":superhero_man:"
+        ],
+        "ico": "🦸‍♂️"
+      },
+      {
+        "code": [
+          ":superhero_woman:"
+        ],
+        "ico": "🦸‍♀️"
+      },
+      {
+        "code": [
+          ":supervillain:"
+        ],
+        "ico": "🦹"
+      },
+      {
+        "code": [
+          ":supervillain_man:"
+        ],
+        "ico": "🦹‍♂️"
+      },
+      {
+        "code": [
+          ":supervillain_woman:"
+        ],
+        "ico": "🦹‍♀️"
+      },
+      {
+        "code": [
+          ":mage:"
+        ],
+        "ico": "🧙"
+      },
+      {
+        "code": [
+          ":mage_man:"
+        ],
+        "ico": "🧙‍♂️"
+      },
+      {
+        "code": [
+          ":mage_woman:"
+        ],
+        "ico": "🧙‍♀️"
+      },
+      {
+        "code": [
+          ":fairy:"
+        ],
+        "ico": "🧚"
+      },
+      {
+        "code": [
+          ":fairy_man:"
+        ],
+        "ico": "🧚‍♂️"
+      },
+      {
+        "code": [
+          ":fairy_woman:"
+        ],
+        "ico": "🧚‍♀️"
+      },
+      {
+        "code": [
+          ":vampire:"
+        ],
+        "ico": "🧛"
+      },
+      {
+        "code": [
+          ":vampire_man:"
+        ],
+        "ico": "🧛‍♂️"
+      },
+      {
+        "code": [
+          ":vampire_woman:"
+        ],
+        "ico": "🧛‍♀️"
+      },
+      {
+        "code": [
+          ":merperson:"
+        ],
+        "ico": "🧜"
+      },
+      {
+        "code": [
+          ":merman:"
+        ],
+        "ico": "🧜‍♂️"
+      },
+      {
+        "code": [
+          ":mermaid:"
+        ],
+        "ico": "🧜‍♀️"
+      },
+      {
+        "code": [
+          ":elf:"
+        ],
+        "ico": "🧝"
+      },
+      {
+        "code": [
+          ":elf_man:"
+        ],
+        "ico": "🧝‍♂️"
+      },
+      {
+        "code": [
+          ":elf_woman:"
+        ],
+        "ico": "🧝‍♀️"
+      },
+      {
+        "code": [
+          ":genie:"
+        ],
+        "ico": "🧞"
+      },
+      {
+        "code": [
+          ":genie_man:"
+        ],
+        "ico": "🧞‍♂️"
+      },
+      {
+        "code": [
+          ":genie_woman:"
+        ],
+        "ico": "🧞‍♀️"
+      },
+      {
+        "code": [
+          ":zombie:"
+        ],
+        "ico": "🧟"
+      },
+      {
+        "code": [
+          ":zombie_man:"
+        ],
+        "ico": "🧟‍♂️"
+      },
+      {
+        "code": [
+          ":zombie_woman:"
+        ],
+        "ico": "🧟‍♀️"
+      },
+      {
+        "code": [
+          ":massage:"
+        ],
+        "ico": "💆"
+      },
+      {
+        "code": [
+          ":massage_man:"
+        ],
+        "ico": "💆‍♂️"
+      },
+      {
+        "code": [
+          ":massage_woman:"
+        ],
+        "ico": "💆‍♀️"
+      },
+      {
+        "code": [
+          ":haircut:"
+        ],
+        "ico": "💇"
+      },
+      {
+        "code": [
+          ":haircut_man:"
+        ],
+        "ico": "💇‍♂️"
+      },
+      {
+        "code": [
+          ":haircut_woman:"
+        ],
+        "ico": "💇‍♀️"
+      },
+      {
+        "code": [
+          ":walking:"
+        ],
+        "ico": "🚶"
+      },
+      {
+        "code": [
+          ":walking_man:"
+        ],
+        "ico": "🚶‍♂️"
+      },
+      {
+        "code": [
+          ":walking_woman:"
+        ],
+        "ico": "🚶‍♀️"
+      },
+      {
+        "code": [
+          ":standing_person:"
+        ],
+        "ico": "🧍"
+      },
+      {
+        "code": [
+          ":standing_man:"
+        ],
+        "ico": "🧍‍♂️"
+      },
+      {
+        "code": [
+          ":standing_woman:"
+        ],
+        "ico": "🧍‍♀️"
+      },
+      {
+        "code": [
+          ":kneeling_person:"
+        ],
+        "ico": "🧎"
+      },
+      {
+        "code": [
+          ":kneeling_man:"
+        ],
+        "ico": "🧎‍♂️"
+      },
+      {
+        "code": [
+          ":kneeling_woman:"
+        ],
+        "ico": "🧎‍♀️"
+      },
+      {
+        "code": [
+          ":person_with_probing_cane:"
+        ],
+        "ico": "🧑‍🦯"
+      },
+      {
+        "code": [
+          ":man_with_probing_cane:"
+        ],
+        "ico": "👨‍🦯"
+      },
+      {
+        "code": [
+          ":woman_with_probing_cane:"
+        ],
+        "ico": "👩‍🦯"
+      },
+      {
+        "code": [
+          ":person_in_motorized_wheelchair:"
+        ],
+        "ico": "🧑‍🦼"
+      },
+      {
+        "code": [
+          ":man_in_motorized_wheelchair:"
+        ],
+        "ico": "👨‍🦼"
+      },
+      {
+        "code": [
+          ":woman_in_motorized_wheelchair:"
+        ],
+        "ico": "👩‍🦼"
+      },
+      {
+        "code": [
+          ":person_in_manual_wheelchair:"
+        ],
+        "ico": "🧑‍🦽"
+      },
+      {
+        "code": [
+          ":man_in_manual_wheelchair:"
+        ],
+        "ico": "👨‍🦽"
+      },
+      {
+        "code": [
+          ":woman_in_manual_wheelchair:"
+        ],
+        "ico": "👩‍🦽"
+      },
+      {
+        "code": [
+          ":runner:"
+        ],
+        "ico": "🏃"
+      },
+      {
+        "code": [
+          ":running_man:"
+        ],
+        "ico": "🏃‍♂️"
+      },
+      {
+        "code": [
+          ":running_woman:"
+        ],
+        "ico": "🏃‍♀️"
+      },
+      {
+        "code": [
+          ":dancer:"
+        ],
+        "ico": "💃"
+      },
+      {
+        "code": [
+          ":man_dancing:"
+        ],
+        "ico": "🕺"
+      },
+      {
+        "code": [
+          ":business_suit_levitating:"
+        ],
+        "ico": "🕴️"
+      },
+      {
+        "code": [
+          ":dancers:"
+        ],
+        "ico": "👯"
+      },
+      {
+        "code": [
+          ":dancing_men:"
+        ],
+        "ico": "👯‍♂️"
+      },
+      {
+        "code": [
+          ":dancing_women:"
+        ],
+        "ico": "👯‍♀️"
+      },
+      {
+        "code": [
+          ":sauna_person:"
+        ],
+        "ico": "🧖"
+      },
+      {
+        "code": [
+          ":sauna_man:"
+        ],
+        "ico": "🧖‍♂️"
+      },
+      {
+        "code": [
+          ":sauna_woman:"
+        ],
+        "ico": "🧖‍♀️"
+      },
+      {
+        "code": [
+          ":climbing:"
+        ],
+        "ico": "🧗"
+      },
+      {
+        "code": [
+          ":climbing_man:"
+        ],
+        "ico": "🧗‍♂️"
+      },
+      {
+        "code": [
+          ":climbing_woman:"
+        ],
+        "ico": "🧗‍♀️"
+      },
+      {
+        "code": [
+          ":person_fencing:"
+        ],
+        "ico": "🤺"
+      },
+      {
+        "code": [
+          ":horse_racing:"
+        ],
+        "ico": "🏇"
+      },
+      {
+        "code": [
+          ":skier:"
+        ],
+        "ico": "⛷️"
+      },
+      {
+        "code": [
+          ":snowboarder:"
+        ],
+        "ico": "🏂"
+      },
+      {
+        "code": [
+          ":golfing:"
+        ],
+        "ico": "🏌️"
+      },
+      {
+        "code": [
+          ":golfing_man:"
+        ],
+        "ico": "🏌️‍♂️"
+      },
+      {
+        "code": [
+          ":golfing_woman:"
+        ],
+        "ico": "🏌️‍♀️"
+      },
+      {
+        "code": [
+          ":surfer:"
+        ],
+        "ico": "🏄"
+      },
+      {
+        "code": [
+          ":surfing_man:"
+        ],
+        "ico": "🏄‍♂️"
+      },
+      {
+        "code": [
+          ":surfing_woman:"
+        ],
+        "ico": "🏄‍♀️"
+      },
+      {
+        "code": [
+          ":rowboat:"
+        ],
+        "ico": "🚣"
+      },
+      {
+        "code": [
+          ":rowing_man:"
+        ],
+        "ico": "🚣‍♂️"
+      },
+      {
+        "code": [
+          ":rowing_woman:"
+        ],
+        "ico": "🚣‍♀️"
+      },
+      {
+        "code": [
+          ":swimmer:"
+        ],
+        "ico": "🏊"
+      },
+      {
+        "code": [
+          ":swimming_man:"
+        ],
+        "ico": "🏊‍♂️"
+      },
+      {
+        "code": [
+          ":swimming_woman:"
+        ],
+        "ico": "🏊‍♀️"
+      },
+      {
+        "code": [
+          ":bouncing_ball_person:"
+        ],
+        "ico": "⛹️"
+      },
+      {
+        "code": [
+          ":basketball_man:"
+        ],
+        "ico": "⛹️‍♂️"
+      },
+      {
+        "code": [
+          ":basketball_woman:"
+        ],
+        "ico": "⛹️‍♀️"
+      },
+      {
+        "code": [
+          ":weight_lifting:"
+        ],
+        "ico": "🏋️"
+      },
+      {
+        "code": [
+          ":weight_lifting_man:"
+        ],
+        "ico": "🏋️‍♂️"
+      },
+      {
+        "code": [
+          ":weight_lifting_woman:"
+        ],
+        "ico": "🏋️‍♀️"
+      },
+      {
+        "code": [
+          ":bicyclist:"
+        ],
+        "ico": "🚴"
+      },
+      {
+        "code": [
+          ":biking_man:"
+        ],
+        "ico": "🚴‍♂️"
+      },
+      {
+        "code": [
+          ":biking_woman:"
+        ],
+        "ico": "🚴‍♀️"
+      },
+      {
+        "code": [
+          ":mountain_bicyclist:"
+        ],
+        "ico": "🚵"
+      },
+      {
+        "code": [
+          ":mountain_biking_man:"
+        ],
+        "ico": "🚵‍♂️"
+      },
+      {
+        "code": [
+          ":mountain_biking_woman:"
+        ],
+        "ico": "🚵‍♀️"
+      },
+      {
+        "code": [
+          ":cartwheeling:"
+        ],
+        "ico": "🤸"
+      },
+      {
+        "code": [
+          ":man_cartwheeling:"
+        ],
+        "ico": "🤸‍♂️"
+      },
+      {
+        "code": [
+          ":woman_cartwheeling:"
+        ],
+        "ico": "🤸‍♀️"
+      },
+      {
+        "code": [
+          ":wrestling:"
+        ],
+        "ico": "🤼"
+      },
+      {
+        "code": [
+          ":men_wrestling:"
+        ],
+        "ico": "🤼‍♂️"
+      },
+      {
+        "code": [
+          ":women_wrestling:"
+        ],
+        "ico": "🤼‍♀️"
+      },
+      {
+        "code": [
+          ":water_polo:"
+        ],
+        "ico": "🤽"
+      },
+      {
+        "code": [
+          ":man_playing_water_polo:"
+        ],
+        "ico": "🤽‍♂️"
+      },
+      {
+        "code": [
+          ":woman_playing_water_polo:"
+        ],
+        "ico": "🤽‍♀️"
+      },
+      {
+        "code": [
+          ":handball_person:"
+        ],
+        "ico": "🤾"
+      },
+      {
+        "code": [
+          ":man_playing_handball:"
+        ],
+        "ico": "🤾‍♂️"
+      },
+      {
+        "code": [
+          ":woman_playing_handball:"
+        ],
+        "ico": "🤾‍♀️"
+      },
+      {
+        "code": [
+          ":juggling_person:"
+        ],
+        "ico": "🤹"
+      },
+      {
+        "code": [
+          ":man_juggling:"
+        ],
+        "ico": "🤹‍♂️"
+      },
+      {
+        "code": [
+          ":woman_juggling:"
+        ],
+        "ico": "🤹‍♀️"
+      },
+      {
+        "code": [
+          ":lotus_position:"
+        ],
+        "ico": "🧘"
+      },
+      {
+        "code": [
+          ":lotus_position_man:"
+        ],
+        "ico": "🧘‍♂️"
+      },
+      {
+        "code": [
+          ":lotus_position_woman:"
+        ],
+        "ico": "🧘‍♀️"
+      },
+      {
+        "code": [
+          ":bath:"
+        ],
+        "ico": "🛀"
+      },
+      {
+        "code": [
+          ":sleeping_bed:"
+        ],
+        "ico": "🛌"
+      },
+      {
+        "code": [
+          ":people_holding_hands:"
+        ],
+        "ico": "🧑‍🤝‍🧑"
+      },
+      {
+        "code": [
+          ":two_women_holding_hands:"
+        ],
+        "ico": "👭"
+      },
+      {
+        "code": [
+          ":couple:"
+        ],
+        "ico": "👫"
+      },
+      {
+        "code": [
+          ":two_men_holding_hands:"
+        ],
+        "ico": "👬"
+      },
+      {
+        "code": [
+          ":couplekiss:"
+        ],
+        "ico": "💏"
+      },
+      {
+        "code": [
+          ":couplekiss_man_woman:"
+        ],
+        "ico": "👩‍❤️‍💋‍👨"
+      },
+      {
+        "code": [
+          ":couplekiss_man_man:"
+        ],
+        "ico": "👨‍❤️‍💋‍👨"
+      },
+      {
+        "code": [
+          ":couplekiss_woman_woman:"
+        ],
+        "ico": "👩‍❤️‍💋‍👩"
+      },
+      {
+        "code": [
+          ":couple_with_heart:"
+        ],
+        "ico": "💑"
+      },
+      {
+        "code": [
+          ":couple_with_heart_woman_man:"
+        ],
+        "ico": "👩‍❤️‍👨"
+      },
+      {
+        "code": [
+          ":couple_with_heart_man_man:"
+        ],
+        "ico": "👨‍❤️‍👨"
+      },
+      {
+        "code": [
+          ":couple_with_heart_woman_woman:"
+        ],
+        "ico": "👩‍❤️‍👩"
+      },
+      {
+        "code": [
+          ":family_man_woman_boy:"
+        ],
+        "ico": "👨‍👩‍👦"
+      },
+      {
+        "code": [
+          ":family_man_woman_girl:"
+        ],
+        "ico": "👨‍👩‍👧"
+      },
+      {
+        "code": [
+          ":family_man_woman_girl_boy:"
+        ],
+        "ico": "👨‍👩‍👧‍👦"
+      },
+      {
+        "code": [
+          ":family_man_woman_boy_boy:"
+        ],
+        "ico": "👨‍👩‍👦‍👦"
+      },
+      {
+        "code": [
+          ":family_man_woman_girl_girl:"
+        ],
+        "ico": "👨‍👩‍👧‍👧"
+      },
+      {
+        "code": [
+          ":family_man_man_boy:"
+        ],
+        "ico": "👨‍👨‍👦"
+      },
+      {
+        "code": [
+          ":family_man_man_girl:"
+        ],
+        "ico": "👨‍👨‍👧"
+      },
+      {
+        "code": [
+          ":family_man_man_girl_boy:"
+        ],
+        "ico": "👨‍👨‍👧‍👦"
+      },
+      {
+        "code": [
+          ":family_man_man_boy_boy:"
+        ],
+        "ico": "👨‍👨‍👦‍👦"
+      },
+      {
+        "code": [
+          ":family_man_man_girl_girl:"
+        ],
+        "ico": "👨‍👨‍👧‍👧"
+      },
+      {
+        "code": [
+          ":family_woman_woman_boy:"
+        ],
+        "ico": "👩‍👩‍👦"
+      },
+      {
+        "code": [
+          ":family_woman_woman_girl:"
+        ],
+        "ico": "👩‍👩‍👧"
+      },
+      {
+        "code": [
+          ":family_woman_woman_girl_boy:"
+        ],
+        "ico": "👩‍👩‍👧‍👦"
+      },
+      {
+        "code": [
+          ":family_woman_woman_boy_boy:"
+        ],
+        "ico": "👩‍👩‍👦‍👦"
+      },
+      {
+        "code": [
+          ":family_woman_woman_girl_girl:"
+        ],
+        "ico": "👩‍👩‍👧‍👧"
+      },
+      {
+        "code": [
+          ":family_man_boy:"
+        ],
+        "ico": "👨‍👦"
+      },
+      {
+        "code": [
+          ":family_man_boy_boy:"
+        ],
+        "ico": "👨‍👦‍👦"
+      },
+      {
+        "code": [
+          ":family_man_girl:"
+        ],
+        "ico": "👨‍👧"
+      },
+      {
+        "code": [
+          ":family_man_girl_boy:"
+        ],
+        "ico": "👨‍👧‍👦"
+      },
+      {
+        "code": [
+          ":family_man_girl_girl:"
+        ],
+        "ico": "👨‍👧‍👧"
+      },
+      {
+        "code": [
+          ":family_woman_boy:"
+        ],
+        "ico": "👩‍👦"
+      },
+      {
+        "code": [
+          ":family_woman_boy_boy:"
+        ],
+        "ico": "👩‍👦‍👦"
+      },
+      {
+        "code": [
+          ":family_woman_girl:"
+        ],
+        "ico": "👩‍👧"
+      },
+      {
+        "code": [
+          ":family_woman_girl_boy:"
+        ],
+        "ico": "👩‍👧‍👦"
+      },
+      {
+        "code": [
+          ":family_woman_girl_girl:"
+        ],
+        "ico": "👩‍👧‍👧"
+      }
+    ]
+  },
+  {
+    "categoryName": "Animals And Nature",
+    "categoryIcon": "🐶",
+    "emojis": [
+      {
+        "code": [
+          ":monkey_face:"
+        ],
+        "ico": "🐵"
+      },
+      {
+        "code": [
+          ":monkey:"
+        ],
+        "ico": "🐒"
+      },
+      {
+        "code": [
+          ":gorilla:"
+        ],
+        "ico": "🦍"
+      },
+      {
+        "code": [
+          ":orangutan:"
+        ],
+        "ico": "🦧"
+      },
+      {
+        "code": [
+          ":dog:"
+        ],
+        "ico": "🐶"
+      },
+      {
+        "code": [
+          ":dog2:"
+        ],
+        "ico": "🐕"
+      },
+      {
+        "code": [
+          ":guide_dog:"
+        ],
+        "ico": "🦮"
+      },
+      {
+        "code": [
+          ":service_dog:"
+        ],
+        "ico": "🐕‍🦺"
+      },
+      {
+        "code": [
+          ":poodle:"
+        ],
+        "ico": "🐩"
+      },
+      {
+        "code": [
+          ":wolf:"
+        ],
+        "ico": "🐺"
+      },
+      {
+        "code": [
+          ":fox_face:"
+        ],
+        "ico": "🦊"
+      },
+      {
+        "code": [
+          ":raccoon:"
+        ],
+        "ico": "🦝"
+      },
+      {
+        "code": [
+          ":cat:"
+        ],
+        "ico": "🐱"
+      },
+      {
+        "code": [
+          ":cat2:"
+        ],
+        "ico": "🐈"
+      },
+      {
+        "code": [
+          ":black_cat:"
+        ],
+        "ico": "🐈‍⬛"
+      },
+      {
+        "code": [
+          ":lion:"
+        ],
+        "ico": "🦁"
+      },
+      {
+        "code": [
+          ":tiger:"
+        ],
+        "ico": "🐯"
+      },
+      {
+        "code": [
+          ":tiger2:"
+        ],
+        "ico": "🐅"
+      },
+      {
+        "code": [
+          ":leopard:"
+        ],
+        "ico": "🐆"
+      },
+      {
+        "code": [
+          ":horse:"
+        ],
+        "ico": "🐴"
+      },
+      {
+        "code": [
+          ":racehorse:"
+        ],
+        "ico": "🐎"
+      },
+      {
+        "code": [
+          ":unicorn:"
+        ],
+        "ico": "🦄"
+      },
+      {
+        "code": [
+          ":zebra:"
+        ],
+        "ico": "🦓"
+      },
+      {
+        "code": [
+          ":deer:"
+        ],
+        "ico": "🦌"
+      },
+      {
+        "code": [
+          ":bison:"
+        ],
+        "ico": "🦬"
+      },
+      {
+        "code": [
+          ":cow:"
+        ],
+        "ico": "🐮"
+      },
+      {
+        "code": [
+          ":ox:"
+        ],
+        "ico": "🐂"
+      },
+      {
+        "code": [
+          ":water_buffalo:"
+        ],
+        "ico": "🐃"
+      },
+      {
+        "code": [
+          ":cow2:"
+        ],
+        "ico": "🐄"
+      },
+      {
+        "code": [
+          ":pig:"
+        ],
+        "ico": "🐷"
+      },
+      {
+        "code": [
+          ":pig2:"
+        ],
+        "ico": "🐖"
+      },
+      {
+        "code": [
+          ":boar:"
+        ],
+        "ico": "🐗"
+      },
+      {
+        "code": [
+          ":pig_nose:"
+        ],
+        "ico": "🐽"
+      },
+      {
+        "code": [
+          ":ram:"
+        ],
+        "ico": "🐏"
+      },
+      {
+        "code": [
+          ":sheep:"
+        ],
+        "ico": "🐑"
+      },
+      {
+        "code": [
+          ":goat:"
+        ],
+        "ico": "🐐"
+      },
+      {
+        "code": [
+          ":dromedary_camel:"
+        ],
+        "ico": "🐪"
+      },
+      {
+        "code": [
+          ":camel:"
+        ],
+        "ico": "🐫"
+      },
+      {
+        "code": [
+          ":llama:"
+        ],
+        "ico": "🦙"
+      },
+      {
+        "code": [
+          ":giraffe:"
+        ],
+        "ico": "🦒"
+      },
+      {
+        "code": [
+          ":elephant:"
+        ],
+        "ico": "🐘"
+      },
+      {
+        "code": [
+          ":mammoth:"
+        ],
+        "ico": "🦣"
+      },
+      {
+        "code": [
+          ":rhinoceros:"
+        ],
+        "ico": "🦏"
+      },
+      {
+        "code": [
+          ":hippopotamus:"
+        ],
+        "ico": "🦛"
+      },
+      {
+        "code": [
+          ":mouse:"
+        ],
+        "ico": "🐭"
+      },
+      {
+        "code": [
+          ":mouse2:"
+        ],
+        "ico": "🐁"
+      },
+      {
+        "code": [
+          ":rat:"
+        ],
+        "ico": "🐀"
+      },
+      {
+        "code": [
+          ":hamster:"
+        ],
+        "ico": "🐹"
+      },
+      {
+        "code": [
+          ":rabbit:"
+        ],
+        "ico": "🐰"
+      },
+      {
+        "code": [
+          ":rabbit2:"
+        ],
+        "ico": "🐇"
+      },
+      {
+        "code": [
+          ":chipmunk:"
+        ],
+        "ico": "🐿️"
+      },
+      {
+        "code": [
+          ":beaver:"
+        ],
+        "ico": "🦫"
+      },
+      {
+        "code": [
+          ":hedgehog:"
+        ],
+        "ico": "🦔"
+      },
+      {
+        "code": [
+          ":bat:"
+        ],
+        "ico": "🦇"
+      },
+      {
+        "code": [
+          ":bear:"
+        ],
+        "ico": "🐻"
+      },
+      {
+        "code": [
+          ":polar_bear:"
+        ],
+        "ico": "🐻‍❄️"
+      },
+      {
+        "code": [
+          ":koala:"
+        ],
+        "ico": "🐨"
+      },
+      {
+        "code": [
+          ":panda_face:"
+        ],
+        "ico": "🐼"
+      },
+      {
+        "code": [
+          ":sloth:"
+        ],
+        "ico": "🦥"
+      },
+      {
+        "code": [
+          ":otter:"
+        ],
+        "ico": "🦦"
+      },
+      {
+        "code": [
+          ":skunk:"
+        ],
+        "ico": "🦨"
+      },
+      {
+        "code": [
+          ":kangaroo:"
+        ],
+        "ico": "🦘"
+      },
+      {
+        "code": [
+          ":badger:"
+        ],
+        "ico": "🦡"
+      },
+      {
+        "code": [
+          ":feet:"
+        ],
+        "ico": "🐾"
+      },
+      {
+        "code": [
+          ":turkey:"
+        ],
+        "ico": "🦃"
+      },
+      {
+        "code": [
+          ":chicken:"
+        ],
+        "ico": "🐔"
+      },
+      {
+        "code": [
+          ":rooster:"
+        ],
+        "ico": "🐓"
+      },
+      {
+        "code": [
+          ":hatching_chick:"
+        ],
+        "ico": "🐣"
+      },
+      {
+        "code": [
+          ":baby_chick:"
+        ],
+        "ico": "🐤"
+      },
+      {
+        "code": [
+          ":hatched_chick:"
+        ],
+        "ico": "🐥"
+      },
+      {
+        "code": [
+          ":bird:"
+        ],
+        "ico": "🐦"
+      },
+      {
+        "code": [
+          ":penguin:"
+        ],
+        "ico": "🐧"
+      },
+      {
+        "code": [
+          ":dove:"
+        ],
+        "ico": "🕊️"
+      },
+      {
+        "code": [
+          ":eagle:"
+        ],
+        "ico": "🦅"
+      },
+      {
+        "code": [
+          ":duck:"
+        ],
+        "ico": "🦆"
+      },
+      {
+        "code": [
+          ":swan:"
+        ],
+        "ico": "🦢"
+      },
+      {
+        "code": [
+          ":owl:"
+        ],
+        "ico": "🦉"
+      },
+      {
+        "code": [
+          ":dodo:"
+        ],
+        "ico": "🦤"
+      },
+      {
+        "code": [
+          ":feather:"
+        ],
+        "ico": "🪶"
+      },
+      {
+        "code": [
+          ":flamingo:"
+        ],
+        "ico": "🦩"
+      },
+      {
+        "code": [
+          ":peacock:"
+        ],
+        "ico": "🦚"
+      },
+      {
+        "code": [
+          ":parrot:"
+        ],
+        "ico": "🦜"
+      },
+      {
+        "code": [
+          ":frog:"
+        ],
+        "ico": "🐸"
+      },
+      {
+        "code": [
+          ":crocodile:"
+        ],
+        "ico": "🐊"
+      },
+      {
+        "code": [
+          ":turtle:"
+        ],
+        "ico": "🐢"
+      },
+      {
+        "code": [
+          ":lizard:"
+        ],
+        "ico": "🦎"
+      },
+      {
+        "code": [
+          ":snake:"
+        ],
+        "ico": "🐍"
+      },
+      {
+        "code": [
+          ":dragon_face:"
+        ],
+        "ico": "🐲"
+      },
+      {
+        "code": [
+          ":dragon:"
+        ],
+        "ico": "🐉"
+      },
+      {
+        "code": [
+          ":sauropod:"
+        ],
+        "ico": "🦕"
+      },
+      {
+        "code": [
+          ":whale:"
+        ],
+        "ico": "🐳"
+      },
+      {
+        "code": [
+          ":whale2:"
+        ],
+        "ico": "🐋"
+      },
+      {
+        "code": [
+          ":dolphin:"
+        ],
+        "ico": "🐬"
+      },
+      {
+        "code": [
+          ":seal:"
+        ],
+        "ico": "🦭"
+      },
+      {
+        "code": [
+          ":fish:"
+        ],
+        "ico": "🐟"
+      },
+      {
+        "code": [
+          ":tropical_fish:"
+        ],
+        "ico": "🐠"
+      },
+      {
+        "code": [
+          ":blowfish:"
+        ],
+        "ico": "🐡"
+      },
+      {
+        "code": [
+          ":shark:"
+        ],
+        "ico": "🦈"
+      },
+      {
+        "code": [
+          ":octopus:"
+        ],
+        "ico": "🐙"
+      },
+      {
+        "code": [
+          ":shell:"
+        ],
+        "ico": "🐚"
+      },
+      {
+        "code": [
+          ":snail:"
+        ],
+        "ico": "🐌"
+      },
+      {
+        "code": [
+          ":butterfly:"
+        ],
+        "ico": "🦋"
+      },
+      {
+        "code": [
+          ":bug:"
+        ],
+        "ico": "🐛"
+      },
+      {
+        "code": [
+          ":ant:"
+        ],
+        "ico": "🐜"
+      },
+      {
+        "code": [
+          ":bee:"
+        ],
+        "ico": "🐝"
+      },
+      {
+        "code": [
+          ":beetle:"
+        ],
+        "ico": "🪲"
+      },
+      {
+        "code": [
+          ":lady_beetle:"
+        ],
+        "ico": "🐞"
+      },
+      {
+        "code": [
+          ":cricket:"
+        ],
+        "ico": "🦗"
+      },
+      {
+        "code": [
+          ":cockroach:"
+        ],
+        "ico": "🪳"
+      },
+      {
+        "code": [
+          ":spider:"
+        ],
+        "ico": "🕷️"
+      },
+      {
+        "code": [
+          ":spider_web:"
+        ],
+        "ico": "🕸️"
+      },
+      {
+        "code": [
+          ":scorpion:"
+        ],
+        "ico": "🦂"
+      },
+      {
+        "code": [
+          ":mosquito:"
+        ],
+        "ico": "🦟"
+      },
+      {
+        "code": [
+          ":fly:"
+        ],
+        "ico": "🪰"
+      },
+      {
+        "code": [
+          ":worm:"
+        ],
+        "ico": "🪱"
+      },
+      {
+        "code": [
+          ":microbe:"
+        ],
+        "ico": "🦠"
+      },
+      {
+        "code": [
+          ":bouquet:"
+        ],
+        "ico": "💐"
+      },
+      {
+        "code": [
+          ":cherry_blossom:"
+        ],
+        "ico": "🌸"
+      },
+      {
+        "code": [
+          ":white_flower:"
+        ],
+        "ico": "💮"
+      },
+      {
+        "code": [
+          ":rosette:"
+        ],
+        "ico": "🏵️"
+      },
+      {
+        "code": [
+          ":rose:"
+        ],
+        "ico": "🌹"
+      },
+      {
+        "code": [
+          ":wilted_flower:"
+        ],
+        "ico": "🥀"
+      },
+      {
+        "code": [
+          ":hibiscus:"
+        ],
+        "ico": "🌺"
+      },
+      {
+        "code": [
+          ":sunflower:"
+        ],
+        "ico": "🌻"
+      },
+      {
+        "code": [
+          ":blossom:"
+        ],
+        "ico": "🌼"
+      },
+      {
+        "code": [
+          ":tulip:"
+        ],
+        "ico": "🌷"
+      },
+      {
+        "code": [
+          ":seedling:"
+        ],
+        "ico": "🌱"
+      },
+      {
+        "code": [
+          ":potted_plant:"
+        ],
+        "ico": "🪴"
+      },
+      {
+        "code": [
+          ":evergreen_tree:"
+        ],
+        "ico": "🌲"
+      },
+      {
+        "code": [
+          ":deciduous_tree:"
+        ],
+        "ico": "🌳"
+      },
+      {
+        "code": [
+          ":palm_tree:"
+        ],
+        "ico": "🌴"
+      },
+      {
+        "code": [
+          ":cactus:"
+        ],
+        "ico": "🌵"
+      },
+      {
+        "code": [
+          ":ear_of_rice:"
+        ],
+        "ico": "🌾"
+      },
+      {
+        "code": [
+          ":herb:"
+        ],
+        "ico": "🌿"
+      },
+      {
+        "code": [
+          ":shamrock:"
+        ],
+        "ico": "☘️"
+      },
+      {
+        "code": [
+          ":four_leaf_clover:"
+        ],
+        "ico": "🍀"
+      },
+      {
+        "code": [
+          ":maple_leaf:"
+        ],
+        "ico": "🍁"
+      },
+      {
+        "code": [
+          ":fallen_leaf:"
+        ],
+        "ico": "🍂"
+      },
+      {
+        "code": [
+          ":leaves:"
+        ],
+        "ico": "🍃"
+      },
+      {
+        "code": [
+          ":mushroom:"
+        ],
+        "ico": "🍄"
+      }
+    ]
+  },
+  {
+    "categoryName": "Food and Drink",
+    "categoryIcon": "🍣",
+    "emojis": [
+      {
+        "code": [
+          ":rice_cracker:"
+        ],
+        "ico": "🍘"
+      },
+      {
+        "code": [
+          ":rice_ball:"
+        ],
+        "ico": "🍙"
+      },
+      {
+        "code": [
+          ":rice:"
+        ],
+        "ico": "🍚"
+      },
+      {
+        "code": [
+          ":curry:"
+        ],
+        "ico": "🍛"
+      },
+      {
+        "code": [
+          ":ramen:"
+        ],
+        "ico": "🍜"
+      },
+      {
+        "code": [
+          ":spaghetti:"
+        ],
+        "ico": "🍝"
+      },
+      {
+        "code": [
+          ":sweet_potato:"
+        ],
+        "ico": "🍠"
+      },
+      {
+        "code": [
+          ":oden:"
+        ],
+        "ico": "🍢"
+      },
+      {
+        "code": [
+          ":sushi:"
+        ],
+        "ico": "🍣"
+      }
+    ]
+  },
+  {
+    "categoryName": "Travel And Places",
+    "categoryIcon": "🌐",
+    "emojis": [
+      {
+        "code": [
+          ":globe_with_meridians:"
+        ],
+        "ico": "🌐"
+      },
+      {
+        "code": [
+          ":world_map:"
+        ],
+        "ico": "🗺️"
+      },
+      {
+        "code": [
+          ":japan:"
+        ],
+        "ico": "🗾"
+      },
+      {
+        "code": [
+          ":compass:"
+        ],
+        "ico": "🧭"
+      },
+      {
+        "code": [
+          ":mountain_snow:"
+        ],
+        "ico": "🏔️"
+      },
+      {
+        "code": [
+          ":mountain:"
+        ],
+        "ico": "⛰️"
+      },
+      {
+        "code": [
+          ":volcano:"
+        ],
+        "ico": "🌋"
+      },
+      {
+        "code": [
+          ":mount_fuji:"
+        ],
+        "ico": "🗻"
+      },
+      {
+        "code": [
+          ":camping:"
+        ],
+        "ico": "🏕️"
+      },
+      {
+        "code": [
+          ":beach_umbrella:"
+        ],
+        "ico": "🏖️"
+      },
+      {
+        "code": [
+          ":desert:"
+        ],
+        "ico": "🏜️"
+      },
+      {
+        "code": [
+          ":desert_island:"
+        ],
+        "ico": "🏝️"
+      },
+      {
+        "code": [
+          ":national_park:"
+        ],
+        "ico": "🏞️"
+      },
+      {
+        "code": [
+          ":stadium:"
+        ],
+        "ico": "🏟️"
+      },
+      {
+        "code": [
+          ":classical_building:"
+        ],
+        "ico": "🏛️"
+      },
+      {
+        "code": [
+          ":building_construction:"
+        ],
+        "ico": "🏗️"
+      },
+      {
+        "code": [
+          ":bricks:"
+        ],
+        "ico": "🧱"
+      },
+      {
+        "code": [
+          ":rock:"
+        ],
+        "ico": "🪨"
+      },
+      {
+        "code": [
+          ":wood:"
+        ],
+        "ico": "🪵"
+      }
+    ]
+  },
+  {
+    "categoryName": "Activities",
+    "categoryIcon": "🎮",
+    "emojis": [
+      {
+        "code": [
+          ":video_game:"
+        ],
+        "ico": "🎮"
+      },
+      {
+        "code": [
+          ":joystick:"
+        ],
+        "ico": "🕹️"
+      },
+      {
+        "code": [
+          ":slot_machine:"
+        ],
+        "ico": "🎰"
+      },
+      {
+        "code": [
+          ":game_die:"
+        ],
+        "ico": "🎲"
+      },
+      {
+        "code": [
+          ":jigsaw:"
+        ],
+        "ico": "🧩"
+      },
+      {
+        "code": [
+          ":teddy_bear:"
+        ],
+        "ico": "🧸"
+      },
+      {
+        "code": [
+          ":pinata:"
+        ],
+        "ico": "🪅"
+      },
+      {
+        "code": [
+          ":nesting_dolls:"
+        ],
+        "ico": "🪆"
+      },
+      {
+        "code": [
+          ":chess_pawn:"
+        ],
+        "ico": "♟️"
+      },
+      {
+        "code": [
+          ":black_joker:"
+        ],
+        "ico": "🃏"
+      },
+      {
+        "code": [
+          ":mahjong:"
+        ],
+        "ico": "🀄"
+      },
+      {
+        "code": [
+          ":flower_playing_cards:"
+        ],
+        "ico": "🎴"
+      }
+    ]
+  },
+  {
+    "categoryName": "Objects",
+    "categoryIcon": "✂️",
+    "emojis": [
+      {
+        "code": [
+          ":paperclip:"
+        ],
+        "ico": "📎"
+      },
+      {
+        "code": [
+          ":paperclips:"
+        ],
+        "ico": "🖇️"
+      },
+      {
+        "code": [
+          ":straight_ruler:"
+        ],
+        "ico": "📏"
+      },
+      {
+        "code": [
+          ":triangular_ruler:"
+        ],
+        "ico": "📐"
+      },
+      {
+        "code": [
+          ":scissors:"
+        ],
+        "ico": "✂️"
+      },
+      {
+        "code": [
+          ":card_file_box:"
+        ],
+        "ico": "🗃️"
+      },
+      {
+        "code": [
+          ":file_cabinet:"
+        ],
+        "ico": "🗄️"
+      },
+      {
+        "code": [
+          ":wastebasket:"
+        ],
+        "ico": "🗑️"
+      },
+      {
+        "code": [
+          ":lock:"
+        ],
+        "ico": "🔒"
+      },
+      {
+        "code": [
+          ":unlock:"
+        ],
+        "ico": "🔓"
+      },
+      {
+        "code": [
+          ":lock_with_ink_pen:"
+        ],
+        "ico": "🔏"
+      },
+      {
+        "code": [
+          ":closed_lock_with_key:"
+        ],
+        "ico": "🔐"
+      },
+      {
+        "code": [
+          ":key:"
+        ],
+        "ico": "🔑"
+      }
+    ]
+  },
+  {
+    "categoryName": "Symbols",
+    "categoryIcon": "🚭",
+    "emojis": [
+      {
+        "code": [
+          ":no_bicycles:"
+        ],
+        "ico": "🚳"
+      },
+      {
+        "code": [
+          ":no_smoking:"
+        ],
+        "ico": "🚭"
+      },
+      {
+        "code": [
+          ":do_not_litter:"
+        ],
+        "ico": "🚯"
+      },
+      {
+        "code": [
+          ":no_pedestrians:"
+        ],
+        "ico": "🚷"
+      },
+      {
+        "code": [
+          ":no_mobile_phones:"
+        ],
+        "ico": "📵"
+      }
+    ]
+  },
+  {
+    "categoryName": "Flags",
+    "categoryIcon": "🇨🇦",
+    "emojis": [
+      {
+        "code": [
+          ":belarus:"
+        ],
+        "ico": "🇧🇾"
+      },
+      {
+        "code": [
+          ":belize:"
+        ],
+        "ico": "🇧🇿"
+      },
+      {
+        "code": [
+          ":canada:"
+        ],
+        "ico": "🇨🇦"
+      },
+      {
+        "code": [
+          ":cocos_islands:"
+        ],
+        "ico": "🇨🇨"
+      },
+      {
+        "code": [
+          ":congo_kinshasa:"
+        ],
+        "ico": "🇨🇩"
+      },
+      {
+        "code": [
+          ":central_african_republic:"
+        ],
+        "ico": "🇨🇫"
+      },
+      {
+        "code": [
+          ":congo_brazzaville:"
+        ],
+        "ico": "🇨🇬"
+      },
+      {
+        "code": [
+          ":switzerland:"
+        ],
+        "ico": "🇨🇭"
+      },
+      {
+        "code": [
+          ":cote_divoire:"
+        ],
+        "ico": "🇨🇮"
+      },
+      {
+        "code": [
+          ":cook_islands:"
+        ],
+        "ico": "🇨🇰"
+      },
+      {
+        "code": [
+          ":chile:"
+        ],
+        "ico": "🇨🇱"
+      }
+    ]
+  }
 ]
