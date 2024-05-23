@@ -104,6 +104,822 @@
           ":kissing_heart:"
         ],
         "ico": "😘"
+      },
+      {
+        "code": [
+          ":kissing:"
+        ],
+        "ico": "😗"
+      },
+      {
+        "code": [
+          ":kissing_closed_eyes:"
+        ],
+        "ico": "😚"
+      },
+      {
+        "code": [
+          ":kissing_smiling_eyes:"
+        ],
+        "ico": "😙"
+      },
+      {
+        "code": [
+          ":smiling_face_with_tear:"
+        ],
+        "ico": "🥲"
+      },
+      {
+        "code": [
+          ":yum:"
+        ],
+        "ico": "😋"
+      },
+      {
+        "code": [
+          ":stuck_out_tongue:"
+        ],
+        "ico": "😛"
+      },
+      {
+        "code": [
+          ":stuck_out_tongue_winking_eye:"
+        ],
+        "ico": "😜"
+      },
+      {
+        "code": [
+          ":zany_face:"
+        ],
+        "ico": "🤪"
+      },
+      {
+        "code": [
+          ":stuck_out_tongue_closed_eyes:"
+        ],
+        "ico": "😝"
+      },
+      {
+        "code": [
+          ":money_mouth_face:"
+        ],
+        "ico": "🤑"
+      },
+      {
+        "code": [
+          ":hugs:"
+        ],
+        "ico": "🤗"
+      },
+      {
+        "code": [
+          ":hand_over_mouth:"
+        ],
+        "ico": "🤭"
+      },
+      {
+        "code": [
+          ":shushing_face:"
+        ],
+        "ico": "🤫"
+      },
+      {
+        "code": [
+          ":thinking:"
+        ],
+        "ico": "🤔"
+      },
+      {
+        "code": [
+          ":zipper_mouth_face:"
+        ],
+        "ico": "🤐"
+      },
+      {
+        "code": [
+          ":raised_eyebrow:"
+        ],
+        "ico": "🤨"
+      },
+      {
+        "code": [
+          ":neutral_face:"
+        ],
+        "ico": "😐"
+      },
+      {
+        "code": [
+          ":expressionless:"
+        ],
+        "ico": "😑"
+      },
+      {
+        "code": [
+          ":no_mouth:"
+        ],
+        "ico": "😶"
+      },
+      {
+        "code": [
+          ":face_in_clouds:"
+        ],
+        "ico": "😶‍🌫️"
+      },
+      {
+        "code": [
+          ":smirk:"
+        ],
+        "ico": "😏"
+      },
+      {
+        "code": [
+          ":unamused:"
+        ],
+        "ico": "😒"
+      },
+      {
+        "code": [
+          ":roll_eyes:"
+        ],
+        "ico": "🙄"
+      },
+      {
+        "code": [
+          ":grimacing:"
+        ],
+        "ico": "😬"
+      },
+      {
+        "code": [
+          ":face_exhaling:"
+        ],
+        "ico": "😮‍💨"
+      },
+      {
+        "code": [
+          ":lying_face:"
+        ],
+        "ico": "🤥"
+      },
+      {
+        "code": [
+          ":relieved:"
+        ],
+        "ico": "😌"
+      },
+      {
+        "code": [
+          ":pensive:"
+        ],
+        "ico": "😔"
+      },
+      {
+        "code": [
+          ":sleepy:"
+        ],
+        "ico": "😪"
+      },
+      {
+        "code": [
+          ":drooling_face:"
+        ],
+        "ico": "🤤"
+      },
+      {
+        "code": [
+          ":sleeping:"
+        ],
+        "ico": "😴"
+      },
+      {
+        "code": [
+          ":mask:"
+        ],
+        "ico": "😷"
+      },
+      {
+        "code": [
+          ":face_with_thermometer:"
+        ],
+        "ico": "🤒"
+      },
+      {
+        "code": [
+          ":face_with_head_bandage:"
+        ],
+        "ico": "🤕"
+      },
+      {
+        "code": [
+          ":nauseated_face:"
+        ],
+        "ico": "🤢"
+      },
+      {
+        "code": [
+          ":vomiting_face:"
+        ],
+        "ico": "🤮"
+      },
+      {
+        "code": [
+          ":sneezing_face:"
+        ],
+        "ico": "🤧"
+      },
+      {
+        "code": [
+          ":hot_face:"
+        ],
+        "ico": "🥵"
+      },
+      {
+        "code": [
+          ":cold_face:"
+        ],
+        "ico": "🥶"
+      },
+      {
+        "code": [
+          ":woozy_face:"
+        ],
+        "ico": "🥴"
+      },
+      {
+        "code": [
+          ":dizzy_face:"
+        ],
+        "ico": "😵"
+      },
+      {
+        "code": [
+          ":face_with_spiral_eyes:"
+        ],
+        "ico": "😵‍💫"
+      },
+      {
+        "code": [
+          ":exploding_head:"
+        ],
+        "ico": "🤯"
+      },
+      {
+        "code": [
+          ":cowboy_hat_face:"
+        ],
+        "ico": "🤠"
+      },
+      {
+        "code": [
+          ":partying_face:"
+        ],
+        "ico": "🥳"
+      },
+      {
+        "code": [
+          ":disguised_face:"
+        ],
+        "ico": "🥸"
+      },
+      {
+        "code": [
+          ":sunglasses:"
+        ],
+        "ico": "😎"
+      },
+      {
+        "code": [
+          ":nerd_face:"
+        ],
+        "ico": "🤓"
+      },
+      {
+        "code": [
+          ":monocle_face:"
+        ],
+        "ico": "🧐"
+      },
+      {
+        "code": [
+          ":confused:"
+        ],
+        "ico": "😕"
+      },
+      {
+        "code": [
+          ":worried:"
+        ],
+        "ico": "😟"
+      },
+      {
+        "code": [
+          ":slightly_frowning_face:"
+        ],
+        "ico": "🙁"
+      },
+      {
+        "code": [
+          ":open_mouth:"
+        ],
+        "ico": "😮"
+      },
+      {
+        "code": [
+          ":hushed:"
+        ],
+        "ico": "😯"
+      },
+      {
+        "code": [
+          ":astonished:"
+        ],
+        "ico": "😲"
+      },
+      {
+        "code": [
+          ":flushed:"
+        ],
+        "ico": "😳"
+      },
+      {
+        "code": [
+          ":pleading_face:"
+        ],
+        "ico": "🥺"
+      },
+      {
+        "code": [
+          ":frowning:"
+        ],
+        "ico": "😦"
+      },
+      {
+        "code": [
+          ":anguished:"
+        ],
+        "ico": "😧"
+      },
+      {
+        "code": [
+          ":fearful:"
+        ],
+        "ico": "😨"
+      },
+      {
+        "code": [
+          ":cold_sweat:"
+        ],
+        "ico": "😰"
+      },
+      {
+        "code": [
+          ":disappointed_relieved:"
+        ],
+        "ico": "😥"
+      },
+      {
+        "code": [
+          ":cry:"
+        ],
+        "ico": "😢"
+      },
+      {
+        "code": [
+          ":sob:"
+        ],
+        "ico": "😭"
+      },
+      {
+        "code": [
+          ":scream:"
+        ],
+        "ico": "😱"
+      },
+      {
+        "code": [
+          ":confounded:"
+        ],
+        "ico": "😖"
+      },
+      {
+        "code": [
+          ":persevere:"
+        ],
+        "ico": "😣"
+      },
+      {
+        "code": [
+          ":disappointed:"
+        ],
+        "ico": "😞"
+      },
+      {
+        "code": [
+          ":sweat:"
+        ],
+        "ico": "😓"
+      },
+      {
+        "code": [
+          ":weary:"
+        ],
+        "ico": "😩"
+      },
+      {
+        "code": [
+          ":tired_face:"
+        ],
+        "ico": "😫"
+      },
+      {
+        "code": [
+          ":yawning_face:"
+        ],
+        "ico": "🥱"
+      },
+      {
+        "code": [
+          ":triumph:"
+        ],
+        "ico": "😤"
+      },
+      {
+        "code": [
+          ":pout:"
+        ],
+        "ico": "😡"
+      },
+      {
+        "code": [
+          ":angry:"
+        ],
+        "ico": "😠"
+      },
+      {
+        "code": [
+          ":cursing_face:"
+        ],
+        "ico": "🤬"
+      },
+      {
+        "code": [
+          ":smiling_imp:"
+        ],
+        "ico": "😈"
+      },
+      {
+        "code": [
+          ":imp:"
+        ],
+        "ico": "👿"
+      },
+      {
+        "code": [
+          ":skull:"
+        ],
+        "ico": "💀"
+      },
+      {
+        "code": [
+          ":skull_and_crossbones:"
+        ],
+        "ico": "☠️"
+      },
+      {
+        "code": [
+          ":hankey:"
+        ],
+        "ico": "💩"
+      },
+      {
+        "code": [
+          ":clown_face:"
+        ],
+        "ico": "🤡"
+      },
+      {
+        "code": [
+          ":japanese_ogre:"
+        ],
+        "ico": "👹"
+      },
+      {
+        "code": [
+          ":japanese_goblin:"
+        ],
+        "ico": "👺"
+      },
+      {
+        "code": [
+          ":ghost:"
+        ],
+        "ico": "👻"
+      },
+      {
+        "code": [
+          ":alien:"
+        ],
+        "ico": "👽"
+      },
+      {
+        "code": [
+          ":space_invader:"
+        ],
+        "ico": "👾"
+      },
+      {
+        "code": [
+          ":robot:"
+        ],
+        "ico": "🤖"
+      },
+      {
+        "code": [
+          ":smiley_cat:"
+        ],
+        "ico": "😺"
+      },
+      {
+        "code": [
+          ":smile_cat:"
+        ],
+        "ico": "😸"
+      },
+      {
+        "code": [
+          ":joy_cat:"
+        ],
+        "ico": "😹"
+      },
+      {
+        "code": [
+          ":heart_eyes_cat:"
+        ],
+        "ico": "😻"
+      },
+      {
+        "code": [
+          ":smirk_cat:"
+        ],
+        "ico": "😼"
+      },
+      {
+        "code": [
+          ":kissing_cat:"
+        ],
+        "ico": "😽"
+      },
+      {
+        "code": [
+          ":scream_cat:"
+        ],
+        "ico": "🙀"
+      },
+      {
+        "code": [
+          ":crying_cat_face:"
+        ],
+        "ico": "😿"
+      },
+      {
+        "code": [
+          ":pouting_cat:"
+        ],
+        "ico": "😾"
+      },
+      {
+        "code": [
+          ":see_no_evil:"
+        ],
+        "ico": "🙈"
+      },
+      {
+        "code": [
+          ":hear_no_evil:"
+        ],
+        "ico": "🙉"
+      },
+      {
+        "code": [
+          ":speak_no_evil:"
+        ],
+        "ico": "🙊"
+      },
+      {
+        "code": [
+          ":love_letter:"
+        ],
+        "ico": "💌"
+      },
+      {
+        "code": [
+          ":cupid:"
+        ],
+        "ico": "💘"
+      },
+      {
+        "code": [
+          ":gift_heart:"
+        ],
+        "ico": "💝"
+      },
+      {
+        "code": [
+          ":sparkling_heart:"
+        ],
+        "ico": "💖"
+      },
+      {
+        "code": [
+          ":heartpulse:"
+        ],
+        "ico": "💗"
+      },
+      {
+        "code": [
+          ":heartbeat:"
+        ],
+        "ico": "💓"
+      },
+      {
+        "code": [
+          ":revolving_hearts:"
+        ],
+        "ico": "💞"
+      },
+      {
+        "code": [
+          ":two_hearts:"
+        ],
+        "ico": "💕"
+      },
+      {
+        "code": [
+          ":heart_decoration:"
+        ],
+        "ico": "💟"
+      },
+      {
+        "code": [
+          ":heavy_heart_exclamation:"
+        ],
+        "ico": "❣️"
+      },
+      {
+        "code": [
+          ":broken_heart:"
+        ],
+        "ico": "💔"
+      },
+      {
+        "code": [
+          ":heart_on_fire:"
+        ],
+        "ico": "❤️‍🔥"
+      },
+      {
+        "code": [
+          ":mending_heart:"
+        ],
+        "ico": "❤️‍🩹"
+      },
+      {
+        "code": [
+          ":heart:"
+        ],
+        "ico": "❤️"
+      },
+      {
+        "code": [
+          ":orange_heart:"
+        ],
+        "ico": "🧡"
+      },
+      {
+        "code": [
+          ":yellow_heart:"
+        ],
+        "ico": "💛"
+      },
+      {
+        "code": [
+          ":green_heart:"
+        ],
+        "ico": "💚"
+      },
+      {
+        "code": [
+          ":blue_heart:"
+        ],
+        "ico": "💙"
+      },
+      {
+        "code": [
+          ":purple_heart:"
+        ],
+        "ico": "💜"
+      },
+      {
+        "code": [
+          ":brown_heart:"
+        ],
+        "ico": "🤎"
+      },
+      {
+        "code": [
+          ":black_heart:"
+        ],
+        "ico": "🖤"
+      },
+      {
+        "code": [
+          ":white_heart:"
+        ],
+        "ico": "🤍"
+      },
+      {
+        "code": [
+          ":kiss:"
+        ],
+        "ico": "💋"
+      },
+      {
+        "code": [
+          ":100:"
+        ],
+        "ico": "💯"
+      },
+      {
+        "code": [
+          ":anger:"
+        ],
+        "ico": "💢"
+      },
+      {
+        "code": [
+          ":boom:"
+        ],
+        "ico": "💥"
+      },
+      {
+        "code": [
+          ":dizzy:"
+        ],
+        "ico": "💫"
+      },
+      {
+        "code": [
+          ":sweat_drops:"
+        ],
+        "ico": "💦"
+      },
+      {
+        "code": [
+          ":dash:"
+        ],
+        "ico": "💨"
+      },
+      {
+        "code": [
+          ":hole:"
+        ],
+        "ico": "🕳️"
+      },
+      {
+        "code": [
+          ":speech_balloon:"
+        ],
+        "ico": "💬"
+      },
+      {
+        "code": [
+          ":eye_speech_bubble:"
+        ],
+        "ico": "👁️‍🗨️"
+      },
+      {
+        "code": [
+          ":left_speech_bubble:"
+        ],
+        "ico": "🗨️"
+      },
+      {
+        "code": [
+          ":right_anger_bubble:"
+        ],
+        "ico": "🗯️"
+      },
+      {
+        "code": [
+          ":thought_balloon:"
+        ],
+        "ico": "💭"
+      },
+      {
+        "code": [
+          ":zzz:"
+        ],
+        "ico": "💤"
       }
     ]
   },
@@ -111,6 +927,72 @@
     "categoryName": "People And Body",
     "categoryIcon": "👍",
     "emojis": [
+      {
+        "code": [
+          ":wave:"
+        ],
+        "ico": "👋"
+      },
+      {
+        "code": [
+          ":raised_back_of_hand:"
+        ],
+        "ico": "🤚"
+      },
+      {
+        "code": [
+          ":raised_hand_with_fingers_splayed:"
+        ],
+        "ico": "🖐️"
+      },
+      {
+        "code": [
+          ":hand:"
+        ],
+        "ico": "✋"
+      },
+      {
+        "code": [
+          ":vulcan_salute:"
+        ],
+        "ico": "🖖"
+      },
+      {
+        "code": [
+          ":ok_hand:"
+        ],
+        "ico": "👌"
+      },
+      {
+        "code": [
+          ":pinched_fingers:"
+        ],
+        "ico": "🤌"
+      },
+      {
+        "code": [
+          ":pinching_hand:"
+        ],
+        "ico": "🤏"
+      },
+      {
+        "code": [
+          ":v:"
+        ],
+        "ico": "✌️"
+      },
+      {
+        "code": [
+          ":crossed_fingers:"
+        ],
+        "ico": "🤞"
+      },
+      {
+        "code": [
+          ":love_you_gesture:"
+        ],
+        "ico": "🤟"
+      },
       {
         "code": [
           ":metal:"
@@ -2084,6 +2966,42 @@
           ":family_woman_girl_girl:"
         ],
         "ico": "👩‍👧‍👧"
+      },
+      {
+        "code": [
+          ":speaking_head:"
+        ],
+        "ico": "🗣️"
+      },
+      {
+        "code": [
+          ":bust_in_silhouette:"
+        ],
+        "ico": "👤"
+      },
+      {
+        "code": [
+          ":busts_in_silhouette:"
+        ],
+        "ico": "👥"
+      },
+      {
+        "code": [
+          ":people_hugging:"
+        ],
+        "ico": "🫂"
+      },
+      {
+        "code": [
+          ":family:"
+        ],
+        "ico": "👪"
+      },
+      {
+        "code": [
+          ":footprints:"
+        ],
+        "ico": "👣"
       }
     ]
   },
@@ -2934,9 +3852,417 @@
     ]
   },
   {
-    "categoryName": "Food and Drink",
-    "categoryIcon": "🍣",
+    "categoryName": "Food And Drink",
+    "categoryIcon": "🍉",
     "emojis": [
+      {
+        "code": [
+          ":grapes:"
+        ],
+        "ico": "🍇"
+      },
+      {
+        "code": [
+          ":melon:"
+        ],
+        "ico": "🍈"
+      },
+      {
+        "code": [
+          ":watermelon:"
+        ],
+        "ico": "🍉"
+      },
+      {
+        "code": [
+          ":mandarin:"
+        ],
+        "ico": "🍊"
+      },
+      {
+        "code": [
+          ":lemon:"
+        ],
+        "ico": "🍋"
+      },
+      {
+        "code": [
+          ":banana:"
+        ],
+        "ico": "🍌"
+      },
+      {
+        "code": [
+          ":pineapple:"
+        ],
+        "ico": "🍍"
+      },
+      {
+        "code": [
+          ":mango:"
+        ],
+        "ico": "🥭"
+      },
+      {
+        "code": [
+          ":apple:"
+        ],
+        "ico": "🍎"
+      },
+      {
+        "code": [
+          ":green_apple:"
+        ],
+        "ico": "🍏"
+      },
+      {
+        "code": [
+          ":pear:"
+        ],
+        "ico": "🍐"
+      },
+      {
+        "code": [
+          ":peach:"
+        ],
+        "ico": "🍑"
+      },
+      {
+        "code": [
+          ":cherries:"
+        ],
+        "ico": "🍒"
+      },
+      {
+        "code": [
+          ":strawberry:"
+        ],
+        "ico": "🍓"
+      },
+      {
+        "code": [
+          ":blueberries:"
+        ],
+        "ico": "🫐"
+      },
+      {
+        "code": [
+          ":kiwi_fruit:"
+        ],
+        "ico": "🥝"
+      },
+      {
+        "code": [
+          ":tomato:"
+        ],
+        "ico": "🍅"
+      },
+      {
+        "code": [
+          ":olive:"
+        ],
+        "ico": "🫒"
+      },
+      {
+        "code": [
+          ":coconut:"
+        ],
+        "ico": "🥥"
+      },
+      {
+        "code": [
+          ":avocado:"
+        ],
+        "ico": "🥑"
+      },
+      {
+        "code": [
+          ":eggplant:"
+        ],
+        "ico": "🍆"
+      },
+      {
+        "code": [
+          ":potato:"
+        ],
+        "ico": "🥔"
+      },
+      {
+        "code": [
+          ":carrot:"
+        ],
+        "ico": "🥕"
+      },
+      {
+        "code": [
+          ":corn:"
+        ],
+        "ico": "🌽"
+      },
+      {
+        "code": [
+          ":hot_pepper:"
+        ],
+        "ico": "🌶️"
+      },
+      {
+        "code": [
+          ":bell_pepper:"
+        ],
+        "ico": "🫑"
+      },
+      {
+        "code": [
+          ":cucumber:"
+        ],
+        "ico": "🥒"
+      },
+      {
+        "code": [
+          ":leafy_green:"
+        ],
+        "ico": "🥬"
+      },
+      {
+        "code": [
+          ":broccoli:"
+        ],
+        "ico": "🥦"
+      },
+      {
+        "code": [
+          ":garlic:"
+        ],
+        "ico": "🧄"
+      },
+      {
+        "code": [
+          ":onion:"
+        ],
+        "ico": "🧅"
+      },
+      {
+        "code": [
+          ":peanuts:"
+        ],
+        "ico": "🥜"
+      },
+      {
+        "code": [
+          ":chestnut:"
+        ],
+        "ico": "🌰"
+      },
+      {
+        "code": [
+          ":bread:"
+        ],
+        "ico": "🍞"
+      },
+      {
+        "code": [
+          ":croissant:"
+        ],
+        "ico": "🥐"
+      },
+      {
+        "code": [
+          ":baguette_bread:"
+        ],
+        "ico": "🥖"
+      },
+      {
+        "code": [
+          ":flatbread:"
+        ],
+        "ico": "🫓"
+      },
+      {
+        "code": [
+          ":pretzel:"
+        ],
+        "ico": "🥨"
+      },
+      {
+        "code": [
+          ":bagel:"
+        ],
+        "ico": "🥯"
+      },
+      {
+        "code": [
+          ":pancakes:"
+        ],
+        "ico": "🥞"
+      },
+      {
+        "code": [
+          ":waffle:"
+        ],
+        "ico": "🧇"
+      },
+      {
+        "code": [
+          ":cheese:"
+        ],
+        "ico": "🧀"
+      },
+      {
+        "code": [
+          ":meat_on_bone:"
+        ],
+        "ico": "🍖"
+      },
+      {
+        "code": [
+          ":poultry_leg:"
+        ],
+        "ico": "🍗"
+      },
+      {
+        "code": [
+          ":cut_of_meat:"
+        ],
+        "ico": "🥩"
+      },
+      {
+        "code": [
+          ":bacon:"
+        ],
+        "ico": "🥓"
+      },
+      {
+        "code": [
+          ":hamburger:"
+        ],
+        "ico": "🍔"
+      },
+      {
+        "code": [
+          ":fries:"
+        ],
+        "ico": "🍟"
+      },
+      {
+        "code": [
+          ":pizza:"
+        ],
+        "ico": "🍕"
+      },
+      {
+        "code": [
+          ":hotdog:"
+        ],
+        "ico": "🌭"
+      },
+      {
+        "code": [
+          ":sandwich:"
+        ],
+        "ico": "🥪"
+      },
+      {
+        "code": [
+          ":taco:"
+        ],
+        "ico": "🌮"
+      },
+      {
+        "code": [
+          ":burrito:"
+        ],
+        "ico": "🌯"
+      },
+      {
+        "code": [
+          ":tamale:"
+        ],
+        "ico": "🫔"
+      },
+      {
+        "code": [
+          ":stuffed_flatbread:"
+        ],
+        "ico": "🥙"
+      },
+      {
+        "code": [
+          ":falafel:"
+        ],
+        "ico": "🧆"
+      },
+      {
+        "code": [
+          ":egg:"
+        ],
+        "ico": "🥚"
+      },
+      {
+        "code": [
+          ":fried_egg:"
+        ],
+        "ico": "🍳"
+      },
+      {
+        "code": [
+          ":shallow_pan_of_food:"
+        ],
+        "ico": "🥘"
+      },
+      {
+        "code": [
+          ":stew:"
+        ],
+        "ico": "🍲"
+      },
+      {
+        "code": [
+          ":fondue:"
+        ],
+        "ico": "🫕"
+      },
+      {
+        "code": [
+          ":bowl_with_spoon:"
+        ],
+        "ico": "🥣"
+      },
+      {
+        "code": [
+          ":green_salad:"
+        ],
+        "ico": "🥗"
+      },
+      {
+        "code": [
+          ":popcorn:"
+        ],
+        "ico": "🍿"
+      },
+      {
+        "code": [
+          ":butter:"
+        ],
+        "ico": "🧈"
+      },
+      {
+        "code": [
+          ":salt:"
+        ],
+        "ico": "🧂"
+      },
+      {
+        "code": [
+          ":canned_food:"
+        ],
+        "ico": "🥫"
+      },
+      {
+        "code": [
+          ":bento:"
+        ],
+        "ico": "🍱"
+      },
       {
         "code": [
           ":rice_cracker:"
@@ -2990,13 +4316,337 @@
           ":sushi:"
         ],
         "ico": "🍣"
+      },
+      {
+        "code": [
+          ":fried_shrimp:"
+        ],
+        "ico": "🍤"
+      },
+      {
+        "code": [
+          ":fish_cake:"
+        ],
+        "ico": "🍥"
+      },
+      {
+        "code": [
+          ":moon_cake:"
+        ],
+        "ico": "🥮"
+      },
+      {
+        "code": [
+          ":dango:"
+        ],
+        "ico": "🍡"
+      },
+      {
+        "code": [
+          ":dumpling:"
+        ],
+        "ico": "🥟"
+      },
+      {
+        "code": [
+          ":fortune_cookie:"
+        ],
+        "ico": "🥠"
+      },
+      {
+        "code": [
+          ":takeout_box:"
+        ],
+        "ico": "🥡"
+      },
+      {
+        "code": [
+          ":crab:"
+        ],
+        "ico": "🦀"
+      },
+      {
+        "code": [
+          ":lobster:"
+        ],
+        "ico": "🦞"
+      },
+      {
+        "code": [
+          ":shrimp:"
+        ],
+        "ico": "🦐"
+      },
+      {
+        "code": [
+          ":squid:"
+        ],
+        "ico": "🦑"
+      },
+      {
+        "code": [
+          ":oyster:"
+        ],
+        "ico": "🦪"
+      },
+      {
+        "code": [
+          ":icecream:"
+        ],
+        "ico": "🍦"
+      },
+      {
+        "code": [
+          ":shaved_ice:"
+        ],
+        "ico": "🍧"
+      },
+      {
+        "code": [
+          ":ice_cream:"
+        ],
+        "ico": "🍨"
+      },
+      {
+        "code": [
+          ":doughnut:"
+        ],
+        "ico": "🍩"
+      },
+      {
+        "code": [
+          ":cookie:"
+        ],
+        "ico": "🍪"
+      },
+      {
+        "code": [
+          ":birthday:"
+        ],
+        "ico": "🎂"
+      },
+      {
+        "code": [
+          ":cake:"
+        ],
+        "ico": "🍰"
+      },
+      {
+        "code": [
+          ":cupcake:"
+        ],
+        "ico": "🧁"
+      },
+      {
+        "code": [
+          ":pie:"
+        ],
+        "ico": "🥧"
+      },
+      {
+        "code": [
+          ":chocolate_bar:"
+        ],
+        "ico": "🍫"
+      },
+      {
+        "code": [
+          ":candy:"
+        ],
+        "ico": "🍬"
+      },
+      {
+        "code": [
+          ":lollipop:"
+        ],
+        "ico": "🍭"
+      },
+      {
+        "code": [
+          ":custard:"
+        ],
+        "ico": "🍮"
+      },
+      {
+        "code": [
+          ":honey_pot:"
+        ],
+        "ico": "🍯"
+      },
+      {
+        "code": [
+          ":baby_bottle:"
+        ],
+        "ico": "🍼"
+      },
+      {
+        "code": [
+          ":milk_glass:"
+        ],
+        "ico": "🥛"
+      },
+      {
+        "code": [
+          ":coffee:"
+        ],
+        "ico": "☕"
+      },
+      {
+        "code": [
+          ":teapot:"
+        ],
+        "ico": "🫖"
+      },
+      {
+        "code": [
+          ":tea:"
+        ],
+        "ico": "🍵"
+      },
+      {
+        "code": [
+          ":sake:"
+        ],
+        "ico": "🍶"
+      },
+      {
+        "code": [
+          ":champagne:"
+        ],
+        "ico": "🍾"
+      },
+      {
+        "code": [
+          ":wine_glass:"
+        ],
+        "ico": "🍷"
+      },
+      {
+        "code": [
+          ":cocktail:"
+        ],
+        "ico": "🍸"
+      },
+      {
+        "code": [
+          ":tropical_drink:"
+        ],
+        "ico": "🍹"
+      },
+      {
+        "code": [
+          ":beer:"
+        ],
+        "ico": "🍺"
+      },
+      {
+        "code": [
+          ":beers:"
+        ],
+        "ico": "🍻"
+      },
+      {
+        "code": [
+          ":clinking_glasses:"
+        ],
+        "ico": "🥂"
+      },
+      {
+        "code": [
+          ":tumbler_glass:"
+        ],
+        "ico": "🥃"
+      },
+      {
+        "code": [
+          ":cup_with_straw:"
+        ],
+        "ico": "🥤"
+      },
+      {
+        "code": [
+          ":bubble_tea:"
+        ],
+        "ico": "🧋"
+      },
+      {
+        "code": [
+          ":beverage_box:"
+        ],
+        "ico": "🧃"
+      },
+      {
+        "code": [
+          ":mate:"
+        ],
+        "ico": "🧉"
+      },
+      {
+        "code": [
+          ":ice_cube:"
+        ],
+        "ico": "🧊"
+      },
+      {
+        "code": [
+          ":chopsticks:"
+        ],
+        "ico": "🥢"
+      },
+      {
+        "code": [
+          ":plate_with_cutlery:"
+        ],
+        "ico": "🍽️"
+      },
+      {
+        "code": [
+          ":fork_and_knife:"
+        ],
+        "ico": "🍴"
+      },
+      {
+        "code": [
+          ":spoon:"
+        ],
+        "ico": "🥄"
+      },
+      {
+        "code": [
+          ":hocho:"
+        ],
+        "ico": "🔪"
+      },
+      {
+        "code": [
+          ":amphora:"
+        ],
+        "ico": "🏺"
       }
     ]
   },
   {
     "categoryName": "Travel And Places",
-    "categoryIcon": "🌐",
+    "categoryIcon": "🌍",
     "emojis": [
+      {
+        "code": [
+          ":earth_africa:"
+        ],
+        "ico": "🌍"
+      },
+      {
+        "code": [
+          ":earth_americas:"
+        ],
+        "ico": "🌎"
+      },
+      {
+        "code": [
+          ":earth_asia:"
+        ],
+        "ico": "🌏"
+      },
       {
         "code": [
           ":globe_with_meridians:"
@@ -3110,13 +4760,1531 @@
           ":wood:"
         ],
         "ico": "🪵"
+      },
+      {
+        "code": [
+          ":hut:"
+        ],
+        "ico": "🛖"
+      },
+      {
+        "code": [
+          ":houses:"
+        ],
+        "ico": "🏘️"
+      },
+      {
+        "code": [
+          ":derelict_house:"
+        ],
+        "ico": "🏚️"
+      },
+      {
+        "code": [
+          ":house:"
+        ],
+        "ico": "🏠"
+      },
+      {
+        "code": [
+          ":house_with_garden:"
+        ],
+        "ico": "🏡"
+      },
+      {
+        "code": [
+          ":office:"
+        ],
+        "ico": "🏢"
+      },
+      {
+        "code": [
+          ":post_office:"
+        ],
+        "ico": "🏣"
+      },
+      {
+        "code": [
+          ":european_post_office:"
+        ],
+        "ico": "🏤"
+      },
+      {
+        "code": [
+          ":hospital:"
+        ],
+        "ico": "🏥"
+      },
+      {
+        "code": [
+          ":bank:"
+        ],
+        "ico": "🏦"
+      },
+      {
+        "code": [
+          ":hotel:"
+        ],
+        "ico": "🏨"
+      },
+      {
+        "code": [
+          ":love_hotel:"
+        ],
+        "ico": "🏩"
+      },
+      {
+        "code": [
+          ":convenience_store:"
+        ],
+        "ico": "🏪"
+      },
+      {
+        "code": [
+          ":school:"
+        ],
+        "ico": "🏫"
+      },
+      {
+        "code": [
+          ":department_store:"
+        ],
+        "ico": "🏬"
+      },
+      {
+        "code": [
+          ":factory:"
+        ],
+        "ico": "🏭"
+      },
+      {
+        "code": [
+          ":japanese_castle:"
+        ],
+        "ico": "🏯"
+      },
+      {
+        "code": [
+          ":european_castle:"
+        ],
+        "ico": "🏰"
+      },
+      {
+        "code": [
+          ":wedding:"
+        ],
+        "ico": "💒"
+      },
+      {
+        "code": [
+          ":tokyo_tower:"
+        ],
+        "ico": "🗼"
+      },
+      {
+        "code": [
+          ":statue_of_liberty:"
+        ],
+        "ico": "🗽"
+      },
+      {
+        "code": [
+          ":church:"
+        ],
+        "ico": "⛪"
+      },
+      {
+        "code": [
+          ":mosque:"
+        ],
+        "ico": "🕌"
+      },
+      {
+        "code": [
+          ":hindu_temple:"
+        ],
+        "ico": "🛕"
+      },
+      {
+        "code": [
+          ":synagogue:"
+        ],
+        "ico": "🕍"
+      },
+      {
+        "code": [
+          ":shinto_shrine:"
+        ],
+        "ico": "⛩️"
+      },
+      {
+        "code": [
+          ":kaaba:"
+        ],
+        "ico": "🕋"
+      },
+      {
+        "code": [
+          ":fountain:"
+        ],
+        "ico": "⛲"
+      },
+      {
+        "code": [
+          ":tent:"
+        ],
+        "ico": "⛺"
+      },
+      {
+        "code": [
+          ":foggy:"
+        ],
+        "ico": "🌁"
+      },
+      {
+        "code": [
+          ":night_with_stars:"
+        ],
+        "ico": "🌃"
+      },
+      {
+        "code": [
+          ":cityscape:"
+        ],
+        "ico": "🏙️"
+      },
+      {
+        "code": [
+          ":sunrise_over_mountains:"
+        ],
+        "ico": "🌄"
+      },
+      {
+        "code": [
+          ":sunrise:"
+        ],
+        "ico": "🌅"
+      },
+      {
+        "code": [
+          ":city_sunset:"
+        ],
+        "ico": "🌆"
+      },
+      {
+        "code": [
+          ":city_sunrise:"
+        ],
+        "ico": "🌇"
+      },
+      {
+        "code": [
+          ":bridge_at_night:"
+        ],
+        "ico": "🌉"
+      },
+      {
+        "code": [
+          ":hotsprings:"
+        ],
+        "ico": "♨️"
+      },
+      {
+        "code": [
+          ":carousel_horse:"
+        ],
+        "ico": "🎠"
+      },
+      {
+        "code": [
+          ":ferris_wheel:"
+        ],
+        "ico": "🎡"
+      },
+      {
+        "code": [
+          ":roller_coaster:"
+        ],
+        "ico": "🎢"
+      },
+      {
+        "code": [
+          ":barber:"
+        ],
+        "ico": "💈"
+      },
+      {
+        "code": [
+          ":circus_tent:"
+        ],
+        "ico": "🎪"
+      },
+      {
+        "code": [
+          ":steam_locomotive:"
+        ],
+        "ico": "🚂"
+      },
+      {
+        "code": [
+          ":railway_car:"
+        ],
+        "ico": "🚃"
+      },
+      {
+        "code": [
+          ":bullettrain_side:"
+        ],
+        "ico": "🚄"
+      },
+      {
+        "code": [
+          ":bullettrain_front:"
+        ],
+        "ico": "🚅"
+      },
+      {
+        "code": [
+          ":train2:"
+        ],
+        "ico": "🚆"
+      },
+      {
+        "code": [
+          ":metro:"
+        ],
+        "ico": "🚇"
+      },
+      {
+        "code": [
+          ":light_rail:"
+        ],
+        "ico": "🚈"
+      },
+      {
+        "code": [
+          ":station:"
+        ],
+        "ico": "🚉"
+      },
+      {
+        "code": [
+          ":tram:"
+        ],
+        "ico": "🚊"
+      },
+      {
+        "code": [
+          ":monorail:"
+        ],
+        "ico": "🚝"
+      },
+      {
+        "code": [
+          ":mountain_railway:"
+        ],
+        "ico": "🚞"
+      },
+      {
+        "code": [
+          ":train:"
+        ],
+        "ico": "🚋"
+      },
+      {
+        "code": [
+          ":bus:"
+        ],
+        "ico": "🚌"
+      },
+      {
+        "code": [
+          ":oncoming_bus:"
+        ],
+        "ico": "🚍"
+      },
+      {
+        "code": [
+          ":trolleybus:"
+        ],
+        "ico": "🚎"
+      },
+      {
+        "code": [
+          ":minibus:"
+        ],
+        "ico": "🚐"
+      },
+      {
+        "code": [
+          ":ambulance:"
+        ],
+        "ico": "🚑"
+      },
+      {
+        "code": [
+          ":fire_engine:"
+        ],
+        "ico": "🚒"
+      },
+      {
+        "code": [
+          ":police_car:"
+        ],
+        "ico": "🚓"
+      },
+      {
+        "code": [
+          ":oncoming_police_car:"
+        ],
+        "ico": "🚔"
+      },
+      {
+        "code": [
+          ":taxi:"
+        ],
+        "ico": "🚕"
+      },
+      {
+        "code": [
+          ":oncoming_taxi:"
+        ],
+        "ico": "🚖"
+      },
+      {
+        "code": [
+          ":car:"
+        ],
+        "ico": "🚗"
+      },
+      {
+        "code": [
+          ":oncoming_automobile:"
+        ],
+        "ico": "🚘"
+      },
+      {
+        "code": [
+          ":blue_car:"
+        ],
+        "ico": "🚙"
+      },
+      {
+        "code": [
+          ":pickup_truck:"
+        ],
+        "ico": "🛻"
+      },
+      {
+        "code": [
+          ":truck:"
+        ],
+        "ico": "🚚"
+      },
+      {
+        "code": [
+          ":articulated_lorry:"
+        ],
+        "ico": "🚛"
+      },
+      {
+        "code": [
+          ":tractor:"
+        ],
+        "ico": "🚜"
+      },
+      {
+        "code": [
+          ":racing_car:"
+        ],
+        "ico": "🏎️"
+      },
+      {
+        "code": [
+          ":motorcycle:"
+        ],
+        "ico": "🏍️"
+      },
+      {
+        "code": [
+          ":motor_scooter:"
+        ],
+        "ico": "🛵"
+      },
+      {
+        "code": [
+          ":manual_wheelchair:"
+        ],
+        "ico": "🦽"
+      },
+      {
+        "code": [
+          ":motorized_wheelchair:"
+        ],
+        "ico": "🦼"
+      },
+      {
+        "code": [
+          ":auto_rickshaw:"
+        ],
+        "ico": "🛺"
+      },
+      {
+        "code": [
+          ":bike:"
+        ],
+        "ico": "🚲"
+      },
+      {
+        "code": [
+          ":kick_scooter:"
+        ],
+        "ico": "🛴"
+      },
+      {
+        "code": [
+          ":skateboard:"
+        ],
+        "ico": "🛹"
+      },
+      {
+        "code": [
+          ":roller_skate:"
+        ],
+        "ico": "🛼"
+      },
+      {
+        "code": [
+          ":busstop:"
+        ],
+        "ico": "🚏"
+      },
+      {
+        "code": [
+          ":motorway:"
+        ],
+        "ico": "🛣️"
+      },
+      {
+        "code": [
+          ":railway_track:"
+        ],
+        "ico": "🛤️"
+      },
+      {
+        "code": [
+          ":oil_drum:"
+        ],
+        "ico": "🛢️"
+      },
+      {
+        "code": [
+          ":fuelpump:"
+        ],
+        "ico": "⛽"
+      },
+      {
+        "code": [
+          ":rotating_light:"
+        ],
+        "ico": "🚨"
+      },
+      {
+        "code": [
+          ":traffic_light:"
+        ],
+        "ico": "🚥"
+      },
+      {
+        "code": [
+          ":vertical_traffic_light:"
+        ],
+        "ico": "🚦"
+      },
+      {
+        "code": [
+          ":stop_sign:"
+        ],
+        "ico": "🛑"
+      },
+      {
+        "code": [
+          ":construction:"
+        ],
+        "ico": "🚧"
+      },
+      {
+        "code": [
+          ":anchor:"
+        ],
+        "ico": "⚓"
+      },
+      {
+        "code": [
+          ":boat:"
+        ],
+        "ico": "⛵"
+      },
+      {
+        "code": [
+          ":canoe:"
+        ],
+        "ico": "🛶"
+      },
+      {
+        "code": [
+          ":speedboat:"
+        ],
+        "ico": "🚤"
+      },
+      {
+        "code": [
+          ":passenger_ship:"
+        ],
+        "ico": "🛳️"
+      },
+      {
+        "code": [
+          ":ferry:"
+        ],
+        "ico": "⛴️"
+      },
+      {
+        "code": [
+          ":motor_boat:"
+        ],
+        "ico": "🛥️"
+      },
+      {
+        "code": [
+          ":ship:"
+        ],
+        "ico": "🚢"
+      },
+      {
+        "code": [
+          ":small_airplane:"
+        ],
+        "ico": "🛩️"
+      },
+      {
+        "code": [
+          ":flight_departure:"
+        ],
+        "ico": "🛫"
+      },
+      {
+        "code": [
+          ":flight_arrival:"
+        ],
+        "ico": "🛬"
+      },
+      {
+        "code": [
+          ":parachute:"
+        ],
+        "ico": "🪂"
+      },
+      {
+        "code": [
+          ":seat:"
+        ],
+        "ico": "💺"
+      },
+      {
+        "code": [
+          ":helicopter:"
+        ],
+        "ico": "🚁"
+      },
+      {
+        "code": [
+          ":suspension_railway:"
+        ],
+        "ico": "🚟"
+      },
+      {
+        "code": [
+          ":mountain_cableway:"
+        ],
+        "ico": "🚠"
+      },
+      {
+        "code": [
+          ":aerial_tramway:"
+        ],
+        "ico": "🚡"
+      },
+      {
+        "code": [
+          ":artificial_satellite:"
+        ],
+        "ico": "🛰️"
+      },
+      {
+        "code": [
+          ":rocket:"
+        ],
+        "ico": "🚀"
+      },
+      {
+        "code": [
+          ":flying_saucer:"
+        ],
+        "ico": "🛸"
+      },
+      {
+        "code": [
+          ":bellhop_bell:"
+        ],
+        "ico": "🛎️"
+      },
+      {
+        "code": [
+          ":luggage:"
+        ],
+        "ico": "🧳"
+      },
+      {
+        "code": [
+          ":hourglass:"
+        ],
+        "ico": "⌛"
+      },
+      {
+        "code": [
+          ":hourglass_flowing_sand:"
+        ],
+        "ico": "⏳"
+      },
+      {
+        "code": [
+          ":watch:"
+        ],
+        "ico": "⌚"
+      },
+      {
+        "code": [
+          ":alarm_clock:"
+        ],
+        "ico": "⏰"
+      },
+      {
+        "code": [
+          ":stopwatch:"
+        ],
+        "ico": "⏱️"
+      },
+      {
+        "code": [
+          ":timer_clock:"
+        ],
+        "ico": "⏲️"
+      },
+      {
+        "code": [
+          ":mantelpiece_clock:"
+        ],
+        "ico": "🕰️"
+      },
+      {
+        "code": [
+          ":clock12:"
+        ],
+        "ico": "🕛"
+      },
+      {
+        "code": [
+          ":clock1230:"
+        ],
+        "ico": "🕧"
+      },
+      {
+        "code": [
+          ":clock1:"
+        ],
+        "ico": "🕐"
+      },
+      {
+        "code": [
+          ":clock130:"
+        ],
+        "ico": "🕜"
+      },
+      {
+        "code": [
+          ":clock2:"
+        ],
+        "ico": "🕑"
+      },
+      {
+        "code": [
+          ":clock230:"
+        ],
+        "ico": "🕝"
+      },
+      {
+        "code": [
+          ":clock3:"
+        ],
+        "ico": "🕒"
+      },
+      {
+        "code": [
+          ":clock330:"
+        ],
+        "ico": "🕞"
+      },
+      {
+        "code": [
+          ":clock4:"
+        ],
+        "ico": "🕓"
+      },
+      {
+        "code": [
+          ":clock430:"
+        ],
+        "ico": "🕟"
+      },
+      {
+        "code": [
+          ":clock5:"
+        ],
+        "ico": "🕔"
+      },
+      {
+        "code": [
+          ":clock530:"
+        ],
+        "ico": "🕠"
+      },
+      {
+        "code": [
+          ":clock6:"
+        ],
+        "ico": "🕕"
+      },
+      {
+        "code": [
+          ":clock630:"
+        ],
+        "ico": "🕡"
+      },
+      {
+        "code": [
+          ":clock7:"
+        ],
+        "ico": "🕖"
+      },
+      {
+        "code": [
+          ":clock730:"
+        ],
+        "ico": "🕢"
+      },
+      {
+        "code": [
+          ":clock8:"
+        ],
+        "ico": "🕗"
+      },
+      {
+        "code": [
+          ":clock830:"
+        ],
+        "ico": "🕣"
+      },
+      {
+        "code": [
+          ":clock9:"
+        ],
+        "ico": "🕘"
+      },
+      {
+        "code": [
+          ":clock930:"
+        ],
+        "ico": "🕤"
+      },
+      {
+        "code": [
+          ":clock10:"
+        ],
+        "ico": "🕙"
+      },
+      {
+        "code": [
+          ":clock1030:"
+        ],
+        "ico": "🕥"
+      },
+      {
+        "code": [
+          ":clock11:"
+        ],
+        "ico": "🕚"
+      },
+      {
+        "code": [
+          ":clock1130:"
+        ],
+        "ico": "🕦"
+      },
+      {
+        "code": [
+          ":new_moon:"
+        ],
+        "ico": "🌑"
+      },
+      {
+        "code": [
+          ":waxing_crescent_moon:"
+        ],
+        "ico": "🌒"
+      },
+      {
+        "code": [
+          ":first_quarter_moon:"
+        ],
+        "ico": "🌓"
+      },
+      {
+        "code": [
+          ":moon:"
+        ],
+        "ico": "🌔"
+      },
+      {
+        "code": [
+          ":full_moon:"
+        ],
+        "ico": "🌕"
+      },
+      {
+        "code": [
+          ":waning_gibbous_moon:"
+        ],
+        "ico": "🌖"
+      },
+      {
+        "code": [
+          ":last_quarter_moon:"
+        ],
+        "ico": "🌗"
+      },
+      {
+        "code": [
+          ":waning_crescent_moon:"
+        ],
+        "ico": "🌘"
+      },
+      {
+        "code": [
+          ":crescent_moon:"
+        ],
+        "ico": "🌙"
+      },
+      {
+        "code": [
+          ":new_moon_with_face:"
+        ],
+        "ico": "🌚"
+      },
+      {
+        "code": [
+          ":first_quarter_moon_with_face:"
+        ],
+        "ico": "🌛"
+      },
+      {
+        "code": [
+          ":last_quarter_moon_with_face:"
+        ],
+        "ico": "🌜"
+      },
+      {
+        "code": [
+          ":thermometer:"
+        ],
+        "ico": "🌡️"
+      },
+      {
+        "code": [
+          ":sunny:"
+        ],
+        "ico": "☀️"
+      },
+      {
+        "code": [
+          ":full_moon_with_face:"
+        ],
+        "ico": "🌝"
+      },
+      {
+        "code": [
+          ":sun_with_face:"
+        ],
+        "ico": "🌞"
+      },
+      {
+        "code": [
+          ":ringed_planet:"
+        ],
+        "ico": "🪐"
+      },
+      {
+        "code": [
+          ":star:"
+        ],
+        "ico": "⭐"
+      },
+      {
+        "code": [
+          ":star2:"
+        ],
+        "ico": "🌟"
+      },
+      {
+        "code": [
+          ":stars:"
+        ],
+        "ico": "🌠"
+      },
+      {
+        "code": [
+          ":milky_way:"
+        ],
+        "ico": "🌌"
+      },
+      {
+        "code": [
+          ":cloud:"
+        ],
+        "ico": "☁️"
+      },
+      {
+        "code": [
+          ":partly_sunny:"
+        ],
+        "ico": "⛅"
+      },
+      {
+        "code": [
+          ":cloud_with_lightning_and_rain:"
+        ],
+        "ico": "⛈️"
+      },
+      {
+        "code": [
+          ":sun_behind_small_cloud:"
+        ],
+        "ico": "🌤️"
+      },
+      {
+        "code": [
+          ":sun_behind_large_cloud:"
+        ],
+        "ico": "🌥️"
+      },
+      {
+        "code": [
+          ":sun_behind_rain_cloud:"
+        ],
+        "ico": "🌦️"
+      },
+      {
+        "code": [
+          ":cloud_with_rain:"
+        ],
+        "ico": "🌧️"
+      },
+      {
+        "code": [
+          ":cloud_with_snow:"
+        ],
+        "ico": "🌨️"
+      },
+      {
+        "code": [
+          ":cloud_with_lightning:"
+        ],
+        "ico": "🌩️"
+      },
+      {
+        "code": [
+          ":tornado:"
+        ],
+        "ico": "🌪️"
+      },
+      {
+        "code": [
+          ":fog:"
+        ],
+        "ico": "🌫️"
+      },
+      {
+        "code": [
+          ":wind_face:"
+        ],
+        "ico": "🌬️"
+      },
+      {
+        "code": [
+          ":cyclone:"
+        ],
+        "ico": "🌀"
+      },
+      {
+        "code": [
+          ":rainbow:"
+        ],
+        "ico": "🌈"
+      },
+      {
+        "code": [
+          ":closed_umbrella:"
+        ],
+        "ico": "🌂"
+      },
+      {
+        "code": [
+          ":open_umbrella:"
+        ],
+        "ico": "☂️"
+      },
+      {
+        "code": [
+          ":umbrella:"
+        ],
+        "ico": "☔"
+      },
+      {
+        "code": [
+          ":parasol_on_ground:"
+        ],
+        "ico": "⛱️"
+      },
+      {
+        "code": [
+          ":zap:"
+        ],
+        "ico": "⚡"
+      },
+      {
+        "code": [
+          ":snowflake:"
+        ],
+        "ico": "❄️"
+      },
+      {
+        "code": [
+          ":snowman_with_snow:"
+        ],
+        "ico": "☃️"
+      },
+      {
+        "code": [
+          ":snowman:"
+        ],
+        "ico": "⛄"
+      },
+      {
+        "code": [
+          ":comet:"
+        ],
+        "ico": "☄️"
+      },
+      {
+        "code": [
+          ":fire:"
+        ],
+        "ico": "🔥"
+      },
+      {
+        "code": [
+          ":droplet:"
+        ],
+        "ico": "💧"
+      },
+      {
+        "code": [
+          ":ocean:"
+        ],
+        "ico": "🌊"
       }
     ]
   },
   {
     "categoryName": "Activities",
-    "categoryIcon": "🎮",
+    "categoryIcon": "⚽",
     "emojis": [
+      {
+        "code": [
+          ":jack_o_lantern:"
+        ],
+        "ico": "🎃"
+      },
+      {
+        "code": [
+          ":christmas_tree:"
+        ],
+        "ico": "🎄"
+      },
+      {
+        "code": [
+          ":fireworks:"
+        ],
+        "ico": "🎆"
+      },
+      {
+        "code": [
+          ":sparkler:"
+        ],
+        "ico": "🎇"
+      },
+      {
+        "code": [
+          ":firecracker:"
+        ],
+        "ico": "🧨"
+      },
+      {
+        "code": [
+          ":sparkles:"
+        ],
+        "ico": "✨"
+      },
+      {
+        "code": [
+          ":balloon:"
+        ],
+        "ico": "🎈"
+      },
+      {
+        "code": [
+          ":tada:"
+        ],
+        "ico": "🎉"
+      },
+      {
+        "code": [
+          ":confetti_ball:"
+        ],
+        "ico": "🎊"
+      },
+      {
+        "code": [
+          ":tanabata_tree:"
+        ],
+        "ico": "🎋"
+      },
+      {
+        "code": [
+          ":bamboo:"
+        ],
+        "ico": "🎍"
+      },
+      {
+        "code": [
+          ":dolls:"
+        ],
+        "ico": "🎎"
+      },
+      {
+        "code": [
+          ":flags:"
+        ],
+        "ico": "🎏"
+      },
+      {
+        "code": [
+          ":wind_chime:"
+        ],
+        "ico": "🎐"
+      },
+      {
+        "code": [
+          ":rice_scene:"
+        ],
+        "ico": "🎑"
+      },
+      {
+        "code": [
+          ":red_envelope:"
+        ],
+        "ico": "🧧"
+      },
+      {
+        "code": [
+          ":ribbon:"
+        ],
+        "ico": "🎀"
+      },
+      {
+        "code": [
+          ":gift:"
+        ],
+        "ico": "🎁"
+      },
+      {
+        "code": [
+          ":reminder_ribbon:"
+        ],
+        "ico": "🎗️"
+      },
+      {
+        "code": [
+          ":tickets:"
+        ],
+        "ico": "🎟️"
+      },
+      {
+        "code": [
+          ":ticket:"
+        ],
+        "ico": "🎫"
+      },
+      {
+        "code": [
+          ":medal_military:"
+        ],
+        "ico": "🎖️"
+      },
+      {
+        "code": [
+          ":trophy:"
+        ],
+        "ico": "🏆"
+      },
+      {
+        "code": [
+          ":medal_sports:"
+        ],
+        "ico": "🏅"
+      },
+      {
+        "code": [
+          ":1st_place_medal:"
+        ],
+        "ico": "🥇"
+      },
+      {
+        "code": [
+          ":2nd_place_medal:"
+        ],
+        "ico": "🥈"
+      },
+      {
+        "code": [
+          ":3rd_place_medal:"
+        ],
+        "ico": "🥉"
+      },
+      {
+        "code": [
+          ":soccer:"
+        ],
+        "ico": "⚽"
+      },
+      {
+        "code": [
+          ":baseball:"
+        ],
+        "ico": "⚾"
+      },
+      {
+        "code": [
+          ":softball:"
+        ],
+        "ico": "🥎"
+      },
+      {
+        "code": [
+          ":basketball:"
+        ],
+        "ico": "🏀"
+      },
+      {
+        "code": [
+          ":volleyball:"
+        ],
+        "ico": "🏐"
+      },
+      {
+        "code": [
+          ":football:"
+        ],
+        "ico": "🏈"
+      },
+      {
+        "code": [
+          ":rugby_football:"
+        ],
+        "ico": "🏉"
+      },
+      {
+        "code": [
+          ":tennis:"
+        ],
+        "ico": "🎾"
+      },
+      {
+        "code": [
+          ":flying_disc:"
+        ],
+        "ico": "🥏"
+      },
+      {
+        "code": [
+          ":bowling:"
+        ],
+        "ico": "🎳"
+      },
+      {
+        "code": [
+          ":cricket_game:"
+        ],
+        "ico": "🏏"
+      },
+      {
+        "code": [
+          ":field_hockey:"
+        ],
+        "ico": "🏑"
+      },
+      {
+        "code": [
+          ":ice_hockey:"
+        ],
+        "ico": "🏒"
+      },
+      {
+        "code": [
+          ":lacrosse:"
+        ],
+        "ico": "🥍"
+      },
+      {
+        "code": [
+          ":ping_pong:"
+        ],
+        "ico": "🏓"
+      },
+      {
+        "code": [
+          ":badminton:"
+        ],
+        "ico": "🏸"
+      },
+      {
+        "code": [
+          ":boxing_glove:"
+        ],
+        "ico": "🥊"
+      },
+      {
+        "code": [
+          ":martial_arts_uniform:"
+        ],
+        "ico": "🥋"
+      },
+      {
+        "code": [
+          ":goal_net:"
+        ],
+        "ico": "🥅"
+      },
+      {
+        "code": [
+          ":golf:"
+        ],
+        "ico": "⛳"
+      },
+      {
+        "code": [
+          ":ice_skate:"
+        ],
+        "ico": "⛸️"
+      },
+      {
+        "code": [
+          ":fishing_pole_and_fish:"
+        ],
+        "ico": "🎣"
+      },
+      {
+        "code": [
+          ":diving_mask:"
+        ],
+        "ico": "🤿"
+      },
+      {
+        "code": [
+          ":running_shirt_with_sash:"
+        ],
+        "ico": "🎽"
+      },
+      {
+        "code": [
+          ":ski:"
+        ],
+        "ico": "🎿"
+      },
+      {
+        "code": [
+          ":sled:"
+        ],
+        "ico": "🛷"
+      },
+      {
+        "code": [
+          ":curling_stone:"
+        ],
+        "ico": "🥌"
+      },
+      {
+        "code": [
+          ":dart:"
+        ],
+        "ico": "🎯"
+      },
+      {
+        "code": [
+          ":yo_yo:"
+        ],
+        "ico": "🪀"
+      },
+      {
+        "code": [
+          ":kite:"
+        ],
+        "ico": "🪁"
+      },
+      {
+        "code": [
+          ":gun:"
+        ],
+        "ico": "🔫"
+      },
+      {
+        "code": [
+          ":8ball:"
+        ],
+        "ico": "🎱"
+      },
+      {
+        "code": [
+          ":crystal_ball:"
+        ],
+        "ico": "🔮"
+      },
+      {
+        "code": [
+          ":magic_wand:"
+        ],
+        "ico": "🪄"
+      },
       {
         "code": [
           ":video_game:"
@@ -3188,13 +6356,1069 @@
           ":flower_playing_cards:"
         ],
         "ico": "🎴"
+      },
+      {
+        "code": [
+          ":performing_arts:"
+        ],
+        "ico": "🎭"
+      },
+      {
+        "code": [
+          ":framed_picture:"
+        ],
+        "ico": "🖼️"
+      },
+      {
+        "code": [
+          ":art:"
+        ],
+        "ico": "🎨"
+      },
+      {
+        "code": [
+          ":thread:"
+        ],
+        "ico": "🧵"
+      },
+      {
+        "code": [
+          ":sewing_needle:"
+        ],
+        "ico": "🪡"
+      },
+      {
+        "code": [
+          ":yarn:"
+        ],
+        "ico": "🧶"
+      },
+      {
+        "code": [
+          ":knot:"
+        ],
+        "ico": "🪢"
       }
     ]
   },
   {
     "categoryName": "Objects",
-    "categoryIcon": "✂️",
+    "categoryIcon": "🎹",
     "emojis": [
+      {
+        "code": [
+          ":eyeglasses:"
+        ],
+        "ico": "👓"
+      },
+      {
+        "code": [
+          ":dark_sunglasses:"
+        ],
+        "ico": "🕶️"
+      },
+      {
+        "code": [
+          ":goggles:"
+        ],
+        "ico": "🥽"
+      },
+      {
+        "code": [
+          ":lab_coat:"
+        ],
+        "ico": "🥼"
+      },
+      {
+        "code": [
+          ":safety_vest:"
+        ],
+        "ico": "🦺"
+      },
+      {
+        "code": [
+          ":necktie:"
+        ],
+        "ico": "👔"
+      },
+      {
+        "code": [
+          ":shirt:"
+        ],
+        "ico": "👕"
+      },
+      {
+        "code": [
+          ":jeans:"
+        ],
+        "ico": "👖"
+      },
+      {
+        "code": [
+          ":scarf:"
+        ],
+        "ico": "🧣"
+      },
+      {
+        "code": [
+          ":gloves:"
+        ],
+        "ico": "🧤"
+      },
+      {
+        "code": [
+          ":coat:"
+        ],
+        "ico": "🧥"
+      },
+      {
+        "code": [
+          ":socks:"
+        ],
+        "ico": "🧦"
+      },
+      {
+        "code": [
+          ":dress:"
+        ],
+        "ico": "👗"
+      },
+      {
+        "code": [
+          ":kimono:"
+        ],
+        "ico": "👘"
+      },
+      {
+        "code": [
+          ":sari:"
+        ],
+        "ico": "🥻"
+      },
+      {
+        "code": [
+          ":one_piece_swimsuit:"
+        ],
+        "ico": "🩱"
+      },
+      {
+        "code": [
+          ":swim_brief:"
+        ],
+        "ico": "🩲"
+      },
+      {
+        "code": [
+          ":shorts:"
+        ],
+        "ico": "🩳"
+      },
+      {
+        "code": [
+          ":bikini:"
+        ],
+        "ico": "👙"
+      },
+      {
+        "code": [
+          ":womans_clothes:"
+        ],
+        "ico": "👚"
+      },
+      {
+        "code": [
+          ":purse:"
+        ],
+        "ico": "👛"
+      },
+      {
+        "code": [
+          ":handbag:"
+        ],
+        "ico": "👜"
+      },
+      {
+        "code": [
+          ":pouch:"
+        ],
+        "ico": "👝"
+      },
+      {
+        "code": [
+          ":shopping:"
+        ],
+        "ico": "🛍️"
+      },
+      {
+        "code": [
+          ":school_satchel:"
+        ],
+        "ico": "🎒"
+      },
+      {
+        "code": [
+          ":thong_sandal:"
+        ],
+        "ico": "🩴"
+      },
+      {
+        "code": [
+          ":mans_shoe:"
+        ],
+        "ico": "👞"
+      },
+      {
+        "code": [
+          ":athletic_shoe:"
+        ],
+        "ico": "👟"
+      },
+      {
+        "code": [
+          ":hiking_boot:"
+        ],
+        "ico": "🥾"
+      },
+      {
+        "code": [
+          ":flat_shoe:"
+        ],
+        "ico": "🥿"
+      },
+      {
+        "code": [
+          ":high_heel:"
+        ],
+        "ico": "👠"
+      },
+      {
+        "code": [
+          ":sandal:"
+        ],
+        "ico": "👡"
+      },
+      {
+        "code": [
+          ":ballet_shoes:"
+        ],
+        "ico": "🩰"
+      },
+      {
+        "code": [
+          ":boot:"
+        ],
+        "ico": "👢"
+      },
+      {
+        "code": [
+          ":crown:"
+        ],
+        "ico": "👑"
+      },
+      {
+        "code": [
+          ":womans_hat:"
+        ],
+        "ico": "👒"
+      },
+      {
+        "code": [
+          ":tophat:"
+        ],
+        "ico": "🎩"
+      },
+      {
+        "code": [
+          ":mortar_board:"
+        ],
+        "ico": "🎓"
+      },
+      {
+        "code": [
+          ":billed_cap:"
+        ],
+        "ico": "🧢"
+      },
+      {
+        "code": [
+          ":military_helmet:"
+        ],
+        "ico": "🪖"
+      },
+      {
+        "code": [
+          ":rescue_worker_helmet:"
+        ],
+        "ico": "⛑️"
+      },
+      {
+        "code": [
+          ":prayer_beads:"
+        ],
+        "ico": "📿"
+      },
+      {
+        "code": [
+          ":lipstick:"
+        ],
+        "ico": "💄"
+      },
+      {
+        "code": [
+          ":ring:"
+        ],
+        "ico": "💍"
+      },
+      {
+        "code": [
+          ":gem:"
+        ],
+        "ico": "💎"
+      },
+      {
+        "code": [
+          ":mute:"
+        ],
+        "ico": "🔇"
+      },
+      {
+        "code": [
+          ":speaker:"
+        ],
+        "ico": "🔈"
+      },
+      {
+        "code": [
+          ":sound:"
+        ],
+        "ico": "🔉"
+      },
+      {
+        "code": [
+          ":loud_sound:"
+        ],
+        "ico": "🔊"
+      },
+      {
+        "code": [
+          ":loudspeaker:"
+        ],
+        "ico": "📢"
+      },
+      {
+        "code": [
+          ":mega:"
+        ],
+        "ico": "📣"
+      },
+      {
+        "code": [
+          ":postal_horn:"
+        ],
+        "ico": "📯"
+      },
+      {
+        "code": [
+          ":bell:"
+        ],
+        "ico": "🔔"
+      },
+      {
+        "code": [
+          ":no_bell:"
+        ],
+        "ico": "🔕"
+      },
+      {
+        "code": [
+          ":musical_score:"
+        ],
+        "ico": "🎼"
+      },
+      {
+        "code": [
+          ":musical_note:"
+        ],
+        "ico": "🎵"
+      },
+      {
+        "code": [
+          ":notes:"
+        ],
+        "ico": "🎶"
+      },
+      {
+        "code": [
+          ":studio_microphone:"
+        ],
+        "ico": "🎙️"
+      },
+      {
+        "code": [
+          ":level_slider:"
+        ],
+        "ico": "🎚️"
+      },
+      {
+        "code": [
+          ":control_knobs:"
+        ],
+        "ico": "🎛️"
+      },
+      {
+        "code": [
+          ":microphone:"
+        ],
+        "ico": "🎤"
+      },
+      {
+        "code": [
+          ":headphones:"
+        ],
+        "ico": "🎧"
+      },
+      {
+        "code": [
+          ":radio:"
+        ],
+        "ico": "📻"
+      },
+      {
+        "code": [
+          ":saxophone:"
+        ],
+        "ico": "🎷"
+      },
+      {
+        "code": [
+          ":accordion:"
+        ],
+        "ico": "🪗"
+      },
+      {
+        "code": [
+          ":guitar:"
+        ],
+        "ico": "🎸"
+      },
+      {
+        "code": [
+          ":musical_keyboard:"
+        ],
+        "ico": "🎹"
+      },
+      {
+        "code": [
+          ":trumpet:"
+        ],
+        "ico": "🎺"
+      },
+      {
+        "code": [
+          ":violin:"
+        ],
+        "ico": "🎻"
+      },
+      {
+        "code": [
+          ":banjo:"
+        ],
+        "ico": "🪕"
+      },
+      {
+        "code": [
+          ":drum:"
+        ],
+        "ico": "🥁"
+      },
+      {
+        "code": [
+          ":long_drum:"
+        ],
+        "ico": "🪘"
+      },
+      {
+        "code": [
+          ":iphone:"
+        ],
+        "ico": "📱"
+      },
+      {
+        "code": [
+          ":calling:"
+        ],
+        "ico": "📲"
+      },
+      {
+        "code": [
+          ":phone:"
+        ],
+        "ico": "☎️"
+      },
+      {
+        "code": [
+          ":telephone_receiver:"
+        ],
+        "ico": "📞"
+      },
+      {
+        "code": [
+          ":pager:"
+        ],
+        "ico": "📟"
+      },
+      {
+        "code": [
+          ":fax:"
+        ],
+        "ico": "📠"
+      },
+      {
+        "code": [
+          ":battery:"
+        ],
+        "ico": "🔋"
+      },
+      {
+        "code": [
+          ":electric_plug:"
+        ],
+        "ico": "🔌"
+      },
+      {
+        "code": [
+          ":computer:"
+        ],
+        "ico": "💻"
+      },
+      {
+        "code": [
+          ":desktop_computer:"
+        ],
+        "ico": "🖥️"
+      },
+      {
+        "code": [
+          ":printer:"
+        ],
+        "ico": "🖨️"
+      },
+      {
+        "code": [
+          ":keyboard:"
+        ],
+        "ico": "⌨️"
+      },
+      {
+        "code": [
+          ":computer_mouse:"
+        ],
+        "ico": "🖱️"
+      },
+      {
+        "code": [
+          ":trackball:"
+        ],
+        "ico": "🖲️"
+      },
+      {
+        "code": [
+          ":minidisc:"
+        ],
+        "ico": "💽"
+      },
+      {
+        "code": [
+          ":floppy_disk:"
+        ],
+        "ico": "💾"
+      },
+      {
+        "code": [
+          ":cd:"
+        ],
+        "ico": "💿"
+      },
+      {
+        "code": [
+          ":dvd:"
+        ],
+        "ico": "📀"
+      },
+      {
+        "code": [
+          ":abacus:"
+        ],
+        "ico": "🧮"
+      },
+      {
+        "code": [
+          ":movie_camera:"
+        ],
+        "ico": "🎥"
+      },
+      {
+        "code": [
+          ":film_strip:"
+        ],
+        "ico": "🎞️"
+      },
+      {
+        "code": [
+          ":film_projector:"
+        ],
+        "ico": "📽️"
+      },
+      {
+        "code": [
+          ":clapper:"
+        ],
+        "ico": "🎬"
+      },
+      {
+        "code": [
+          ":tv:"
+        ],
+        "ico": "📺"
+      },
+      {
+        "code": [
+          ":camera:"
+        ],
+        "ico": "📷"
+      },
+      {
+        "code": [
+          ":camera_flash:"
+        ],
+        "ico": "📸"
+      },
+      {
+        "code": [
+          ":video_camera:"
+        ],
+        "ico": "📹"
+      },
+      {
+        "code": [
+          ":vhs:"
+        ],
+        "ico": "📼"
+      },
+      {
+        "code": [
+          ":mag:"
+        ],
+        "ico": "🔍"
+      },
+      {
+        "code": [
+          ":mag_right:"
+        ],
+        "ico": "🔎"
+      },
+      {
+        "code": [
+          ":candle:"
+        ],
+        "ico": "🕯️"
+      },
+      {
+        "code": [
+          ":bulb:"
+        ],
+        "ico": "💡"
+      },
+      {
+        "code": [
+          ":flashlight:"
+        ],
+        "ico": "🔦"
+      },
+      {
+        "code": [
+          ":izakaya_lantern:"
+        ],
+        "ico": "🏮"
+      },
+      {
+        "code": [
+          ":diya_lamp:"
+        ],
+        "ico": "🪔"
+      },
+      {
+        "code": [
+          ":notebook_with_decorative_cover:"
+        ],
+        "ico": "📔"
+      },
+      {
+        "code": [
+          ":closed_book:"
+        ],
+        "ico": "📕"
+      },
+      {
+        "code": [
+          ":book:"
+        ],
+        "ico": "📖"
+      },
+      {
+        "code": [
+          ":green_book:"
+        ],
+        "ico": "📗"
+      },
+      {
+        "code": [
+          ":blue_book:"
+        ],
+        "ico": "📘"
+      },
+      {
+        "code": [
+          ":orange_book:"
+        ],
+        "ico": "📙"
+      },
+      {
+        "code": [
+          ":books:"
+        ],
+        "ico": "📚"
+      },
+      {
+        "code": [
+          ":notebook:"
+        ],
+        "ico": "📓"
+      },
+      {
+        "code": [
+          ":ledger:"
+        ],
+        "ico": "📒"
+      },
+      {
+        "code": [
+          ":page_with_curl:"
+        ],
+        "ico": "📃"
+      },
+      {
+        "code": [
+          ":scroll:"
+        ],
+        "ico": "📜"
+      },
+      {
+        "code": [
+          ":page_facing_up:"
+        ],
+        "ico": "📄"
+      },
+      {
+        "code": [
+          ":newspaper:"
+        ],
+        "ico": "📰"
+      },
+      {
+        "code": [
+          ":newspaper_roll:"
+        ],
+        "ico": "🗞️"
+      },
+      {
+        "code": [
+          ":bookmark_tabs:"
+        ],
+        "ico": "📑"
+      },
+      {
+        "code": [
+          ":bookmark:"
+        ],
+        "ico": "🔖"
+      },
+      {
+        "code": [
+          ":label:"
+        ],
+        "ico": "🏷️"
+      },
+      {
+        "code": [
+          ":moneybag:"
+        ],
+        "ico": "💰"
+      },
+      {
+        "code": [
+          ":coin:"
+        ],
+        "ico": "🪙"
+      },
+      {
+        "code": [
+          ":yen:"
+        ],
+        "ico": "💴"
+      },
+      {
+        "code": [
+          ":dollar:"
+        ],
+        "ico": "💵"
+      },
+      {
+        "code": [
+          ":euro:"
+        ],
+        "ico": "💶"
+      },
+      {
+        "code": [
+          ":pound:"
+        ],
+        "ico": "💷"
+      },
+      {
+        "code": [
+          ":money_with_wings:"
+        ],
+        "ico": "💸"
+      },
+      {
+        "code": [
+          ":credit_card:"
+        ],
+        "ico": "💳"
+      },
+      {
+        "code": [
+          ":receipt:"
+        ],
+        "ico": "🧾"
+      },
+      {
+        "code": [
+          ":chart:"
+        ],
+        "ico": "💹"
+      },
+      {
+        "code": [
+          ":envelope:"
+        ],
+        "ico": "✉️"
+      },
+      {
+        "code": [
+          ":email:"
+        ],
+        "ico": "📧"
+      },
+      {
+        "code": [
+          ":incoming_envelope:"
+        ],
+        "ico": "📨"
+      },
+      {
+        "code": [
+          ":envelope_with_arrow:"
+        ],
+        "ico": "📩"
+      },
+      {
+        "code": [
+          ":outbox_tray:"
+        ],
+        "ico": "📤"
+      },
+      {
+        "code": [
+          ":inbox_tray:"
+        ],
+        "ico": "📥"
+      },
+      {
+        "code": [
+          ":package:"
+        ],
+        "ico": "📦"
+      },
+      {
+        "code": [
+          ":mailbox:"
+        ],
+        "ico": "📫"
+      },
+      {
+        "code": [
+          ":mailbox_closed:"
+        ],
+        "ico": "📪"
+      },
+      {
+        "code": [
+          ":mailbox_with_mail:"
+        ],
+        "ico": "📬"
+      },
+      {
+        "code": [
+          ":mailbox_with_no_mail:"
+        ],
+        "ico": "📭"
+      },
+      {
+        "code": [
+          ":postbox:"
+        ],
+        "ico": "📮"
+      },
+      {
+        "code": [
+          ":ballot_box:"
+        ],
+        "ico": "🗳️"
+      },
+      {
+        "code": [
+          ":pencil2:"
+        ],
+        "ico": "✏️"
+      },
+      {
+        "code": [
+          ":black_nib:"
+        ],
+        "ico": "✒️"
+      },
+      {
+        "code": [
+          ":fountain_pen:"
+        ],
+        "ico": "🖋️"
+      },
+      {
+        "code": [
+          ":pen:"
+        ],
+        "ico": "🖊️"
+      },
+      {
+        "code": [
+          ":paintbrush:"
+        ],
+        "ico": "🖌️"
+      },
+      {
+        "code": [
+          ":crayon:"
+        ],
+        "ico": "🖍️"
+      },
+      {
+        "code": [
+          ":memo:"
+        ],
+        "ico": "📝"
+      },
+      {
+        "code": [
+          ":briefcase:"
+        ],
+        "ico": "💼"
+      },
+      {
+        "code": [
+          ":file_folder:"
+        ],
+        "ico": "📁"
+      },
+      {
+        "code": [
+          ":open_file_folder:"
+        ],
+        "ico": "📂"
+      },
+      {
+        "code": [
+          ":card_index_dividers:"
+        ],
+        "ico": "🗂️"
+      },
+      {
+        "code": [
+          ":date:"
+        ],
+        "ico": "📅"
+      },
+      {
+        "code": [
+          ":calendar:"
+        ],
+        "ico": "📆"
+      },
+      {
+        "code": [
+          ":spiral_notepad:"
+        ],
+        "ico": "🗒️"
+      },
+      {
+        "code": [
+          ":spiral_calendar:"
+        ],
+        "ico": "🗓️"
+      },
+      {
+        "code": [
+          ":card_index:"
+        ],
+        "ico": "📇"
+      },
+      {
+        "code": [
+          ":chart_with_upwards_trend:"
+        ],
+        "ico": "📈"
+      },
+      {
+        "code": [
+          ":chart_with_downwards_trend:"
+        ],
+        "ico": "📉"
+      },
+      {
+        "code": [
+          ":bar_chart:"
+        ],
+        "ico": "📊"
+      },
+      {
+        "code": [
+          ":clipboard:"
+        ],
+        "ico": "📋"
+      },
+      {
+        "code": [
+          ":pushpin:"
+        ],
+        "ico": "📌"
+      },
+      {
+        "code": [
+          ":round_pushpin:"
+        ],
+        "ico": "📍"
+      },
       {
         "code": [
           ":paperclip:"
@@ -3272,13 +7496,523 @@
           ":key:"
         ],
         "ico": "🔑"
+      },
+      {
+        "code": [
+          ":old_key:"
+        ],
+        "ico": "🗝️"
+      },
+      {
+        "code": [
+          ":hammer:"
+        ],
+        "ico": "🔨"
+      },
+      {
+        "code": [
+          ":axe:"
+        ],
+        "ico": "🪓"
+      },
+      {
+        "code": [
+          ":pick:"
+        ],
+        "ico": "⛏️"
+      },
+      {
+        "code": [
+          ":hammer_and_pick:"
+        ],
+        "ico": "⚒️"
+      },
+      {
+        "code": [
+          ":hammer_and_wrench:"
+        ],
+        "ico": "🛠️"
+      },
+      {
+        "code": [
+          ":dagger:"
+        ],
+        "ico": "🗡️"
+      },
+      {
+        "code": [
+          ":crossed_swords:"
+        ],
+        "ico": "⚔️"
+      },
+      {
+        "code": [
+          ":bomb:"
+        ],
+        "ico": "💣"
+      },
+      {
+        "code": [
+          ":boomerang:"
+        ],
+        "ico": "🪃"
+      },
+      {
+        "code": [
+          ":bow_and_arrow:"
+        ],
+        "ico": "🏹"
+      },
+      {
+        "code": [
+          ":shield:"
+        ],
+        "ico": "🛡️"
+      },
+      {
+        "code": [
+          ":carpentry_saw:"
+        ],
+        "ico": "🪚"
+      },
+      {
+        "code": [
+          ":wrench:"
+        ],
+        "ico": "🔧"
+      },
+      {
+        "code": [
+          ":screwdriver:"
+        ],
+        "ico": "🪛"
+      },
+      {
+        "code": [
+          ":nut_and_bolt:"
+        ],
+        "ico": "🔩"
+      },
+      {
+        "code": [
+          ":gear:"
+        ],
+        "ico": "⚙️"
+      },
+      {
+        "code": [
+          ":clamp:"
+        ],
+        "ico": "🗜️"
+      },
+      {
+        "code": [
+          ":balance_scale:"
+        ],
+        "ico": "⚖️"
+      },
+      {
+        "code": [
+          ":probing_cane:"
+        ],
+        "ico": "🦯"
+      },
+      {
+        "code": [
+          ":link:"
+        ],
+        "ico": "🔗"
+      },
+      {
+        "code": [
+          ":chains:"
+        ],
+        "ico": "⛓️"
+      },
+      {
+        "code": [
+          ":hook:"
+        ],
+        "ico": "🪝"
+      },
+      {
+        "code": [
+          ":toolbox:"
+        ],
+        "ico": "🧰"
+      },
+      {
+        "code": [
+          ":magnet:"
+        ],
+        "ico": "🧲"
+      },
+      {
+        "code": [
+          ":ladder:"
+        ],
+        "ico": "🪜"
+      },
+      {
+        "code": [
+          ":alembic:"
+        ],
+        "ico": "⚗️"
+      },
+      {
+        "code": [
+          ":test_tube:"
+        ],
+        "ico": "🧪"
+      },
+      {
+        "code": [
+          ":petri_dish:"
+        ],
+        "ico": "🧫"
+      },
+      {
+        "code": [
+          ":dna:"
+        ],
+        "ico": "🧬"
+      },
+      {
+        "code": [
+          ":microscope:"
+        ],
+        "ico": "🔬"
+      },
+      {
+        "code": [
+          ":telescope:"
+        ],
+        "ico": "🔭"
+      },
+      {
+        "code": [
+          ":satellite:"
+        ],
+        "ico": "📡"
+      },
+      {
+        "code": [
+          ":syringe:"
+        ],
+        "ico": "💉"
+      },
+      {
+        "code": [
+          ":drop_of_blood:"
+        ],
+        "ico": "🩸"
+      },
+      {
+        "code": [
+          ":pill:"
+        ],
+        "ico": "💊"
+      },
+      {
+        "code": [
+          ":adhesive_bandage:"
+        ],
+        "ico": "🩹"
+      },
+      {
+        "code": [
+          ":stethoscope:"
+        ],
+        "ico": "🩺"
+      },
+      {
+        "code": [
+          ":door:"
+        ],
+        "ico": "🚪"
+      },
+      {
+        "code": [
+          ":elevator:"
+        ],
+        "ico": "🛗"
+      },
+      {
+        "code": [
+          ":mirror:"
+        ],
+        "ico": "🪞"
+      },
+      {
+        "code": [
+          ":window:"
+        ],
+        "ico": "🪟"
+      },
+      {
+        "code": [
+          ":bed:"
+        ],
+        "ico": "🛏️"
+      },
+      {
+        "code": [
+          ":couch_and_lamp:"
+        ],
+        "ico": "🛋️"
+      },
+      {
+        "code": [
+          ":chair:"
+        ],
+        "ico": "🪑"
+      },
+      {
+        "code": [
+          ":toilet:"
+        ],
+        "ico": "🚽"
+      },
+      {
+        "code": [
+          ":plunger:"
+        ],
+        "ico": "🪠"
+      },
+      {
+        "code": [
+          ":shower:"
+        ],
+        "ico": "🚿"
+      },
+      {
+        "code": [
+          ":bathtub:"
+        ],
+        "ico": "🛁"
+      },
+      {
+        "code": [
+          ":mouse_trap:"
+        ],
+        "ico": "🪤"
+      },
+      {
+        "code": [
+          ":razor:"
+        ],
+        "ico": "🪒"
+      },
+      {
+        "code": [
+          ":lotion_bottle:"
+        ],
+        "ico": "🧴"
+      },
+      {
+        "code": [
+          ":safety_pin:"
+        ],
+        "ico": "🧷"
+      },
+      {
+        "code": [
+          ":broom:"
+        ],
+        "ico": "🧹"
+      },
+      {
+        "code": [
+          ":basket:"
+        ],
+        "ico": "🧺"
+      },
+      {
+        "code": [
+          ":roll_of_paper:"
+        ],
+        "ico": "🧻"
+      },
+      {
+        "code": [
+          ":bucket:"
+        ],
+        "ico": "🪣"
+      },
+      {
+        "code": [
+          ":soap:"
+        ],
+        "ico": "🧼"
+      },
+      {
+        "code": [
+          ":toothbrush:"
+        ],
+        "ico": "🪥"
+      },
+      {
+        "code": [
+          ":sponge:"
+        ],
+        "ico": "🧽"
+      },
+      {
+        "code": [
+          ":fire_extinguisher:"
+        ],
+        "ico": "🧯"
+      },
+      {
+        "code": [
+          ":shopping_cart:"
+        ],
+        "ico": "🛒"
+      },
+      {
+        "code": [
+          ":smoking:"
+        ],
+        "ico": "🚬"
+      },
+      {
+        "code": [
+          ":coffin:"
+        ],
+        "ico": "⚰️"
+      },
+      {
+        "code": [
+          ":headstone:"
+        ],
+        "ico": "🪦"
+      },
+      {
+        "code": [
+          ":funeral_urn:"
+        ],
+        "ico": "⚱️"
+      },
+      {
+        "code": [
+          ":nazar_amulet:"
+        ],
+        "ico": "🧿"
+      },
+      {
+        "code": [
+          ":moyai:"
+        ],
+        "ico": "🗿"
+      },
+      {
+        "code": [
+          ":placard:"
+        ],
+        "ico": "🪧"
       }
     ]
   },
   {
     "categoryName": "Symbols",
-    "categoryIcon": "🚭",
+    "categoryIcon": "💲",
     "emojis": [
+      {
+        "code": [
+          ":atm:"
+        ],
+        "ico": "🏧"
+      },
+      {
+        "code": [
+          ":put_litter_in_its_place:"
+        ],
+        "ico": "🚮"
+      },
+      {
+        "code": [
+          ":potable_water:"
+        ],
+        "ico": "🚰"
+      },
+      {
+        "code": [
+          ":wheelchair:"
+        ],
+        "ico": "♿"
+      },
+      {
+        "code": [
+          ":mens:"
+        ],
+        "ico": "🚹"
+      },
+      {
+        "code": [
+          ":womens:"
+        ],
+        "ico": "🚺"
+      },
+      {
+        "code": [
+          ":restroom:"
+        ],
+        "ico": "🚻"
+      },
+      {
+        "code": [
+          ":baby_symbol:"
+        ],
+        "ico": "🚼"
+      },
+      {
+        "code": [
+          ":wc:"
+        ],
+        "ico": "🚾"
+      },
+      {
+        "code": [
+          ":passport_control:"
+        ],
+        "ico": "🛂"
+      },
+      {
+        "code": [
+          ":customs:"
+        ],
+        "ico": "🛃"
+      },
+      {
+        "code": [
+          ":baggage_claim:"
+        ],
+        "ico": "🛄"
+      },
+      {
+        "code": [
+          ":left_luggage:"
+        ],
+        "ico": "🛅"
+      },
+      {
+        "code": [
+          ":children_crossing:"
+        ],
+        "ico": "🚸"
+      },
+      {
+        "code": [
+          ":no_entry:"
+        ],
+        "ico": "⛔"
+      },
+      {
+        "code": [
+          ":no_entry_sign:"
+        ],
+        "ico": "🚫"
+      },
       {
         "code": [
           ":no_bicycles:"
@@ -3308,13 +8042,1351 @@
           ":no_mobile_phones:"
         ],
         "ico": "📵"
+      },
+      {
+        "code": [
+          ":underage:"
+        ],
+        "ico": "🔞"
+      },
+      {
+        "code": [
+          ":radioactive:"
+        ],
+        "ico": "☢️"
+      },
+      {
+        "code": [
+          ":biohazard:"
+        ],
+        "ico": "☣️"
+      },
+      {
+        "code": [
+          ":arrow_up:"
+        ],
+        "ico": "⬆️"
+      },
+      {
+        "code": [
+          ":arrow_right:"
+        ],
+        "ico": "➡️"
+      },
+      {
+        "code": [
+          ":arrow_down:"
+        ],
+        "ico": "⬇️"
+      },
+      {
+        "code": [
+          ":arrow_left:"
+        ],
+        "ico": "⬅️"
+      },
+      {
+        "code": [
+          ":leftwards_arrow_with_hook:"
+        ],
+        "ico": "↩️"
+      },
+      {
+        "code": [
+          ":arrow_right_hook:"
+        ],
+        "ico": "↪️"
+      },
+      {
+        "code": [
+          ":arrows_clockwise:"
+        ],
+        "ico": "🔃"
+      },
+      {
+        "code": [
+          ":arrows_counterclockwise:"
+        ],
+        "ico": "🔄"
+      },
+      {
+        "code": [
+          ":back:"
+        ],
+        "ico": "🔙"
+      },
+      {
+        "code": [
+          ":end:"
+        ],
+        "ico": "🔚"
+      },
+      {
+        "code": [
+          ":on:"
+        ],
+        "ico": "🔛"
+      },
+      {
+        "code": [
+          ":soon:"
+        ],
+        "ico": "🔜"
+      },
+      {
+        "code": [
+          ":top:"
+        ],
+        "ico": "🔝"
+      },
+      {
+        "code": [
+          ":place_of_worship:"
+        ],
+        "ico": "🛐"
+      },
+      {
+        "code": [
+          ":atom_symbol:"
+        ],
+        "ico": "⚛️"
+      },
+      {
+        "code": [
+          ":om:"
+        ],
+        "ico": "🕉️"
+      },
+      {
+        "code": [
+          ":star_of_david:"
+        ],
+        "ico": "✡️"
+      },
+      {
+        "code": [
+          ":wheel_of_dharma:"
+        ],
+        "ico": "☸️"
+      },
+      {
+        "code": [
+          ":yin_yang:"
+        ],
+        "ico": "☯️"
+      },
+      {
+        "code": [
+          ":latin_cross:"
+        ],
+        "ico": "✝️"
+      },
+      {
+        "code": [
+          ":orthodox_cross:"
+        ],
+        "ico": "☦️"
+      },
+      {
+        "code": [
+          ":star_and_crescent:"
+        ],
+        "ico": "☪️"
+      },
+      {
+        "code": [
+          ":peace_symbol:"
+        ],
+        "ico": "☮️"
+      },
+      {
+        "code": [
+          ":menorah:"
+        ],
+        "ico": "🕎"
+      },
+      {
+        "code": [
+          ":six_pointed_star:"
+        ],
+        "ico": "🔯"
+      },
+      {
+        "code": [
+          ":aries:"
+        ],
+        "ico": "♈"
+      },
+      {
+        "code": [
+          ":taurus:"
+        ],
+        "ico": "♉"
+      },
+      {
+        "code": [
+          ":gemini:"
+        ],
+        "ico": "♊"
+      },
+      {
+        "code": [
+          ":cancer:"
+        ],
+        "ico": "♋"
+      },
+      {
+        "code": [
+          ":leo:"
+        ],
+        "ico": "♌"
+      },
+      {
+        "code": [
+          ":virgo:"
+        ],
+        "ico": "♍"
+      },
+      {
+        "code": [
+          ":libra:"
+        ],
+        "ico": "♎"
+      },
+      {
+        "code": [
+          ":scorpius:"
+        ],
+        "ico": "♏"
+      },
+      {
+        "code": [
+          ":sagittarius:"
+        ],
+        "ico": "♐"
+      },
+      {
+        "code": [
+          ":capricorn:"
+        ],
+        "ico": "♑"
+      },
+      {
+        "code": [
+          ":aquarius:"
+        ],
+        "ico": "♒"
+      },
+      {
+        "code": [
+          ":pisces:"
+        ],
+        "ico": "♓"
+      },
+      {
+        "code": [
+          ":ophiuchus:"
+        ],
+        "ico": "⛎"
+      },
+      {
+        "code": [
+          ":twisted_rightwards_arrows:"
+        ],
+        "ico": "🔀"
+      },
+      {
+        "code": [
+          ":repeat:"
+        ],
+        "ico": "🔁"
+      },
+      {
+        "code": [
+          ":repeat_one:"
+        ],
+        "ico": "🔂"
+      },
+      {
+        "code": [
+          ":fast_forward:"
+        ],
+        "ico": "⏩"
+      },
+      {
+        "code": [
+          ":next_track_button:"
+        ],
+        "ico": "⏭️"
+      },
+      {
+        "code": [
+          ":play_or_pause_button:"
+        ],
+        "ico": "⏯️"
+      },
+      {
+        "code": [
+          ":rewind:"
+        ],
+        "ico": "⏪"
+      },
+      {
+        "code": [
+          ":previous_track_button:"
+        ],
+        "ico": "⏮️"
+      },
+      {
+        "code": [
+          ":arrow_up_small:"
+        ],
+        "ico": "🔼"
+      },
+      {
+        "code": [
+          ":arrow_double_up:"
+        ],
+        "ico": "⏫"
+      },
+      {
+        "code": [
+          ":arrow_down_small:"
+        ],
+        "ico": "🔽"
+      },
+      {
+        "code": [
+          ":arrow_double_down:"
+        ],
+        "ico": "⏬"
+      },
+      {
+        "code": [
+          ":pause_button:"
+        ],
+        "ico": "⏸️"
+      },
+      {
+        "code": [
+          ":stop_button:"
+        ],
+        "ico": "⏹️"
+      },
+      {
+        "code": [
+          ":record_button:"
+        ],
+        "ico": "⏺️"
+      },
+      {
+        "code": [
+          ":cinema:"
+        ],
+        "ico": "🎦"
+      },
+      {
+        "code": [
+          ":low_brightness:"
+        ],
+        "ico": "🔅"
+      },
+      {
+        "code": [
+          ":high_brightness:"
+        ],
+        "ico": "🔆"
+      },
+      {
+        "code": [
+          ":signal_strength:"
+        ],
+        "ico": "📶"
+      },
+      {
+        "code": [
+          ":vibration_mode:"
+        ],
+        "ico": "📳"
+      },
+      {
+        "code": [
+          ":mobile_phone_off:"
+        ],
+        "ico": "📴"
+      },
+      {
+        "code": [
+          ":female_sign:"
+        ],
+        "ico": "♀️"
+      },
+      {
+        "code": [
+          ":male_sign:"
+        ],
+        "ico": "♂️"
+      },
+      {
+        "code": [
+          ":transgender_symbol:"
+        ],
+        "ico": "⚧️"
+      },
+      {
+        "code": [
+          ":heavy_multiplication_x:"
+        ],
+        "ico": "✖️"
+      },
+      {
+        "code": [
+          ":heavy_plus_sign:"
+        ],
+        "ico": "➕"
+      },
+      {
+        "code": [
+          ":heavy_minus_sign:"
+        ],
+        "ico": "➖"
+      },
+      {
+        "code": [
+          ":heavy_division_sign:"
+        ],
+        "ico": "➗"
+      },
+      {
+        "code": [
+          ":infinity:"
+        ],
+        "ico": "♾️"
+      },
+      {
+        "code": [
+          ":question:"
+        ],
+        "ico": "❓"
+      },
+      {
+        "code": [
+          ":grey_question:"
+        ],
+        "ico": "❔"
+      },
+      {
+        "code": [
+          ":grey_exclamation:"
+        ],
+        "ico": "❕"
+      },
+      {
+        "code": [
+          ":exclamation:"
+        ],
+        "ico": "❗"
+      },
+      {
+        "code": [
+          ":wavy_dash:"
+        ],
+        "ico": "〰️"
+      },
+      {
+        "code": [
+          ":currency_exchange:"
+        ],
+        "ico": "💱"
+      },
+      {
+        "code": [
+          ":heavy_dollar_sign:"
+        ],
+        "ico": "💲"
+      },
+      {
+        "code": [
+          ":medical_symbol:"
+        ],
+        "ico": "⚕️"
+      },
+      {
+        "code": [
+          ":recycle:"
+        ],
+        "ico": "♻️"
+      },
+      {
+        "code": [
+          ":fleur_de_lis:"
+        ],
+        "ico": "⚜️"
+      },
+      {
+        "code": [
+          ":trident:"
+        ],
+        "ico": "🔱"
+      },
+      {
+        "code": [
+          ":name_badge:"
+        ],
+        "ico": "📛"
+      },
+      {
+        "code": [
+          ":beginner:"
+        ],
+        "ico": "🔰"
+      },
+      {
+        "code": [
+          ":o:"
+        ],
+        "ico": "⭕"
+      },
+      {
+        "code": [
+          ":white_check_mark:"
+        ],
+        "ico": "✅"
+      },
+      {
+        "code": [
+          ":ballot_box_with_check:"
+        ],
+        "ico": "☑️"
+      },
+      {
+        "code": [
+          ":heavy_check_mark:"
+        ],
+        "ico": "✔️"
+      },
+      {
+        "code": [
+          ":x:"
+        ],
+        "ico": "❌"
+      },
+      {
+        "code": [
+          ":negative_squared_cross_mark:"
+        ],
+        "ico": "❎"
+      },
+      {
+        "code": [
+          ":curly_loop:"
+        ],
+        "ico": "➰"
+      },
+      {
+        "code": [
+          ":loop:"
+        ],
+        "ico": "➿"
+      },
+      {
+        "code": [
+          ":part_alternation_mark:"
+        ],
+        "ico": "〽️"
+      },
+      {
+        "code": [
+          ":eight_spoked_asterisk:"
+        ],
+        "ico": "✳️"
+      },
+      {
+        "code": [
+          ":eight_pointed_black_star:"
+        ],
+        "ico": "✴️"
+      },
+      {
+        "code": [
+          ":sparkle:"
+        ],
+        "ico": "❇️"
+      },
+      {
+        "code": [
+          ":copyright:"
+        ],
+        "ico": "©️"
+      },
+      {
+        "code": [
+          ":registered:"
+        ],
+        "ico": "®️"
+      },
+      {
+        "code": [
+          ":tm:"
+        ],
+        "ico": "™️"
+      },
+      {
+        "code": [
+          ":hash:"
+        ],
+        "ico": "#️⃣"
+      },
+      {
+        "code": [
+          ":asterisk:"
+        ],
+        "ico": "*️⃣"
+      },
+      {
+        "code": [
+          ":zero:"
+        ],
+        "ico": "0️⃣"
+      },
+      {
+        "code": [
+          ":one:"
+        ],
+        "ico": "1️⃣"
+      },
+      {
+        "code": [
+          ":two:"
+        ],
+        "ico": "2️⃣"
+      },
+      {
+        "code": [
+          ":three:"
+        ],
+        "ico": "3️⃣"
+      },
+      {
+        "code": [
+          ":four:"
+        ],
+        "ico": "4️⃣"
+      },
+      {
+        "code": [
+          ":five:"
+        ],
+        "ico": "5️⃣"
+      },
+      {
+        "code": [
+          ":six:"
+        ],
+        "ico": "6️⃣"
+      },
+      {
+        "code": [
+          ":seven:"
+        ],
+        "ico": "7️⃣"
+      },
+      {
+        "code": [
+          ":eight:"
+        ],
+        "ico": "8️⃣"
+      },
+      {
+        "code": [
+          ":nine:"
+        ],
+        "ico": "9️⃣"
+      },
+      {
+        "code": [
+          ":keycap_ten:"
+        ],
+        "ico": "🔟"
+      },
+      {
+        "code": [
+          ":capital_abcd:"
+        ],
+        "ico": "🔠"
+      },
+      {
+        "code": [
+          ":abcd:"
+        ],
+        "ico": "🔡"
+      },
+      {
+        "code": [
+          ":1234:"
+        ],
+        "ico": "🔢"
+      },
+      {
+        "code": [
+          ":symbols:"
+        ],
+        "ico": "🔣"
+      },
+      {
+        "code": [
+          ":abc:"
+        ],
+        "ico": "🔤"
+      },
+      {
+        "code": [
+          ":ab:"
+        ],
+        "ico": "🆎"
+      },
+      {
+        "code": [
+          ":cl:"
+        ],
+        "ico": "🆑"
+      },
+      {
+        "code": [
+          ":cool:"
+        ],
+        "ico": "🆒"
+      },
+      {
+        "code": [
+          ":free:"
+        ],
+        "ico": "🆓"
+      },
+      {
+        "code": [
+          ":information_source:"
+        ],
+        "ico": "ℹ️"
+      },
+      {
+        "code": [
+          ":id:"
+        ],
+        "ico": "🆔"
+      },
+      {
+        "code": [
+          ":new:"
+        ],
+        "ico": "🆕"
+      },
+      {
+        "code": [
+          ":ng:"
+        ],
+        "ico": "🆖"
+      },
+      {
+        "code": [
+          ":ok:"
+        ],
+        "ico": "🆗"
+      },
+      {
+        "code": [
+          ":sos:"
+        ],
+        "ico": "🆘"
+      },
+      {
+        "code": [
+          ":up:"
+        ],
+        "ico": "🆙"
+      },
+      {
+        "code": [
+          ":vs:"
+        ],
+        "ico": "🆚"
+      },
+      {
+        "code": [
+          ":koko:"
+        ],
+        "ico": "🈁"
+      },
+      {
+        "code": [
+          ":sa:"
+        ],
+        "ico": "🈂️"
+      },
+      {
+        "code": [
+          ":u6708:"
+        ],
+        "ico": "🈷️"
+      },
+      {
+        "code": [
+          ":u6709:"
+        ],
+        "ico": "🈶"
+      },
+      {
+        "code": [
+          ":u6307:"
+        ],
+        "ico": "🈯"
+      },
+      {
+        "code": [
+          ":ideograph_advantage:"
+        ],
+        "ico": "🉐"
+      },
+      {
+        "code": [
+          ":u5272:"
+        ],
+        "ico": "🈹"
+      },
+      {
+        "code": [
+          ":u7121:"
+        ],
+        "ico": "🈚"
+      },
+      {
+        "code": [
+          ":u7981:"
+        ],
+        "ico": "🈲"
+      },
+      {
+        "code": [
+          ":accept:"
+        ],
+        "ico": "🉑"
+      },
+      {
+        "code": [
+          ":u7533:"
+        ],
+        "ico": "🈸"
+      },
+      {
+        "code": [
+          ":u5408:"
+        ],
+        "ico": "🈴"
+      },
+      {
+        "code": [
+          ":u7a7a:"
+        ],
+        "ico": "🈳"
+      },
+      {
+        "code": [
+          ":congratulations:"
+        ],
+        "ico": "㊗️"
+      },
+      {
+        "code": [
+          ":secret:"
+        ],
+        "ico": "㊙️"
+      },
+      {
+        "code": [
+          ":u55b6:"
+        ],
+        "ico": "🈺"
+      },
+      {
+        "code": [
+          ":u6e80:"
+        ],
+        "ico": "🈵"
+      },
+      {
+        "code": [
+          ":red_circle:"
+        ],
+        "ico": "🔴"
+      },
+      {
+        "code": [
+          ":orange_circle:"
+        ],
+        "ico": "🟠"
+      },
+      {
+        "code": [
+          ":yellow_circle:"
+        ],
+        "ico": "🟡"
+      },
+      {
+        "code": [
+          ":green_circle:"
+        ],
+        "ico": "🟢"
+      },
+      {
+        "code": [
+          ":large_blue_circle:"
+        ],
+        "ico": "🔵"
+      },
+      {
+        "code": [
+          ":purple_circle:"
+        ],
+        "ico": "🟣"
+      },
+      {
+        "code": [
+          ":brown_circle:"
+        ],
+        "ico": "🟤"
+      },
+      {
+        "code": [
+          ":black_circle:"
+        ],
+        "ico": "⚫"
+      },
+      {
+        "code": [
+          ":white_circle:"
+        ],
+        "ico": "⚪"
+      },
+      {
+        "code": [
+          ":red_square:"
+        ],
+        "ico": "🟥"
+      },
+      {
+        "code": [
+          ":orange_square:"
+        ],
+        "ico": "🟧"
+      },
+      {
+        "code": [
+          ":yellow_square:"
+        ],
+        "ico": "🟨"
+      },
+      {
+        "code": [
+          ":green_square:"
+        ],
+        "ico": "🟩"
+      },
+      {
+        "code": [
+          ":blue_square:"
+        ],
+        "ico": "🟦"
+      },
+      {
+        "code": [
+          ":purple_square:"
+        ],
+        "ico": "🟪"
+      },
+      {
+        "code": [
+          ":brown_square:"
+        ],
+        "ico": "🟫"
+      },
+      {
+        "code": [
+          ":black_large_square:"
+        ],
+        "ico": "⬛"
+      },
+      {
+        "code": [
+          ":white_large_square:"
+        ],
+        "ico": "⬜"
+      },
+      {
+        "code": [
+          ":black_medium_square:"
+        ],
+        "ico": "◼️"
+      },
+      {
+        "code": [
+          ":white_medium_square:"
+        ],
+        "ico": "◻️"
+      },
+      {
+        "code": [
+          ":black_medium_small_square:"
+        ],
+        "ico": "◾"
+      },
+      {
+        "code": [
+          ":white_medium_small_square:"
+        ],
+        "ico": "◽"
+      },
+      {
+        "code": [
+          ":black_small_square:"
+        ],
+        "ico": "▪️"
+      },
+      {
+        "code": [
+          ":white_small_square:"
+        ],
+        "ico": "▫️"
+      },
+      {
+        "code": [
+          ":large_orange_diamond:"
+        ],
+        "ico": "🔶"
+      },
+      {
+        "code": [
+          ":large_blue_diamond:"
+        ],
+        "ico": "🔷"
+      },
+      {
+        "code": [
+          ":small_orange_diamond:"
+        ],
+        "ico": "🔸"
+      },
+      {
+        "code": [
+          ":small_blue_diamond:"
+        ],
+        "ico": "🔹"
+      },
+      {
+        "code": [
+          ":small_red_triangle:"
+        ],
+        "ico": "🔺"
+      },
+      {
+        "code": [
+          ":small_red_triangle_down:"
+        ],
+        "ico": "🔻"
+      },
+      {
+        "code": [
+          ":diamond_shape_with_a_dot_inside:"
+        ],
+        "ico": "💠"
+      },
+      {
+        "code": [
+          ":radio_button:"
+        ],
+        "ico": "🔘"
+      },
+      {
+        "code": [
+          ":white_square_button:"
+        ],
+        "ico": "🔳"
+      },
+      {
+        "code": [
+          ":black_square_button:"
+        ],
+        "ico": "🔲"
       }
     ]
   },
   {
     "categoryName": "Flags",
-    "categoryIcon": "🇨🇦",
+    "categoryIcon": "🏁",
     "emojis": [
+      {
+        "code": [
+          ":checkered_flag:"
+        ],
+        "ico": "🏁"
+      },
+      {
+        "code": [
+          ":triangular_flag_on_post:"
+        ],
+        "ico": "🚩"
+      },
+      {
+        "code": [
+          ":crossed_flags:"
+        ],
+        "ico": "🎌"
+      },
+      {
+        "code": [
+          ":black_flag:"
+        ],
+        "ico": "🏴"
+      },
+      {
+        "code": [
+          ":white_flag:"
+        ],
+        "ico": "🏳️"
+      },
+      {
+        "code": [
+          ":rainbow_flag:"
+        ],
+        "ico": "🏳️‍🌈"
+      },
+      {
+        "code": [
+          ":transgender_flag:"
+        ],
+        "ico": "🏳️‍⚧️"
+      },
+      {
+        "code": [
+          ":pirate_flag:"
+        ],
+        "ico": "🏴‍☠️"
+      },
+      {
+        "code": [
+          ":ascension_island:"
+        ],
+        "ico": "🇦🇨"
+      },
+      {
+        "code": [
+          ":andorra:"
+        ],
+        "ico": "🇦🇩"
+      },
+      {
+        "code": [
+          ":united_arab_emirates:"
+        ],
+        "ico": "🇦🇪"
+      },
+      {
+        "code": [
+          ":afghanistan:"
+        ],
+        "ico": "🇦🇫"
+      },
+      {
+        "code": [
+          ":antigua_barbuda:"
+        ],
+        "ico": "🇦🇬"
+      },
+      {
+        "code": [
+          ":anguilla:"
+        ],
+        "ico": "🇦🇮"
+      },
+      {
+        "code": [
+          ":albania:"
+        ],
+        "ico": "🇦🇱"
+      },
+      {
+        "code": [
+          ":armenia:"
+        ],
+        "ico": "🇦🇲"
+      },
+      {
+        "code": [
+          ":angola:"
+        ],
+        "ico": "🇦🇴"
+      },
+      {
+        "code": [
+          ":antarctica:"
+        ],
+        "ico": "🇦🇶"
+      },
+      {
+        "code": [
+          ":argentina:"
+        ],
+        "ico": "🇦🇷"
+      },
+      {
+        "code": [
+          ":american_samoa:"
+        ],
+        "ico": "🇦🇸"
+      },
+      {
+        "code": [
+          ":austria:"
+        ],
+        "ico": "🇦🇹"
+      },
+      {
+        "code": [
+          ":australia:"
+        ],
+        "ico": "🇦🇺"
+      },
+      {
+        "code": [
+          ":aruba:"
+        ],
+        "ico": "🇦🇼"
+      },
+      {
+        "code": [
+          ":aland_islands:"
+        ],
+        "ico": "🇦🇽"
+      },
+      {
+        "code": [
+          ":azerbaijan:"
+        ],
+        "ico": "🇦🇿"
+      },
+      {
+        "code": [
+          ":bosnia_herzegovina:"
+        ],
+        "ico": "🇧🇦"
+      },
+      {
+        "code": [
+          ":barbados:"
+        ],
+        "ico": "🇧🇧"
+      },
+      {
+        "code": [
+          ":bangladesh:"
+        ],
+        "ico": "🇧🇩"
+      },
+      {
+        "code": [
+          ":belgium:"
+        ],
+        "ico": "🇧🇪"
+      },
+      {
+        "code": [
+          ":burkina_faso:"
+        ],
+        "ico": "🇧🇫"
+      },
+      {
+        "code": [
+          ":bulgaria:"
+        ],
+        "ico": "🇧🇬"
+      },
+      {
+        "code": [
+          ":bahrain:"
+        ],
+        "ico": "🇧🇭"
+      },
+      {
+        "code": [
+          ":burundi:"
+        ],
+        "ico": "🇧🇮"
+      },
+      {
+        "code": [
+          ":benin:"
+        ],
+        "ico": "🇧🇯"
+      },
+      {
+        "code": [
+          ":st_barthelemy:"
+        ],
+        "ico": "🇧🇱"
+      },
+      {
+        "code": [
+          ":bermuda:"
+        ],
+        "ico": "🇧🇲"
+      },
+      {
+        "code": [
+          ":brunei:"
+        ],
+        "ico": "🇧🇳"
+      },
+      {
+        "code": [
+          ":bolivia:"
+        ],
+        "ico": "🇧🇴"
+      },
+      {
+        "code": [
+          ":caribbean_netherlands:"
+        ],
+        "ico": "🇧🇶"
+      },
+      {
+        "code": [
+          ":brazil:"
+        ],
+        "ico": "🇧🇷"
+      },
+      {
+        "code": [
+          ":bahamas:"
+        ],
+        "ico": "🇧🇸"
+      },
+      {
+        "code": [
+          ":bhutan:"
+        ],
+        "ico": "🇧🇹"
+      },
+      {
+        "code": [
+          ":bouvet_island:"
+        ],
+        "ico": "🇧🇻"
+      },
+      {
+        "code": [
+          ":botswana:"
+        ],
+        "ico": "🇧🇼"
+      },
       {
         "code": [
           ":belarus:"
@@ -3380,6 +9452,1290 @@
           ":chile:"
         ],
         "ico": "🇨🇱"
+      },
+      {
+        "code": [
+          ":cameroon:"
+        ],
+        "ico": "🇨🇲"
+      },
+      {
+        "code": [
+          ":cn:"
+        ],
+        "ico": "🇨🇳"
+      },
+      {
+        "code": [
+          ":colombia:"
+        ],
+        "ico": "🇨🇴"
+      },
+      {
+        "code": [
+          ":clipperton_island:"
+        ],
+        "ico": "🇨🇵"
+      },
+      {
+        "code": [
+          ":costa_rica:"
+        ],
+        "ico": "🇨🇷"
+      },
+      {
+        "code": [
+          ":cuba:"
+        ],
+        "ico": "🇨🇺"
+      },
+      {
+        "code": [
+          ":cape_verde:"
+        ],
+        "ico": "🇨🇻"
+      },
+      {
+        "code": [
+          ":curacao:"
+        ],
+        "ico": "🇨🇼"
+      },
+      {
+        "code": [
+          ":christmas_island:"
+        ],
+        "ico": "🇨🇽"
+      },
+      {
+        "code": [
+          ":cyprus:"
+        ],
+        "ico": "🇨🇾"
+      },
+      {
+        "code": [
+          ":czech_republic:"
+        ],
+        "ico": "🇨🇿"
+      },
+      {
+        "code": [
+          ":de:"
+        ],
+        "ico": "🇩🇪"
+      },
+      {
+        "code": [
+          ":diego_garcia:"
+        ],
+        "ico": "🇩🇬"
+      },
+      {
+        "code": [
+          ":djibouti:"
+        ],
+        "ico": "🇩🇯"
+      },
+      {
+        "code": [
+          ":denmark:"
+        ],
+        "ico": "🇩🇰"
+      },
+      {
+        "code": [
+          ":dominica:"
+        ],
+        "ico": "🇩🇲"
+      },
+      {
+        "code": [
+          ":dominican_republic:"
+        ],
+        "ico": "🇩🇴"
+      },
+      {
+        "code": [
+          ":algeria:"
+        ],
+        "ico": "🇩🇿"
+      },
+      {
+        "code": [
+          ":ceuta_melilla:"
+        ],
+        "ico": "🇪🇦"
+      },
+      {
+        "code": [
+          ":ecuador:"
+        ],
+        "ico": "🇪🇨"
+      },
+      {
+        "code": [
+          ":estonia:"
+        ],
+        "ico": "🇪🇪"
+      },
+      {
+        "code": [
+          ":egypt:"
+        ],
+        "ico": "🇪🇬"
+      },
+      {
+        "code": [
+          ":western_sahara:"
+        ],
+        "ico": "🇪🇭"
+      },
+      {
+        "code": [
+          ":eritrea:"
+        ],
+        "ico": "🇪🇷"
+      },
+      {
+        "code": [
+          ":es:"
+        ],
+        "ico": "🇪🇸"
+      },
+      {
+        "code": [
+          ":ethiopia:"
+        ],
+        "ico": "🇪🇹"
+      },
+      {
+        "code": [
+          ":eu:"
+        ],
+        "ico": "🇪🇺"
+      },
+      {
+        "code": [
+          ":finland:"
+        ],
+        "ico": "🇫🇮"
+      },
+      {
+        "code": [
+          ":fiji:"
+        ],
+        "ico": "🇫🇯"
+      },
+      {
+        "code": [
+          ":falkland_islands:"
+        ],
+        "ico": "🇫🇰"
+      },
+      {
+        "code": [
+          ":micronesia:"
+        ],
+        "ico": "🇫🇲"
+      },
+      {
+        "code": [
+          ":faroe_islands:"
+        ],
+        "ico": "🇫🇴"
+      },
+      {
+        "code": [
+          ":fr:"
+        ],
+        "ico": "🇫🇷"
+      },
+      {
+        "code": [
+          ":gabon:"
+        ],
+        "ico": "🇬🇦"
+      },
+      {
+        "code": [
+          ":gb:"
+        ],
+        "ico": "🇬🇧"
+      },
+      {
+        "code": [
+          ":grenada:"
+        ],
+        "ico": "🇬🇩"
+      },
+      {
+        "code": [
+          ":georgia:"
+        ],
+        "ico": "🇬🇪"
+      },
+      {
+        "code": [
+          ":french_guiana:"
+        ],
+        "ico": "🇬🇫"
+      },
+      {
+        "code": [
+          ":guernsey:"
+        ],
+        "ico": "🇬🇬"
+      },
+      {
+        "code": [
+          ":ghana:"
+        ],
+        "ico": "🇬🇭"
+      },
+      {
+        "code": [
+          ":gibraltar:"
+        ],
+        "ico": "🇬🇮"
+      },
+      {
+        "code": [
+          ":greenland:"
+        ],
+        "ico": "🇬🇱"
+      },
+      {
+        "code": [
+          ":gambia:"
+        ],
+        "ico": "🇬🇲"
+      },
+      {
+        "code": [
+          ":guinea:"
+        ],
+        "ico": "🇬🇳"
+      },
+      {
+        "code": [
+          ":guadeloupe:"
+        ],
+        "ico": "🇬🇵"
+      },
+      {
+        "code": [
+          ":equatorial_guinea:"
+        ],
+        "ico": "🇬🇶"
+      },
+      {
+        "code": [
+          ":greece:"
+        ],
+        "ico": "🇬🇷"
+      },
+      {
+        "code": [
+          ":south_georgia_south_sandwich_islands:"
+        ],
+        "ico": "🇬🇸"
+      },
+      {
+        "code": [
+          ":guatemala:"
+        ],
+        "ico": "🇬🇹"
+      },
+      {
+        "code": [
+          ":guam:"
+        ],
+        "ico": "🇬🇺"
+      },
+      {
+        "code": [
+          ":guinea_bissau:"
+        ],
+        "ico": "🇬🇼"
+      },
+      {
+        "code": [
+          ":guyana:"
+        ],
+        "ico": "🇬🇾"
+      },
+      {
+        "code": [
+          ":hong_kong:"
+        ],
+        "ico": "🇭🇰"
+      },
+      {
+        "code": [
+          ":heard_mcdonald_islands:"
+        ],
+        "ico": "🇭🇲"
+      },
+      {
+        "code": [
+          ":honduras:"
+        ],
+        "ico": "🇭🇳"
+      },
+      {
+        "code": [
+          ":croatia:"
+        ],
+        "ico": "🇭🇷"
+      },
+      {
+        "code": [
+          ":haiti:"
+        ],
+        "ico": "🇭🇹"
+      },
+      {
+        "code": [
+          ":hungary:"
+        ],
+        "ico": "🇭🇺"
+      },
+      {
+        "code": [
+          ":canary_islands:"
+        ],
+        "ico": "🇮🇨"
+      },
+      {
+        "code": [
+          ":indonesia:"
+        ],
+        "ico": "🇮🇩"
+      },
+      {
+        "code": [
+          ":ireland:"
+        ],
+        "ico": "🇮🇪"
+      },
+      {
+        "code": [
+          ":israel:"
+        ],
+        "ico": "🇮🇱"
+      },
+      {
+        "code": [
+          ":isle_of_man:"
+        ],
+        "ico": "🇮🇲"
+      },
+      {
+        "code": [
+          ":india:"
+        ],
+        "ico": "🇮🇳"
+      },
+      {
+        "code": [
+          ":british_indian_ocean_territory:"
+        ],
+        "ico": "🇮🇴"
+      },
+      {
+        "code": [
+          ":iraq:"
+        ],
+        "ico": "🇮🇶"
+      },
+      {
+        "code": [
+          ":iran:"
+        ],
+        "ico": "🇮🇷"
+      },
+      {
+        "code": [
+          ":iceland:"
+        ],
+        "ico": "🇮🇸"
+      },
+      {
+        "code": [
+          ":it:"
+        ],
+        "ico": "🇮🇹"
+      },
+      {
+        "code": [
+          ":jersey:"
+        ],
+        "ico": "🇯🇪"
+      },
+      {
+        "code": [
+          ":jamaica:"
+        ],
+        "ico": "🇯🇲"
+      },
+      {
+        "code": [
+          ":jordan:"
+        ],
+        "ico": "🇯🇴"
+      },
+      {
+        "code": [
+          ":jp:"
+        ],
+        "ico": "🇯🇵"
+      },
+      {
+        "code": [
+          ":kenya:"
+        ],
+        "ico": "🇰🇪"
+      },
+      {
+        "code": [
+          ":kyrgyzstan:"
+        ],
+        "ico": "🇰🇬"
+      },
+      {
+        "code": [
+          ":cambodia:"
+        ],
+        "ico": "🇰🇭"
+      },
+      {
+        "code": [
+          ":kiribati:"
+        ],
+        "ico": "🇰🇮"
+      },
+      {
+        "code": [
+          ":comoros:"
+        ],
+        "ico": "🇰🇲"
+      },
+      {
+        "code": [
+          ":st_kitts_nevis:"
+        ],
+        "ico": "🇰🇳"
+      },
+      {
+        "code": [
+          ":north_korea:"
+        ],
+        "ico": "🇰🇵"
+      },
+      {
+        "code": [
+          ":kr:"
+        ],
+        "ico": "🇰🇷"
+      },
+      {
+        "code": [
+          ":kuwait:"
+        ],
+        "ico": "🇰🇼"
+      },
+      {
+        "code": [
+          ":cayman_islands:"
+        ],
+        "ico": "🇰🇾"
+      },
+      {
+        "code": [
+          ":kazakhstan:"
+        ],
+        "ico": "🇰🇿"
+      },
+      {
+        "code": [
+          ":laos:"
+        ],
+        "ico": "🇱🇦"
+      },
+      {
+        "code": [
+          ":lebanon:"
+        ],
+        "ico": "🇱🇧"
+      },
+      {
+        "code": [
+          ":st_lucia:"
+        ],
+        "ico": "🇱🇨"
+      },
+      {
+        "code": [
+          ":liechtenstein:"
+        ],
+        "ico": "🇱🇮"
+      },
+      {
+        "code": [
+          ":sri_lanka:"
+        ],
+        "ico": "🇱🇰"
+      },
+      {
+        "code": [
+          ":liberia:"
+        ],
+        "ico": "🇱🇷"
+      },
+      {
+        "code": [
+          ":lesotho:"
+        ],
+        "ico": "🇱🇸"
+      },
+      {
+        "code": [
+          ":lithuania:"
+        ],
+        "ico": "🇱🇹"
+      },
+      {
+        "code": [
+          ":luxembourg:"
+        ],
+        "ico": "🇱🇺"
+      },
+      {
+        "code": [
+          ":latvia:"
+        ],
+        "ico": "🇱🇻"
+      },
+      {
+        "code": [
+          ":libya:"
+        ],
+        "ico": "🇱🇾"
+      },
+      {
+        "code": [
+          ":morocco:"
+        ],
+        "ico": "🇲🇦"
+      },
+      {
+        "code": [
+          ":monaco:"
+        ],
+        "ico": "🇲🇨"
+      },
+      {
+        "code": [
+          ":moldova:"
+        ],
+        "ico": "🇲🇩"
+      },
+      {
+        "code": [
+          ":montenegro:"
+        ],
+        "ico": "🇲🇪"
+      },
+      {
+        "code": [
+          ":st_martin:"
+        ],
+        "ico": "🇲🇫"
+      },
+      {
+        "code": [
+          ":madagascar:"
+        ],
+        "ico": "🇲🇬"
+      },
+      {
+        "code": [
+          ":marshall_islands:"
+        ],
+        "ico": "🇲🇭"
+      },
+      {
+        "code": [
+          ":macedonia:"
+        ],
+        "ico": "🇲🇰"
+      },
+      {
+        "code": [
+          ":mali:"
+        ],
+        "ico": "🇲🇱"
+      },
+      {
+        "code": [
+          ":myanmar:"
+        ],
+        "ico": "🇲🇲"
+      },
+      {
+        "code": [
+          ":mongolia:"
+        ],
+        "ico": "🇲🇳"
+      },
+      {
+        "code": [
+          ":macau:"
+        ],
+        "ico": "🇲🇴"
+      },
+      {
+        "code": [
+          ":northern_mariana_islands:"
+        ],
+        "ico": "🇲🇵"
+      },
+      {
+        "code": [
+          ":martinique:"
+        ],
+        "ico": "🇲🇶"
+      },
+      {
+        "code": [
+          ":mauritania:"
+        ],
+        "ico": "🇲🇷"
+      },
+      {
+        "code": [
+          ":montserrat:"
+        ],
+        "ico": "🇲🇸"
+      },
+      {
+        "code": [
+          ":malta:"
+        ],
+        "ico": "🇲🇹"
+      },
+      {
+        "code": [
+          ":mauritius:"
+        ],
+        "ico": "🇲🇺"
+      },
+      {
+        "code": [
+          ":maldives:"
+        ],
+        "ico": "🇲🇻"
+      },
+      {
+        "code": [
+          ":malawi:"
+        ],
+        "ico": "🇲🇼"
+      },
+      {
+        "code": [
+          ":mexico:"
+        ],
+        "ico": "🇲🇽"
+      },
+      {
+        "code": [
+          ":malaysia:"
+        ],
+        "ico": "🇲🇾"
+      },
+      {
+        "code": [
+          ":mozambique:"
+        ],
+        "ico": "🇲🇿"
+      },
+      {
+        "code": [
+          ":namibia:"
+        ],
+        "ico": "🇳🇦"
+      },
+      {
+        "code": [
+          ":new_caledonia:"
+        ],
+        "ico": "🇳🇨"
+      },
+      {
+        "code": [
+          ":niger:"
+        ],
+        "ico": "🇳🇪"
+      },
+      {
+        "code": [
+          ":norfolk_island:"
+        ],
+        "ico": "🇳🇫"
+      },
+      {
+        "code": [
+          ":nigeria:"
+        ],
+        "ico": "🇳🇬"
+      },
+      {
+        "code": [
+          ":nicaragua:"
+        ],
+        "ico": "🇳🇮"
+      },
+      {
+        "code": [
+          ":netherlands:"
+        ],
+        "ico": "🇳🇱"
+      },
+      {
+        "code": [
+          ":norway:"
+        ],
+        "ico": "🇳🇴"
+      },
+      {
+        "code": [
+          ":nepal:"
+        ],
+        "ico": "🇳🇵"
+      },
+      {
+        "code": [
+          ":nauru:"
+        ],
+        "ico": "🇳🇷"
+      },
+      {
+        "code": [
+          ":niue:"
+        ],
+        "ico": "🇳🇺"
+      },
+      {
+        "code": [
+          ":new_zealand:"
+        ],
+        "ico": "🇳🇿"
+      },
+      {
+        "code": [
+          ":oman:"
+        ],
+        "ico": "🇴🇲"
+      },
+      {
+        "code": [
+          ":panama:"
+        ],
+        "ico": "🇵🇦"
+      },
+      {
+        "code": [
+          ":peru:"
+        ],
+        "ico": "🇵🇪"
+      },
+      {
+        "code": [
+          ":french_polynesia:"
+        ],
+        "ico": "🇵🇫"
+      },
+      {
+        "code": [
+          ":papua_new_guinea:"
+        ],
+        "ico": "🇵🇬"
+      },
+      {
+        "code": [
+          ":philippines:"
+        ],
+        "ico": "🇵🇭"
+      },
+      {
+        "code": [
+          ":pakistan:"
+        ],
+        "ico": "🇵🇰"
+      },
+      {
+        "code": [
+          ":poland:"
+        ],
+        "ico": "🇵🇱"
+      },
+      {
+        "code": [
+          ":st_pierre_miquelon:"
+        ],
+        "ico": "🇵🇲"
+      },
+      {
+        "code": [
+          ":pitcairn_islands:"
+        ],
+        "ico": "🇵🇳"
+      },
+      {
+        "code": [
+          ":puerto_rico:"
+        ],
+        "ico": "🇵🇷"
+      },
+      {
+        "code": [
+          ":palestinian_territories:"
+        ],
+        "ico": "🇵🇸"
+      },
+      {
+        "code": [
+          ":portugal:"
+        ],
+        "ico": "🇵🇹"
+      },
+      {
+        "code": [
+          ":palau:"
+        ],
+        "ico": "🇵🇼"
+      },
+      {
+        "code": [
+          ":paraguay:"
+        ],
+        "ico": "🇵🇾"
+      },
+      {
+        "code": [
+          ":qatar:"
+        ],
+        "ico": "🇶🇦"
+      },
+      {
+        "code": [
+          ":reunion:"
+        ],
+        "ico": "🇷🇪"
+      },
+      {
+        "code": [
+          ":romania:"
+        ],
+        "ico": "🇷🇴"
+      },
+      {
+        "code": [
+          ":serbia:"
+        ],
+        "ico": "🇷🇸"
+      },
+      {
+        "code": [
+          ":ru:"
+        ],
+        "ico": "🇷🇺"
+      },
+      {
+        "code": [
+          ":rwanda:"
+        ],
+        "ico": "🇷🇼"
+      },
+      {
+        "code": [
+          ":saudi_arabia:"
+        ],
+        "ico": "🇸🇦"
+      },
+      {
+        "code": [
+          ":solomon_islands:"
+        ],
+        "ico": "🇸🇧"
+      },
+      {
+        "code": [
+          ":seychelles:"
+        ],
+        "ico": "🇸🇨"
+      },
+      {
+        "code": [
+          ":sudan:"
+        ],
+        "ico": "🇸🇩"
+      },
+      {
+        "code": [
+          ":sweden:"
+        ],
+        "ico": "🇸🇪"
+      },
+      {
+        "code": [
+          ":singapore:"
+        ],
+        "ico": "🇸🇬"
+      },
+      {
+        "code": [
+          ":st_helena:"
+        ],
+        "ico": "🇸🇭"
+      },
+      {
+        "code": [
+          ":slovenia:"
+        ],
+        "ico": "🇸🇮"
+      },
+      {
+        "code": [
+          ":svalbard_jan_mayen:"
+        ],
+        "ico": "🇸🇯"
+      },
+      {
+        "code": [
+          ":slovakia:"
+        ],
+        "ico": "🇸🇰"
+      },
+      {
+        "code": [
+          ":sierra_leone:"
+        ],
+        "ico": "🇸🇱"
+      },
+      {
+        "code": [
+          ":san_marino:"
+        ],
+        "ico": "🇸🇲"
+      },
+      {
+        "code": [
+          ":senegal:"
+        ],
+        "ico": "🇸🇳"
+      },
+      {
+        "code": [
+          ":somalia:"
+        ],
+        "ico": "🇸🇴"
+      },
+      {
+        "code": [
+          ":suriname:"
+        ],
+        "ico": "🇸🇷"
+      },
+      {
+        "code": [
+          ":south_sudan:"
+        ],
+        "ico": "🇸🇸"
+      },
+      {
+        "code": [
+          ":sao_tome_principe:"
+        ],
+        "ico": "🇸🇹"
+      },
+      {
+        "code": [
+          ":el_salvador:"
+        ],
+        "ico": "🇸🇻"
+      },
+      {
+        "code": [
+          ":sint_maarten:"
+        ],
+        "ico": "🇸🇽"
+      },
+      {
+        "code": [
+          ":syria:"
+        ],
+        "ico": "🇸🇾"
+      },
+      {
+        "code": [
+          ":swaziland:"
+        ],
+        "ico": "🇸🇿"
+      },
+      {
+        "code": [
+          ":tristan_da_cunha:"
+        ],
+        "ico": "🇹🇦"
+      },
+      {
+        "code": [
+          ":turks_caicos_islands:"
+        ],
+        "ico": "🇹🇨"
+      },
+      {
+        "code": [
+          ":chad:"
+        ],
+        "ico": "🇹🇩"
+      },
+      {
+        "code": [
+          ":french_southern_territories:"
+        ],
+        "ico": "🇹🇫"
+      },
+      {
+        "code": [
+          ":togo:"
+        ],
+        "ico": "🇹🇬"
+      },
+      {
+        "code": [
+          ":thailand:"
+        ],
+        "ico": "🇹🇭"
+      },
+      {
+        "code": [
+          ":tajikistan:"
+        ],
+        "ico": "🇹🇯"
+      },
+      {
+        "code": [
+          ":tokelau:"
+        ],
+        "ico": "🇹🇰"
+      },
+      {
+        "code": [
+          ":timor_leste:"
+        ],
+        "ico": "🇹🇱"
+      },
+      {
+        "code": [
+          ":turkmenistan:"
+        ],
+        "ico": "🇹🇲"
+      },
+      {
+        "code": [
+          ":tunisia:"
+        ],
+        "ico": "🇹🇳"
+      },
+      {
+        "code": [
+          ":tonga:"
+        ],
+        "ico": "🇹🇴"
+      },
+      {
+        "code": [
+          ":tr:"
+        ],
+        "ico": "🇹🇷"
+      },
+      {
+        "code": [
+          ":trinidad_tobago:"
+        ],
+        "ico": "🇹🇹"
+      },
+      {
+        "code": [
+          ":tuvalu:"
+        ],
+        "ico": "🇹🇻"
+      },
+      {
+        "code": [
+          ":taiwan:"
+        ],
+        "ico": "🇹🇼"
+      },
+      {
+        "code": [
+          ":tanzania:"
+        ],
+        "ico": "🇹🇿"
+      },
+      {
+        "code": [
+          ":ukraine:"
+        ],
+        "ico": "🇺🇦"
+      },
+      {
+        "code": [
+          ":uganda:"
+        ],
+        "ico": "🇺🇬"
+      },
+      {
+        "code": [
+          ":us_outlying_islands:"
+        ],
+        "ico": "🇺🇲"
+      },
+      {
+        "code": [
+          ":united_nations:"
+        ],
+        "ico": "🇺🇳"
+      },
+      {
+        "code": [
+          ":us:"
+        ],
+        "ico": "🇺🇸"
+      },
+      {
+        "code": [
+          ":uruguay:"
+        ],
+        "ico": "🇺🇾"
+      },
+      {
+        "code": [
+          ":uzbekistan:"
+        ],
+        "ico": "🇺🇿"
+      },
+      {
+        "code": [
+          ":vatican_city:"
+        ],
+        "ico": "🇻🇦"
+      },
+      {
+        "code": [
+          ":st_vincent_grenadines:"
+        ],
+        "ico": "🇻🇨"
+      },
+      {
+        "code": [
+          ":venezuela:"
+        ],
+        "ico": "🇻🇪"
+      },
+      {
+        "code": [
+          ":british_virgin_islands:"
+        ],
+        "ico": "🇻🇬"
+      },
+      {
+        "code": [
+          ":us_virgin_islands:"
+        ],
+        "ico": "🇻🇮"
+      },
+      {
+        "code": [
+          ":vietnam:"
+        ],
+        "ico": "🇻🇳"
+      },
+      {
+        "code": [
+          ":vanuatu:"
+        ],
+        "ico": "🇻🇺"
+      },
+      {
+        "code": [
+          ":wallis_futuna:"
+        ],
+        "ico": "🇼🇫"
+      },
+      {
+        "code": [
+          ":samoa:"
+        ],
+        "ico": "🇼🇸"
+      },
+      {
+        "code": [
+          ":kosovo:"
+        ],
+        "ico": "🇽🇰"
+      },
+      {
+        "code": [
+          ":yemen:"
+        ],
+        "ico": "🇾🇪"
+      },
+      {
+        "code": [
+          ":mayotte:"
+        ],
+        "ico": "🇾🇹"
+      },
+      {
+        "code": [
+          ":south_africa:"
+        ],
+        "ico": "🇿🇦"
+      },
+      {
+        "code": [
+          ":zambia:"
+        ],
+        "ico": "🇿🇲"
+      },
+      {
+        "code": [
+          ":zimbabwe:"
+        ],
+        "ico": "🇿🇼"
+      },
+      {
+        "code": [
+          ":england:"
+        ],
+        "ico": "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
+      },
+      {
+        "code": [
+          ":scotland:"
+        ],
+        "ico": "🏴󠁧󠁢󠁳󠁣󠁴󠁿"
+      },
+      {
+        "code": [
+          ":wales:"
+        ],
+        "ico": "🏴󠁧󠁢󠁷󠁬󠁳󠁿"
       }
     ]
   }
