@@ -12,6 +12,7 @@ export default function CommentIcon(props : CommandBarProps) {
     return (
         <IconButton
             aria-label="Insert Comment"
+            color="info"
             onClick={() => {
                 handleCommand(
                     comment,

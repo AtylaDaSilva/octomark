@@ -3,9 +3,9 @@
 import { useState } from "react";
 
 // MUI Components
-import { Container, Box } from "@mui/material";
+import { Container, ContainerProps, Box, BoxProps, styled } from "@mui/material";
 
-// Classes]
+// Classes
 import { TextSelector, selectedTextType } from "@/classes";
 
 // Components
@@ -24,6 +24,11 @@ import removeComments from "remark-remove-comments";
 // CSS
 import "@/css/globals.css";
 import "~/remark-github-blockquote-alert/alert.css"; // Styles for alert markdown
+
+// Themes
+import CssBaseline from '@mui/material/CssBaseline';
+import { ThemeProvider } from "@mui/material/styles";
+import { GitHubDark } from "@/themes";
 
 export default function Home() {
   // State
@@ -51,95 +56,96 @@ export default function Home() {
     if (markdown === "") setFootnoteCount(0);
   }
 
+  const AppContainer = styled(Container)<ContainerProps>(({ theme }) => ({
+    backgroundColor: theme.palette.background.paper
+  }))
+
+  const PreviewBox = styled(Box)<BoxProps>(({ theme }) => ({
+    border: `1px solid ${theme.palette.grey[700]}`,
+    borderRadius: theme.shape.borderRadius
+  }))
+
   return (
-    <Container
-      maxWidth={false}
-      disableGutters
-      sx={{
-        height: "100vh",
-        marginX: "0px",
-        display: "flex",
-        flexDirection: "column"
-      }}
-    >
-      <Box>
-        <Appbar title={markdownTitle} />
-      </Box>
-
-      <Box
-        margin="10px 35px"
-      >
-        <CommandBar
-          selection={selection}
-          setSelection={setSelection}
-          markdown={markdown}
-          setMarkdown={setMarkdown}
-          imageAltText={imageAltText}
-          setImageAltText={setImageAltText}
-          footnoteCount={footnoteCount}
-          setFootnoteCount={setFootnoteCount}
-        />
-      </Box>
-
-      <Box
-        display="flex"
-        flexGrow={1}
-        flexDirection="row"
-        justifyContent="center"
-        alignItems="center"
-        gap={5}
+    <ThemeProvider theme={GitHubDark}>
+      <CssBaseline />
+      <AppContainer
+        maxWidth={false}
+        disableGutters
         sx={{
-          backgroundColor: "#ffd700"
-        }}>
+          height: "100vh",
+          marginX: "0px",
+          display: "flex",
+          flexDirection: "column"
+        }}
+      >
+        <Box>
+          <Appbar title={markdownTitle} />
+        </Box>
         <Box
-          maxHeight={780}
-          minHeight={700}
-          maxWidth={600}
-          flexGrow={1}
-          padding={1}
-          overflow="auto"
-          sx={{
-            backgroundColor: "#a83232"
-          }}
+          margin="10px 35px"
         >
-          <MDEditor
+          <CommandBar
+            selection={selection}
+            setSelection={setSelection}
             markdown={markdown}
-            handleChange={setMarkdown}
-            handleEditorEvent={handleEditorEvent}
-            editorOptions={{
-              rows: 30,
-              fullWidth: true,
-              autoFocus: true,
-              placeholder: "Type your markdown here.",
-              variant: "filled",
-            }}
+            setMarkdown={setMarkdown}
+            imageAltText={imageAltText}
+            setImageAltText={setImageAltText}
+            footnoteCount={footnoteCount}
+            setFootnoteCount={setFootnoteCount}
           />
         </Box>
         <Box
-          maxHeight={780}
-          minHeight={700}
-          maxWidth={600}
+          display="flex"
           flexGrow={1}
-          padding={1}
-          overflow="auto"
-          sx={{
-            border: "1px solid black",
-            backgroundColor: "#3236a8"
-          }}
-        >
-          <MDPreview
-            markdown={markdown}
-            previewOptions={{
-              remarkPlugins: [
-                remarkGfm,
-                remarkAlert,
-                remarkGemoji,
-                removeComments
-              ],
-            }}
-          />
+          flexDirection="row"
+          justifyContent="center"
+          alignItems="center"
+          gap={5}
+          >
+          <Box
+            maxHeight={780}
+            minHeight={700}
+            maxWidth={600}
+            flexGrow={1}
+            padding={1}
+            overflow="auto"
+          >
+            <MDEditor
+              markdown={markdown}
+              handleChange={setMarkdown}
+              handleEditorEvent={handleEditorEvent}
+              editorOptions={{
+                rows: 30,
+                fullWidth: true,
+                autoFocus: true,
+                placeholder: "Type your markdown here.",
+                variant: "outlined",
+              }}
+            />
+          </Box>
+          <PreviewBox
+            maxHeight={725}
+            minHeight={725}
+            maxWidth={600}
+            flexGrow={1}
+            padding={2}
+            overflow="auto"
+          >
+            <MDPreview
+              markdown={markdown}
+              previewOptions={{
+                remarkPlugins: [
+                  remarkGfm,
+                  remarkAlert,
+                  remarkGemoji,
+                  removeComments
+                ],
+              }}
+            />
+          </PreviewBox>
         </Box>
-      </Box>
-    </Container>
+      </AppContainer>
+    </ThemeProvider>
   );
 }

@@ -36,6 +36,7 @@ export default function TitleIcon(props: CommandBarProps) {
             <IconButton
                 aria-label="Format Title"
                 onClick={handleClick}
+                color="info"
             >
                 <Title />
             </IconButton>

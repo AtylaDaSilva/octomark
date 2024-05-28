@@ -39,6 +39,7 @@ export default function AlertIcon(props: CommandBarProps) {
         <>
             <IconButton
                 aria-label="Format Alert"
+                color="info"
                 onClick={handleClick}
             >
                 <PriorityHigh />

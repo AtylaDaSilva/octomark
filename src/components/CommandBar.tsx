@@ -1,5 +1,5 @@
 // MUI Components
-import { AppBar, Toolbar } from "@mui/material";
+import { AppBar, AppBarProps, Toolbar, styled } from "@mui/material";
 
 // Command Icons
 import {
@@ -24,9 +24,15 @@ import {
 import { Dispatch, SetStateAction } from "react";
 import type { selectedTextType } from "@/classes";
 
+const CustomAppBar = styled(AppBar)<AppBarProps>(({theme}) => ({
+    backgroundColor: theme.palette.background.paper,
+    border: `1px solid ${theme.palette.grey[700]}`,
+    borderRadius: theme.shape.borderRadius
+}))
+
 export default function CommandBar(props: CommandBarProps) {
     return (
-        <AppBar
+        <CustomAppBar
             position="static"
             color="secondary"
         >
@@ -79,7 +85,7 @@ export default function CommandBar(props: CommandBarProps) {
                     </li>
                 </ul>
             </Toolbar>
-        </AppBar>
+        </CustomAppBar>
     );
 }
 

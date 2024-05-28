@@ -22,6 +22,7 @@ export default function LinkIcon(props: CommandBarProps) {
         <>
             <IconButton
                 aria-label="Insert Link"
+                color="info"
                 onClick={() => setIsModalOpen(true)}
             >
                 <Link />

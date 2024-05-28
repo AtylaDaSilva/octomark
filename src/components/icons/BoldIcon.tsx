@@ -12,6 +12,7 @@ export default function BoldIcon(props : CommandBarProps) {
     return (
         <IconButton
             aria-label="Format Bold"
+            color="info"
             onClick={() => {
                 handleCommand(
                     bold,

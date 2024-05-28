@@ -1,14 +1,20 @@
 // MUI Components
-import { Toolbar, AppBar, Typography, Container, Box } from "@mui/material";
+import { Toolbar, AppBar, AppBarProps, Typography, Container, Box, styled } from "@mui/material";
 
 // Component types
 export type AppbarType = {
     title: string
 }
 
+const CustomAppBar = styled(AppBar)<AppBarProps>(({ theme }) => ({
+    borderBottom: `1px solid ${theme.palette.grey[700]}`,
+    backgroundColor: theme.palette.background.default
+}));
+
 export default function Appbar({ title }: AppbarType) {
+
     return (
-        <AppBar position="static">
+        <CustomAppBar position="static">
             <Toolbar>
                 <Container
                     maxWidth={false}
@@ -16,7 +22,7 @@ export default function Appbar({ title }: AppbarType) {
                         position: "relative",
                         display: "flex",
                         alignItems: "center",
-                        justifyContent: "center"
+                        justifyContent: "center",
                     }}
                 >
                     <Box position="absolute" left={0}>
@@ -24,7 +30,7 @@ export default function Appbar({ title }: AppbarType) {
                             variant="h2"
                             fontSize="2rem"
                         >
-                            App Title
+                            OctoMark
                         </Typography>
                     </Box>
                     <Box>
@@ -37,6 +43,6 @@ export default function Appbar({ title }: AppbarType) {
                     </Box>
                 </Container>
             </Toolbar>
-        </AppBar>
+        </CustomAppBar>
     );
 }

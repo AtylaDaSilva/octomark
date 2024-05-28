@@ -40,6 +40,7 @@ export default function ImageIcon(props: CommandBarProps) {
         <>
             <IconButton
                 aria-label="Insert Table"
+                color="info"
                 onClick={() => setIsModalOpen(true)}
             >
                 <GridOn />

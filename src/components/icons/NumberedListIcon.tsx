@@ -12,6 +12,7 @@ export default function NumberedListIcon(props : CommandBarProps) {
     return (
         <IconButton
             aria-label="Insert Numbered List"
+            color="info"
             onClick={() => {
                 handleCommand(
                     numberedList,

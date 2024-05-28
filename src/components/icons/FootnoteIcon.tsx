@@ -12,6 +12,7 @@ export default function FootnoteIcon(props : CommandBarProps) {
     return (
         <IconButton
             aria-label="Insert Task List"
+            color="info"
             onClick={() => {
                 handleCommand(
                     footnote,

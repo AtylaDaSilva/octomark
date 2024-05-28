@@ -12,6 +12,7 @@ export default function StrikethroughIcon(props : CommandBarProps) {
     return (
         <IconButton
             aria-label="Format Strikethrough"
+            color="info"
             onClick={() => {
                 handleCommand(
                     strikethrough,

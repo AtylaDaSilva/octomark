@@ -67,6 +67,7 @@ export default function EmojiIcon(props: CommandBarProps) {
         <>
             <IconButton
                 aria-label="Format Title"
+                color="info"
                 onClick={handleClick}
             >
                 <SentimentSatisfiedAlt />

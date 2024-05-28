@@ -23,6 +23,7 @@ export default function ImageIcon(props: CommandBarProps) {
         <>
             <IconButton
                 aria-label="Insert Image"
+                color="info"
                 onClick={() => setIsModalOpen(true)}
             >
                 <Image />

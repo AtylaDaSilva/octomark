@@ -12,6 +12,7 @@ export default function ItalicIcon(props : CommandBarProps) {
     return (
         <IconButton
             aria-label="Format Italic"
+            color="info"
             onClick={() => {
                 handleCommand(
                     italic,

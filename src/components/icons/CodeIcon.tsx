@@ -12,6 +12,7 @@ export default function CodeIcon(props : CommandBarProps) {
     return (
         <IconButton
             aria-label="Format Code"
+            color="info"
             onClick={() => {
                 handleCommand(
                     code,

@@ -12,6 +12,7 @@ export default function BulletedListIcon(props : CommandBarProps) {
     return (
         <IconButton
             aria-label="Insert Bulleted List"
+            color="info"
             onClick={() => {
                 handleCommand(
                     bulletedList,
