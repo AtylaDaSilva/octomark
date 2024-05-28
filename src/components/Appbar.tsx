@@ -8,7 +8,7 @@ export type AppbarType = {
 
 const CustomAppBar = styled(AppBar)<AppBarProps>(({ theme }) => ({
     borderBottom: `1px solid ${theme.palette.grey[700]}`,
-    backgroundColor: theme.palette.background.default
+    backgroundColor: theme.palette.background.paper
 }));
 
 export default function Appbar({ title }: AppbarType) {

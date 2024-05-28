@@ -25,7 +25,7 @@ import { Dispatch, SetStateAction } from "react";
 import type { selectedTextType } from "@/classes";
 
 const CustomAppBar = styled(AppBar)<AppBarProps>(({theme}) => ({
-    backgroundColor: theme.palette.background.paper,
+    backgroundColor: theme.palette.background.default,
     border: `1px solid ${theme.palette.grey[700]}`,
     borderRadius: theme.shape.borderRadius
 }))

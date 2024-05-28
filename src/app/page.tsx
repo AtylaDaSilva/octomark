@@ -56,10 +56,6 @@ export default function Home() {
     if (markdown === "") setFootnoteCount(0);
   }
 
-  const AppContainer = styled(Container)<ContainerProps>(({ theme }) => ({
-    backgroundColor: theme.palette.background.paper
-  }))
-
   const PreviewBox = styled(Box)<BoxProps>(({ theme }) => ({
     border: `1px solid ${theme.palette.grey[700]}`,
     borderRadius: theme.shape.borderRadius
@@ -68,7 +64,7 @@ export default function Home() {
   return (
     <ThemeProvider theme={GitHubDark}>
       <CssBaseline />
-      <AppContainer
+      <Container
         maxWidth={false}
         disableGutters
         sx={{
@@ -118,7 +114,7 @@ export default function Home() {
               editorOptions={{
                 rows: 30,
                 fullWidth: true,
-                autoFocus: true,
+                autoFocus: false,
                 placeholder: "Type your markdown here.",
                 variant: "outlined",
               }}
@@ -145,7 +141,7 @@ export default function Home() {
             />
           </PreviewBox>
         </Box>
-      </AppContainer>
+      </Container>
     </ThemeProvider>
   );
 }

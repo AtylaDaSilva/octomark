@@ -16,8 +16,9 @@ const GitHubDark = createTheme({
             "700": "#2f353c"
         },
         background: {
-            paper: "#0d1117",
-            default: "#010409"
+            paper: "#010409",
+            default: "#0d1117",
+            // default: "#010409"
         },
         text: {
             primary: "#e6edf3"
