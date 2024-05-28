@@ -3,7 +3,7 @@
 import { useState } from "react";
 
 // MUI Components
-import { IconButton } from "@mui/material";
+import { IconButton, Tooltip } from "@mui/material";
 import { Link } from "@mui/icons-material";
 
 // Components
@@ -20,19 +20,21 @@ export default function LinkIcon(props: CommandBarProps) {
     const [uri, setUri] = useState("");
     return (
         <>
-            <IconButton
-                aria-label="Insert Link"
-                color="info"
-                onClick={() => setIsModalOpen(true)}
-            >
-                <Link />
-            </IconButton>
+            <Tooltip title="Link">
+                <IconButton
+                    aria-label="Insert Link"
+                    color="info"
+                    onClick={() => setIsModalOpen(true)}
+                >
+                    <Link />
+                </IconButton>
+            </Tooltip>
             <FormModal
                 isOpen={isModalOpen}
                 handleSubmit={() => {
                     handleCommand(
                         link,
-                        { selection: props.selection, uri: uri},
+                        { selection: props.selection, linkProps: { uri }},
                         props.setSelection,
                         props.markdown,
                         props.setMarkdown

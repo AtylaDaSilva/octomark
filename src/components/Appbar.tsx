@@ -1,17 +1,32 @@
 // MUI Components
-import { Toolbar, AppBar, AppBarProps, Typography, Container, Box, styled } from "@mui/material";
+import { Toolbar, AppBar, AppBarProps, Typography, TextField, TextFieldProps, Container, Box, styled } from "@mui/material";
+
+// Types
+import { Dispatch, SetStateAction } from "react";
 
 // Component types
 export type AppbarType = {
-    title: string
+    markdownTitle: {
+        state: string,
+        updater: Dispatch<SetStateAction<string>>
+    }
 }
 
+// Utils
+import { capitalize } from "@/functions/capitalize";
+
+// Styled Components
 const CustomAppBar = styled(AppBar)<AppBarProps>(({ theme }) => ({
     borderBottom: `1px solid ${theme.palette.grey[700]}`,
-    backgroundColor: theme.palette.background.paper
+    backgroundColor: theme.palette.background.paper,
+    padding: "5px 0px",
 }));
 
-export default function Appbar({ title }: AppbarType) {
+const MarkdownTitleField = styled(TextField)<TextFieldProps>(({ theme }) => ({
+    border: "none"
+}))
+
+export default function Appbar({ markdownTitle }: AppbarType) {
 
     return (
         <CustomAppBar position="static">
@@ -33,13 +48,19 @@ export default function Appbar({ title }: AppbarType) {
                             OctoMark
                         </Typography>
                     </Box>
-                    <Box>
-                        <Typography
-                            variant="h1"
-                            fontSize="1.5rem"
-                        >
-                            {title}
-                        </Typography>
+                    <Box width="50%">
+                        <MarkdownTitleField
+                            inputProps={{
+                                readOnly: true,
+                                style: {
+                                    textAlign: "center",
+                                    fontSize: "1.2rem"
+                                },
+                            }}
+                            fullWidth
+                            onChange={({target}) => markdownTitle.updater(target.value)}
+                            value={capitalize(markdownTitle.state)}
+                        />
                     </Box>
                 </Container>
             </Toolbar>

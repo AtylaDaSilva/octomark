@@ -22,6 +22,7 @@ export type ModalPropsType = {
 
 export type FormField = {
     type: "text" | "number" | "select",
+    color?: 'primary' | 'secondary' | 'error' | 'info' | 'success' | 'warning';
     options?: selectOption[]
     value?: string | number,
     required?: boolean,

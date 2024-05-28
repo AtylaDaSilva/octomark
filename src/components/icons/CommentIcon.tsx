@@ -1,5 +1,5 @@
 // MUI Components
-import { IconButton } from "@mui/material";
+import { IconButton, Tooltip } from "@mui/material";
 import { CodeOff } from "@mui/icons-material";
 
 // Commands
@@ -10,20 +10,22 @@ import { CommandBarProps } from "../CommandBar";
 
 export default function CommentIcon(props : CommandBarProps) {
     return (
-        <IconButton
-            aria-label="Insert Comment"
-            color="info"
-            onClick={() => {
-                handleCommand(
-                    comment,
-                    { selection: props.selection },
-                    props.setSelection,
-                    props.markdown,
-                    props.setMarkdown
-                );
-            }}
-        >
-            <CodeOff />
-        </IconButton>
+        <Tooltip title="Comment">
+            <IconButton
+                aria-label="Insert Comment"
+                color="info"
+                onClick={() => {
+                    handleCommand(
+                        comment,
+                        { selection: props.selection },
+                        props.setSelection,
+                        props.markdown,
+                        props.setMarkdown
+                    );
+                }}
+            >
+                <CodeOff />
+            </IconButton>
+        </Tooltip>
     );
 }

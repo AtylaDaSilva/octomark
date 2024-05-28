@@ -2,7 +2,7 @@
 import { useState } from "react";
 
 // MUI Components
-import { IconButton, Menu, MenuItem } from "@mui/material";
+import { IconButton, Menu, MenuItem, Tooltip } from "@mui/material";
 import { Title } from "@mui/icons-material";
 
 // Commands
@@ -33,13 +33,15 @@ export default function TitleIcon(props: CommandBarProps) {
 
     return (
         <>
-            <IconButton
-                aria-label="Format Title"
-                onClick={handleClick}
-                color="info"
-            >
-                <Title />
-            </IconButton>
+            <Tooltip title="Title">
+                <IconButton
+                    aria-label="Format Title"
+                    onClick={handleClick}
+                    color="info"
+                >
+                    <Title />
+                </IconButton>
+            </Tooltip>
             <Menu
                 anchorEl={anchorElement}
                 open={isOpen}

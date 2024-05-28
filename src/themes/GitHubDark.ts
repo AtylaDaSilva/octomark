@@ -18,10 +18,10 @@ const GitHubDark = createTheme({
         background: {
             paper: "#010409",
             default: "#0d1117",
-            // default: "#010409"
         },
         text: {
-            primary: "#e6edf3"
+            primary: "#e6edf3",
+            secondary: "#e6edf3"
         }
     },
     shape: {

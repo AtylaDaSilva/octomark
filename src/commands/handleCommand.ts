@@ -3,6 +3,7 @@ import { Dispatch, SetStateAction } from "react";
 import { selectedTextType } from "@/classes";
 import type { alertLevelType } from "./alert";
 import type { headingLevelType } from "./heading";
+import type { linkProps } from "./link";
 import type { imagePropsType } from "./image";
 import type { tablePropsType } from "./table";
 
@@ -38,6 +39,7 @@ export type commandFuncArgsType = {
     headingLevel?: headingLevelType,
     alertLevel?: alertLevelType,
     emojiCode?: string,
+    linkProps?: linkProps,
     tableProps?: tablePropsType,
     imageProps?: imagePropsType
     state?: {

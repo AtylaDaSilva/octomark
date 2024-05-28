@@ -3,7 +3,7 @@
 import { useState } from "react";
 
 // MUI Components
-import { IconButton } from "@mui/material";
+import { IconButton, Tooltip } from "@mui/material";
 import { GridOn } from "@mui/icons-material";
 
 // Components
@@ -38,13 +38,15 @@ export default function ImageIcon(props: CommandBarProps) {
 
     return (
         <>
-            <IconButton
-                aria-label="Insert Table"
-                color="info"
-                onClick={() => setIsModalOpen(true)}
-            >
-                <GridOn />
-            </IconButton>
+            <Tooltip title="Table">
+                <IconButton
+                    aria-label="Insert Table"
+                    color="info"
+                    onClick={() => setIsModalOpen(true)}
+                >
+                    <GridOn />
+                </IconButton>
+            </Tooltip>
             <FormModal
                 isOpen={isModalOpen}
                 handleSubmit={() => {

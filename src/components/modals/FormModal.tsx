@@ -35,6 +35,7 @@ export default function FormModal({
                             <TextField
                                 variant={field?.variant || "standard"}
                                 type={field.type}
+                                color={field.color || "primary"}
                                 label={capitalize(field.label)}
                                 required={field.required}
                                 value={field.value}

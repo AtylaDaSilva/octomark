@@ -2,7 +2,7 @@
 import { useState } from "react";
 
 // MUI Components
-import { IconButton, Menu, MenuItem } from "@mui/material";
+import { IconButton, Menu, MenuItem, Tooltip } from "@mui/material";
 import { PriorityHigh } from "@mui/icons-material";
 
 // Utility functions
@@ -37,13 +37,15 @@ export default function AlertIcon(props: CommandBarProps) {
 
     return (
         <>
-            <IconButton
-                aria-label="Format Alert"
-                color="info"
-                onClick={handleClick}
-            >
-                <PriorityHigh />
-            </IconButton>
+            <Tooltip title="Alert">
+                <IconButton
+                    aria-label="Format Alert"
+                    color="info"
+                    onClick={handleClick}
+                >
+                    <PriorityHigh />
+                </IconButton>
+            </Tooltip>
             <Menu
                 anchorEl={anchorElement}
                 open={isOpen}

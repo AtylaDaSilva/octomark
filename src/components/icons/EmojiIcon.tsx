@@ -2,7 +2,7 @@
 import { useState } from "react";
 
 // MUI Components
-import { IconButton, Grid, Menu, Tabs, Tab } from "@mui/material";
+import { IconButton, Grid, Menu, Tabs, Tab, Tooltip } from "@mui/material";
 import { SentimentSatisfiedAlt } from "@mui/icons-material";
 
 // Commands
@@ -65,18 +65,20 @@ export default function EmojiIcon(props: CommandBarProps) {
 
     return (
         <>
-            <IconButton
-                aria-label="Format Title"
-                color="info"
-                onClick={handleClick}
-            >
-                <SentimentSatisfiedAlt />
-            </IconButton>
+            <Tooltip title="Emoji">
+                <IconButton
+                    aria-label="Insert Emoji"
+                    color="info"
+                    onClick={handleClick}
+                >
+                    <SentimentSatisfiedAlt />
+                </IconButton>
+            </Tooltip>
             <Menu
                 anchorEl={anchorElement}
                 open={isOpen}
                 onClose={handleClose}
-                sx={{ overflowY: "auto", minWidth: "1485px", maxWidth: "1485px" }}
+                //sx={{ overflow: "hidden", minWidth: "1550px", maxWidth: "1550px" }}
             >
                 <Grid
                     container

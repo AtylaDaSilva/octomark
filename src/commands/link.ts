@@ -7,10 +7,14 @@ import { commandFuncArgsType } from "./handleCommand";
  * @param selection Selection state.
  * @returns selectedTextType object
  */
-export function link({ selection, uri } : commandFuncArgsType) : selectedTextType {
+export function link({ selection, linkProps } : commandFuncArgsType) : selectedTextType {
     const newSelection : selectedTextType = {
         ...selection,
-        text: `[${selection?.text}](${uri})`
+        text: `[${selection?.text}](${linkProps?.uri})`
     };
     return newSelection;
+}
+
+export type linkProps = {
+    uri: string
 }

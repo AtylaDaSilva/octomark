@@ -3,7 +3,7 @@
 import { useState } from "react";
 
 // MUI Components
-import { Container, ContainerProps, Box, BoxProps, styled } from "@mui/material";
+import { Container, Box, BoxProps, styled } from "@mui/material";
 
 // Classes
 import { TextSelector, selectedTextType } from "@/classes";
@@ -30,10 +30,14 @@ import CssBaseline from '@mui/material/CssBaseline';
 import { ThemeProvider } from "@mui/material/styles";
 import { GitHubDark } from "@/themes";
 
+// Utils
+import { capitalize } from "@/functions/capitalize";
+import { DEFAULT_MARKDOWN_TITLE, MARKDOWN_SYMBOLS } from "@/utils/constants";
+
 export default function Home() {
   // State
-  const [markdownTitle, setMarkdownTitle] = useState<string>("untitled markdown");
-  const [markdown, setMarkdown] = useState<string>("# Hello, World!");
+  const [markdownTitle, setMarkdownTitle] = useState<string>(() => capitalize(DEFAULT_MARKDOWN_TITLE));
+  const [markdown, setMarkdown] = useState<string>(() => `# ${capitalize(DEFAULT_MARKDOWN_TITLE)}`);
   const [selection, setSelection] = useState<selectedTextType>({
     text: "",
     startPosition: -1,
@@ -49,6 +53,13 @@ export default function Home() {
    * @returns void or null.
    */
   const handleEditorEvent = ({ target }: any) => {
+    const regExp = new RegExp(`[${MARKDOWN_SYMBOLS.join("")}]`, "g");
+    const newLine = markdown.indexOf("\n");
+    const newTitle = (newLine === -1)
+      ? markdown
+      : markdown.slice(0, newLine);
+    setMarkdownTitle(newTitle.replaceAll(regExp, "").trim() || DEFAULT_MARKDOWN_TITLE);
+
     const selector = new TextSelector(target, markdown);
     const sel = selector.getSelectedText();
     setSelection(sel);
@@ -56,6 +67,7 @@ export default function Home() {
     if (markdown === "") setFootnoteCount(0);
   }
 
+  // Styled Components
   const PreviewBox = styled(Box)<BoxProps>(({ theme }) => ({
     border: `1px solid ${theme.palette.grey[700]}`,
     borderRadius: theme.shape.borderRadius
@@ -75,10 +87,13 @@ export default function Home() {
         }}
       >
         <Box>
-          <Appbar title={markdownTitle} />
+          <Appbar markdownTitle={{
+            state: markdownTitle,
+            updater: setMarkdownTitle
+          }} />
         </Box>
         <Box
-          margin="10px 35px"
+          margin="10px 250px -10px 250px"
         >
           <CommandBar
             selection={selection}
