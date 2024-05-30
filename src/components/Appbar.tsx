@@ -1,3 +1,6 @@
+// Next Components
+import Link from "next/link";
+
 // MUI Components
 import { Toolbar, AppBar, AppBarProps, Typography, TextField, TextFieldProps, Container, Box, styled } from "@mui/material";
 
@@ -24,7 +27,7 @@ const CustomAppBar = styled(AppBar)<AppBarProps>(({ theme }) => ({
 
 const MarkdownTitleField = styled(TextField)<TextFieldProps>(({ theme }) => ({
     border: "none"
-}))
+}));
 
 export default function Appbar({ markdownTitle }: AppbarType) {
 
@@ -45,7 +48,7 @@ export default function Appbar({ markdownTitle }: AppbarType) {
                             variant="h2"
                             fontSize="2rem"
                         >
-                            OctoMark
+                            <Link href="/" className="no-text-decor">OctoMark</Link>
                         </Typography>
                     </Box>
                     <Box width="50%">
