@@ -4,6 +4,9 @@ import Link from "next/link";
 // MUI Components
 import { Toolbar, AppBar, AppBarProps, Typography, TextField, TextFieldProps, Container, Box, styled } from "@mui/material";
 
+// App Components
+import { GitHubLink, LinkedInLink } from "./links";
+
 // Types
 import { Dispatch, SetStateAction } from "react";
 
@@ -51,7 +54,7 @@ export default function Appbar({ markdownTitle }: AppbarType) {
                             <Link href="/" className="no-text-decor">OctoMark</Link>
                         </Typography>
                     </Box>
-                    <Box width="50%">
+                    <Box flexGrow={1} margin="0px 250px">
                         <MarkdownTitleField
                             inputProps={{
                                 readOnly: true,
@@ -64,6 +67,10 @@ export default function Appbar({ markdownTitle }: AppbarType) {
                             onChange={({target}) => markdownTitle.updater(target.value)}
                             value={capitalize(markdownTitle.state)}
                         />
+                    </Box>
+                    <Box>
+                            <GitHubLink />
+                            <LinkedInLink />
                     </Box>
                 </Container>
             </Toolbar>
