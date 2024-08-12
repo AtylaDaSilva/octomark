@@ -8,7 +8,7 @@ import '@fontsource/roboto/700.css';
 
 export const metadata: Metadata = {
   title: "OctoMark | Markdown Editor",
-  description: "CommonMark and GitHub Flavored Markdown editor. ",
+  description: "CommonMark and GitHub-Flavored Markdown Editor. ",
 };
 
 export default function RootLayout({

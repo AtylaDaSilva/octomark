@@ -18,3 +18,8 @@ body {
 .no-list-style {
     list-style: none;
 }
+
+.no-text-decor {
+    text-decoration: none;
+    color: inherit;
+}
