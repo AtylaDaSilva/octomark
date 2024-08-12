@@ -37,7 +37,7 @@ export default function CommandBar(props: CommandBarProps) {
             color="secondary"
         >
             <Toolbar>
-                <ul className="no-list-style flex flex-row">
+                <ul className="no-list-style flex flex-row flex-grow-1 justify-contents-center">
                     <li>
                         <TitleIcon {...props} />
                     </li>

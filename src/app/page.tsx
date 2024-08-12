@@ -93,7 +93,7 @@ export default function Home() {
           }} />
         </Box>
         <Box
-          margin="10px 250px -10px 250px"
+          margin="10px 10px"
         >
           <CommandBar
             selection={selection}
