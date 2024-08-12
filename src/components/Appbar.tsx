@@ -54,7 +54,7 @@ export default function Appbar({ markdownTitle }: AppbarType) {
                             <Link href="/" className="no-text-decor">OctoMark</Link>
                         </Typography>
                     </Box>
-                    <Box flexGrow={1} margin="0px 250px">
+                    <Box flexGrow={1} margin="0px auto" maxWidth={300}>
                         <MarkdownTitleField
                             inputProps={{
                                 readOnly: true,
