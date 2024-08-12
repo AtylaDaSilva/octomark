@@ -56,7 +56,8 @@ export default function ImageIcon(props: CommandBarProps) {
                         required: true,
                         columns: 12,
                         handleChange: setUri,
-                        value: uri
+                        value: uri,
+                        variant: "outlined"
                     },
                     {
                         type: "text",
@@ -64,7 +65,8 @@ export default function ImageIcon(props: CommandBarProps) {
                         required: true,
                         columns: 12,
                         handleChange: props.setImageAltText,
-                        value: props.imageAltText
+                        value: props.imageAltText,
+                        variant: "outlined"
                     }
                 ]}
             />

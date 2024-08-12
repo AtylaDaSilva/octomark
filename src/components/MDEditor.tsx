@@ -4,6 +4,9 @@ import { Dispatch, SetStateAction } from "react";
 // MUI Components
 import { TextField } from "@mui/material";
 
+// Constants
+import { DEFAULT_EDITOR_FONT } from "@/utils/constants";
+
 // Component types
 export type MDEditorType = {
     markdown: string,
@@ -49,6 +52,9 @@ export default function MDEditor(
             onChange={(event) => handleChange(event.target.value)}
             onClick={handleEditorEvent}
             onKeyUp={handleEditorEvent}
+            inputProps={{style: {
+                fontFamily: DEFAULT_EDITOR_FONT
+            }}}
         />
     );
 }
