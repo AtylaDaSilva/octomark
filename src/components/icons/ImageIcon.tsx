@@ -10,12 +10,14 @@ import { Image } from "@mui/icons-material";
 import { FormModal } from "../modals";
 
 // Types
-import { CommandBarProps } from "../CommandBar";
+import { stateType } from "@/app/page";
 
 // Commands
 import { handleCommand, image } from "@/commands";
 
-export default function ImageIcon(props: CommandBarProps) {
+export default function ImageIcon(
+    { selection, setSelection, markdown, setMarkdown, imageAltText, setImageAltText }: stateType
+) {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [uri, setUri] = useState("");
 
@@ -33,19 +35,21 @@ export default function ImageIcon(props: CommandBarProps) {
             <FormModal
                 isOpen={isModalOpen}
                 handleSubmit={() => {
-                    handleCommand(
-                        image,
-                        {
-                            selection: props.selection,
-                            imageProps: {
-                                uri,
-                                altText: props?.imageAltText
-                            }
-                        },
-                        props.setSelection,
-                        props.markdown,
-                        props.setMarkdown
-                    );
+                    if (selection && setSelection && markdown && setMarkdown && imageAltText) {
+                        handleCommand(
+                            image,
+                            {
+                                selection: selection,
+                                imageProps: {
+                                    uri,
+                                    altText: imageAltText
+                                }
+                            },
+                            setSelection,
+                            markdown,
+                            setMarkdown
+                        );
+                    }
                     setIsModalOpen(false);
                 }}
                 handleClose={() => setIsModalOpen(false)}
@@ -64,8 +68,8 @@ export default function ImageIcon(props: CommandBarProps) {
                         label: "Alt Text",
                         required: true,
                         columns: 12,
-                        handleChange: props.setImageAltText,
-                        value: props.imageAltText,
+                        handleChange: setImageAltText,
+                        value: imageAltText,
                         variant: "outlined"
                     }
                 ]}

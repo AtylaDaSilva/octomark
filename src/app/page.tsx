@@ -35,10 +35,11 @@ import { DEFAULT_MARKDOWN_TITLE } from "@/utils/constants";
 
 // State type
 export type stateType = {
-  markdown: string, setMarkdown: Dispatch<SetStateAction<string>>,
-  selection: selectedTextType, setSelection: Dispatch<SetStateAction<selectedTextType>>,
-  imageAltText: string, setImageAltText: Dispatch<SetStateAction<string>>,
-  footnoteCount: number, setFootnoteCount: Dispatch<SetStateAction<number>>
+  markdown?: string, setMarkdown?: Dispatch<SetStateAction<string>>,
+  selection?: selectedTextType, setSelection?: Dispatch<SetStateAction<selectedTextType>>,
+  imageAltText?: string, setImageAltText?: Dispatch<SetStateAction<string>>,
+  footnoteCount?: number, setFootnoteCount?: Dispatch<SetStateAction<number>>,
+  showPreview?: boolean, setShowPreview?: Dispatch<SetStateAction<boolean>>
 }
 
 export default function Home() {
@@ -51,13 +52,15 @@ export default function Home() {
   });
   const [imageAltText, setImageAltText] = useState<string>("");
   const [footnoteCount, setFootnoteCount] = useState<number>(0);
+  const [showPreview, setShowPreview] = useState(true)
 
   // Constant to pass state around components
   const state: stateType = {
     markdown, setMarkdown,
     selection, setSelection,
     imageAltText, setImageAltText,
-    footnoteCount, setFootnoteCount
+    footnoteCount, setFootnoteCount,
+    showPreview, setShowPreview
   }
 
   // Event handlers
@@ -103,7 +106,7 @@ export default function Home() {
           justifyContent="center"
           alignItems="center"
           gap={5}
-          >
+        >
           <Box
             maxHeight={780}
             minHeight={700}
@@ -125,7 +128,7 @@ export default function Home() {
               }}
             />
           </Box>
-          <PreviewBox
+          {showPreview && <PreviewBox
             maxHeight={725}
             minHeight={725}
             maxWidth={600}
@@ -144,7 +147,7 @@ export default function Home() {
                 ],
               }}
             />
-          </PreviewBox>
+          </PreviewBox>}
         </Box>
       </Container>
     </ThemeProvider>

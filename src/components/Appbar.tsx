@@ -47,14 +47,7 @@ export default function Appbar({ state }: AppbarType) {
                     </Box>
                     <Box margin="0px auto">
                         <CommandBar
-                            selection={state.selection}
-                            setSelection={state.setSelection}
-                            markdown={state.markdown}
-                            setMarkdown={state.setMarkdown}
-                            imageAltText={state.imageAltText}
-                            setImageAltText={state.setImageAltText}
-                            footnoteCount={state.footnoteCount}
-                            setFootnoteCount={state.setFootnoteCount}
+                            state={state}
                         />
                     </Box>
                     <Box>

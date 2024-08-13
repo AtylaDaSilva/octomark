@@ -9,12 +9,12 @@ import { SentimentSatisfiedAlt } from "@mui/icons-material";
 import { handleCommand, emoji } from "@/commands";
 
 // Types
-import { CommandBarProps } from "../CommandBar";
+import { stateType } from "@/app/page";
 
 // Emoji list
 import emojiList from "@/utils/emojis.json";
 
-export default function EmojiIcon(props: CommandBarProps) {
+export default function EmojiIcon({ selection, setSelection, markdown, setMarkdown }: stateType) {
     const [anchorElement, setAnchorElement] = useState<null | HTMLElement>(null);
     const [activeTab, setActiveTab] = useState<number>(0);
     const isOpen = Boolean(anchorElement);
@@ -32,13 +32,15 @@ export default function EmojiIcon(props: CommandBarProps) {
     };
 
     const handleMenuItemClick = (emojiCode: string) => {
-        handleCommand(
-            emoji,
-            { selection: props.selection, emojiCode },
-            props.setSelection,
-            props.markdown,
-            props.setMarkdown
-        );
+        if (selection && setSelection && markdown && setMarkdown) {
+            handleCommand(
+                emoji,
+                { selection: selection, emojiCode },
+                setSelection,
+                markdown,
+                setMarkdown
+            );
+        }
         handleClose();
         setActiveTab(0);
     }

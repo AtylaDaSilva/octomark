@@ -6,22 +6,24 @@ import { StrikethroughS } from "@mui/icons-material";
 import { handleCommand, strikethrough } from "@/commands";
 
 // Types
-import { CommandBarProps } from "../CommandBar";
+import { stateType } from "@/app/page";
 
-export default function StrikethroughIcon(props : CommandBarProps) {
+export default function StrikethroughIcon({ selection, setSelection, markdown, setMarkdown }: stateType) {
     return (
         <Tooltip title="Strikethrough">
             <IconButton
                 aria-label="Format Strikethrough"
                 color="info"
                 onClick={() => {
-                    handleCommand(
-                        strikethrough,
-                        { selection: props.selection },
-                        props.setSelection,
-                        props.markdown,
-                        props.setMarkdown
-                    );
+                    if (selection && setSelection && markdown && setMarkdown) {
+                        handleCommand(
+                            strikethrough,
+                            { selection: selection },
+                            setSelection,
+                            markdown,
+                            setMarkdown
+                        );
+                    }
                 }}
             >
                 <StrikethroughS />

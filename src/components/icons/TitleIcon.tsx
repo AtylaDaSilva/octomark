@@ -10,9 +10,9 @@ import { handleCommand, heading } from "@/commands";
 
 // Types
 import { headingLevelType } from "@/commands/heading";
-import { CommandBarProps } from "../CommandBar";
+import { stateType } from "@/app/page";
 
-export default function TitleIcon(props: CommandBarProps) {
+export default function TitleIcon({ selection, setSelection, markdown, setMarkdown }: stateType) {
     const [anchorElement, setAnchorElement] = useState<null | HTMLElement>(null);
     const isOpen = Boolean(anchorElement);
     const handleClick = (event: React.MouseEvent<HTMLElement>) => {
@@ -21,14 +21,16 @@ export default function TitleIcon(props: CommandBarProps) {
     const handleClose = () => {
         setAnchorElement(null);
     };
-    const handleMenuItemClick = (headingLevel : headingLevelType) => {
-        handleCommand(
-            heading,
-            { selection: props.selection, headingLevel: headingLevel },
-            props.setSelection,
-            props.markdown,
-            props.setMarkdown
-        );
+    const handleMenuItemClick = (headingLevel: headingLevelType) => {
+        if (selection && setSelection && markdown && setMarkdown) {
+            handleCommand(
+                heading,
+                { selection: selection, headingLevel: headingLevel },
+                setSelection,
+                markdown,
+                setMarkdown
+            );
+        }
     }
 
     return (

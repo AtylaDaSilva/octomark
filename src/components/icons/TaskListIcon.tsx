@@ -6,22 +6,24 @@ import { Checklist } from "@mui/icons-material";
 import { handleCommand, taskList } from "@/commands";
 
 // Types
-import { CommandBarProps } from "../CommandBar";
+import { stateType } from "@/app/page";
 
-export default function TaskListIcon(props : CommandBarProps) {
+export default function TaskListIcon({ selection, setSelection, markdown, setMarkdown }: stateType) {
     return (
         <Tooltip title="Task List">
             <IconButton
                 aria-label="Insert Task List"
                 color="info"
                 onClick={() => {
-                    handleCommand(
-                        taskList,
-                        { selection: props.selection },
-                        props.setSelection,
-                        props.markdown,
-                        props.setMarkdown
-                    );
+                    if (selection && setSelection && markdown && setMarkdown) {
+                        handleCommand(
+                            taskList,
+                            { selection: selection },
+                            setSelection,
+                            markdown,
+                            setMarkdown
+                        );
+                    }
                 }}
             >
                 <Checklist />

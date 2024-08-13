@@ -10,13 +10,13 @@ import { GridOn } from "@mui/icons-material";
 import { FormModal } from "../modals";
 
 // Types
-import type { CommandBarProps } from "../CommandBar";
 import type { tablePropsType } from "@/commands/table";
 
 // Commands
 import { handleCommand, table } from "@/commands";
+import { stateType } from "@/app/page";
 
-export default function ImageIcon(props: CommandBarProps) {
+export default function ImageIcon({ selection, setSelection, markdown, setMarkdown }: stateType) {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [tableProps, setTableProps] = useState<tablePropsType>({
         width: 2,
@@ -50,13 +50,15 @@ export default function ImageIcon(props: CommandBarProps) {
             <FormModal
                 isOpen={isModalOpen}
                 handleSubmit={() => {
-                    handleCommand(
-                        table,
-                        { selection: props.selection, tableProps },
-                        props.setSelection,
-                        props.markdown,
-                        props.setMarkdown
-                    );
+                    if (selection && setSelection && markdown && setMarkdown) {
+                        handleCommand(
+                            table,
+                            { selection: selection, tableProps },
+                            setSelection,
+                            markdown,
+                            setMarkdown
+                        );
+                    }
                     setIsModalOpen(false);
                 }}
                 handleClose={() => setIsModalOpen(false)}
