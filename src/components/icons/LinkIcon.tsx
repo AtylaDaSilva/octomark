@@ -10,12 +10,12 @@ import { Link } from "@mui/icons-material";
 import { FormModal } from "../modals";
 
 // Types
-import { CommandBarProps } from "../CommandBar";
+import { stateType } from "@/app/page";
 
 // Commands
 import { handleCommand, link } from "@/commands";
 
-export default function LinkIcon(props: CommandBarProps) {
+export default function LinkIcon({ selection, setSelection, markdown, setMarkdown }: stateType) {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [uri, setUri] = useState("");
     return (
@@ -32,13 +32,15 @@ export default function LinkIcon(props: CommandBarProps) {
             <FormModal
                 isOpen={isModalOpen}
                 handleSubmit={() => {
-                    handleCommand(
-                        link,
-                        { selection: props.selection, linkProps: { uri }},
-                        props.setSelection,
-                        props.markdown,
-                        props.setMarkdown
-                    );
+                    if (selection && setSelection && markdown && setMarkdown) {
+                        handleCommand(
+                            link,
+                            { selection: selection, linkProps: { uri } },
+                            setSelection,
+                            markdown,
+                            setMarkdown
+                        );
+                    }
                     setIsModalOpen(false);
                 }}
                 handleClose={() => setIsModalOpen(false)}

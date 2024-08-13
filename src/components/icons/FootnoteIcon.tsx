@@ -6,25 +6,29 @@ import { WrapText } from "@mui/icons-material";
 import { handleCommand, footnote } from "@/commands";
 
 // Types
-import { CommandBarProps } from "../CommandBar";
+import { stateType } from "@/app/page";
 
-export default function FootnoteIcon(props : CommandBarProps) {
+export default function FootnoteIcon(
+    { selection, setSelection, markdown, setMarkdown, footnoteCount, setFootnoteCount }: stateType
+) {
     return (
         <Tooltip title="Footnote">
             <IconButton
                 aria-label="Insert Footnote"
                 color="info"
                 onClick={() => {
-                    handleCommand(
-                        footnote,
-                        {
-                            selection: props.selection,
-                            state: { value: props.footnoteCount, updater: props.setFootnoteCount }
-                        },
-                        props.setSelection,
-                        props.markdown,
-                        props.setMarkdown
-                    );
+                    if (selection && setSelection && markdown && setMarkdown && footnoteCount != undefined && setFootnoteCount) {
+                        handleCommand(
+                            footnote,
+                            {
+                                selection: selection,
+                                state: { value: footnoteCount, updater: setFootnoteCount }
+                            },
+                            setSelection,
+                            markdown,
+                            setMarkdown
+                        );
+                    }
                 }}
             >
                 <WrapText />

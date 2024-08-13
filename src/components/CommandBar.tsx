@@ -17,20 +17,20 @@ import {
     CommentIcon,
     AlertIcon,
     TableIcon,
-    EmojiIcon
+    EmojiIcon,
+    HideShowPreviewIcon
 } from "./icons";
 
-// Types
-import { Dispatch, SetStateAction } from "react";
-import type { selectedTextType } from "@/classes";
+// Types;
+import { stateType } from "@/app/page";
 
-const CustomAppBar = styled(AppBar)<AppBarProps>(({theme}) => ({
-    backgroundColor: theme.palette.background.default,
+const CustomAppBar = styled(AppBar)<AppBarProps>(({ theme }) => ({
+    backgroundColor: "transparent",
     border: `1px solid ${theme.palette.grey[700]}`,
     borderRadius: theme.shape.borderRadius
 }))
 
-export default function CommandBar(props: CommandBarProps) {
+export default function CommandBar({ state }: CommandBarProps) {
     return (
         <CustomAppBar
             position="static"
@@ -39,49 +39,134 @@ export default function CommandBar(props: CommandBarProps) {
             <Toolbar>
                 <ul className="no-list-style flex flex-row">
                     <li>
-                        <TitleIcon {...props} />
+                        <TitleIcon
+                            selection={state.selection}
+                            setSelection={state.setSelection}
+                            markdown={state.markdown}
+                            setMarkdown={state.setMarkdown}
+                        />
                     </li>
                     <li>
-                        <BoldIcon {...props} />
+                        <BoldIcon
+                            selection={state.selection}
+                            setSelection={state.setSelection}
+                            markdown={state.markdown}
+                            setMarkdown={state.setMarkdown}
+                        />
                     </li>
                     <li>
-                        <ItalicIcon {...props} />
+                        <ItalicIcon
+                            selection={state.selection}
+                            setSelection={state.setSelection}
+                            markdown={state.markdown}
+                            setMarkdown={state.setMarkdown}
+                        />
                     </li>
                     <li>
-                        <StrikethroughIcon {...props} />
+                        <StrikethroughIcon
+                            selection={state.selection}
+                            setSelection={state.setSelection}
+                            markdown={state.markdown}
+                            setMarkdown={state.setMarkdown}
+                        />
                     </li>
                     <li>
-                        <CodeIcon {...props} />
+                        <CodeIcon
+                            selection={state.selection}
+                            setSelection={state.setSelection}
+                            markdown={state.markdown}
+                            setMarkdown={state.setMarkdown}
+                        />
                     </li>
                     <li>
-                        <LinkIcon {...props} />
+                        <LinkIcon
+                            selection={state.selection}
+                            setSelection={state.setSelection}
+                            markdown={state.markdown}
+                            setMarkdown={state.setMarkdown}
+                        />
                     </li>
                     <li>
-                        <ImageIcon {...props} />
+                        <ImageIcon
+                            selection={state.selection}
+                            setSelection={state.setSelection}
+                            markdown={state.markdown}
+                            setMarkdown={state.setMarkdown}
+                            imageAltText={state.imageAltText}
+                            setImageAltText={state.setImageAltText}
+                        />
                     </li>
                     <li>
-                        <BulletedListIcon {...props} />
+                        <BulletedListIcon
+                            selection={state.selection}
+                            setSelection={state.setSelection}
+                            markdown={state.markdown}
+                            setMarkdown={state.setMarkdown}
+                        />
                     </li>
                     <li>
-                        <NumberedListIcon {...props} />
+                        <NumberedListIcon
+                            selection={state.selection}
+                            setSelection={state.setSelection}
+                            markdown={state.markdown}
+                            setMarkdown={state.setMarkdown}
+                        />
                     </li>
                     <li>
-                        <TaskListIcon {...props} />
+                        <TaskListIcon
+                            selection={state.selection}
+                            setSelection={state.setSelection}
+                            markdown={state.markdown}
+                            setMarkdown={state.setMarkdown}
+                        />
                     </li>
                     <li>
-                        <FootnoteIcon {...props} />
+                        <FootnoteIcon
+                            selection={state.selection}
+                            setSelection={state.setSelection}
+                            markdown={state.markdown}
+                            setMarkdown={state.setMarkdown}
+                            footnoteCount={state.footnoteCount}
+                            setFootnoteCount={state.setFootnoteCount}
+                        />
                     </li>
                     <li>
-                        <CommentIcon {...props} />
+                        <CommentIcon
+                            selection={state.selection}
+                            setSelection={state.setSelection}
+                            markdown={state.markdown}
+                            setMarkdown={state.setMarkdown}
+                        />
                     </li>
                     <li>
-                        <AlertIcon {...props} />
+                        <AlertIcon
+                            selection={state.selection}
+                            setSelection={state.setSelection}
+                            markdown={state.markdown}
+                            setMarkdown={state.setMarkdown}
+                        />
                     </li>
                     <li>
-                        <TableIcon {...props} />
+                        <TableIcon
+                            selection={state.selection}
+                            setSelection={state.setSelection}
+                            markdown={state.markdown}
+                            setMarkdown={state.setMarkdown}
+                        />
                     </li>
                     <li>
-                        <EmojiIcon {...props} />
+                        <EmojiIcon
+                            selection={state.selection}
+                            setSelection={state.setSelection}
+                            markdown={state.markdown}
+                            setMarkdown={state.setMarkdown}
+                        />
+                    </li>
+                    <li>
+                        <HideShowPreviewIcon
+                            showPreview={state.showPreview}
+                            setShowPreview={state.setShowPreview}
+                        />
                     </li>
                 </ul>
             </Toolbar>
@@ -91,12 +176,5 @@ export default function CommandBar(props: CommandBarProps) {
 
 // Component types
 export type CommandBarProps = {
-    selection: selectedTextType,
-    setSelection: Dispatch<SetStateAction<selectedTextType>>,
-    markdown: string,
-    setMarkdown: Dispatch<SetStateAction<string>>,
-    imageAltText: string,
-    setImageAltText: Dispatch<SetStateAction<string>>,
-    footnoteCount: number,
-    setFootnoteCount: Dispatch<SetStateAction<number>>
+    state: stateType
 }

@@ -6,22 +6,24 @@ import { FormatBold } from "@mui/icons-material";
 import { handleCommand, bold } from "@/commands";
 
 // Types
-import { CommandBarProps } from "../CommandBar";
+import { stateType } from "@/app/page";
 
-export default function BoldIcon(props : CommandBarProps) {
+export default function BoldIcon({ selection, setSelection, markdown, setMarkdown }: stateType) {
     return (
         <Tooltip title="Bold">
             <IconButton
                 aria-label="Format Bold"
                 color="info"
                 onClick={() => {
-                    handleCommand(
-                        bold,
-                        { selection: props.selection },
-                        props.setSelection,
-                        props.markdown,
-                        props.setMarkdown
-                    );
+                    if (selection && setSelection && markdown && setMarkdown) {
+                        handleCommand(
+                            bold,
+                            { selection: selection },
+                            setSelection,
+                            markdown,
+                            setMarkdown
+                        );
+                    }
                 }}
             >
                 <FormatBold />

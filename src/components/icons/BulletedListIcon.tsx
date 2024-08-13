@@ -6,22 +6,24 @@ import { FormatListBulleted } from "@mui/icons-material";
 import { handleCommand, bulletedList } from "@/commands";
 
 // Types
-import { CommandBarProps } from "../CommandBar";
+import { stateType } from "@/app/page";
 
-export default function BulletedListIcon(props : CommandBarProps) {
+export default function BulletedListIcon({ selection, setSelection, markdown, setMarkdown }: stateType) {
     return (
         <Tooltip title="Bulleted List">
             <IconButton
                 aria-label="Insert Bulleted List"
                 color="info"
                 onClick={() => {
-                    handleCommand(
-                        bulletedList,
-                        { selection: props.selection },
-                        props.setSelection,
-                        props.markdown,
-                        props.setMarkdown
-                    );
+                    if (selection && setSelection && markdown && setMarkdown) {
+                        handleCommand(
+                            bulletedList,
+                            { selection: selection },
+                            setSelection,
+                            markdown,
+                            setMarkdown
+                        );
+                    }
                 }}
             >
                 <FormatListBulleted />

@@ -13,6 +13,7 @@ import CommentIcon from "./CommentIcon";
 import AlertIcon from "./AlertIcon";
 import TableIcon from "./TableIcon";
 import EmojiIcon from "./EmojiIcon";
+import HideShowPreviewIcon from "./HideShowPreviewIcon";
 
 export {
     BoldIcon,
@@ -29,5 +30,6 @@ export {
     CommentIcon,
     AlertIcon,
     TableIcon,
-    EmojiIcon
+    EmojiIcon,
+    HideShowPreviewIcon
 }

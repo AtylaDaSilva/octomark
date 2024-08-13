@@ -6,22 +6,24 @@ import { FormatItalic } from "@mui/icons-material";
 import { handleCommand, italic } from "@/commands";
 
 // Types
-import { CommandBarProps } from "../CommandBar";
+import { stateType } from "@/app/page";
 
-export default function ItalicIcon(props : CommandBarProps) {
+export default function ItalicIcon({ selection, setSelection, markdown, setMarkdown }: stateType) {
     return (
         <Tooltip title="Italic">
             <IconButton
                 aria-label="Format Italic"
                 color="info"
                 onClick={() => {
-                    handleCommand(
-                        italic,
-                        { selection: props.selection },
-                        props.setSelection,
-                        props.markdown,
-                        props.setMarkdown
-                    );
+                    if (selection && setSelection && markdown && setMarkdown) {
+                        handleCommand(
+                            italic,
+                            { selection: selection },
+                            setSelection,
+                            markdown,
+                            setMarkdown
+                        );
+                    }
                 }}
             >
                 <FormatItalic />

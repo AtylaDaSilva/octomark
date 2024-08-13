@@ -6,22 +6,24 @@ import { FormatListNumbered } from "@mui/icons-material";
 import { handleCommand, numberedList } from "@/commands";
 
 // Types
-import { CommandBarProps } from "../CommandBar";
+import { stateType } from "@/app/page";
 
-export default function NumberedListIcon(props : CommandBarProps) {
+export default function NumberedListIcon({ selection, setSelection, markdown, setMarkdown }: stateType) {
     return (
         <Tooltip title="Numbered List">
             <IconButton
                 aria-label="Insert Numbered List"
                 color="info"
                 onClick={() => {
-                    handleCommand(
-                        numberedList,
-                        { selection: props.selection },
-                        props.setSelection,
-                        props.markdown,
-                        props.setMarkdown
-                    );
+                    if (selection && setSelection && markdown && setMarkdown) {
+                        handleCommand(
+                            numberedList,
+                            { selection: selection },
+                            setSelection,
+                            markdown,
+                            setMarkdown
+                        );
+                    }
                 }}
             >
                 <FormatListNumbered />

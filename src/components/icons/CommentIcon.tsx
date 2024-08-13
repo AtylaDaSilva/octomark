@@ -6,22 +6,24 @@ import { CodeOff } from "@mui/icons-material";
 import { handleCommand, comment } from "@/commands";
 
 // Types
-import { CommandBarProps } from "../CommandBar";
+import { stateType } from "@/app/page";
 
-export default function CommentIcon(props : CommandBarProps) {
+export default function CommentIcon({ selection, setSelection, markdown, setMarkdown }: stateType) {
     return (
         <Tooltip title="Comment">
             <IconButton
                 aria-label="Insert Comment"
                 color="info"
                 onClick={() => {
-                    handleCommand(
-                        comment,
-                        { selection: props.selection },
-                        props.setSelection,
-                        props.markdown,
-                        props.setMarkdown
-                    );
+                    if (selection && setSelection && markdown && setMarkdown) {
+                        handleCommand(
+                            comment,
+                            { selection: selection },
+                            setSelection,
+                            markdown,
+                            setMarkdown
+                        );
+                    }
                 }}
             >
                 <CodeOff />

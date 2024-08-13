@@ -13,9 +13,9 @@ import { handleCommand, alert } from "@/commands";
 
 // Types
 import type { alertLevelType } from "@/commands/alert";
-import { CommandBarProps } from "../CommandBar";
+import { stateType } from "@/app/page";
 
-export default function AlertIcon(props: CommandBarProps) {
+export default function AlertIcon({ selection, setSelection, markdown, setMarkdown }: stateType) {
     const [anchorElement, setAnchorElement] = useState<null | HTMLElement>(null);
     const isOpen = Boolean(anchorElement);
     const handleClick = (event: React.MouseEvent<HTMLElement>) => {
@@ -25,13 +25,15 @@ export default function AlertIcon(props: CommandBarProps) {
         setAnchorElement(null);
     };
     const handleMenuItemClick = (alertLevel: alertLevelType) => {
-        handleCommand(
-            alert,
-            { selection: props.selection, alertLevel },
-            props.setSelection,
-            props.markdown,
-            props.setMarkdown
-        );
+        if (selection && setSelection && markdown && setMarkdown) {
+            handleCommand(
+                alert,
+                { selection: selection, alertLevel },
+                setSelection,
+                markdown,
+                setMarkdown
+            );
+        }
     }
     const alertLevels: alertLevelType[] = ["note", "tip", "important", "warning", "caution"];
 

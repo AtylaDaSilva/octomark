@@ -1,6 +1,6 @@
 "use client";
 // React
-import { useState } from "react";
+import { useState, Dispatch, SetStateAction } from "react";
 
 // MUI Components
 import { Container, Box, BoxProps, styled } from "@mui/material";
@@ -10,7 +10,6 @@ import { TextSelector, selectedTextType } from "@/classes";
 
 // Components
 import Appbar from "@/components/Appbar";
-import CommandBar from "@/components/CommandBar";
 import MDEditor from "@/components/MDEditor";
 import MDPreview from "@/components/MDPreview";
 
@@ -32,11 +31,19 @@ import { GitHubDark } from "@/themes";
 
 // Utils
 import { capitalize } from "@/functions/capitalize";
-import { DEFAULT_MARKDOWN_TITLE, MARKDOWN_SYMBOLS } from "@/utils/constants";
+import { DEFAULT_MARKDOWN_TITLE } from "@/utils/constants";
+
+// State type
+export type stateType = {
+  markdown?: string, setMarkdown?: Dispatch<SetStateAction<string>>,
+  selection?: selectedTextType, setSelection?: Dispatch<SetStateAction<selectedTextType>>,
+  imageAltText?: string, setImageAltText?: Dispatch<SetStateAction<string>>,
+  footnoteCount?: number, setFootnoteCount?: Dispatch<SetStateAction<number>>,
+  showPreview?: boolean, setShowPreview?: Dispatch<SetStateAction<boolean>>
+}
 
 export default function Home() {
   // State
-  const [markdownTitle, setMarkdownTitle] = useState<string>(() => capitalize(DEFAULT_MARKDOWN_TITLE));
   const [markdown, setMarkdown] = useState<string>(() => `# ${capitalize(DEFAULT_MARKDOWN_TITLE)}`);
   const [selection, setSelection] = useState<selectedTextType>({
     text: "",
@@ -45,6 +52,16 @@ export default function Home() {
   });
   const [imageAltText, setImageAltText] = useState<string>("");
   const [footnoteCount, setFootnoteCount] = useState<number>(0);
+  const [showPreview, setShowPreview] = useState(true)
+
+  // Constant to pass state around components
+  const state: stateType = {
+    markdown, setMarkdown,
+    selection, setSelection,
+    imageAltText, setImageAltText,
+    footnoteCount, setFootnoteCount,
+    showPreview, setShowPreview
+  }
 
   // Event handlers
   /**
@@ -53,13 +70,6 @@ export default function Home() {
    * @returns void or null.
    */
   const handleEditorEvent = ({ target }: any) => {
-    const regExp = new RegExp(`[${MARKDOWN_SYMBOLS.join("")}]`, "g");
-    const newLine = markdown.indexOf("\n");
-    const newTitle = (newLine === -1)
-      ? markdown
-      : markdown.slice(0, newLine);
-    setMarkdownTitle(newTitle.replaceAll(regExp, "").trim() || DEFAULT_MARKDOWN_TITLE);
-
     const selector = new TextSelector(target, markdown);
     const sel = selector.getSelectedText();
     setSelection(sel);
@@ -87,24 +97,7 @@ export default function Home() {
         }}
       >
         <Box>
-          <Appbar markdownTitle={{
-            state: markdownTitle,
-            updater: setMarkdownTitle
-          }} />
-        </Box>
-        <Box
-          margin="10px 250px -10px 250px"
-        >
-          <CommandBar
-            selection={selection}
-            setSelection={setSelection}
-            markdown={markdown}
-            setMarkdown={setMarkdown}
-            imageAltText={imageAltText}
-            setImageAltText={setImageAltText}
-            footnoteCount={footnoteCount}
-            setFootnoteCount={setFootnoteCount}
-          />
+          <Appbar state={state} />
         </Box>
         <Box
           display="flex"
@@ -113,7 +106,7 @@ export default function Home() {
           justifyContent="center"
           alignItems="center"
           gap={5}
-          >
+        >
           <Box
             maxHeight={780}
             minHeight={700}
@@ -135,7 +128,7 @@ export default function Home() {
               }}
             />
           </Box>
-          <PreviewBox
+          {showPreview && <PreviewBox
             maxHeight={725}
             minHeight={725}
             maxWidth={600}
@@ -154,7 +147,7 @@ export default function Home() {
                 ],
               }}
             />
-          </PreviewBox>
+          </PreviewBox>}
         </Box>
       </Container>
     </ThemeProvider>

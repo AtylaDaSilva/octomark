@@ -1,5 +1,6 @@
 * {
     margin: 0px;
+    padding: 0px;
 }
 
 body {
@@ -13,6 +14,14 @@ body {
 
 .flex-row {
     flex-direction: row;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
+.justify-contents-center {
+    justify-content: center;
 }
 
 .no-list-style {
