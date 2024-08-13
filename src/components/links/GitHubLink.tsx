@@ -14,7 +14,7 @@ export default function GitHubLink() {
             <Link
                 href="https://github.com/AtylaDaSilva/octomark"
                 target="_blank"
-                className="no-text-decor"
+                className="no-text-decor color-inherit"
             >
                 <GitHub />
             </Link>

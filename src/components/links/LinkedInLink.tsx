@@ -14,7 +14,7 @@ export default function LinkedInLink() {
             <Link
                 href="https://www.linkedin.com/in/atyla-mendes-da-silva-39a21018b/"
                 target="_blank"
-                className="no-text-decor"
+                className="no-text-decor color-inherit"
             >
                 <LinkedIn />
             </Link>
