@@ -27,7 +27,9 @@ import { stateType } from "@/app/page";
 const CustomAppBar = styled(AppBar)<AppBarProps>(({ theme }) => ({
     backgroundColor: "transparent",
     border: `1px solid ${theme.palette.grey[700]}`,
-    borderRadius: theme.shape.borderRadius
+    borderRadius: theme.shape.borderRadius,
+    display: "flex",
+    alignItems: "center"
 }))
 
 export default function CommandBar({ state }: CommandBarProps) {

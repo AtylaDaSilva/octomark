@@ -2,7 +2,7 @@
 import Link from "next/link";
 
 // MUI Components
-import { Toolbar, AppBar, AppBarProps, Typography, Container, Box, styled } from "@mui/material";
+import { Grid, Toolbar, AppBar, AppBarProps, Typography, styled } from "@mui/material";
 
 // App Components
 import CommandBar from "@/components/CommandBar";
@@ -28,33 +28,23 @@ export default function Appbar({ state }: AppbarType) {
     return (
         <CustomAppBar position="static">
             <Toolbar>
-                <Container
-                    maxWidth={false}
-                    sx={{
-                        position: "relative",
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                    }}
-                >
-                    <Box position="absolute" left={0}>
+                <Grid container alignItems={"center"} justifyContent={"center"}>
+                    <Grid item xs={1}>
                         <Typography
                             variant="h2"
                             fontSize="2rem"
                         >
                             <Link href="/" className="no-text-decor color-inherit">OctoMark</Link>
                         </Typography>
-                    </Box>
-                    <Box margin="0px auto">
-                        <CommandBar
-                            state={state}
-                        />
-                    </Box>
-                    <Box>
+                    </Grid>
+                    <Grid item xs={"auto"} marginX="auto">
+                        <CommandBar state={state} />
+                    </Grid>
+                    <Grid item xs={1} display={"flex"} justifyContent={"flex-end"} >
                         <GitHubLink />
                         <LinkedInLink />
-                    </Box>
-                </Container>
+                    </Grid>
+                </Grid>
             </Toolbar>
         </CustomAppBar>
     );

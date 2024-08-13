@@ -86,27 +86,27 @@ export default function Home() {
   return (
     <ThemeProvider theme={GitHubDark}>
       <CssBaseline />
-      <Grid container columnSpacing={3} rowSpacing={2} sx={{height: "90vh"}}>
+      <Grid container columnSpacing={3} rowSpacing={2} sx={{ height: "90vh" }} justifyContent="center" alignItems="flex-start">
         <Grid item xs={12}>
           <Appbar state={state} />
         </Grid>
-        <Grid item xs={6} sx={{ height: "100%" }}>
+        <Grid item xs={4}>
           <MDEditor
             markdown={markdown}
             handleChange={setMarkdown}
             handleEditorEvent={handleEditorEvent}
             editorOptions={{
               fullWidth: true,
-              rows: 30,
+              rows: 31,
               autoFocus: false,
               placeholder: "Type your markdown here.",
               variant: "outlined",
             }}
           />
         </Grid>
-        <Grid item xs={6} sx={{ height: "100%" }} >
-          {
-            showPreview &&
+        {
+          showPreview &&
+          <Grid item xs={4} sx={{ height: "100%" }} >
             <PreviewBox
               padding={2}
               overflow="auto"
@@ -124,8 +124,9 @@ export default function Home() {
                 }}
               />
             </PreviewBox>
-          }
-        </Grid>
+
+          </Grid>
+        }
       </Grid>
     </ThemeProvider>
   );
