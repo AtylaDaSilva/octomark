@@ -30,5 +30,8 @@ body {
 
 .no-text-decor {
     text-decoration: none;
+}
+
+.color-inherit {
     color: inherit;
 }

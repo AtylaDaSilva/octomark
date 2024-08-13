@@ -42,7 +42,7 @@ export default function Appbar({ state }: AppbarType) {
                             variant="h2"
                             fontSize="2rem"
                         >
-                            <Link href="/" className="no-text-decor">OctoMark</Link>
+                            <Link href="/" className="no-text-decor color-inherit">OctoMark</Link>
                         </Typography>
                     </Box>
                     <Box margin="0px auto">
