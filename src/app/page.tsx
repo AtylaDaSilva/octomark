@@ -3,7 +3,7 @@
 import { useState, Dispatch, SetStateAction } from "react";
 
 // MUI Components
-import { Container, Box, BoxProps, styled } from "@mui/material";
+import { Container, Box, BoxProps, Grid, styled } from "@mui/material";
 
 // Classes
 import { TextSelector, selectedTextType } from "@/classes";
@@ -86,70 +86,48 @@ export default function Home() {
   return (
     <ThemeProvider theme={GitHubDark}>
       <CssBaseline />
-      <Container
-        maxWidth={false}
-        disableGutters
-        sx={{
-          height: "100vh",
-          marginX: "0px",
-          display: "flex",
-          flexDirection: "column"
-        }}
-      >
-        <Box>
+      <Grid container columnSpacing={3} rowSpacing={2} sx={{ height: "90vh" }} justifyContent="center" alignItems="flex-start">
+        <Grid item xs={12}>
           <Appbar state={state} />
-        </Box>
-        <Box
-          display="flex"
-          flexGrow={1}
-          flexDirection="row"
-          justifyContent="center"
-          alignItems="center"
-          gap={5}
-        >
-          <Box
-            maxHeight={780}
-            minHeight={700}
-            maxWidth={600}
-            flexGrow={1}
-            padding={1}
-            overflow="auto"
-          >
-            <MDEditor
-              markdown={markdown}
-              handleChange={setMarkdown}
-              handleEditorEvent={handleEditorEvent}
-              editorOptions={{
-                rows: 30,
-                fullWidth: true,
-                autoFocus: false,
-                placeholder: "Type your markdown here.",
-                variant: "outlined",
-              }}
-            />
-          </Box>
-          {showPreview && <PreviewBox
-            maxHeight={725}
-            minHeight={725}
-            maxWidth={600}
-            flexGrow={1}
-            padding={2}
-            overflow="auto"
-          >
-            <MDPreview
-              markdown={markdown}
-              previewOptions={{
-                remarkPlugins: [
-                  remarkGfm,
-                  remarkAlert,
-                  remarkGemoji,
-                  removeComments
-                ],
-              }}
-            />
-          </PreviewBox>}
-        </Box>
-      </Container>
+        </Grid>
+        <Grid item xs={4}>
+          <MDEditor
+            markdown={markdown}
+            handleChange={setMarkdown}
+            handleEditorEvent={handleEditorEvent}
+            editorOptions={{
+              fullWidth: true,
+              rows: 31,
+              autoFocus: false,
+              placeholder: "Type your markdown here.",
+              variant: "outlined",
+            }}
+          />
+        </Grid>
+        {
+          showPreview &&
+          <Grid item xs={4} sx={{ height: "100%" }} >
+            <PreviewBox
+              padding={2}
+              overflow="auto"
+              sx={{ height: "100%" }}
+            >
+              <MDPreview
+                markdown={markdown}
+                previewOptions={{
+                  remarkPlugins: [
+                    remarkGfm,
+                    remarkAlert,
+                    remarkGemoji,
+                    removeComments
+                  ],
+                }}
+              />
+            </PreviewBox>
+
+          </Grid>
+        }
+      </Grid>
     </ThemeProvider>
   );
 }

@@ -9,8 +9,6 @@ export type MDPreviewType = {
 
 export type MDPreviewOptions = {
     remarkPlugins?: PluggableList | null
-    height?: string,
-    width?: string,
 }
 
 export default function MDPreview({ markdown, previewOptions } : MDPreviewType) {
