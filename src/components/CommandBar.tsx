@@ -25,7 +25,7 @@ import { Dispatch, SetStateAction } from "react";
 import type { selectedTextType } from "@/classes";
 
 const CustomAppBar = styled(AppBar)<AppBarProps>(({theme}) => ({
-    backgroundColor: theme.palette.background.default,
+    backgroundColor: "transparent",
     border: `1px solid ${theme.palette.grey[700]}`,
     borderRadius: theme.shape.borderRadius
 }))
@@ -34,10 +34,10 @@ export default function CommandBar(props: CommandBarProps) {
     return (
         <CustomAppBar
             position="static"
-            color="secondary"
+            color="secondary" 
         >
             <Toolbar>
-                <ul className="no-list-style flex flex-row flex-grow-1 justify-contents-center">
+                <ul className="no-list-style flex flex-row">
                     <li>
                         <TitleIcon {...props} />
                     </li>

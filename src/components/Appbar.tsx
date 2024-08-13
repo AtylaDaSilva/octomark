@@ -2,24 +2,19 @@
 import Link from "next/link";
 
 // MUI Components
-import { Toolbar, AppBar, AppBarProps, Typography, TextField, TextFieldProps, Container, Box, styled } from "@mui/material";
+import { Toolbar, AppBar, AppBarProps, Typography, Container, Box, styled } from "@mui/material";
 
 // App Components
+import CommandBar from "@/components/CommandBar";
 import { GitHubLink, LinkedInLink } from "./links";
 
 // Types
-import { Dispatch, SetStateAction } from "react";
+import { stateType } from "@/app/page";
 
 // Component types
 export type AppbarType = {
-    markdownTitle: {
-        state: string,
-        updater: Dispatch<SetStateAction<string>>
-    }
+    state: stateType
 }
-
-// Utils
-import { capitalize } from "@/functions/capitalize";
 
 // Styled Components
 const CustomAppBar = styled(AppBar)<AppBarProps>(({ theme }) => ({
@@ -28,11 +23,7 @@ const CustomAppBar = styled(AppBar)<AppBarProps>(({ theme }) => ({
     padding: "5px 0px",
 }));
 
-const MarkdownTitleField = styled(TextField)<TextFieldProps>(({ theme }) => ({
-    border: "none"
-}));
-
-export default function Appbar({ markdownTitle }: AppbarType) {
+export default function Appbar({ state }: AppbarType) {
 
     return (
         <CustomAppBar position="static">
@@ -54,23 +45,21 @@ export default function Appbar({ markdownTitle }: AppbarType) {
                             <Link href="/" className="no-text-decor">OctoMark</Link>
                         </Typography>
                     </Box>
-                    <Box flexGrow={1} margin="0px auto" maxWidth={300}>
-                        <MarkdownTitleField
-                            inputProps={{
-                                readOnly: true,
-                                style: {
-                                    textAlign: "center",
-                                    fontSize: "1.2rem"
-                                },
-                            }}
-                            fullWidth
-                            onChange={({target}) => markdownTitle.updater(target.value)}
-                            value={capitalize(markdownTitle.state)}
+                    <Box margin="0px auto">
+                        <CommandBar
+                            selection={state.selection}
+                            setSelection={state.setSelection}
+                            markdown={state.markdown}
+                            setMarkdown={state.setMarkdown}
+                            imageAltText={state.imageAltText}
+                            setImageAltText={state.setImageAltText}
+                            footnoteCount={state.footnoteCount}
+                            setFootnoteCount={state.setFootnoteCount}
                         />
                     </Box>
                     <Box>
-                            <GitHubLink />
-                            <LinkedInLink />
+                        <GitHubLink />
+                        <LinkedInLink />
                     </Box>
                 </Container>
             </Toolbar>
