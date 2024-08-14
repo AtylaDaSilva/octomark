@@ -38,7 +38,7 @@ export default function Appbar({ state }: AppbarType) {
                         </Typography>
                     </Grid>
                     <Grid item xs={"auto"} marginX="auto">
-                        <CommandBar state={state} />
+                        {/* <CommandBar state={state} /> */}
                     </Grid>
                     <Grid item xs={1} display={"flex"} justifyContent={"flex-end"} >
                         <GitHubLink />

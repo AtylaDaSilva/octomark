@@ -3,7 +3,9 @@
 import { useState, Dispatch, SetStateAction } from "react";
 
 // MUI Components
-import { Container, Box, BoxProps, Grid, styled } from "@mui/material";
+import { Box, BoxProps, Grid, styled } from "@mui/material";
+
+import { Editor } from "@monaco-editor/react";
 
 // Classes
 import { TextSelector, selectedTextType } from "@/classes";
@@ -12,6 +14,7 @@ import { TextSelector, selectedTextType } from "@/classes";
 import Appbar from "@/components/Appbar";
 import MDEditor from "@/components/MDEditor";
 import MDPreview from "@/components/MDPreview";
+import EditorHeader from "@/components/EditorHeader";
 
 // Remark Plugins
 import remarkGfm from "remark-gfm";
@@ -86,47 +89,23 @@ export default function Home() {
   return (
     <ThemeProvider theme={GitHubDark}>
       <CssBaseline />
-      <Grid container columnSpacing={3} rowSpacing={2} sx={{ height: "90vh" }} justifyContent="center" alignItems="flex-start">
+      <Grid
+        container
+        height="100%"
+      >
         <Grid item xs={12}>
           <Appbar state={state} />
         </Grid>
-        <Grid item xs={4}>
-          <MDEditor
-            markdown={markdown}
-            handleChange={setMarkdown}
-            handleEditorEvent={handleEditorEvent}
-            editorOptions={{
-              fullWidth: true,
-              rows: 31,
-              autoFocus: false,
-              placeholder: "Type your markdown here.",
-              variant: "outlined",
-            }}
-          />
+        <Grid
+          item
+          xs={12}
+          flexGrow={1}
+          display="flex"
+          flexDirection="column"
+        >
+          <EditorHeader />
+          <Editor height="80vh" theme="vs-dark" language="markdown" value={markdown}/>
         </Grid>
-        {
-          showPreview &&
-          <Grid item xs={4} sx={{ height: "100%" }} >
-            <PreviewBox
-              padding={2}
-              overflow="auto"
-              sx={{ height: "100%" }}
-            >
-              <MDPreview
-                markdown={markdown}
-                previewOptions={{
-                  remarkPlugins: [
-                    remarkGfm,
-                    remarkAlert,
-                    remarkGemoji,
-                    removeComments
-                  ],
-                }}
-              />
-            </PreviewBox>
-
-          </Grid>
-        }
       </Grid>
     </ThemeProvider>
   );
