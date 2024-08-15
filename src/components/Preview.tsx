@@ -9,7 +9,7 @@ import remarkGemoji from "remark-gemoji";
 import removeComments from "remark-remove-comments";
 
 // Constants
-import { WINDOW_SIZE } from "@/utils/constants";
+import { WINDOW_HEIGHT } from "@/utils/constants";
 
 // Component types
 export type PreviewType = {
@@ -18,7 +18,7 @@ export type PreviewType = {
 
 export default function Preview({ markdown } : PreviewType) {
     return (
-        <PreviewBox height={WINDOW_SIZE}>
+        <PreviewBox height={WINDOW_HEIGHT}>
             <Markdown
                 remarkPlugins={[
                     remarkGfm,

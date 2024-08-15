@@ -3,9 +3,10 @@
 import { useState, Dispatch, SetStateAction } from "react";
 
 // MUI Components
-import { Box, BoxProps, Grid, styled } from "@mui/material";
+import { Grid } from "@mui/material";
 
-import { Editor } from "@monaco-editor/react";
+// Monaco Editor
+import { Editor, } from "@monaco-editor/react";
 
 // Classes
 import { TextSelector, selectedTextType } from "@/classes";
@@ -28,9 +29,9 @@ import { GitHubDark } from "@/themes";
 
 // Utils
 import { capitalize } from "@/functions/capitalize";
-import { DEFAULT_MARKDOWN_TITLE, WINDOW_SIZE } from "@/utils/constants";
+import { DEFAULT_MARKDOWN_TITLE, WINDOW_HEIGHT } from "@/utils/constants";
 
-// State type
+// Types
 export type stateType = {
   markdown?: string, setMarkdown?: Dispatch<SetStateAction<string>>,
   selection?: selectedTextType, setSelection?: Dispatch<SetStateAction<selectedTextType>>,
@@ -93,7 +94,13 @@ export default function Home() {
           paddingX={1}
         >
           <EditorHeader state={state}/>
-          <Editor height={WINDOW_SIZE} theme="vs-dark" language="markdown" value={markdown}/>
+          <Editor
+            height={WINDOW_HEIGHT}
+            theme="vs-dark"
+            language="markdown"
+            onChange={(editorText?: string) => setMarkdown(editorText ? editorText : "")}
+            value={markdown}
+          />
         </Grid>
         <Grid
           item xs={6}
