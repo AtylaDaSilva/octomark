@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { PreviewBox } from "@/components/styled/PreviewBox"
 import Markdown from "react-markdown";
 
 // Remark Plugins
@@ -18,7 +18,7 @@ export type PreviewType = {
 
 export default function Preview({ markdown } : PreviewType) {
     return (
-        <Box height={WINDOW_SIZE}>
+        <PreviewBox height={WINDOW_SIZE}>
             <Markdown
                 remarkPlugins={[
                     remarkGfm,
@@ -29,6 +29,6 @@ export default function Preview({ markdown } : PreviewType) {
             >
                 {markdown}
             </Markdown>
-        </Box>
+        </PreviewBox>
     );
 }

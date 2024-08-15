@@ -74,12 +74,6 @@ export default function Home() {
     if (markdown === "") setFootnoteCount(0);
   }
 
-  // Styled Components
-  const PreviewBox = styled(Box)<BoxProps>(({ theme }) => ({
-    border: `1px solid ${theme.palette.grey[700]}`,
-    borderRadius: theme.shape.borderRadius
-  }))
-
   return (
     <ThemeProvider theme={GitHubDark}>
       <CssBaseline />
