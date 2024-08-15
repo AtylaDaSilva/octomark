@@ -1,5 +1,5 @@
 // MUI Components
-import { Box } from "@mui/material";
+import { Container, Box } from "@mui/material";
 
 // Command Icons
 import {
@@ -26,7 +26,7 @@ import { stateType } from "@/app/page";
 
 export default function CommandBar({ state }: CommandBarProps) {
     return (
-        <Box>
+        <Container maxWidth={false}>
             <ul className="no-list-style flex">
                 <li>
                     <TitleIcon
@@ -152,14 +152,16 @@ export default function CommandBar({ state }: CommandBarProps) {
                         setMarkdown={state.setMarkdown}
                     />
                 </li>
-                <li>
-                    <HideShowPreviewIcon
-                        showPreview={state.showPreview}
-                        setShowPreview={state.setShowPreview}
-                    />
-                </li>
+                <Box marginLeft="auto">
+                    <li>
+                        <HideShowPreviewIcon
+                            showPreview={state.showPreview}
+                            setShowPreview={state.setShowPreview}
+                        />
+                    </li>
+                </Box>
             </ul>
-        </Box>
+        </Container>
     );
 }
 

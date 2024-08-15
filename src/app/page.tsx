@@ -13,14 +13,9 @@ import { TextSelector, selectedTextType } from "@/classes";
 // Components
 import Appbar from "@/components/Appbar";
 import EditorHeader from "@/components/EditorHeader";
+import PreviewHeader from "@/components/PreviewHeader";
+import Preview from "@/components/Preview";
 import Appfooter from "@/components/Appfooter";
-
-// Remark Plugins
-import remarkGfm from "remark-gfm";
-//import remarkGithub from "remark-github";
-import { remarkAlert } from "remark-github-blockquote-alert";
-import remarkGemoji from "remark-gemoji";
-import removeComments from "remark-remove-comments";
 
 // CSS
 import "@/css/globals.css";
@@ -33,7 +28,7 @@ import { GitHubDark } from "@/themes";
 
 // Utils
 import { capitalize } from "@/functions/capitalize";
-import { DEFAULT_MARKDOWN_TITLE } from "@/utils/constants";
+import { DEFAULT_MARKDOWN_TITLE, WINDOW_SIZE } from "@/utils/constants";
 
 // State type
 export type stateType = {
@@ -97,14 +92,22 @@ export default function Home() {
         </Grid>
         <Grid
           item
-          xs={12}
+          xs={6}
           display="flex"
           flexDirection="column"
-          paddingX={3}
           paddingY={2}
+          paddingX={1}
         >
           <EditorHeader state={state}/>
-          <Editor height="78vh" theme="vs-dark" language="markdown" value={markdown}/>
+          <Editor height={WINDOW_SIZE} theme="vs-dark" language="markdown" value={markdown}/>
+        </Grid>
+        <Grid
+          item xs={6}
+          paddingY={2}
+          paddingX={1}
+        >
+          <PreviewHeader />
+          <Preview markdown={state.markdown} />
         </Grid>
         <Grid item xs={12}>
           <Appfooter />
