@@ -12,9 +12,8 @@ import { TextSelector, selectedTextType } from "@/classes";
 
 // Components
 import Appbar from "@/components/Appbar";
-import MDEditor from "@/components/MDEditor";
-import MDPreview from "@/components/MDPreview";
 import EditorHeader from "@/components/EditorHeader";
+import Appfooter from "@/components/Appfooter";
 
 // Remark Plugins
 import remarkGfm from "remark-gfm";
@@ -94,17 +93,21 @@ export default function Home() {
         height="100%"
       >
         <Grid item xs={12}>
-          <Appbar state={state} />
+          <Appbar />
         </Grid>
         <Grid
           item
           xs={12}
-          flexGrow={1}
           display="flex"
           flexDirection="column"
+          paddingX={3}
+          paddingY={2}
         >
-          <EditorHeader />
-          <Editor height="80vh" theme="vs-dark" language="markdown" value={markdown}/>
+          <EditorHeader state={state}/>
+          <Editor height="78vh" theme="vs-dark" language="markdown" value={markdown}/>
+        </Grid>
+        <Grid item xs={12}>
+          <Appfooter />
         </Grid>
       </Grid>
     </ThemeProvider>

@@ -1,15 +1,21 @@
-import { Container, Box, styled, ContainerProps } from "@mui/material"
+import { Container, styled, ContainerProps } from "@mui/material"
+import CommandBar from "./CommandBar"
+import { stateType } from "@/app/page"
 
-export default function EditorHeader() {
+export default function EditorHeader({ state }: { state: stateType }) {
     const CustomContainer = styled(Container)<ContainerProps>(({ theme }) => ({
         border: `1px solid ${theme.palette.grey[700]}`,
         borderTopLeftRadius: "5px",
         borderTopRightRadius: "5px",
-        height: "45px"
+        height: "3.2rem",
+        display: "flex",
+        justifyContent: "flex-start",
+        alignItems: "center"
+        // boxSizing: "border-box"
     }))
     return (
         <CustomContainer maxWidth={false}>
-            <Box>Editor Header</Box>
+            <CommandBar state={state} />
         </CustomContainer>
     )
 }
