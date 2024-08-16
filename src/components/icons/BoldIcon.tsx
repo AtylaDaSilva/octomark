@@ -6,24 +6,20 @@ import { FormatBold } from "@mui/icons-material";
 import { handleCommand, bold } from "@/commands";
 
 // Types
-import { stateType } from "@/app/page";
+import { TReference, TState } from "@/types";
 
-export default function BoldIcon({ selection, setSelection, markdown, setMarkdown }: stateType) {
+export default function BoldIcon({ state, reference }: { state: TState, reference: TReference }) {
     return (
         <Tooltip title="Bold">
             <IconButton
                 aria-label="Format Bold"
                 color="info"
                 onClick={() => {
-                    if (selection && setSelection && markdown && setMarkdown) {
-                        handleCommand(
-                            bold,
-                            { selection: selection },
-                            setSelection,
-                            markdown,
-                            setMarkdown
-                        );
-                    }
+                    handleCommand(
+                        bold,
+                        reference.editorRef,
+                        state
+                    );
                 }}
             >
                 <FormatBold />

@@ -1,32 +1,27 @@
-import type { selectedTextType } from "@/types";
+import type { TEditorRef } from "@/types";
+import { EditorSelection } from "./EditorSelection";
 
-/** Extracts text selected with a mouse from an HTML textarea input.
- * @param eventTarget Textarea HTML element reference.
- * @param markdown Markdown state string.
+/** Extracts the selected text within a text editor
+ * @param editorRef The reference of the text editor.
  */
 export class TextSelector {
-    readonly eventTarget: any;
-    readonly markdown: string;
-    selectedText: selectedTextType | null
+    readonly editorRef: TEditorRef;
 
-    constructor(eventTarget: any, markdown: string) {
-        this.selectedText = null;
-        this.eventTarget = eventTarget;
-        this.markdown = markdown;
+    constructor(editorRef: TEditorRef) {
+        this.editorRef = editorRef.current
     }
 
-    getCursorPosition() : number {
-        return this.eventTarget.selectionStart
+    getEditorRef(): void {
+        return this.editorRef;
     }
 
-    getSelectedText() : selectedTextType {
-        const { selectionStart, selectionEnd } = this.eventTarget;
-        this.selectedText = {
-            text: this.markdown.slice(selectionStart, selectionEnd),
-            startPosition: selectionStart,
-            endPosition: selectionEnd,
+    getSelection(): EditorSelection | null {
+        if (this.editorRef) {
+            const range = this.editorRef.getSelection()
+            const text = this.editorRef.getModel().getValueInRange(range)
+            return new EditorSelection(range, text)
         }
 
-        return this.selectedText;
+        return null;
     }
 }

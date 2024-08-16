@@ -9,10 +9,9 @@ import { Title } from "@mui/icons-material";
 import { handleCommand, heading } from "@/commands";
 
 // Types
-import { headingLevelType } from "@/commands/heading";
-import { stateType } from "@/app/page";
+import { TState, TReference, headingLevelType } from "@/types";
 
-export default function TitleIcon({ selection, setSelection, markdown, setMarkdown }: stateType) {
+export default function TitleIcon({ state, reference }: { state: TState, reference: TReference }) {
     const [anchorElement, setAnchorElement] = useState<null | HTMLElement>(null);
     const isOpen = Boolean(anchorElement);
     const handleClick = (event: React.MouseEvent<HTMLElement>) => {
@@ -22,15 +21,12 @@ export default function TitleIcon({ selection, setSelection, markdown, setMarkdo
         setAnchorElement(null);
     };
     const handleMenuItemClick = (headingLevel: headingLevelType) => {
-        if (selection && setSelection && markdown && setMarkdown) {
-            handleCommand(
-                heading,
-                { selection: selection, headingLevel: headingLevel },
-                setSelection,
-                markdown,
-                setMarkdown
-            );
-        }
+        handleCommand(
+            heading,
+            reference.editorRef,
+            state,
+            { headingLevel: headingLevel }
+        );
     }
 
     return (

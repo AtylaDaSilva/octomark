@@ -10,13 +10,13 @@ import { Image } from "@mui/icons-material";
 import { FormModal } from "../modals";
 
 // Types
-import { stateType } from "@/app/page";
+import { TState } from "@/app/page";
 
 // Commands
 import { handleCommand, image } from "@/commands";
 
 export default function ImageIcon(
-    { selection, setSelection, markdown, setMarkdown, imageAltText, setImageAltText }: stateType
+    { selection, setSelection, markdown, setMarkdown, imageAltText, setImageAltText }: TState
 ) {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [uri, setUri] = useState("");

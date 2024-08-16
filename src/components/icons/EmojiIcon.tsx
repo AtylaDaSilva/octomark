@@ -9,12 +9,12 @@ import { SentimentSatisfiedAlt } from "@mui/icons-material";
 import { handleCommand, emoji } from "@/commands";
 
 // Types
-import { stateType } from "@/app/page";
+import { TState } from "@/app/page";
 
 // Emoji list
 import emojiList from "@/utils/emojis.json";
 
-export default function EmojiIcon({ selection, setSelection, markdown, setMarkdown }: stateType) {
+export default function EmojiIcon({ selection, setSelection, markdown, setMarkdown }: TState) {
     const [anchorElement, setAnchorElement] = useState<null | HTMLElement>(null);
     const [activeTab, setActiveTab] = useState<number>(0);
     const isOpen = Boolean(anchorElement);

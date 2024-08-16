@@ -6,9 +6,9 @@ import { Visibility, VisibilityOff } from "@mui/icons-material";
 import { handleCommand, bold } from "@/commands";
 
 // Types
-import { stateType } from "@/app/page";
+import { TState } from "@/app/page";
 
-export default function HideShowPreviewIcon({ showPreview, setShowPreview }: stateType) {
+export default function HideShowPreviewIcon({ showPreview, setShowPreview }: TState) {
     const PreviewIcon = showPreview ? Visibility : VisibilityOff
     const label = `${showPreview ? 'Hide' : 'Show'} Preview`
     return (

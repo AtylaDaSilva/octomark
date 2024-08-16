@@ -6,9 +6,9 @@ import { FormatItalic } from "@mui/icons-material";
 import { handleCommand, italic } from "@/commands";
 
 // Types
-import { stateType } from "@/app/page";
+import { TState } from "@/app/page";
 
-export default function ItalicIcon({ selection, setSelection, markdown, setMarkdown }: stateType) {
+export default function ItalicIcon({ selection, setSelection, markdown, setMarkdown }: TState) {
     return (
         <Tooltip title="Italic">
             <IconButton

@@ -1,7 +1,7 @@
-// Imports
+import { EditorSelection } from "./EditorSelection";
 import { TextSelector } from "./TextSelector";
 
-// Exports
 export {
-    TextSelector,
+    EditorSelection,
+    TextSelector
 }

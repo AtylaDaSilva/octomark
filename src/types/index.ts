@@ -1,23 +1,33 @@
 import { Dispatch, SetStateAction } from "react"
 
-export type selectedTextType = {
-    text: string,
-    startPosition?: number,
-    endPosition?: number,
-}
-
-export type stateType = {
+export type TState = {
     markdown?: string, setMarkdown?: Dispatch<SetStateAction<string>>,
-    selection?: selectedTextType, setSelection?: Dispatch<SetStateAction<selectedTextType>>,
     imageAltText?: string, setImageAltText?: Dispatch<SetStateAction<string>>,
     footnoteCount?: number, setFootnoteCount?: Dispatch<SetStateAction<number>>,
     showPreview?: boolean, setShowPreview?: Dispatch<SetStateAction<boolean>>
 }
 
+export type TEditor = any;
+
+export type TEditorRef = any;
+
+export type TReference = {
+    editorRef: TEditorRef
+}
+
+export type TSelectionRange = any;
+
+export type TSelection = {
+    range: TSelectionRange,
+    text: string
+}
+
 export type alertLevelType = "note" | "tip" | "important" | "warning" | "caution";
 
-export type commandFuncArgsType = {
-    selection?: selectedTextType,
+export type TCommandFunc = (commandFuncArgs: TCommandFuncArgs) => TSelection;
+
+export type TCommandFuncArgs = {
+    selection?: TSelection | null,
     headingLevel?: headingLevelType,
     alertLevel?: alertLevelType,
     emojiCode?: string,
@@ -45,10 +55,6 @@ export type tablePropsType = {
     width: number,
     length: number,
     textAlign: "center" | "left" | "right"
-}
-
-export type CommandBarProps = {
-    state: stateType
 }
 
 export type PreviewType = {

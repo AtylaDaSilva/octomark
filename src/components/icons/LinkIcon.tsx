@@ -10,12 +10,12 @@ import { Link } from "@mui/icons-material";
 import { FormModal } from "../modals";
 
 // Types
-import { stateType } from "@/app/page";
+import { TState } from "@/app/page";
 
 // Commands
 import { handleCommand, link } from "@/commands";
 
-export default function LinkIcon({ selection, setSelection, markdown, setMarkdown }: stateType) {
+export default function LinkIcon({ selection, setSelection, markdown, setMarkdown }: TState) {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [uri, setUri] = useState("");
     return (

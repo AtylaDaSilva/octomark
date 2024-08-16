@@ -6,9 +6,9 @@ import { Code } from "@mui/icons-material";
 import { handleCommand, code } from "@/commands";
 
 // Types
-import { stateType } from "@/app/page";
+import { TState } from "@/app/page";
 
-export default function CodeIcon({ selection, setSelection, markdown, setMarkdown }: stateType) {
+export default function CodeIcon({ selection, setSelection, markdown, setMarkdown }: TState) {
     return (
         <Tooltip title="Code">
             <IconButton

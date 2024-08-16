@@ -6,10 +6,10 @@ import { WrapText } from "@mui/icons-material";
 import { handleCommand, footnote } from "@/commands";
 
 // Types
-import { stateType } from "@/app/page";
+import { TState } from "@/app/page";
 
 export default function FootnoteIcon(
-    { selection, setSelection, markdown, setMarkdown, footnoteCount, setFootnoteCount }: stateType
+    { selection, setSelection, markdown, setMarkdown, footnoteCount, setFootnoteCount }: TState
 ) {
     return (
         <Tooltip title="Footnote">

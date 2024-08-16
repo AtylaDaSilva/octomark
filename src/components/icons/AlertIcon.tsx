@@ -13,9 +13,9 @@ import { handleCommand, alert } from "@/commands";
 
 // Types
 import type { alertLevelType } from "@/commands/alert";
-import { stateType } from "@/app/page";
+import { TState } from "@/app/page";
 
-export default function AlertIcon({ selection, setSelection, markdown, setMarkdown }: stateType) {
+export default function AlertIcon({ selection, setSelection, markdown, setMarkdown }: TState) {
     const [anchorElement, setAnchorElement] = useState<null | HTMLElement>(null);
     const isOpen = Boolean(anchorElement);
     const handleClick = (event: React.MouseEvent<HTMLElement>) => {

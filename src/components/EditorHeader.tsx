@@ -1,11 +1,13 @@
 import { WindowHeader } from "@/components/styled/WindowHeader";
 import CommandBar from "./CommandBar"
-import { stateType } from "@/app/page"
+import { TReference, TState } from "@/types"
 
-export default function EditorHeader({ state }: { state: stateType }) {
+export default function EditorHeader(
+    { state, reference }: { state: TState, reference: TReference }
+) {
     return (
         <WindowHeader>
-            <CommandBar state={state} />
+            <CommandBar state={state} reference={reference} />
         </WindowHeader>
     )
 }

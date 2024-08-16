@@ -6,9 +6,9 @@ import { FormatListBulleted } from "@mui/icons-material";
 import { handleCommand, bulletedList } from "@/commands";
 
 // Types
-import { stateType } from "@/app/page";
+import { TState } from "@/app/page";
 
-export default function BulletedListIcon({ selection, setSelection, markdown, setMarkdown }: stateType) {
+export default function BulletedListIcon({ selection, setSelection, markdown, setMarkdown }: TState) {
     return (
         <Tooltip title="Bulleted List">
             <IconButton
