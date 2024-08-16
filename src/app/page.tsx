@@ -1,6 +1,6 @@
 "use client";
 // React
-import { useState, Dispatch, SetStateAction } from "react";
+import { useState } from "react";
 
 // MUI Components
 import { Grid } from "@mui/material";
@@ -32,13 +32,7 @@ import { capitalize } from "@/functions/capitalize";
 import { DEFAULT_MARKDOWN_TITLE, WINDOW_HEIGHT } from "@/utils/constants";
 
 // Types
-export type stateType = {
-  markdown?: string, setMarkdown?: Dispatch<SetStateAction<string>>,
-  selection?: selectedTextType, setSelection?: Dispatch<SetStateAction<selectedTextType>>,
-  imageAltText?: string, setImageAltText?: Dispatch<SetStateAction<string>>,
-  footnoteCount?: number, setFootnoteCount?: Dispatch<SetStateAction<number>>,
-  showPreview?: boolean, setShowPreview?: Dispatch<SetStateAction<boolean>>
-}
+import type { stateType } from "@/types";
 
 export default function Home() {
   // State

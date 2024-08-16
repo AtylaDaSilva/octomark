@@ -11,10 +11,8 @@ import removeComments from "remark-remove-comments";
 // Constants
 import { WINDOW_HEIGHT } from "@/utils/constants";
 
-// Component types
-export type PreviewType = {
-    markdown?: string,
-}
+// Types
+import { PreviewType } from "@/types";
 
 export default function Preview({ markdown } : PreviewType) {
     return (

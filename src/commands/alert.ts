@@ -1,5 +1,5 @@
 // Types
-import { selectedTextType } from "@/classes";
+import { selectedTextType } from "@/types";
 import type { commandFuncArgsType } from "./handleCommand";
 
 /**
@@ -17,6 +17,3 @@ export function alert(
     };
     return newSelection;
 }
-
-// Component types
-export type alertLevelType = "note" | "tip" | "important" | "warning" | "caution";

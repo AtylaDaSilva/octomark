@@ -1,6 +1,5 @@
 // Types
-import { selectedTextType } from "@/classes";
-import { commandFuncArgsType } from "./handleCommand";
+import { selectedTextType, commandFuncArgsType } from "@/types";
 
 /**
  * Converts text to 'link' Github-Flavored Markdown.
@@ -13,8 +12,4 @@ export function link({ selection, linkProps } : commandFuncArgsType) : selectedT
         text: `[${selection?.text}](${linkProps?.uri})`
     };
     return newSelection;
-}
-
-export type linkProps = {
-    uri: string
 }

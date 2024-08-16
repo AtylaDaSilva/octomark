@@ -1,3 +1,5 @@
+import type { selectedTextType } from "@/types";
+
 /** Extracts text selected with a mouse from an HTML textarea input.
  * @param eventTarget Textarea HTML element reference.
  * @param markdown Markdown state string.
@@ -27,12 +29,4 @@ export class TextSelector {
 
         return this.selectedText;
     }
-}
-
-// Types
-
-export type selectedTextType = {
-    text: string,
-    startPosition?: number,
-    endPosition?: number,
 }

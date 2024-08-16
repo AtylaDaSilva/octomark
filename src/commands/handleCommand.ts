@@ -1,6 +1,6 @@
 // Types
 import { Dispatch, SetStateAction } from "react";
-import { selectedTextType } from "@/classes";
+import { selectedTextType, commandFuncArgsType } from "@/types";
 import type { alertLevelType } from "./alert";
 import type { headingLevelType } from "./heading";
 import type { linkProps } from "./link";
@@ -32,18 +32,4 @@ export function handleCommand(
         markdown.slice(commandFuncArgs?.selection?.endPosition)
     )
     setMarkdown(newMarkdown);
-}
-
-export type commandFuncArgsType = {
-    selection?: selectedTextType,
-    headingLevel?: headingLevelType,
-    alertLevel?: alertLevelType,
-    emojiCode?: string,
-    linkProps?: linkProps,
-    tableProps?: tablePropsType,
-    imageProps?: imagePropsType
-    state?: {
-        value: any,
-        updater: Dispatch<SetStateAction<any>>
-    }
 }

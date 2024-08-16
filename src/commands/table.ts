@@ -1,6 +1,5 @@
 // Types
-import { selectedTextType } from "@/classes";
-import { commandFuncArgsType } from "./handleCommand";
+import { selectedTextType, commandFuncArgsType } from "@/types";
 
 /**
  * Inserts 'table' Github-Flavored Markdown into text.
@@ -51,11 +50,4 @@ export function table({ selection, tableProps }: commandFuncArgsType) {
     };
 
     return newSelection;
-}
-
-// Component types
-export type tablePropsType = {
-    width: number,
-    length: number,
-    textAlign: "center" | "left" | "right"
 }

@@ -22,7 +22,7 @@ import {
 } from "./icons";
 
 // Types;
-import { stateType } from "@/app/page";
+import { CommandBarProps } from "@/types";
 
 export default function CommandBar({ state }: CommandBarProps) {
     return (
@@ -163,9 +163,4 @@ export default function CommandBar({ state }: CommandBarProps) {
             </ul>
         </Container>
     );
-}
-
-// Component types
-export type CommandBarProps = {
-    state: stateType
 }

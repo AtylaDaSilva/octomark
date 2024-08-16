@@ -1,6 +1,5 @@
 // Types
-import { selectedTextType } from "@/classes";
-import { commandFuncArgsType } from "./handleCommand";
+import { selectedTextType, commandFuncArgsType } from "@/types";
 
 /**
  * Inserts 'image' Github-Flavored Markdown into text.
@@ -13,10 +12,4 @@ export function image({ selection, imageProps } : commandFuncArgsType) {
         text: `![${imageProps?.altText}](${imageProps?.uri})`
     };
     return newSelection;
-}
-
-// Component types
-export type imagePropsType = {
-    uri: string,
-    altText: string
 }

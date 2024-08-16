@@ -1,6 +1,5 @@
 // Types
-import { selectedTextType } from "@/classes";
-import type { commandFuncArgsType } from "./handleCommand";
+import { selectedTextType, commandFuncArgsType } from "@/types";
 
 /**
  * Converts text to bold Github-Flavored Markdown.
@@ -17,6 +16,3 @@ export function heading(
     };
     return newSelection;
 }
-
-// Component types
-export type headingLevelType = 1 | 2 | 3 | 4 | 5 | 6;
