@@ -6,9 +6,9 @@ import { Checklist } from "@mui/icons-material";
 import { handleCommand, taskList } from "@/commands";
 
 // Types
-import { TState } from "@/app/page";
+import { TState, TReference } from "@/types";
 
-export default function TaskListIcon({ selection, setSelection, markdown, setMarkdown }: TState) {
+export default function TaskListIcon({ state, reference }: { state: TState, reference: TReference }) {
     return (
         <Tooltip title="Task List">
             <IconButton

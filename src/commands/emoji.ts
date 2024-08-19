@@ -1,14 +1,14 @@
 // Types
-import { selectedTextType } from "@/classes";
-import { commandFuncArgsType } from "./handleCommand";
+import { EditorSelection } from "@/classes";
+import { TCommandFuncArgs } from "@/types";
 
 /**
  * Inserts emoji code into selection.
  * @param selection Selection state.
- * @returns selectedTextType object
+ * @returns EditorSelection object
  */
-export function emoji({ selection, emojiCode } : commandFuncArgsType) : selectedTextType {
-    const newSelection : selectedTextType = {
+export function emoji({ selection, emojiCode } : TCommandFuncArgs) : EditorSelection {
+    const newSelection : EditorSelection = {
         ...selection,
         text: `${emojiCode}`
     };

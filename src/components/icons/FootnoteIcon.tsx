@@ -6,7 +6,7 @@ import { WrapText } from "@mui/icons-material";
 import { handleCommand, footnote } from "@/commands";
 
 // Types
-import { TState } from "@/app/page";
+import { TState, TReference } from "@/types";
 
 export default function FootnoteIcon(
     { selection, setSelection, markdown, setMarkdown, footnoteCount, setFootnoteCount }: TState

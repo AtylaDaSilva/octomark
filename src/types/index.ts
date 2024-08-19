@@ -43,8 +43,7 @@ export type TCommandFuncArgs = {
 export type headingLevelType = 1 | 2 | 3 | 4 | 5 | 6;
 
 export type imagePropsType = {
-    uri: string,
-    altText: string
+    uri: string
 }
 
 export type linkProps = {

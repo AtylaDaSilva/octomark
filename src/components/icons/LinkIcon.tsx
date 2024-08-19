@@ -10,12 +10,12 @@ import { Link } from "@mui/icons-material";
 import { FormModal } from "../modals";
 
 // Types
-import { TState } from "@/app/page";
+import { TState, TReference } from "@/types";
 
 // Commands
 import { handleCommand, link } from "@/commands";
 
-export default function LinkIcon({ selection, setSelection, markdown, setMarkdown }: TState) {
+export default function LinkIcon({ state, reference }: { state: TState, reference: TReference }) {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [uri, setUri] = useState("");
     return (
@@ -32,15 +32,12 @@ export default function LinkIcon({ selection, setSelection, markdown, setMarkdow
             <FormModal
                 isOpen={isModalOpen}
                 handleSubmit={() => {
-                    if (selection && setSelection && markdown && setMarkdown) {
-                        handleCommand(
-                            link,
-                            { selection: selection, linkProps: { uri } },
-                            setSelection,
-                            markdown,
-                            setMarkdown
-                        );
-                    }
+                    handleCommand(
+                        link,
+                        reference.editorRef,
+                        state,
+                        { linkProps: { uri } },
+                    );
                     setIsModalOpen(false);
                 }}
                 handleClose={() => setIsModalOpen(false)}

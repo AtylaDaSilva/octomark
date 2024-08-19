@@ -10,14 +10,12 @@ import { Image } from "@mui/icons-material";
 import { FormModal } from "../modals";
 
 // Types
-import { TState } from "@/app/page";
+import { TState, TReference } from "@/types";
 
 // Commands
 import { handleCommand, image } from "@/commands";
 
-export default function ImageIcon(
-    { selection, setSelection, markdown, setMarkdown, imageAltText, setImageAltText }: TState
-) {
+export default function ImageIcon({ state, reference }: { state: TState, reference: TReference }) {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [uri, setUri] = useState("");
 
@@ -35,21 +33,12 @@ export default function ImageIcon(
             <FormModal
                 isOpen={isModalOpen}
                 handleSubmit={() => {
-                    if (selection && setSelection && markdown && setMarkdown && imageAltText) {
-                        handleCommand(
-                            image,
-                            {
-                                selection: selection,
-                                imageProps: {
-                                    uri,
-                                    altText: imageAltText
-                                }
-                            },
-                            setSelection,
-                            markdown,
-                            setMarkdown
-                        );
-                    }
+                    handleCommand(
+                        image,
+                        reference.editorRef,
+                        state,
+                        { imageProps: { uri } }
+                    );
                     setIsModalOpen(false);
                 }}
                 handleClose={() => setIsModalOpen(false)}
@@ -61,15 +50,6 @@ export default function ImageIcon(
                         columns: 12,
                         handleChange: setUri,
                         value: uri,
-                        variant: "outlined"
-                    },
-                    {
-                        type: "text",
-                        label: "Alt Text",
-                        required: true,
-                        columns: 12,
-                        handleChange: setImageAltText,
-                        value: imageAltText,
                         variant: "outlined"
                     }
                 ]}

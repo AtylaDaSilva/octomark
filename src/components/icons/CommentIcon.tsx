@@ -6,9 +6,9 @@ import { CodeOff } from "@mui/icons-material";
 import { handleCommand, comment } from "@/commands";
 
 // Types
-import { TState } from "@/app/page";
+import { TState, TReference } from "@/types";
 
-export default function CommentIcon({ selection, setSelection, markdown, setMarkdown }: TState) {
+export default function CommentIcon({ state, reference }: { state: TState, reference: TReference }) {
     return (
         <Tooltip title="Comment">
             <IconButton

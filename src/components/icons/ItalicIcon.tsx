@@ -6,24 +6,20 @@ import { FormatItalic } from "@mui/icons-material";
 import { handleCommand, italic } from "@/commands";
 
 // Types
-import { TState } from "@/app/page";
+import { TState, TReference } from "@/types";
 
-export default function ItalicIcon({ selection, setSelection, markdown, setMarkdown }: TState) {
+export default function ItalicIcon({ state, reference } : { state: TState, reference: TReference }) {
     return (
         <Tooltip title="Italic">
             <IconButton
                 aria-label="Format Italic"
                 color="info"
                 onClick={() => {
-                    if (selection && setSelection && markdown && setMarkdown) {
-                        handleCommand(
-                            italic,
-                            { selection: selection },
-                            setSelection,
-                            markdown,
-                            setMarkdown
-                        );
-                    }
+                    handleCommand(
+                        italic,
+                        reference.editorRef,
+                        state
+                    );
                 }}
             >
                 <FormatItalic />

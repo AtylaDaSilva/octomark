@@ -70,8 +70,6 @@ export default function CommandBar(
                     <ImageIcon
                         state={state}
                         reference={reference}
-                        imageAltText={state.imageAltText}
-                        setImageAltText={state.setImageAltText}
                     />
                 </li>
                 <li>

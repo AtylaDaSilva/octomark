@@ -14,9 +14,9 @@ import type { tablePropsType } from "@/commands/table";
 
 // Commands
 import { handleCommand, table } from "@/commands";
-import { TState } from "@/app/page";
+import { TState, TReference } from "@/types";
 
-export default function ImageIcon({ selection, setSelection, markdown, setMarkdown }: TState) {
+export default function ImageIcon({ state, reference }: { state: TState, reference: TReference }) {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [tableProps, setTableProps] = useState<tablePropsType>({
         width: 2,

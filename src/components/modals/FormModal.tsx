@@ -9,7 +9,7 @@ import {
     ModalPropsType,
     FormField,
     selectOption
-} from "./";
+} from "@/types";
 
 // Utility functions
 import { capitalize } from "@/functions/capitalize";
@@ -33,7 +33,7 @@ export default function FormModal({
                             key={index}
                         >
                             <TextField
-                                variant={field?.variant || "standard"}
+                                variant={field?.variant || "outlined"}
                                 type={field.type}
                                 color={field.color || "primary"}
                                 label={capitalize(field.label)}
@@ -57,7 +57,7 @@ export default function FormModal({
                             key={index}
                         >
                             <TextField
-                                variant={field?.variant || "standard"}
+                                variant={field?.variant || "outlined"}
                                 select
                                 type={field.type}
                                 label={capitalize(field.label)}

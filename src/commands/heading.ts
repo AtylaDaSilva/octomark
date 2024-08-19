@@ -5,7 +5,7 @@ import { TCommandFuncArgs, TSelection } from "@/types";
 /**
  * Converts text to bold Github-Flavored Markdown.
  * @param selection Selection state.
- * @returns selectedTextType object
+ * @returns EditorSelection object
  */
 export function heading(
     { selection, headingLevel } : TCommandFuncArgs

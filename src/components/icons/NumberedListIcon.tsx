@@ -6,9 +6,9 @@ import { FormatListNumbered } from "@mui/icons-material";
 import { handleCommand, numberedList } from "@/commands";
 
 // Types
-import { TState } from "@/app/page";
+import { TState, TReference } from "@/types";
 
-export default function NumberedListIcon({ selection, setSelection, markdown, setMarkdown }: TState) {
+export default function NumberedListIcon({ state, reference }: { state: TState, reference: TReference }) {
     return (
         <Tooltip title="Numbered List">
             <IconButton

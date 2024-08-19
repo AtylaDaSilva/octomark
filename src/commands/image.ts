@@ -1,15 +1,12 @@
 // Types
-import { selectedTextType, commandFuncArgsType } from "@/types";
+import { EditorSelection } from "@/classes";
+import { TCommandFuncArgs } from "@/types";
 
 /**
  * Inserts 'image' Github-Flavored Markdown into text.
  * @param selection Selection state.
- * @returns selectedTextType object
+ * @returns EditorSelection object
  */
-export function image({ selection, imageProps } : commandFuncArgsType) {
-    const newSelection : selectedTextType = {
-        ...selection,
-        text: `![${imageProps?.altText}](${imageProps?.uri})`
-    };
-    return newSelection;
+export function image({ selection, imageProps } : TCommandFuncArgs) {
+    return new EditorSelection(selection?.range, `![Image](${imageProps?.uri})`)
 }

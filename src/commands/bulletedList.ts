@@ -1,16 +1,12 @@
 // Types
-import { selectedTextType } from "@/classes";
-import { commandFuncArgsType } from "./handleCommand";
+import { EditorSelection } from "@/classes";
+import { TCommandFuncArgs } from "@/types";
 
 /**
  * Converts text to 'bulleted list' Github-Flavored Markdown.
  * @param selection Selection state.
- * @returns selectedTextType object
+ * @returns EditorSelection object
  */
-export function bulletedList({ selection } : commandFuncArgsType) : selectedTextType {
-    const newSelection : selectedTextType = {
-        ...selection,
-        text: `* ${selection?.text.replaceAll(/\n/g, "\n* ")}`
-    };
-    return newSelection;
+export function bulletedList({ selection } : TCommandFuncArgs) : EditorSelection {
+    return new EditorSelection(selection?.range, `* ${selection?.text.replaceAll(/\n/g, "\n* ")}`)
 }
