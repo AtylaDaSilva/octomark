@@ -1,19 +1,11 @@
 // Types
-import { EditorSelection } from "@/types";
-import type { TCommandFuncArgs } from "./handleCommand";
+import type { TCommandFuncArgs } from "@/types";
 
 /**
  * Converts text to 'alert' Github-Flavored Markdown.
- * @param selection Selection state.
- * @returns EditorSelection object
+ * @param selectedText The currently selected text in the editor
+ * @returns string
  */
-export function alert(
-    { selection, alertLevel } : TCommandFuncArgs
-) : EditorSelection {
-    let alertMarkdown = `[!${alertLevel?.toUpperCase()}]`;
-    const newSelection : EditorSelection = {
-        ...selection,
-        text: `> ${alertMarkdown}\n> ${selection?.text}`
-    };
-    return newSelection;
+export function alert({ selectedText, alertLevel } : TCommandFuncArgs) : string {
+    return `> [!${alertLevel?.toUpperCase()}]\n> ${selectedText}`;
 }

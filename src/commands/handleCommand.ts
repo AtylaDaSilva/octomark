@@ -1,8 +1,5 @@
-//Classes
-import { TextSelector } from "@/classes";
-
 // Types
-import { TCommandFunc, TCommandFuncArgs, TEditorRef, TState } from "@/types";
+import { TCommandFunc, TCommandFuncArgs, TState } from "@/types";
 
 /**
  * Executes commandFunction on the selected text in the editor and updates markdown state.
@@ -12,23 +9,27 @@ import { TCommandFunc, TCommandFuncArgs, TEditorRef, TState } from "@/types";
  */
 export function handleCommand(
     commandFunction: TCommandFunc,
-    editorRef: TEditorRef,
+    editorRef: any,
     state: TState,
     commandFuncArgs?: TCommandFuncArgs,
 ) {
-    // Get selected text
-    const selector = new TextSelector(editorRef);
-    const selection = selector.getSelection();
-    const newSelection = commandFunction({ ...commandFuncArgs, selection: selection });
+    // Get selectrion range and text
+    const selection = editorRef.current.getSelection()
+    const selectedText = editorRef.current.getModel().getValueInRange(selection)
 
-    // Update markdown
-    if (state.setMarkdown) {
-        state.setMarkdown(oldMarkdown => {
-            return [
-                oldMarkdown.slice(0, selection?.getRange().startColumn - 1) + 
-                newSelection.text + 
-                oldMarkdown.slice(selection?.getRange().endColumn - 1)
-            ].join("")
-        })
+    // Push the edit into the editor
+    const edit = {
+        identifier: "command",
+        range: selection,
+        text: commandFunction({ ...commandFuncArgs, selectedText: selectedText })
     }
+    editorRef.current.getModel().pushEditOperations([selection], [edit])
+
+    // Update state
+    if (state.setMarkdown) {
+        state.setMarkdown(editorRef.current.getModel().getValue())
+    }
+
+    // Focus on editor
+    editorRef.current.focus()
 }

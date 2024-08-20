@@ -1,16 +1,11 @@
 // Types
-import { EditorSelection } from "@/classes";
 import { TCommandFuncArgs } from "@/types";
 
 /**
  * Converts text to 'task list' Github-Flavored Markdown.
- * @param selection Selection state.
- * @returns EditorSelection object
+ * @param selectedText The currently selected text in the editor
+ * @returns string
  */
-export function taskList({ selection } : TCommandFuncArgs) : EditorSelection {
-    const newSelection : EditorSelection = {
-        ...selection,
-        text: `- [ ] ${selection?.text.replaceAll(/\n/g, "\n- [ ] ")}`
-    };
-    return newSelection;
+export function taskList({ selectedText } : TCommandFuncArgs) : string {
+    return `- [ ] ${selectedText?.replaceAll(/\n/g, "\n- [ ] ")}`; // Replaces subsequent new line characters with '- [ ]'
 }

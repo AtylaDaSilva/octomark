@@ -3,13 +3,9 @@ import { TCommandFuncArgs } from "@/types";
 
 /**
  * Converts text to 'link' Github-Flavored Markdown.
- * @param selection Selection state.
- * @returns EditorSelection object
+ * @param selectedText The currently selected text in the editor
+ * @returns string
  */
-export function link({ selection, linkProps } : TCommandFuncArgs) : EditorSelection {
-    const newSelection : EditorSelection = {
-        ...selection,
-        text: `[${selection?.text}](${linkProps?.uri})`
-    };
-    return newSelection;
+export function link({ selectedText, linkProps } : TCommandFuncArgs) : string {
+    return `[${selectedText}](${linkProps?.uri})`
 }

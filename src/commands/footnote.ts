@@ -1,14 +1,13 @@
 // Types
-import { EditorSelection } from "@/classes";
 import { TCommandFuncArgs } from "@/types";
 import { match } from "assert";
 
 /**
  * Converts text to 'footnote' Github-Flavored Markdown.
- * @param selection Selection state.
- * @returns EditorSelection object
+ * @param selectedText The currently selected text in the editor
+ * @returns string
  */
-export function footnote({ selection, state } : TCommandFuncArgs) : EditorSelection {
+export function footnote({ selectedText, state } : TCommandFuncArgs) : string {
     var counter = state?.value + 1;
     var append = `[^${counter}]: Footnote ${counter}\n`;
 
@@ -19,12 +18,5 @@ export function footnote({ selection, state } : TCommandFuncArgs) : EditorSelect
         return res;
     }
 
-    let newSelection : EditorSelection = {
-        ...selection,
-        text: `${selection?.text.replaceAll(/\n/g, replacer)}[^${counter}]\n\n${append}`
-    };
-
-    state?.updater(counter);
-
-    return newSelection;
+    return `${selectedText?.replaceAll(/\n/g, replacer)}[^${counter}]\n\n${append}`;
 }

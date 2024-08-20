@@ -1,10 +1,9 @@
-import { EditorSelection } from "@/classes"
 import type { TCommandFuncArgs } from "@/types"
 /**
  * Returns a new string with text wrapped in bold GFM markdown.
- * @param selection Selection state.
+ * @param selectedText The currently selected text in the editor
  * @return string
  */
-export function bold({ selection }: TCommandFuncArgs): EditorSelection {
-    return new EditorSelection(selection?.range, `**${selection?.text}**`)
+export function bold({ selectedText }: TCommandFuncArgs): string {
+    return `**${selectedText}**`;
 }

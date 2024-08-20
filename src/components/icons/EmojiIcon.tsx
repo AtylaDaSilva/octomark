@@ -32,15 +32,12 @@ export default function EmojiIcon({ state, reference }: { state: TState, referen
     };
 
     const handleMenuItemClick = (emojiCode: string) => {
-        if (selection && setSelection && markdown && setMarkdown) {
-            handleCommand(
-                emoji,
-                { selection: selection, emojiCode },
-                setSelection,
-                markdown,
-                setMarkdown
-            );
-        }
+        handleCommand(
+            emoji,
+            reference.editorRef,
+            state,
+            { emojiCode },
+        );
         handleClose();
         setActiveTab(0);
     }

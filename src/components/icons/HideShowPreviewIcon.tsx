@@ -2,11 +2,8 @@
 import { IconButton, Tooltip } from "@mui/material";
 import { Visibility, VisibilityOff } from "@mui/icons-material";
 
-// Commands
-import { handleCommand, bold } from "@/commands";
-
 // Types
-import { TState, TReference } from "@/types";
+import { TState, } from "@/types";
 
 export default function HideShowPreviewIcon({ showPreview, setShowPreview }: TState) {
     const PreviewIcon = showPreview ? Visibility : VisibilityOff

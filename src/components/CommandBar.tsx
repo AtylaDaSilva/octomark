@@ -21,7 +21,7 @@ import {
     HideShowPreviewIcon
 } from "./icons";
 
-// Types;
+// Types
 import { TReference, TState } from "@/types";
 
 export default function CommandBar(
@@ -94,8 +94,6 @@ export default function CommandBar(
                     <FootnoteIcon
                         state={state}
                         reference={reference}
-                        footnoteCount={state.footnoteCount}
-                        setFootnoteCount={state.setFootnoteCount}
                     />
                 </li>
                 <li>

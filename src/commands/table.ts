@@ -3,10 +3,10 @@ import { TCommandFuncArgs } from "@/types";
 
 /**
  * Inserts 'table' Github-Flavored Markdown into text.
- * @param selection Selection state.
- * @returns EditorSelection object
+ * @param selectedText The currently selected text in the editor
+ * @returns string
  */
-export function table({ selection, tableProps }: TCommandFuncArgs) {
+export function table({ selectedText, tableProps }: TCommandFuncArgs) {
     let tableHeaders = "|";
     let textAlign = "|";
     let textAlignMarkdown = "";
@@ -44,10 +44,5 @@ export function table({ selection, tableProps }: TCommandFuncArgs) {
         }
     }
 
-    const newSelection: EditorSelection = {
-        ...selection,
-        text: `${tableMarkdown}`
-    };
-
-    return newSelection;
+    return `${tableMarkdown}`
 }

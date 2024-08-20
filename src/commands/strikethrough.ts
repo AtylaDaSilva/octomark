@@ -1,12 +1,11 @@
 // Types
-import { EditorSelection } from "@/classes";
 import { TCommandFuncArgs } from "@/types";
 
 /**
- * Converts text to striketrhough Github-Flavored Markdown.
- * @param selection Selection state.
- * @returns EditorSelection object
+ * Converts text to "striketrhough" Github-Flavored Markdown.
+ * @param selectedText The currently selected text in the editor
+ * @returns string
  */
-export function strikethrough ({ selection } : TCommandFuncArgs) : EditorSelection {
-    return new EditorSelection(selection?.range, `~${selection?.text}~`)
+export function strikethrough ({ selectedText } : TCommandFuncArgs) : string {
+    return `~${selectedText}~`
 }

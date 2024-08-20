@@ -15,15 +15,11 @@ export default function CommentIcon({ state, reference }: { state: TState, refer
                 aria-label="Insert Comment"
                 color="info"
                 onClick={() => {
-                    if (selection && setSelection && markdown && setMarkdown) {
-                        handleCommand(
-                            comment,
-                            { selection: selection },
-                            setSelection,
-                            markdown,
-                            setMarkdown
-                        );
-                    }
+                    handleCommand(
+                        comment,
+                        reference.editorRef,
+                        state
+                    );
                 }}
             >
                 <CodeOff />

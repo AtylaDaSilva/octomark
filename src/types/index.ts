@@ -7,32 +7,22 @@ export type TState = {
     showPreview?: boolean, setShowPreview?: Dispatch<SetStateAction<boolean>>
 }
 
-export type TEditor = any;
-
-export type TEditorRef = any;
-
 export type TReference = {
-    editorRef: TEditorRef
+    editorRef: any,
+    monacoRef: any
 }
 
-export type TSelectionRange = any;
+export type TAlertLevel = "note" | "tip" | "important" | "warning" | "caution";
 
-export type TSelection = {
-    range: TSelectionRange,
-    text: string
-}
-
-export type alertLevelType = "note" | "tip" | "important" | "warning" | "caution";
-
-export type TCommandFunc = (commandFuncArgs: TCommandFuncArgs) => TSelection;
+export type TCommandFunc = (commandFuncArgs: TCommandFuncArgs) => string;
 
 export type TCommandFuncArgs = {
-    selection?: TSelection | null,
+    selectedText?: string | null,
     headingLevel?: headingLevelType,
-    alertLevel?: alertLevelType,
+    alertLevel?: TAlertLevel,
     emojiCode?: string,
     linkProps?: linkProps,
-    tableProps?: tablePropsType,
+    tableProps?: TTableProps,
     imageProps?: imagePropsType
     state?: {
         value: any,
@@ -50,7 +40,7 @@ export type linkProps = {
     uri: string
 }
 
-export type tablePropsType = {
+export type TTableProps = {
     width: number,
     length: number,
     textAlign: "center" | "left" | "right"

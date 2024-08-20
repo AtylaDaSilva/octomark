@@ -8,9 +8,6 @@ import { Grid } from "@mui/material";
 // Monaco Editor
 import { Editor, } from "@monaco-editor/react";
 
-// Classes
-import { TextSelector } from "@/classes";
-
 // Components
 import Appbar from "@/components/Appbar";
 import EditorHeader from "@/components/EditorHeader";
@@ -34,17 +31,18 @@ import { DEFAULT_MARKDOWN_TITLE, WINDOW_HEIGHT } from "@/utils/constants";
 // Types
 import type {
   TState,
-  TEditor,
   TReference
 } from "@/types";
 
 export default function Home() {
   // Reference
-  const editorRef = useRef(null)
+  const editorRef = useRef(null);
+  const monacoRef = useRef(null);
 
   // Constant to pass references around components
   const reference: TReference = {
-    editorRef
+    editorRef,
+    monacoRef
   }
 
   // State
@@ -58,8 +56,9 @@ export default function Home() {
   }
 
   // Event Handlers
-  const handleEditorDidMount = (editor: TEditor) => {
+  const handleEditorDidMount = (editor: any, monaco: any) => {
     editorRef.current = editor;
+    monacoRef.current = monaco
   }
 
   return (
@@ -74,7 +73,7 @@ export default function Home() {
         </Grid>
         <Grid
           item
-          xs={6}
+          xs={showPreview ? 6 : 12}
           display="flex"
           flexDirection="column"
           paddingY={2}
@@ -90,14 +89,18 @@ export default function Home() {
             value={markdown}
           />
         </Grid>
-        <Grid
-          item xs={6}
-          paddingY={2}
-          paddingX={1}
-        >
-          <PreviewHeader />
-          <Preview markdown={state.markdown} />
-        </Grid>
+        {
+          showPreview && (
+            <Grid
+              item xs={6}
+              paddingY={2}
+              paddingX={1}
+            >
+              <PreviewHeader />
+              <Preview markdown={state.markdown} />
+            </Grid>
+          )
+        }
         <Grid item xs={12}>
           <Appfooter />
         </Grid>

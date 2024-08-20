@@ -15,15 +15,11 @@ export default function TaskListIcon({ state, reference }: { state: TState, refe
                 aria-label="Insert Task List"
                 color="info"
                 onClick={() => {
-                    if (selection && setSelection && markdown && setMarkdown) {
-                        handleCommand(
-                            taskList,
-                            { selection: selection },
-                            setSelection,
-                            markdown,
-                            setMarkdown
-                        );
-                    }
+                    handleCommand(
+                        taskList,
+                        reference.editorRef,
+                        state
+                    );
                 }}
             >
                 <Checklist />

@@ -1,13 +1,11 @@
-import { EditorSelection } from "@/classes";
-
 // Types
 import type { TCommandFuncArgs } from "@/types";
 
 /**
  * Converts text to italicized Github-Flavored Markdown.
  * @param selectionState Selection state.
- * @returns EditorSelection object
+ * @returns string
  */
-export function italic({ selection } : TCommandFuncArgs) : EditorSelection {
-    return new EditorSelection(selection?.range, `_${selection?.text}_`)
+export function italic({ selectedText } : TCommandFuncArgs) : string {
+    return `_${selectedText}_`
 }

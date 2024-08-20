@@ -1,15 +1,12 @@
 // Types
-import { EditorSelection } from "@/classes";
-import { TCommandFuncArgs, TSelection } from "@/types";
+import { TCommandFuncArgs } from "@/types";
 
 /**
- * Converts text to bold Github-Flavored Markdown.
- * @param selection Selection state.
- * @returns EditorSelection object
+ * Converts text to "bold" Github-Flavored Markdown.
+ * @param selectedText The currently selected text in the editor
+ * @returns string
  */
-export function heading(
-    { selection, headingLevel } : TCommandFuncArgs
-): TSelection {
+export function heading({ selectedText, headingLevel } : TCommandFuncArgs): string {
     const headingMarkdown = "#";
-    return new EditorSelection(selection?.range, `${headingMarkdown.repeat(headingLevel || 1)} ${selection?.text}`)
+    return `${headingMarkdown.repeat(headingLevel || 1)} ${selectedText}`
 }

@@ -15,15 +15,11 @@ export default function NumberedListIcon({ state, reference }: { state: TState, 
                 aria-label="Insert Numbered List"
                 color="info"
                 onClick={() => {
-                    if (selection && setSelection && markdown && setMarkdown) {
-                        handleCommand(
-                            numberedList,
-                            { selection: selection },
-                            setSelection,
-                            markdown,
-                            setMarkdown
-                        );
-                    }
+                    handleCommand(
+                        numberedList,
+                        reference.editorRef,
+                        state
+                    );
                 }}
             >
                 <FormatListNumbered />

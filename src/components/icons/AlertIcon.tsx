@@ -12,7 +12,7 @@ import { capitalize } from "@/functions/capitalize";
 import { handleCommand, alert } from "@/commands";
 
 // Types
-import type { alertLevelType } from "@/commands/alert";
+import type { TAlertLevel } from "@/types";
 import { TState, TReference } from "@/types";
 
 export default function AlertIcon({ state, reference }: { state: TState, reference: TReference }) {
@@ -24,18 +24,15 @@ export default function AlertIcon({ state, reference }: { state: TState, referen
     const handleClose = () => {
         setAnchorElement(null);
     };
-    const handleMenuItemClick = (alertLevel: alertLevelType) => {
-        if (selection && setSelection && markdown && setMarkdown) {
-            handleCommand(
-                alert,
-                { selection: selection, alertLevel },
-                setSelection,
-                markdown,
-                setMarkdown
-            );
-        }
+    const handleMenuItemClick = (alertLevel: TAlertLevel) => {
+        handleCommand(
+            alert,
+            reference.editorRef,
+            state,
+            { alertLevel },
+        );
     }
-    const alertLevels: alertLevelType[] = ["note", "tip", "important", "warning", "caution"];
+    const alertLevels: TAlertLevel[] = ["note", "tip", "important", "warning", "caution"];
 
     return (
         <>
@@ -56,7 +53,7 @@ export default function AlertIcon({ state, reference }: { state: TState, referen
             >
 
                 {
-                    alertLevels.map((alertLevel: alertLevelType, index) => {
+                    alertLevels.map((alertLevel: TAlertLevel, index) => {
                         return (
                             <MenuItem
                                 key={index}
