@@ -29,7 +29,7 @@ export default function CommandBar(
 ) {
     return (
         <Container maxWidth={false}>
-            <ul className="no-list-style flex">
+            <ul className="no-padding no-list-style flex justify-contents-center">
                 <li>
                     <TitleIcon
                         state={state}

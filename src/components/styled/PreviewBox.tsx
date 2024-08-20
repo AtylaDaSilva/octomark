@@ -5,6 +5,8 @@ export const PreviewBox = styled(Box)<BoxProps>(({ theme }) => {
     return ({
         borderRight: borderColor,
         borderBottom: borderColor,
-        borderLeft: borderColor
+        borderLeft: borderColor,
+        overflow: "auto",
+        padding: "0px 15px"
     })
 });

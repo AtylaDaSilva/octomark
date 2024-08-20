@@ -102,7 +102,7 @@ export default function Home() {
             </Grid>
           )
         }
-        <Grid item xs={12}>
+        <Grid item xs={12} height="1.5rem">
           <Appfooter />
         </Grid>
       </Grid>

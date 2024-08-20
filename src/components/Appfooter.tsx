@@ -13,7 +13,7 @@ export default function Appfooter() {
             </Link>
     )
     return (
-        <Box height="100%" display="flex" justifyContent="center" alignItems="center">
+        <Box fontSize=".8rem" height="100%" display="flex" justifyContent="center" alignItems="center">
             <p>
                 Made with <span>love</span> by { me }
             </p>
