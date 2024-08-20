@@ -15,6 +15,9 @@ import { TState, TReference } from "@/types";
 // Commands
 import { handleCommand, link } from "@/commands";
 
+// Constants
+import { DEFAULT_ICON_SIZE } from "@/utils/constants";
+
 export default function LinkIcon({ state, reference }: { state: TState, reference: TReference }) {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [uri, setUri] = useState("");
@@ -26,7 +29,7 @@ export default function LinkIcon({ state, reference }: { state: TState, referenc
                     color="info"
                     onClick={() => setIsModalOpen(true)}
                 >
-                    <Link />
+                    <Link sx={{ fontSize: DEFAULT_ICON_SIZE }} />
                 </IconButton>
             </Tooltip>
             <FormModal

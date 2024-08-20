@@ -8,6 +8,9 @@ import { handleCommand, numberedList } from "@/commands";
 // Types
 import { TState, TReference } from "@/types";
 
+// Constants
+import { DEFAULT_ICON_SIZE } from "@/utils/constants";
+
 export default function NumberedListIcon({ state, reference }: { state: TState, reference: TReference }) {
     return (
         <Tooltip title="Numbered List">
@@ -22,7 +25,7 @@ export default function NumberedListIcon({ state, reference }: { state: TState, 
                     );
                 }}
             >
-                <FormatListNumbered />
+                <FormatListNumbered sx={{ fontSize: DEFAULT_ICON_SIZE }} />
             </IconButton>
         </Tooltip>
     );

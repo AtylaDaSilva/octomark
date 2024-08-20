@@ -15,6 +15,9 @@ import { handleCommand, alert } from "@/commands";
 import type { TAlertLevel } from "@/types";
 import { TState, TReference } from "@/types";
 
+// Constants
+import { DEFAULT_ICON_SIZE } from "@/utils/constants";
+
 export default function AlertIcon({ state, reference }: { state: TState, reference: TReference }) {
     const [anchorElement, setAnchorElement] = useState<null | HTMLElement>(null);
     const isOpen = Boolean(anchorElement);
@@ -42,7 +45,7 @@ export default function AlertIcon({ state, reference }: { state: TState, referen
                     color="info"
                     onClick={handleClick}
                 >
-                    <PriorityHigh />
+                    <PriorityHigh sx={{ fontSize: DEFAULT_ICON_SIZE }} />
                 </IconButton>
             </Tooltip>
             <Menu

@@ -8,6 +8,9 @@ import { handleCommand, bulletedList } from "@/commands";
 // Types
 import { TState, TReference } from "@/types";
 
+// Constants
+import { DEFAULT_ICON_SIZE } from "@/utils/constants";
+
 export default function BulletedListIcon({ state, reference }: { state: TState, reference: TReference }) {
     return (
         <Tooltip title="Bulleted List">
@@ -22,7 +25,7 @@ export default function BulletedListIcon({ state, reference }: { state: TState, 
                     );
                 }}
             >
-                <FormatListBulleted />
+                <FormatListBulleted sx={{ fontSize: DEFAULT_ICON_SIZE }} />
             </IconButton>
         </Tooltip>
     );

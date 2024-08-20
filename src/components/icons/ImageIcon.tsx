@@ -15,6 +15,9 @@ import { TState, TReference } from "@/types";
 // Commands
 import { handleCommand, image } from "@/commands";
 
+// Constants
+import { DEFAULT_ICON_SIZE } from "@/utils/constants";
+
 export default function ImageIcon({ state, reference }: { state: TState, reference: TReference }) {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [uri, setUri] = useState("");
@@ -27,7 +30,7 @@ export default function ImageIcon({ state, reference }: { state: TState, referen
                     color="info"
                     onClick={() => setIsModalOpen(true)}
                 >
-                    <Image />
+                    <Image sx={{ fontSize: DEFAULT_ICON_SIZE }} />
                 </IconButton>
             </Tooltip>
             <FormModal

@@ -8,6 +8,9 @@ import { handleCommand, italic } from "@/commands";
 // Types
 import { TState, TReference } from "@/types";
 
+// Constants
+import { DEFAULT_ICON_SIZE } from "@/utils/constants";
+
 export default function ItalicIcon({ state, reference } : { state: TState, reference: TReference }) {
     return (
         <Tooltip title="Italic">
@@ -22,7 +25,7 @@ export default function ItalicIcon({ state, reference } : { state: TState, refer
                     );
                 }}
             >
-                <FormatItalic />
+                <FormatItalic sx={{ fontSize: DEFAULT_ICON_SIZE }} />
             </IconButton>
         </Tooltip>
     );

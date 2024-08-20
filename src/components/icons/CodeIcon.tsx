@@ -8,6 +8,9 @@ import { handleCommand, code } from "@/commands";
 // Types
 import { TState, TReference } from "@/types";
 
+// Constants
+import { DEFAULT_ICON_SIZE } from "@/utils/constants";
+
 export default function CodeIcon({ state, reference }: { state: TState, reference: TReference }) {
     return (
         <Tooltip title="Code">
@@ -22,7 +25,7 @@ export default function CodeIcon({ state, reference }: { state: TState, referenc
                     );
                 }}
             >
-                <Code />
+                <Code sx={{ fontSize: DEFAULT_ICON_SIZE }} />
             </IconButton>
         </Tooltip>
     );

@@ -11,6 +11,9 @@ import { handleCommand, heading } from "@/commands";
 // Types
 import { TState, TReference, headingLevelType } from "@/types";
 
+// Constants
+import { DEFAULT_ICON_SIZE } from "@/utils/constants";
+
 export default function TitleIcon({ state, reference }: { state: TState, reference: TReference }) {
     const [anchorElement, setAnchorElement] = useState<null | HTMLElement>(null);
     const isOpen = Boolean(anchorElement);
@@ -37,7 +40,7 @@ export default function TitleIcon({ state, reference }: { state: TState, referen
                     onClick={handleClick}
                     color="info"
                 >
-                    <Title />
+                    <Title sx={{ fontSize: DEFAULT_ICON_SIZE }} />
                 </IconButton>
             </Tooltip>
             <Menu

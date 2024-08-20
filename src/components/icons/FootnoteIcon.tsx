@@ -8,6 +8,9 @@ import { handleCommand, footnote } from "@/commands";
 // Types
 import { TState, TReference } from "@/types";
 
+// Constants
+import { DEFAULT_ICON_SIZE } from "@/utils/constants";
+
 export default function FootnoteIcon({ state, reference }: { state: TState, reference: TReference }) {
     return (
         <Tooltip title="Footnote">
@@ -22,7 +25,7 @@ export default function FootnoteIcon({ state, reference }: { state: TState, refe
                     );
                 }}
             >
-                <WrapText />
+                <WrapText sx={{ fontSize: DEFAULT_ICON_SIZE }} />
             </IconButton>
         </Tooltip>
     );

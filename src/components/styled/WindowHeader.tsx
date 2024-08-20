@@ -5,7 +5,7 @@ export const WindowHeader = styled(Box)<BoxProps>(({ theme }) => ({
     borderTopLeftRadius: "5px",
     borderTopRightRadius: "5px",
     backgroundColor: theme.palette.background.default,
-    height: "3rem",
+    height: "1.5rem",
     display: "flex",
     alignItems: "center",
     justifyContent: "flex-start"

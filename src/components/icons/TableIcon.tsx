@@ -16,6 +16,9 @@ import type { TTableProps } from "@/types";
 import { handleCommand, table } from "@/commands";
 import { TState, TReference } from "@/types";
 
+// Constants
+import { DEFAULT_ICON_SIZE } from "@/utils/constants";
+
 export default function ImageIcon({ state, reference }: { state: TState, reference: TReference }) {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [tableProps, setTableProps] = useState<TTableProps>({
@@ -44,7 +47,7 @@ export default function ImageIcon({ state, reference }: { state: TState, referen
                     color="info"
                     onClick={() => setIsModalOpen(true)}
                 >
-                    <GridOn />
+                    <GridOn sx={{ fontSize: DEFAULT_ICON_SIZE }} />
                 </IconButton>
             </Tooltip>
             <FormModal

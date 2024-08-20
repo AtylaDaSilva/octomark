@@ -14,6 +14,9 @@ import { TState, TReference } from "@/types";
 // Emoji list
 import emojiList from "@/utils/emojis.json";
 
+// Constants
+import { DEFAULT_ICON_SIZE } from "@/utils/constants";
+
 export default function EmojiIcon({ state, reference }: { state: TState, reference: TReference }) {
     const [anchorElement, setAnchorElement] = useState<null | HTMLElement>(null);
     const [activeTab, setActiveTab] = useState<number>(0);
@@ -70,7 +73,7 @@ export default function EmojiIcon({ state, reference }: { state: TState, referen
                     color="info"
                     onClick={handleClick}
                 >
-                    <SentimentSatisfiedAlt />
+                    <SentimentSatisfiedAlt sx={{ fontSize: DEFAULT_ICON_SIZE }} />
                 </IconButton>
             </Tooltip>
             <Menu
