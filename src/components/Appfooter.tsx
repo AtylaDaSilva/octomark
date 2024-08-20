@@ -14,8 +14,8 @@ export default function Appfooter() {
     )
     return (
         <Box fontSize=".8rem" height="100%" display="flex" justifyContent="center" alignItems="center">
-            <p>
-                Made with <span>love</span> by { me }
+            <p id="footer-message">
+                Made with <span></span> by { me }
             </p>
         </Box>
     );

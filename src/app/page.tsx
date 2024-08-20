@@ -17,6 +17,7 @@ import Appfooter from "@/components/Appfooter";
 
 // CSS
 import "@/css/globals.css";
+import "@/css/footer.css";
 import "~/remark-github-blockquote-alert/alert.css"; // Styles for alert markdown
 
 // Themes

@@ -1,0 +1,8 @@
+#footer-message > span::before {
+    content: "🤍";
+}
+
+#footer-message > span:hover::before {
+    content: "🖤";
+}
+
