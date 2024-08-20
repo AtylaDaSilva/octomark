@@ -1,5 +1,5 @@
 // MUI Components
-import { AppBar, AppBarProps, Toolbar, styled } from "@mui/material";
+import { Container, Box } from "@mui/material";
 
 // Command Icons
 import {
@@ -21,162 +21,114 @@ import {
     HideShowPreviewIcon
 } from "./icons";
 
-// Types;
-import { stateType } from "@/app/page";
+// Types
+import { TReference, TState } from "@/types";
 
-const CustomAppBar = styled(AppBar)<AppBarProps>(({ theme }) => ({
-    backgroundColor: "transparent",
-    border: `1px solid ${theme.palette.grey[700]}`,
-    borderRadius: theme.shape.borderRadius,
-    display: "flex",
-    alignItems: "center"
-}))
-
-export default function CommandBar({ state }: CommandBarProps) {
+export default function CommandBar(
+    { state, reference }: { state: TState, reference: TReference }
+) {
     return (
-        <CustomAppBar
-            position="static"
-            color="secondary"
-        >
-            <Toolbar>
-                <ul className="no-list-style flex flex-row">
-                    <li>
-                        <TitleIcon
-                            selection={state.selection}
-                            setSelection={state.setSelection}
-                            markdown={state.markdown}
-                            setMarkdown={state.setMarkdown}
-                        />
-                    </li>
-                    <li>
-                        <BoldIcon
-                            selection={state.selection}
-                            setSelection={state.setSelection}
-                            markdown={state.markdown}
-                            setMarkdown={state.setMarkdown}
-                        />
-                    </li>
-                    <li>
-                        <ItalicIcon
-                            selection={state.selection}
-                            setSelection={state.setSelection}
-                            markdown={state.markdown}
-                            setMarkdown={state.setMarkdown}
-                        />
-                    </li>
-                    <li>
-                        <StrikethroughIcon
-                            selection={state.selection}
-                            setSelection={state.setSelection}
-                            markdown={state.markdown}
-                            setMarkdown={state.setMarkdown}
-                        />
-                    </li>
-                    <li>
-                        <CodeIcon
-                            selection={state.selection}
-                            setSelection={state.setSelection}
-                            markdown={state.markdown}
-                            setMarkdown={state.setMarkdown}
-                        />
-                    </li>
-                    <li>
-                        <LinkIcon
-                            selection={state.selection}
-                            setSelection={state.setSelection}
-                            markdown={state.markdown}
-                            setMarkdown={state.setMarkdown}
-                        />
-                    </li>
-                    <li>
-                        <ImageIcon
-                            selection={state.selection}
-                            setSelection={state.setSelection}
-                            markdown={state.markdown}
-                            setMarkdown={state.setMarkdown}
-                            imageAltText={state.imageAltText}
-                            setImageAltText={state.setImageAltText}
-                        />
-                    </li>
-                    <li>
-                        <BulletedListIcon
-                            selection={state.selection}
-                            setSelection={state.setSelection}
-                            markdown={state.markdown}
-                            setMarkdown={state.setMarkdown}
-                        />
-                    </li>
-                    <li>
-                        <NumberedListIcon
-                            selection={state.selection}
-                            setSelection={state.setSelection}
-                            markdown={state.markdown}
-                            setMarkdown={state.setMarkdown}
-                        />
-                    </li>
-                    <li>
-                        <TaskListIcon
-                            selection={state.selection}
-                            setSelection={state.setSelection}
-                            markdown={state.markdown}
-                            setMarkdown={state.setMarkdown}
-                        />
-                    </li>
-                    <li>
-                        <FootnoteIcon
-                            selection={state.selection}
-                            setSelection={state.setSelection}
-                            markdown={state.markdown}
-                            setMarkdown={state.setMarkdown}
-                            footnoteCount={state.footnoteCount}
-                            setFootnoteCount={state.setFootnoteCount}
-                        />
-                    </li>
-                    <li>
-                        <CommentIcon
-                            selection={state.selection}
-                            setSelection={state.setSelection}
-                            markdown={state.markdown}
-                            setMarkdown={state.setMarkdown}
-                        />
-                    </li>
-                    <li>
-                        <AlertIcon
-                            selection={state.selection}
-                            setSelection={state.setSelection}
-                            markdown={state.markdown}
-                            setMarkdown={state.setMarkdown}
-                        />
-                    </li>
-                    <li>
-                        <TableIcon
-                            selection={state.selection}
-                            setSelection={state.setSelection}
-                            markdown={state.markdown}
-                            setMarkdown={state.setMarkdown}
-                        />
-                    </li>
-                    <li>
-                        <EmojiIcon
-                            selection={state.selection}
-                            setSelection={state.setSelection}
-                            markdown={state.markdown}
-                            setMarkdown={state.setMarkdown}
-                        />
-                    </li>
+        <Container maxWidth={false}>
+            <ul className="no-padding no-list-style flex justify-contents-center">
+                <li>
+                    <TitleIcon
+                        state={state}
+                        reference={reference}
+                    />
+                </li>
+                <li>
+                    <BoldIcon
+                        state={state}
+                        reference={reference}
+                    />
+                </li>
+                <li>
+                    <ItalicIcon
+                        state={state}
+                        reference={reference}
+                    />
+                </li>
+                <li>
+                    <StrikethroughIcon
+                        state={state}
+                        reference={reference}
+                    />
+                </li>
+                <li>
+                    <CodeIcon
+                        state={state}
+                        reference={reference}
+                    />
+                </li>
+                <li>
+                    <LinkIcon
+                        state={state}
+                        reference={reference}
+                    />
+                </li>
+                <li>
+                    <ImageIcon
+                        state={state}
+                        reference={reference}
+                    />
+                </li>
+                <li>
+                    <BulletedListIcon
+                        state={state}
+                        reference={reference}
+                    />
+                </li>
+                <li>
+                    <NumberedListIcon
+                        state={state}
+                        reference={reference}
+                    />
+                </li>
+                <li>
+                    <TaskListIcon
+                        state={state}
+                        reference={reference}
+                    />
+                </li>
+                <li>
+                    <FootnoteIcon
+                        state={state}
+                        reference={reference}
+                    />
+                </li>
+                <li>
+                    <CommentIcon
+                        state={state}
+                        reference={reference}
+                    />
+                </li>
+                <li>
+                    <AlertIcon
+                        state={state}
+                        reference={reference}
+                    />
+                </li>
+                <li>
+                    <TableIcon
+                        state={state}
+                        reference={reference}
+                    />
+                </li>
+                <li>
+                    <EmojiIcon
+                        state={state}
+                        reference={reference}
+                    />
+                </li>
+                <Box marginLeft="auto">
                     <li>
                         <HideShowPreviewIcon
                             showPreview={state.showPreview}
                             setShowPreview={state.setShowPreview}
                         />
                     </li>
-                </ul>
-            </Toolbar>
-        </CustomAppBar>
+                </Box>
+            </ul>
+        </Container>
     );
-}
-
-// Component types
-export type CommandBarProps = {
-    state: stateType
 }

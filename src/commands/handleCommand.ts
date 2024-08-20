@@ -1,49 +1,35 @@
 // Types
-import { Dispatch, SetStateAction } from "react";
-import { selectedTextType } from "@/classes";
-import type { alertLevelType } from "./alert";
-import type { headingLevelType } from "./heading";
-import type { linkProps } from "./link";
-import type { imagePropsType } from "./image";
-import type { tablePropsType } from "./table";
+import { TCommandFunc, TCommandFuncArgs, TState } from "@/types";
 
 /**
- * Executes commandFunction, passing selection as argument, and updates selection and markdown states.
- * @param commandFunction The command function (bold, italics, etc.) to be executed
- * @param commandFuncArgs Array of arguments to be passed to commandFunction.
- * @param setSelection Selection state updater.
- * @param markdown Markdown state. Used to update contents of the TextFied component.
- * @param setMarkdown Markdown state updater.
+ * Executes commandFunction on the selected text in the editor and updates markdown state.
+ * @param commandFunction The command function to be executed (bold, italics, etc.).
+ * @param editorRef A reference to the text editor.
+ * @param state An object containing state
  */
 export function handleCommand(
-    commandFunction : (commandFuncArgs : commandFuncArgsType) => selectedTextType,
-    commandFuncArgs : commandFuncArgsType,
-    setSelection: Dispatch<SetStateAction<selectedTextType>>,
-    markdown : string,
-    setMarkdown : Dispatch<SetStateAction<string>>
+    commandFunction: TCommandFunc,
+    editorRef: any,
+    state: TState,
+    commandFuncArgs?: TCommandFuncArgs,
 ) {
-    const sel = commandFunction(commandFuncArgs);
-    setSelection(sel);
+    // Get selectrion range and text
+    const selection = editorRef.current.getSelection()
+    const selectedText = editorRef.current.getModel().getValueInRange(selection)
 
-    let newMarkdown = "";
-    newMarkdown = newMarkdown.concat(
-        markdown.slice(0, commandFuncArgs?.selection?.startPosition),
-        sel.text,
-        markdown.slice(commandFuncArgs?.selection?.endPosition)
-    )
-    setMarkdown(newMarkdown);
-}
-
-export type commandFuncArgsType = {
-    selection?: selectedTextType,
-    headingLevel?: headingLevelType,
-    alertLevel?: alertLevelType,
-    emojiCode?: string,
-    linkProps?: linkProps,
-    tableProps?: tablePropsType,
-    imageProps?: imagePropsType
-    state?: {
-        value: any,
-        updater: Dispatch<SetStateAction<any>>
+    // Push the edit into the editor
+    const edit = {
+        identifier: "command",
+        range: selection,
+        text: commandFunction({ ...commandFuncArgs, selectedText: selectedText })
     }
+    editorRef.current.getModel().pushEditOperations([selection], [edit])
+
+    // Update state
+    if (state.setMarkdown) {
+        state.setMarkdown(editorRef.current.getModel().getValue())
+    }
+
+    // Focus on editor
+    editorRef.current.focus()
 }

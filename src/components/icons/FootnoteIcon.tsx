@@ -6,32 +6,26 @@ import { WrapText } from "@mui/icons-material";
 import { handleCommand, footnote } from "@/commands";
 
 // Types
-import { stateType } from "@/app/page";
+import { TState, TReference } from "@/types";
 
-export default function FootnoteIcon(
-    { selection, setSelection, markdown, setMarkdown, footnoteCount, setFootnoteCount }: stateType
-) {
+// Constants
+import { DEFAULT_ICON_SIZE } from "@/utils/constants";
+
+export default function FootnoteIcon({ state, reference }: { state: TState, reference: TReference }) {
     return (
         <Tooltip title="Footnote">
             <IconButton
                 aria-label="Insert Footnote"
                 color="info"
                 onClick={() => {
-                    if (selection && setSelection && markdown && setMarkdown && footnoteCount != undefined && setFootnoteCount) {
-                        handleCommand(
-                            footnote,
-                            {
-                                selection: selection,
-                                state: { value: footnoteCount, updater: setFootnoteCount }
-                            },
-                            setSelection,
-                            markdown,
-                            setMarkdown
-                        );
-                    }
+                    handleCommand(
+                        footnote,
+                        reference.editorRef,
+                        state
+                    );
                 }}
             >
-                <WrapText />
+                <WrapText sx={{ fontSize: DEFAULT_ICON_SIZE }} />
             </IconButton>
         </Tooltip>
     );

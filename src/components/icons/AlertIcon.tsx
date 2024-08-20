@@ -12,10 +12,13 @@ import { capitalize } from "@/functions/capitalize";
 import { handleCommand, alert } from "@/commands";
 
 // Types
-import type { alertLevelType } from "@/commands/alert";
-import { stateType } from "@/app/page";
+import type { TAlertLevel } from "@/types";
+import { TState, TReference } from "@/types";
 
-export default function AlertIcon({ selection, setSelection, markdown, setMarkdown }: stateType) {
+// Constants
+import { DEFAULT_ICON_SIZE } from "@/utils/constants";
+
+export default function AlertIcon({ state, reference }: { state: TState, reference: TReference }) {
     const [anchorElement, setAnchorElement] = useState<null | HTMLElement>(null);
     const isOpen = Boolean(anchorElement);
     const handleClick = (event: React.MouseEvent<HTMLElement>) => {
@@ -24,18 +27,15 @@ export default function AlertIcon({ selection, setSelection, markdown, setMarkdo
     const handleClose = () => {
         setAnchorElement(null);
     };
-    const handleMenuItemClick = (alertLevel: alertLevelType) => {
-        if (selection && setSelection && markdown && setMarkdown) {
-            handleCommand(
-                alert,
-                { selection: selection, alertLevel },
-                setSelection,
-                markdown,
-                setMarkdown
-            );
-        }
+    const handleMenuItemClick = (alertLevel: TAlertLevel) => {
+        handleCommand(
+            alert,
+            reference.editorRef,
+            state,
+            { alertLevel },
+        );
     }
-    const alertLevels: alertLevelType[] = ["note", "tip", "important", "warning", "caution"];
+    const alertLevels: TAlertLevel[] = ["note", "tip", "important", "warning", "caution"];
 
     return (
         <>
@@ -45,7 +45,7 @@ export default function AlertIcon({ selection, setSelection, markdown, setMarkdo
                     color="info"
                     onClick={handleClick}
                 >
-                    <PriorityHigh />
+                    <PriorityHigh sx={{ fontSize: DEFAULT_ICON_SIZE }} />
                 </IconButton>
             </Tooltip>
             <Menu
@@ -56,7 +56,7 @@ export default function AlertIcon({ selection, setSelection, markdown, setMarkdo
             >
 
                 {
-                    alertLevels.map((alertLevel: alertLevelType, index) => {
+                    alertLevels.map((alertLevel: TAlertLevel, index) => {
                         return (
                             <MenuItem
                                 key={index}

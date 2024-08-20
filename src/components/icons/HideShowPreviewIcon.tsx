@@ -2,13 +2,13 @@
 import { IconButton, Tooltip } from "@mui/material";
 import { Visibility, VisibilityOff } from "@mui/icons-material";
 
-// Commands
-import { handleCommand, bold } from "@/commands";
-
 // Types
-import { stateType } from "@/app/page";
+import { TState, } from "@/types";
 
-export default function HideShowPreviewIcon({ showPreview, setShowPreview }: stateType) {
+// Constants
+import { DEFAULT_ICON_SIZE } from "@/utils/constants";
+
+export default function HideShowPreviewIcon({ showPreview, setShowPreview }: TState) {
     const PreviewIcon = showPreview ? Visibility : VisibilityOff
     const label = `${showPreview ? 'Hide' : 'Show'} Preview`
     return (
@@ -20,7 +20,7 @@ export default function HideShowPreviewIcon({ showPreview, setShowPreview }: sta
                     if (setShowPreview) setShowPreview(currState => !currState)
                 }}
             >
-                <PreviewIcon />
+                <PreviewIcon sx={{ fontSize: DEFAULT_ICON_SIZE }} />
             </IconButton>
         </Tooltip>
     );

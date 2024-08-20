@@ -6,27 +6,26 @@ import { StrikethroughS } from "@mui/icons-material";
 import { handleCommand, strikethrough } from "@/commands";
 
 // Types
-import { stateType } from "@/app/page";
+import { TState, TReference } from "@/types";
 
-export default function StrikethroughIcon({ selection, setSelection, markdown, setMarkdown }: stateType) {
+// Constants
+import { DEFAULT_ICON_SIZE } from "@/utils/constants";
+
+export default function StrikethroughIcon({ state, reference }: { state:TState, reference: TReference }) {
     return (
         <Tooltip title="Strikethrough">
             <IconButton
                 aria-label="Format Strikethrough"
                 color="info"
                 onClick={() => {
-                    if (selection && setSelection && markdown && setMarkdown) {
-                        handleCommand(
-                            strikethrough,
-                            { selection: selection },
-                            setSelection,
-                            markdown,
-                            setMarkdown
-                        );
-                    }
+                    handleCommand(
+                        strikethrough,
+                        reference.editorRef,
+                        state
+                    );
                 }}
             >
-                <StrikethroughS />
+                <StrikethroughS sx={{ fontSize: DEFAULT_ICON_SIZE }} />
             </IconButton>
         </Tooltip>
     );

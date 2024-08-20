@@ -6,27 +6,26 @@ import { FormatListBulleted } from "@mui/icons-material";
 import { handleCommand, bulletedList } from "@/commands";
 
 // Types
-import { stateType } from "@/app/page";
+import { TState, TReference } from "@/types";
 
-export default function BulletedListIcon({ selection, setSelection, markdown, setMarkdown }: stateType) {
+// Constants
+import { DEFAULT_ICON_SIZE } from "@/utils/constants";
+
+export default function BulletedListIcon({ state, reference }: { state: TState, reference: TReference }) {
     return (
         <Tooltip title="Bulleted List">
             <IconButton
                 aria-label="Insert Bulleted List"
                 color="info"
                 onClick={() => {
-                    if (selection && setSelection && markdown && setMarkdown) {
-                        handleCommand(
-                            bulletedList,
-                            { selection: selection },
-                            setSelection,
-                            markdown,
-                            setMarkdown
-                        );
-                    }
+                    handleCommand(
+                        bulletedList,
+                        reference.editorRef,
+                        state
+                    );
                 }}
             >
-                <FormatListBulleted />
+                <FormatListBulleted sx={{ fontSize: DEFAULT_ICON_SIZE }} />
             </IconButton>
         </Tooltip>
     );

@@ -9,12 +9,15 @@ import { SentimentSatisfiedAlt } from "@mui/icons-material";
 import { handleCommand, emoji } from "@/commands";
 
 // Types
-import { stateType } from "@/app/page";
+import { TState, TReference } from "@/types";
 
 // Emoji list
 import emojiList from "@/utils/emojis.json";
 
-export default function EmojiIcon({ selection, setSelection, markdown, setMarkdown }: stateType) {
+// Constants
+import { DEFAULT_ICON_SIZE } from "@/utils/constants";
+
+export default function EmojiIcon({ state, reference }: { state: TState, reference: TReference }) {
     const [anchorElement, setAnchorElement] = useState<null | HTMLElement>(null);
     const [activeTab, setActiveTab] = useState<number>(0);
     const isOpen = Boolean(anchorElement);
@@ -32,15 +35,12 @@ export default function EmojiIcon({ selection, setSelection, markdown, setMarkdo
     };
 
     const handleMenuItemClick = (emojiCode: string) => {
-        if (selection && setSelection && markdown && setMarkdown) {
-            handleCommand(
-                emoji,
-                { selection: selection, emojiCode },
-                setSelection,
-                markdown,
-                setMarkdown
-            );
-        }
+        handleCommand(
+            emoji,
+            reference.editorRef,
+            state,
+            { emojiCode },
+        );
         handleClose();
         setActiveTab(0);
     }
@@ -73,7 +73,7 @@ export default function EmojiIcon({ selection, setSelection, markdown, setMarkdo
                     color="info"
                     onClick={handleClick}
                 >
-                    <SentimentSatisfiedAlt />
+                    <SentimentSatisfiedAlt sx={{ fontSize: DEFAULT_ICON_SIZE }} />
                 </IconButton>
             </Tooltip>
             <Menu

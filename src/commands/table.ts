@@ -1,13 +1,12 @@
 // Types
-import { selectedTextType } from "@/classes";
-import { commandFuncArgsType } from "./handleCommand";
+import { TCommandFuncArgs } from "@/types";
 
 /**
  * Inserts 'table' Github-Flavored Markdown into text.
- * @param selection Selection state.
- * @returns selectedTextType object
+ * @param selectedText The currently selected text in the editor
+ * @returns string
  */
-export function table({ selection, tableProps }: commandFuncArgsType) {
+export function table({ selectedText, tableProps }: TCommandFuncArgs) {
     let tableHeaders = "|";
     let textAlign = "|";
     let textAlignMarkdown = "";
@@ -45,17 +44,5 @@ export function table({ selection, tableProps }: commandFuncArgsType) {
         }
     }
 
-    const newSelection: selectedTextType = {
-        ...selection,
-        text: `${tableMarkdown}`
-    };
-
-    return newSelection;
-}
-
-// Component types
-export type tablePropsType = {
-    width: number,
-    length: number,
-    textAlign: "center" | "left" | "right"
+    return `${tableMarkdown}`
 }

@@ -10,12 +10,15 @@ import { Link } from "@mui/icons-material";
 import { FormModal } from "../modals";
 
 // Types
-import { stateType } from "@/app/page";
+import { TState, TReference } from "@/types";
 
 // Commands
 import { handleCommand, link } from "@/commands";
 
-export default function LinkIcon({ selection, setSelection, markdown, setMarkdown }: stateType) {
+// Constants
+import { DEFAULT_ICON_SIZE } from "@/utils/constants";
+
+export default function LinkIcon({ state, reference }: { state: TState, reference: TReference }) {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [uri, setUri] = useState("");
     return (
@@ -26,21 +29,18 @@ export default function LinkIcon({ selection, setSelection, markdown, setMarkdow
                     color="info"
                     onClick={() => setIsModalOpen(true)}
                 >
-                    <Link />
+                    <Link sx={{ fontSize: DEFAULT_ICON_SIZE }} />
                 </IconButton>
             </Tooltip>
             <FormModal
                 isOpen={isModalOpen}
                 handleSubmit={() => {
-                    if (selection && setSelection && markdown && setMarkdown) {
-                        handleCommand(
-                            link,
-                            { selection: selection, linkProps: { uri } },
-                            setSelection,
-                            markdown,
-                            setMarkdown
-                        );
-                    }
+                    handleCommand(
+                        link,
+                        reference.editorRef,
+                        state,
+                        { linkProps: { uri } },
+                    );
                     setIsModalOpen(false);
                 }}
                 handleClose={() => setIsModalOpen(false)}

@@ -1,16 +1,13 @@
 // Types
-import { selectedTextType } from "@/classes";
-import { commandFuncArgsType } from "./handleCommand";
+import { TCommandFuncArgs } from "@/types";
 
 /**
- * Converts text to code quote Github-Flavored Markdown.
- * @param selection Selection state.
- * @returns selectedTextType object
+ * Converts text to 'code' Github-Flavored Markdown.
+ * @param selectedText The currently selected text in the editor
+ * @returns string
  */
-export function code({ selection } : commandFuncArgsType) : selectedTextType {
-    const newSelection : selectedTextType = {
-        ...selection,
-        text: "`" + selection?.text + "`"
-    };
-    return newSelection;
+export function code({ selectedText } : TCommandFuncArgs) : string {
+    const oneLine = `\`\`\`${selectedText}\`\`\``;
+    const multiLine = `\`\`\`\n${selectedText}\n\`\`\``
+    return selectedText?.indexOf("\n") === -1 ? oneLine : multiLine
 }

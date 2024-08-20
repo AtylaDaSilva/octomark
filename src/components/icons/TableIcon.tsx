@@ -10,15 +10,18 @@ import { GridOn } from "@mui/icons-material";
 import { FormModal } from "../modals";
 
 // Types
-import type { tablePropsType } from "@/commands/table";
+import type { TTableProps } from "@/types";
 
 // Commands
 import { handleCommand, table } from "@/commands";
-import { stateType } from "@/app/page";
+import { TState, TReference } from "@/types";
 
-export default function ImageIcon({ selection, setSelection, markdown, setMarkdown }: stateType) {
+// Constants
+import { DEFAULT_ICON_SIZE } from "@/utils/constants";
+
+export default function ImageIcon({ state, reference }: { state: TState, reference: TReference }) {
     const [isModalOpen, setIsModalOpen] = useState(false);
-    const [tableProps, setTableProps] = useState<tablePropsType>({
+    const [tableProps, setTableProps] = useState<TTableProps>({
         width: 2,
         length: 2,
         textAlign: "center"
@@ -44,21 +47,18 @@ export default function ImageIcon({ selection, setSelection, markdown, setMarkdo
                     color="info"
                     onClick={() => setIsModalOpen(true)}
                 >
-                    <GridOn />
+                    <GridOn sx={{ fontSize: DEFAULT_ICON_SIZE }} />
                 </IconButton>
             </Tooltip>
             <FormModal
                 isOpen={isModalOpen}
                 handleSubmit={() => {
-                    if (selection && setSelection && markdown && setMarkdown) {
-                        handleCommand(
-                            table,
-                            { selection: selection, tableProps },
-                            setSelection,
-                            markdown,
-                            setMarkdown
-                        );
-                    }
+                    handleCommand(
+                        table,
+                        reference.editorRef,
+                        state,
+                        { tableProps },
+                    );
                     setIsModalOpen(false);
                 }}
                 handleClose={() => setIsModalOpen(false)}

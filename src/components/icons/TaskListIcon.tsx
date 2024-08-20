@@ -6,27 +6,26 @@ import { Checklist } from "@mui/icons-material";
 import { handleCommand, taskList } from "@/commands";
 
 // Types
-import { stateType } from "@/app/page";
+import { TState, TReference } from "@/types";
 
-export default function TaskListIcon({ selection, setSelection, markdown, setMarkdown }: stateType) {
+// Constants
+import { DEFAULT_ICON_SIZE } from "@/utils/constants";
+
+export default function TaskListIcon({ state, reference }: { state: TState, reference: TReference }) {
     return (
         <Tooltip title="Task List">
             <IconButton
                 aria-label="Insert Task List"
                 color="info"
                 onClick={() => {
-                    if (selection && setSelection && markdown && setMarkdown) {
-                        handleCommand(
-                            taskList,
-                            { selection: selection },
-                            setSelection,
-                            markdown,
-                            setMarkdown
-                        );
-                    }
+                    handleCommand(
+                        taskList,
+                        reference.editorRef,
+                        state
+                    );
                 }}
             >
-                <Checklist />
+                <Checklist sx={{ fontSize: DEFAULT_ICON_SIZE }} />
             </IconButton>
         </Tooltip>
     );

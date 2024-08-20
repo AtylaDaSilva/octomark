@@ -1,16 +1,11 @@
 // Types
-import { selectedTextType } from "@/classes";
-import type { commandFuncArgsType } from "./handleCommand";
+import type { TCommandFuncArgs } from "@/types";
 
 /**
  * Converts text to italicized Github-Flavored Markdown.
  * @param selectionState Selection state.
- * @returns selectedTextType object
+ * @returns string
  */
-export function italic({ selection } : commandFuncArgsType) : selectedTextType {
-    const newSelection : selectedTextType = {
-        ...selection,
-        text: `_${selection?.text}_`
-    };
-    return newSelection;
+export function italic({ selectedText } : TCommandFuncArgs) : string {
+    return `_${selectedText}_`
 }

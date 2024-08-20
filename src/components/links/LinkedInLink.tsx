@@ -5,6 +5,9 @@ import Link from "next/link";
 import { IconButton } from "@mui/material";
 import { LinkedIn } from "@mui/icons-material";
 
+// Constants
+import { LINKEDIN_LINK } from "@/utils/constants";
+
 export default function LinkedInLink() {
     return (
         <IconButton
@@ -12,11 +15,11 @@ export default function LinkedInLink() {
             color="info"
         >
             <Link
-                href="https://www.linkedin.com/in/atyla-mendes-da-silva-39a21018b/"
+                href={LINKEDIN_LINK}
                 target="_blank"
                 className="no-text-decor color-inherit"
             >
-                <LinkedIn />
+                <LinkedIn fontSize="small" />
             </Link>
         </IconButton>
     );

@@ -1,16 +1,11 @@
 // Types
-import { selectedTextType } from "@/classes";
-import { commandFuncArgsType } from "./handleCommand";
+import { TCommandFuncArgs } from "@/types";
 
 /**
- * Converts text to comment Github-Flavored Markdown.
- * @param selection Selection state.
- * @returns selectedTextType object
+ * Converts text to "comment" Github-Flavored Markdown.
+ * @param selectedText The currently selected text in the editor
+ * @returns string
  */
-export function comment({ selection } : commandFuncArgsType) : selectedTextType {
-    const newSelection : selectedTextType = {
-        ...selection,
-        text: `<!--${selection?.text}-->`
-    };
-    return newSelection;
+export function comment({ selectedText } : TCommandFuncArgs) : string {
+    return `<!--${selectedText}-->`;
 }

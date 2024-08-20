@@ -1,16 +1,9 @@
-// Types
-import { selectedTextType } from "@/classes";
-import { commandFuncArgsType } from "./handleCommand";
-
+import type { TCommandFuncArgs } from "@/types"
 /**
- * Converts text to bold Github-Flavored Markdown.
- * @param selection Selection state.
- * @returns selectedTextType object
+ * Returns a new string with text wrapped in bold GFM markdown.
+ * @param selectedText The currently selected text in the editor
+ * @return string
  */
-export function bold({ selection } : commandFuncArgsType) : selectedTextType {
-    const newSelection : selectedTextType = {
-        ...selection,
-        text: `**${selection?.text}**`
-    };
-    return newSelection;
+export function bold({ selectedText }: TCommandFuncArgs): string {
+    return `**${selectedText}**`;
 }

@@ -1,21 +1,16 @@
 // Types
-import { selectedTextType } from "@/classes";
-import { commandFuncArgsType } from "./handleCommand";
+import { TCommandFuncArgs } from "@/types";
 
 /**
  * Converts text to 'numbered list' Github-Flavored Markdown.
- * @param selection Selection state.
- * @returns selectedTextType object
+ * @param selectedText The currently selected text in the editor
+ * @returns string
  */
-export function numberedList({ selection } : commandFuncArgsType) : selectedTextType {
+export function numberedList({ selectedText } : TCommandFuncArgs) : string {
     var counter = 1;
     const replacer = () => {
         counter += 1;
         return `\n${counter}. `;
     }
-    const newSelection : selectedTextType = {
-        ...selection,
-        text: `1. ${selection?.text.replaceAll(/\n/g, replacer)}`
-    };
-    return newSelection;
+    return `1. ${selectedText?.replaceAll(/\n/g, replacer)}`;
 }

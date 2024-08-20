@@ -1,27 +1,23 @@
 "use client";
 // React
-import { useState, Dispatch, SetStateAction } from "react";
+import { useState, useRef } from "react";
 
 // MUI Components
-import { Container, Box, BoxProps, Grid, styled } from "@mui/material";
+import { Grid } from "@mui/material";
 
-// Classes
-import { TextSelector, selectedTextType } from "@/classes";
+// Monaco Editor
+import { Editor, } from "@monaco-editor/react";
 
 // Components
 import Appbar from "@/components/Appbar";
-import MDEditor from "@/components/MDEditor";
-import MDPreview from "@/components/MDPreview";
-
-// Remark Plugins
-import remarkGfm from "remark-gfm";
-//import remarkGithub from "remark-github";
-import { remarkAlert } from "remark-github-blockquote-alert";
-import remarkGemoji from "remark-gemoji";
-import removeComments from "remark-remove-comments";
+import EditorHeader from "@/components/EditorHeader";
+import PreviewHeader from "@/components/PreviewHeader";
+import Preview from "@/components/Preview";
+import Appfooter from "@/components/Appfooter";
 
 // CSS
 import "@/css/globals.css";
+import "@/css/footer.css";
 import "~/remark-github-blockquote-alert/alert.css"; // Styles for alert markdown
 
 // Themes
@@ -31,102 +27,85 @@ import { GitHubDark } from "@/themes";
 
 // Utils
 import { capitalize } from "@/functions/capitalize";
-import { DEFAULT_MARKDOWN_TITLE } from "@/utils/constants";
+import { DEFAULT_MARKDOWN_TITLE, WINDOW_HEIGHT } from "@/utils/constants";
 
-// State type
-export type stateType = {
-  markdown?: string, setMarkdown?: Dispatch<SetStateAction<string>>,
-  selection?: selectedTextType, setSelection?: Dispatch<SetStateAction<selectedTextType>>,
-  imageAltText?: string, setImageAltText?: Dispatch<SetStateAction<string>>,
-  footnoteCount?: number, setFootnoteCount?: Dispatch<SetStateAction<number>>,
-  showPreview?: boolean, setShowPreview?: Dispatch<SetStateAction<boolean>>
-}
+// Types
+import type {
+  TState,
+  TReference
+} from "@/types";
 
 export default function Home() {
+  // Reference
+  const editorRef = useRef(null);
+  const monacoRef = useRef(null);
+
+  // Constant to pass references around components
+  const reference: TReference = {
+    editorRef,
+    monacoRef
+  }
+
   // State
   const [markdown, setMarkdown] = useState<string>(() => `# ${capitalize(DEFAULT_MARKDOWN_TITLE)}`);
-  const [selection, setSelection] = useState<selectedTextType>({
-    text: "",
-    startPosition: -1,
-    endPosition: -1
-  });
-  const [imageAltText, setImageAltText] = useState<string>("");
-  const [footnoteCount, setFootnoteCount] = useState<number>(0);
   const [showPreview, setShowPreview] = useState(true)
 
   // Constant to pass state around components
-  const state: stateType = {
+  const state: TState = {
     markdown, setMarkdown,
-    selection, setSelection,
-    imageAltText, setImageAltText,
-    footnoteCount, setFootnoteCount,
     showPreview, setShowPreview
   }
 
-  // Event handlers
-  /**
-   * Handles user events on a textarea element.
-   * @param target Textarea HTML element reference.
-   * @returns void or null.
-   */
-  const handleEditorEvent = ({ target }: any) => {
-    const selector = new TextSelector(target, markdown);
-    const sel = selector.getSelectedText();
-    setSelection(sel);
-    setImageAltText(sel.text);
-    if (markdown === "") setFootnoteCount(0);
+  // Event Handlers
+  const handleEditorDidMount = (editor: any, monaco: any) => {
+    editorRef.current = editor;
+    monacoRef.current = monaco
   }
-
-  // Styled Components
-  const PreviewBox = styled(Box)<BoxProps>(({ theme }) => ({
-    border: `1px solid ${theme.palette.grey[700]}`,
-    borderRadius: theme.shape.borderRadius
-  }))
 
   return (
     <ThemeProvider theme={GitHubDark}>
       <CssBaseline />
-      <Grid container columnSpacing={3} rowSpacing={2} sx={{ height: "90vh" }} justifyContent="center" alignItems="flex-start">
-        <Grid item xs={12}>
-          <Appbar state={state} />
+      <Grid
+        container
+        height="100%"
+        rowSpacing={1}
+      >
+        <Grid item xs={12} height="3rem">
+          <Appbar />
         </Grid>
-        <Grid item xs={4}>
-          <MDEditor
-            markdown={markdown}
-            handleChange={setMarkdown}
-            handleEditorEvent={handleEditorEvent}
-            editorOptions={{
-              fullWidth: true,
-              rows: 31,
-              autoFocus: false,
-              placeholder: "Type your markdown here.",
-              variant: "outlined",
-            }}
+        <Grid
+          item
+          xs={showPreview ? 6 : 12}
+          display="flex"
+          flexDirection="column"
+          paddingY={2}
+          paddingX={1}
+        >
+          <EditorHeader state={state} reference={reference} />
+          <Editor
+            height={WINDOW_HEIGHT}
+            theme="vs-dark"
+            language="markdown"
+            onMount={handleEditorDidMount}
+            onChange={(editorText?: string) => setMarkdown(editorText ? editorText : "")}
+            value={markdown}
           />
         </Grid>
         {
-          showPreview &&
-          <Grid item xs={4} sx={{ height: "100%" }} >
-            <PreviewBox
-              padding={2}
-              overflow="auto"
-              sx={{ height: "100%" }}
+          showPreview && (
+            <Grid
+              item xs={6}
+              paddingY={2}
+              paddingX={1}
             >
-              <MDPreview
-                markdown={markdown}
-                previewOptions={{
-                  remarkPlugins: [
-                    remarkGfm,
-                    remarkAlert,
-                    remarkGemoji,
-                    removeComments
-                  ],
-                }}
-              />
-            </PreviewBox>
-
-          </Grid>
+              <PreviewHeader />
+              <Preview markdown={state.markdown} />
+            </Grid>
+          )
         }
+        <Grid item xs={12} height="1.5rem">
+          <Appfooter />
+        </Grid>
       </Grid>
     </ThemeProvider>
   );

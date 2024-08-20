@@ -6,27 +6,26 @@ import { FormatListNumbered } from "@mui/icons-material";
 import { handleCommand, numberedList } from "@/commands";
 
 // Types
-import { stateType } from "@/app/page";
+import { TState, TReference } from "@/types";
 
-export default function NumberedListIcon({ selection, setSelection, markdown, setMarkdown }: stateType) {
+// Constants
+import { DEFAULT_ICON_SIZE } from "@/utils/constants";
+
+export default function NumberedListIcon({ state, reference }: { state: TState, reference: TReference }) {
     return (
         <Tooltip title="Numbered List">
             <IconButton
                 aria-label="Insert Numbered List"
                 color="info"
                 onClick={() => {
-                    if (selection && setSelection && markdown && setMarkdown) {
-                        handleCommand(
-                            numberedList,
-                            { selection: selection },
-                            setSelection,
-                            markdown,
-                            setMarkdown
-                        );
-                    }
+                    handleCommand(
+                        numberedList,
+                        reference.editorRef,
+                        state
+                    );
                 }}
             >
-                <FormatListNumbered />
+                <FormatListNumbered sx={{ fontSize: DEFAULT_ICON_SIZE }} />
             </IconButton>
         </Tooltip>
     );

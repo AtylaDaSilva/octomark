@@ -6,27 +6,26 @@ import { Code } from "@mui/icons-material";
 import { handleCommand, code } from "@/commands";
 
 // Types
-import { stateType } from "@/app/page";
+import { TState, TReference } from "@/types";
 
-export default function CodeIcon({ selection, setSelection, markdown, setMarkdown }: stateType) {
+// Constants
+import { DEFAULT_ICON_SIZE } from "@/utils/constants";
+
+export default function CodeIcon({ state, reference }: { state: TState, reference: TReference }) {
     return (
         <Tooltip title="Code">
             <IconButton
                 aria-label="Format Code"
                 color="info"
                 onClick={() => {
-                    if (selection && setSelection && markdown && setMarkdown) {
-                        handleCommand(
-                            code,
-                            { selection: selection },
-                            setSelection,
-                            markdown,
-                            setMarkdown
-                        );
-                    }
+                    handleCommand(
+                        code,
+                        reference.editorRef,
+                        state
+                    );
                 }}
             >
-                <Code />
+                <Code sx={{ fontSize: DEFAULT_ICON_SIZE }} />
             </IconButton>
         </Tooltip>
     );
