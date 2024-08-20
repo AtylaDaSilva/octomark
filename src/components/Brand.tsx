@@ -7,8 +7,8 @@ import { Typography } from "@mui/material";
 export default function Brand() {
     return (
         <Typography
-            variant="h2"
-            fontSize="2rem"
+            variant="h1"
+            fontSize="1.5rem"
         >
             <Link href="/" className="no-text-decor color-inherit">OctoMark</Link>
         </Typography>

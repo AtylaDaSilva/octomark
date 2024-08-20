@@ -19,7 +19,7 @@ export default function GitHubLink() {
                 target="_blank"
                 className="no-text-decor color-inherit"
             >
-                <GitHub />
+                <GitHub fontSize="small" />
             </Link>
         </IconButton>
     );

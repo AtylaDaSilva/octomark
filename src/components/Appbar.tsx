@@ -11,11 +11,11 @@ export default function Appbar() {
     return (
         <MainAppbar position="static">
             <Toolbar>
-                <Grid container alignItems={"center"} justifyContent={"center"}>
-                    <Grid item xs={1} marginRight="auto">
+                <Grid container>
+                    <Grid item xs={1} marginRight="auto" display="flex" alignItems="center">
                         <Brand />
                     </Grid>
-                    <Grid item xs={1} marginLeft="auto" display={"flex"} justifyContent={"flex-end"} >
+                    <Grid item xs={1} marginLeft="auto" display="flex" justifyContent={"center"} alignItems="center">
                         <GitHubLink />
                         <LinkedInLink />
                     </Grid>

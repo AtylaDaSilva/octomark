@@ -19,7 +19,7 @@ export default function LinkedInLink() {
                 target="_blank"
                 className="no-text-decor color-inherit"
             >
-                <LinkedIn />
+                <LinkedIn fontSize="small" />
             </Link>
         </IconButton>
     );

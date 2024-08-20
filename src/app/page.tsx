@@ -68,7 +68,7 @@ export default function Home() {
         container
         height="100%"
       >
-        <Grid item xs={12}>
+        <Grid item xs={12} height="3rem">
           <Appbar />
         </Grid>
         <Grid
