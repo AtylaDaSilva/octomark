@@ -7,7 +7,7 @@ export default function Appfooter() {
         <Link
             href={GITHUB_LINK}
             target="_blank"
-            className="no-text-decor color-inherit"
+            className="text-link no-text-decor color-inherit"
             >
                 AtylaDaSilva
             </Link>
