@@ -13,6 +13,7 @@ export default function GitHubLink() {
         <IconButton
             aria-label="GitHub"
             color="info"
+            disableRipple
         >
             <Link
                 href={REPO_LINK}

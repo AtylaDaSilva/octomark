@@ -13,6 +13,7 @@ export default function LinkedInLink() {
         <IconButton
             aria-label="LinkedIn"
             color="info"
+            disableRipple
         >
             <Link
                 href={LINKEDIN_LINK}
