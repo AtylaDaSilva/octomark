@@ -20,7 +20,8 @@ import {
     EmojiIcon,
     HideShowPreviewIcon,
     CopyEditorContentsIcon,
-    UploadFile
+    UploadFileIcon,
+    DownloadFileIcon
 } from "./icons";
 
 // Types
@@ -135,7 +136,10 @@ export default function CommandBar(
                         />
                     </li>
                     <li>
-                        <UploadFile state={state} />
+                        <UploadFileIcon state={state} />
+                    </li>
+                    <li>
+                        <DownloadFileIcon state={state} />
                     </li>
                 </Box>
             </ul>

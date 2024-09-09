@@ -21,7 +21,7 @@ const VisuallyHiddenInput = styled('input')({
 });
 
 
-export default function UploadFile({ state }: { state: TState }) {
+export default function UploadFileIcon({ state }: { state: TState }) {
     const readFile = async (event: any) => {
         const reader = new FileReader();
             reader.onload = async (event) => {
