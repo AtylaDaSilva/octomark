@@ -12,11 +12,11 @@ import removeComments from "remark-remove-comments";
 import { WINDOW_HEIGHT } from "@/utils/constants";
 
 // Types
-import { PreviewType } from "@/types";
+import { TPreviewProps } from "@/types";
 
-export default function Preview({ markdown } : PreviewType) {
+export default function Preview({ reference, markdown, handleScroll } : TPreviewProps) {
     return (
-        <PreviewBox height={WINDOW_HEIGHT}>
+        <PreviewBox height={WINDOW_HEIGHT} ref={reference.previewRef} onScroll={handleScroll}>
             <Markdown
                 remarkPlugins={[
                     remarkGfm,

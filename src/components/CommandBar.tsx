@@ -120,7 +120,7 @@ export default function CommandBar(
                         reference={reference}
                     />
                 </li>
-                <Box marginLeft="auto">
+                <Box marginLeft="auto" display="flex">
                     <li>
                         <HideShowPreviewIcon
                             showPreview={state.showPreview}

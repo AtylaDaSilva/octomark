@@ -9,7 +9,8 @@ export type TState = {
 
 export type TReference = {
     editorRef: any,
-    monacoRef: any
+    monacoRef: any,
+    previewRef: any
 }
 
 export type TAlertLevel = "note" | "tip" | "important" | "warning" | "caution";
@@ -46,8 +47,10 @@ export type TTableProps = {
     textAlign: "center" | "left" | "right"
 }
 
-export type PreviewType = {
+export type TPreviewProps = {
+    reference: TReference,
     markdown?: string,
+    handleScroll: (event:any) => void
 }
 
 export type ModalPropsType = {

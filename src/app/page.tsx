@@ -37,13 +37,15 @@ import type {
 
 export default function Home() {
   // Reference
-  const editorRef = useRef(null);
-  const monacoRef = useRef(null);
+  const editorRef = useRef<any>(null);
+  const monacoRef = useRef<any>(null);
+  const previewRef = useRef<HTMLDivElement>(null)
 
   // Constant to pass references around components
   const reference: TReference = {
     editorRef,
-    monacoRef
+    monacoRef,
+    previewRef
   }
 
   // State
@@ -57,9 +59,33 @@ export default function Home() {
   }
 
   // Event Handlers
+  const handleEditorScrollEvent = (event: any) => {
+    if (
+      previewRef.current != null &&
+      editorRef.current != null
+    ) {
+      previewRef.current.scrollTop = editorRef.current.getScrollTop()
+    }
+  }
+
+  const handlePreviewScrollEvent = (event: any) => {
+    if (
+      previewRef.current != null &&
+      editorRef.current != null
+    ) {
+      editorRef.current.setScrollPosition({ scrollTop: previewRef.current.scrollTop })
+    }
+  }
+
   const handleEditorDidMount = (editor: any, monaco: any) => {
-    editorRef.current = editor;
-    monacoRef.current = monaco
+    if (editor && monaco) {
+      // Get References
+      editorRef.current = editor;
+      monacoRef.current = monaco
+
+      // Handle scroll events
+      editor.onDidScrollChange(handleEditorScrollEvent)
+    }
   }
 
   return (
@@ -82,14 +108,16 @@ export default function Home() {
           paddingX={1}
         >
           <EditorHeader state={state} reference={reference} />
-          <Editor
-            height={WINDOW_HEIGHT}
-            theme="vs-dark"
-            language="markdown"
-            onMount={handleEditorDidMount}
-            onChange={(editorText?: string) => setMarkdown(editorText ? editorText : "")}
-            value={markdown}
-          />
+          <div onScroll={handleEditorScrollEvent}>
+            <Editor
+              height={WINDOW_HEIGHT}
+              theme="vs-dark"
+              language="markdown"
+              onMount={handleEditorDidMount}
+              onChange={(editorText?: string) => setMarkdown(editorText ? editorText : "")}
+              value={markdown}
+            />
+          </div>
         </Grid>
         {
           showPreview && (
@@ -99,7 +127,7 @@ export default function Home() {
               paddingX={1}
             >
               <PreviewHeader />
-              <Preview markdown={state.markdown} />
+              <Preview reference={reference} markdown={state.markdown} handleScroll={handlePreviewScrollEvent} />
             </Grid>
           )
         }
