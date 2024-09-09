@@ -19,7 +19,8 @@ import {
     TableIcon,
     EmojiIcon,
     HideShowPreviewIcon,
-    CopyEditorContentsIcon
+    CopyEditorContentsIcon,
+    UploadFile
 } from "./icons";
 
 // Types
@@ -132,6 +133,9 @@ export default function CommandBar(
                         <CopyEditorContentsIcon
                             reference={reference}
                         />
+                    </li>
+                    <li>
+                        <UploadFile state={state} />
                     </li>
                 </Box>
             </ul>

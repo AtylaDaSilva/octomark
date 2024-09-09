@@ -15,6 +15,7 @@ import TableIcon from "./TableIcon";
 import EmojiIcon from "./EmojiIcon";
 import HideShowPreviewIcon from "./HideShowPreviewIcon";
 import CopyEditorContentsIcon from "./CopyEditorContentsIcon";
+import UploadFile from "./UploadFileIcon";
 
 export {
     BoldIcon,
@@ -33,5 +34,6 @@ export {
     TableIcon,
     EmojiIcon,
     HideShowPreviewIcon,
-    CopyEditorContentsIcon
+    CopyEditorContentsIcon,
+    UploadFile
 }
