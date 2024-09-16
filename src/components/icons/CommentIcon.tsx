@@ -13,9 +13,9 @@ import { DEFAULT_ICON_SIZE } from "@/utils/constants";
 
 export default function CommentIcon({ state, reference }: { state: TState, reference: TReference }) {
     return (
-        <Tooltip title="Comment">
+        <Tooltip title="Format selected text as a Comment">
             <IconButton
-                aria-label="Insert Comment"
+                aria-label="Button | Format selected text as a Comment"
                 color="info"
                 onClick={() => {
                     handleCommand(

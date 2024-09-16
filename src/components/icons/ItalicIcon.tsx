@@ -13,9 +13,9 @@ import { DEFAULT_ICON_SIZE } from "@/utils/constants";
 
 export default function ItalicIcon({ state, reference } : { state: TState, reference: TReference }) {
     return (
-        <Tooltip title="Italic">
+        <Tooltip title="Format selected text as a Italic">
             <IconButton
-                aria-label="Format Italic"
+                aria-label="Button | Format selection as Italic"
                 color="info"
                 onClick={() => {
                     handleCommand(

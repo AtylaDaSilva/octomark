@@ -13,9 +13,9 @@ import { DEFAULT_ICON_SIZE } from "@/utils/constants";
 
 export default function TaskListIcon({ state, reference }: { state: TState, reference: TReference }) {
     return (
-        <Tooltip title="Task List">
+        <Tooltip title="Format selected text as a Task List">
             <IconButton
-                aria-label="Insert Task List"
+                aria-label="Button | Format selected text as a Task List"
                 color="info"
                 onClick={() => {
                     handleCommand(

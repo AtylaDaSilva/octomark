@@ -67,9 +67,9 @@ export default function EmojiIcon({ state, reference }: { state: TState, referen
 
     return (
         <>
-            <Tooltip title="Emoji">
+            <Tooltip title="Replace selected text with an Emoji or Insert an Emoji where the cursor is positioned">
                 <IconButton
-                    aria-label="Insert Emoji"
+                    aria-label="Modal | Replace selected text with an Emoji or Insert an Emoji where the cursor is positioned"
                     color="info"
                     onClick={handleClick}
                 >

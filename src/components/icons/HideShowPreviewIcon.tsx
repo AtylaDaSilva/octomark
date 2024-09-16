@@ -10,11 +10,11 @@ import { DEFAULT_ICON_SIZE } from "@/utils/constants";
 
 export default function HideShowPreviewIcon({ showPreview, setShowPreview }: TState) {
     const PreviewIcon = showPreview ? Visibility : VisibilityOff
-    const label = `${showPreview ? 'Hide' : 'Show'} Preview`
+    const label = `Click to ${showPreview ? 'Hide' : 'Show'} Preview Window`
     return (
         <Tooltip title={label}>
             <IconButton
-                aria-label={label}
+                aria-label={`Button | ${label}`}
                 color="info"
                 onClick={() => {
                     if (setShowPreview) setShowPreview(currState => !currState)

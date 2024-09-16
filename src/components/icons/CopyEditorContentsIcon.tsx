@@ -12,12 +12,12 @@ import { TReference, } from "@/types";
 import { DEFAULT_ICON_SIZE } from "@/utils/constants";
 
 export default function CopyEditorContentsIcon({ reference }: { reference: TReference }) {
-    const defaultTooltip = "Copy Raw File";
+    const defaultTooltip = "Copy the contents of the editor to the clipboard";
     const [tooltip, setTooltip] = useState<string>(defaultTooltip)
     return (
         <Tooltip title={tooltip}>
             <IconButton
-                aria-label="Copy Raw File"
+                aria-label="Button | Copy the contents of the editor to the clipboard"
                 color="info"
                 onClick={() => {
                     window.navigator.clipboard.writeText(reference.editorRef.current.getValue())

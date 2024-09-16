@@ -46,7 +46,7 @@ export default function DownloadFileIcon({ state }: { state: TState }) {
     return (
         <Tooltip title="Download File">
             <IconButton
-                aria-label="Download File"
+                aria-label="Button | Download File"
                 color="info"
                 onClick={downloadFile}
 

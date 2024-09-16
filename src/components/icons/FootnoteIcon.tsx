@@ -13,9 +13,9 @@ import { DEFAULT_ICON_SIZE } from "@/utils/constants";
 
 export default function FootnoteIcon({ state, reference }: { state: TState, reference: TReference }) {
     return (
-        <Tooltip title="Footnote">
+        <Tooltip title="Format selected text as a Footnote">
             <IconButton
-                aria-label="Insert Footnote"
+                aria-label="Button | Format selected text as a Footnote"
                 color="info"
                 onClick={() => {
                     handleCommand(

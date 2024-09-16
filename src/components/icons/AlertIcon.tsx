@@ -39,9 +39,9 @@ export default function AlertIcon({ state, reference }: { state: TState, referen
 
     return (
         <>
-            <Tooltip title="Alert">
+            <Tooltip title="Format selected text as a GitHub Alert">
                 <IconButton
-                    aria-label="Format Alert"
+                    aria-label="Modal | Format selected text as a GitHub Alert"
                     color="info"
                     onClick={handleClick}
                 >

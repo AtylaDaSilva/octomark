@@ -34,9 +34,9 @@ export default function TitleIcon({ state, reference }: { state: TState, referen
 
     return (
         <>
-            <Tooltip title="Title">
+            <Tooltip title="Format selected text as a Title">
                 <IconButton
-                    aria-label="Format Title"
+                    aria-label="Button | Format selection as Title"
                     onClick={handleClick}
                     color="info"
                 >
