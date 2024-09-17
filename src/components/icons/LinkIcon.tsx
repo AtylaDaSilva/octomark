@@ -42,12 +42,16 @@ export default function LinkIcon({ state, reference }: { state: TState, referenc
                         { linkProps: { uri } },
                     );
                     setIsModalOpen(false);
+                    setUri("")
                 }}
-                handleClose={() => setIsModalOpen(false)}
+                handleClose={() => {
+                    setIsModalOpen(false)
+                    setUri("")
+                }}
                 formFields={[
                     {
                         type: "text",
-                        label: "Link",
+                        label: "Link URL",
                         ariaLabel: "Form Field | Link",
                         required: true,
                         columns: 12,

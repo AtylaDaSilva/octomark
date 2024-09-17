@@ -21,11 +21,12 @@ import { DEFAULT_ICON_SIZE } from "@/utils/constants";
 
 export default function ImageIcon({ state, reference }: { state: TState, reference: TReference }) {
     const [isModalOpen, setIsModalOpen] = useState(false);
-    const [tableProps, setTableProps] = useState<TTableProps>({
+    const defaultTableProps: TTableProps = {
         width: 2,
         length: 2,
         textAlign: "center"
-    })
+    }
+    const [tableProps, setTableProps] = useState<TTableProps>(defaultTableProps)
 
     const handleStateChange = (
         field : "width" | "length" | "textAlign",
@@ -60,8 +61,12 @@ export default function ImageIcon({ state, reference }: { state: TState, referen
                         { tableProps },
                     );
                     setIsModalOpen(false);
+                    setTableProps(defaultTableProps)
                 }}
-                handleClose={() => setIsModalOpen(false)}
+                handleClose={() => {
+                    setIsModalOpen(false)
+                    setTableProps(defaultTableProps)
+                }}
                 modalTitle="Insert Table"
                 formFields={[
                     {

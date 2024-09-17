@@ -43,8 +43,12 @@ export default function ImageIcon({ state, reference }: { state: TState, referen
                         { imageProps: { uri } }
                     );
                     setIsModalOpen(false);
+                    setUri("")
                 }}
-                handleClose={() => setIsModalOpen(false)}
+                handleClose={() => {
+                    setIsModalOpen(false)
+                    setUri("")
+                }}
                 formFields={[
                     {
                         type: "text",
