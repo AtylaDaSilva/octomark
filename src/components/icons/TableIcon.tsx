@@ -66,7 +66,8 @@ export default function ImageIcon({ state, reference }: { state: TState, referen
                 formFields={[
                     {
                         type: "number",
-                        label: "width",
+                        label: "Columns",
+                        ariaLabel: "Table Form Field | Number of columns",
                         required: true,
                         columns: 6,
                         handleChange: (value: any) => handleStateChange("width", value),
@@ -74,7 +75,8 @@ export default function ImageIcon({ state, reference }: { state: TState, referen
                     },
                     {
                         type: "number",
-                        label: "length",
+                        label: "Rows",
+                        ariaLabel: "Table Form Field | Number of rows",
                         required: true,
                         columns: 6,
                         handleChange: (value: any) => handleStateChange("length", value),
@@ -87,7 +89,9 @@ export default function ImageIcon({ state, reference }: { state: TState, referen
                             { label: "right", value: "right" },
                             { label: "left", value: "left" }
                         ],
-                        label: "text align",
+                        label: "Text Alignment",
+                        ariaLabel: "Table Form Field | Text Alignment",
+                        required: true,
                         columns: 12,
                         handleChange: (value: any) => handleStateChange("textAlign", value),
                         value: tableProps.textAlign

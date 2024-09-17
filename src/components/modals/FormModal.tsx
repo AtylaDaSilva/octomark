@@ -36,7 +36,8 @@ export default function FormModal({
                                 variant={field?.variant || "outlined"}
                                 type={field.type}
                                 color={field.color || "primary"}
-                                label={capitalize(field.label)}
+                                label={(field.capitalizeLabel) ? capitalize(field.label) : field.label}
+                                aria-label={field.ariaLabel}
                                 required={field.required}
                                 value={field.value}
                                 size="small"

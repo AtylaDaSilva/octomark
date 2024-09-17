@@ -48,6 +48,7 @@ export default function LinkIcon({ state, reference }: { state: TState, referenc
                     {
                         type: "text",
                         label: "Link",
+                        ariaLabel: "Form Field | Link",
                         required: true,
                         columns: 12,
                         handleChange: setUri,

@@ -46,35 +46,42 @@ export default function TitleIcon({ state, reference }: { state: TState, referen
             <Menu
                 anchorEl={anchorElement}
                 open={isOpen}
+                aria-expanded={isOpen}
                 onClick={handleClose}
                 onClose={handleClose}
             >
                 <MenuItem
+                    aria-label="Title Menu Option | Level 1"
                     onClick={() => handleMenuItemClick(1)}
                 >
                     Level 1
                 </MenuItem>
                 <MenuItem
+                    aria-label="Title Menu Option | Level 2"
                     onClick={() => handleMenuItemClick(2)}
                 >
                     Level 2
                 </MenuItem>
                 <MenuItem
+                    aria-label="Title Menu Option | Level 3"
                     onClick={() => handleMenuItemClick(3)}
                 >
                     Level 3
                 </MenuItem>
                 <MenuItem
+                    aria-label="Title Menu Option | Level 4"
                     onClick={() => handleMenuItemClick(4)}
                 >
                     Level 4
                 </MenuItem>
                 <MenuItem
+                    aria-label="Title Menu Option | Level 5"
                     onClick={() => handleMenuItemClick(5)}
                 >
                     Level 5
                 </MenuItem>
                 <MenuItem
+                    aria-label="Title Menu Option | Level 6"
                     onClick={() => handleMenuItemClick(6)}
                 >
                     Level 6

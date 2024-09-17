@@ -48,7 +48,9 @@ export default function ImageIcon({ state, reference }: { state: TState, referen
                 formFields={[
                     {
                         type: "text",
-                        label: "Image URI",
+                        label: "Image URL",
+                        ariaLabel: "Form Field | Image URL",
+                        capitalizeLabel: false,
                         required: true,
                         columns: 12,
                         handleChange: setUri,

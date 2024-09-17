@@ -61,6 +61,7 @@ export default function AlertIcon({ state, reference }: { state: TState, referen
                             <MenuItem
                                 key={index}
                                 onClick={() => handleMenuItemClick(alertLevel)}
+                                aria-label={`Menu Item | Alert level '${alertLevel}'`}
                             >
                                 {capitalize(alertLevel)}
                             </MenuItem>
