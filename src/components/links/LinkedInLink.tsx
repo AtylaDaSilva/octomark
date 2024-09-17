@@ -10,17 +10,19 @@ import { LINKEDIN_LINK } from "@/utils/constants";
 
 export default function LinkedInLink() {
     return (
-        <IconButton
-            aria-label="LinkedIn"
-            color="info"
+        <Link
+            href={LINKEDIN_LINK}
+            target="_blank"
+            className="no-text-decor color-inherit"
         >
-            <Link
-                href={LINKEDIN_LINK}
-                target="_blank"
-                className="no-text-decor color-inherit"
+            <IconButton
+                aria-label="Link to the Developer's LinkedIn profile"
+                color="info"
+                disableRipple
+                tabIndex={-1}
             >
                 <LinkedIn fontSize="small" />
-            </Link>
-        </IconButton>
+            </IconButton>
+        </Link>
     );
 }

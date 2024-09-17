@@ -13,9 +13,9 @@ import { DEFAULT_ICON_SIZE } from "@/utils/constants";
 
 export default function BoldIcon({ state, reference }: { state: TState, reference: TReference }) {
     return (
-        <Tooltip title="Bold">
+        <Tooltip title="Format selected text as a Bold">
             <IconButton
-                aria-label="Format Bold"
+                aria-label="Button | Format selection as Bold"
                 color="info"
                 onClick={() => {
                     handleCommand(

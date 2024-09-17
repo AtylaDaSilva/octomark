@@ -14,6 +14,9 @@ import AlertIcon from "./AlertIcon";
 import TableIcon from "./TableIcon";
 import EmojiIcon from "./EmojiIcon";
 import HideShowPreviewIcon from "./HideShowPreviewIcon";
+import CopyEditorContentsIcon from "./CopyEditorContentsIcon";
+import UploadFileIcon from "./UploadFileIcon";
+import DownloadFileIcon from "./DownloadFileIcon";
 
 export {
     BoldIcon,
@@ -31,5 +34,8 @@ export {
     AlertIcon,
     TableIcon,
     EmojiIcon,
-    HideShowPreviewIcon
+    HideShowPreviewIcon,
+    CopyEditorContentsIcon,
+    UploadFileIcon,
+    DownloadFileIcon
 }

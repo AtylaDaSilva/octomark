@@ -13,9 +13,9 @@ import { DEFAULT_ICON_SIZE } from "@/utils/constants";
 
 export default function CodeIcon({ state, reference }: { state: TState, reference: TReference }) {
     return (
-        <Tooltip title="Code">
+        <Tooltip title="Format selected text as Code">
             <IconButton
-                aria-label="Format Code"
+                aria-label="Button | Format selected text as Code"
                 color="info"
                 onClick={() => {
                     handleCommand(

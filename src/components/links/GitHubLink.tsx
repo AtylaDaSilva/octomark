@@ -10,17 +10,19 @@ import { REPO_LINK } from "../../utils/constants";
 
 export default function GitHubLink() {
     return (
-        <IconButton
-            aria-label="GitHub"
-            color="info"
+        <Link
+            href={REPO_LINK}
+            target="_blank"
+            className="no-text-decor color-inherit"
         >
-            <Link
-                href={REPO_LINK}
-                target="_blank"
-                className="no-text-decor color-inherit"
+            <IconButton
+                aria-label="Link to the Developer's GitHub repository"
+                color="info"
+                disableRipple
+                tabIndex={-1}
             >
                 <GitHub fontSize="small" />
-            </Link>
-        </IconButton>
+            </IconButton>
+        </Link>
     );
 }

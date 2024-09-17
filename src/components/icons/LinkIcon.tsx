@@ -23,9 +23,9 @@ export default function LinkIcon({ state, reference }: { state: TState, referenc
     const [uri, setUri] = useState("");
     return (
         <>
-            <Tooltip title="Link">
+            <Tooltip title="Format selected text as Link">
                 <IconButton
-                    aria-label="Insert Link"
+                    aria-label="Modal | Format selected text as Link"
                     color="info"
                     onClick={() => setIsModalOpen(true)}
                 >
@@ -42,12 +42,17 @@ export default function LinkIcon({ state, reference }: { state: TState, referenc
                         { linkProps: { uri } },
                     );
                     setIsModalOpen(false);
+                    setUri("")
                 }}
-                handleClose={() => setIsModalOpen(false)}
+                handleClose={() => {
+                    setIsModalOpen(false)
+                    setUri("")
+                }}
                 formFields={[
                     {
                         type: "text",
-                        label: "Link",
+                        label: "Link URL",
+                        ariaLabel: "Form Field | Link",
                         required: true,
                         columns: 12,
                         handleChange: setUri,

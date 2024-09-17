@@ -24,9 +24,9 @@ export default function ImageIcon({ state, reference }: { state: TState, referen
 
     return (
         <>
-            <Tooltip title="Image">
+            <Tooltip title="Format selected text as Image">
                 <IconButton
-                    aria-label="Insert Image"
+                    aria-label="Modal | Format selected text as Image"
                     color="info"
                     onClick={() => setIsModalOpen(true)}
                 >
@@ -43,12 +43,18 @@ export default function ImageIcon({ state, reference }: { state: TState, referen
                         { imageProps: { uri } }
                     );
                     setIsModalOpen(false);
+                    setUri("")
                 }}
-                handleClose={() => setIsModalOpen(false)}
+                handleClose={() => {
+                    setIsModalOpen(false)
+                    setUri("")
+                }}
                 formFields={[
                     {
                         type: "text",
-                        label: "Image URI",
+                        label: "Image URL",
+                        ariaLabel: "Form Field | Image URL",
+                        capitalizeLabel: false,
                         required: true,
                         columns: 12,
                         handleChange: setUri,

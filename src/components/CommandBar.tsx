@@ -18,7 +18,10 @@ import {
     AlertIcon,
     TableIcon,
     EmojiIcon,
-    HideShowPreviewIcon
+    HideShowPreviewIcon,
+    CopyEditorContentsIcon,
+    UploadFileIcon,
+    DownloadFileIcon
 } from "./icons";
 
 // Types
@@ -120,12 +123,23 @@ export default function CommandBar(
                         reference={reference}
                     />
                 </li>
-                <Box marginLeft="auto">
+                <Box marginLeft="auto" display="flex">
                     <li>
                         <HideShowPreviewIcon
                             showPreview={state.showPreview}
                             setShowPreview={state.setShowPreview}
                         />
+                    </li>
+                    <li>
+                        <CopyEditorContentsIcon
+                            reference={reference}
+                        />
+                    </li>
+                    <li>
+                        <UploadFileIcon state={state} />
+                    </li>
+                    <li>
+                        <DownloadFileIcon state={state} />
                     </li>
                 </Box>
             </ul>

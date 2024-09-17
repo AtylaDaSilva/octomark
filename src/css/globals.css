@@ -27,6 +27,14 @@ body {
     list-style: none;
 }
 
+.text-link {
+    cursor: pointer;
+}
+
+.text-link:hover {
+    text-decoration: underline;
+}
+
 .no-text-decor {
     text-decoration: none;
 }

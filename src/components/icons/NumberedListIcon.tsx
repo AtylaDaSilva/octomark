@@ -13,9 +13,9 @@ import { DEFAULT_ICON_SIZE } from "@/utils/constants";
 
 export default function NumberedListIcon({ state, reference }: { state: TState, reference: TReference }) {
     return (
-        <Tooltip title="Numbered List">
+        <Tooltip title="Format selected text as a Numbered List">
             <IconButton
-                aria-label="Insert Numbered List"
+                aria-label="Button | Format selected text as a Numbered List"
                 color="info"
                 onClick={() => {
                     handleCommand(

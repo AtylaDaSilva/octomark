@@ -36,9 +36,11 @@ export default function FormModal({
                                 variant={field?.variant || "outlined"}
                                 type={field.type}
                                 color={field.color || "primary"}
-                                label={capitalize(field.label)}
+                                label={(field.capitalizeLabel) ? capitalize(field.label) : field.label}
+                                aria-label={field.ariaLabel}
                                 required={field.required}
                                 value={field.value}
+                                size="small"
                                 onChange={(event) => {
                                     if (field.handleChange) {
                                         field.handleChange(event.target.value);
@@ -62,6 +64,7 @@ export default function FormModal({
                                 type={field.type}
                                 label={capitalize(field.label)}
                                 required={field.required}
+                                size="small"
                                 value={field.value}
                                 onChange={(event) => {
                                     if (field.handleChange) {
@@ -119,11 +122,12 @@ export default function FormModal({
                             <Button
                                 variant="contained"
                                 type="submit"
+                                size="small"
                                 sx={{ marginRight: "5px" }}
                             >
                                 Save
                             </Button>
-                            <Button variant="contained" onClick={handleClose}>
+                            <Button variant="contained" onClick={handleClose} size="small">
                                 Cancel
                             </Button>
                         </Grid>

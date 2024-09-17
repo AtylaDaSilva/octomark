@@ -21,11 +21,12 @@ import { DEFAULT_ICON_SIZE } from "@/utils/constants";
 
 export default function ImageIcon({ state, reference }: { state: TState, reference: TReference }) {
     const [isModalOpen, setIsModalOpen] = useState(false);
-    const [tableProps, setTableProps] = useState<TTableProps>({
+    const defaultTableProps: TTableProps = {
         width: 2,
         length: 2,
         textAlign: "center"
-    })
+    }
+    const [tableProps, setTableProps] = useState<TTableProps>(defaultTableProps)
 
     const handleStateChange = (
         field : "width" | "length" | "textAlign",
@@ -41,9 +42,9 @@ export default function ImageIcon({ state, reference }: { state: TState, referen
 
     return (
         <>
-            <Tooltip title="Table">
+            <Tooltip title="Insert a Table where the cursor is positioned">
                 <IconButton
-                    aria-label="Insert Table"
+                    aria-label="Modal | Insert a Table where the cursor is positioned"
                     color="info"
                     onClick={() => setIsModalOpen(true)}
                 >
@@ -60,13 +61,18 @@ export default function ImageIcon({ state, reference }: { state: TState, referen
                         { tableProps },
                     );
                     setIsModalOpen(false);
+                    setTableProps(defaultTableProps)
                 }}
-                handleClose={() => setIsModalOpen(false)}
+                handleClose={() => {
+                    setIsModalOpen(false)
+                    setTableProps(defaultTableProps)
+                }}
                 modalTitle="Insert Table"
                 formFields={[
                     {
                         type: "number",
-                        label: "width",
+                        label: "Columns",
+                        ariaLabel: "Table Form Field | Number of columns",
                         required: true,
                         columns: 6,
                         handleChange: (value: any) => handleStateChange("width", value),
@@ -74,7 +80,8 @@ export default function ImageIcon({ state, reference }: { state: TState, referen
                     },
                     {
                         type: "number",
-                        label: "length",
+                        label: "Rows",
+                        ariaLabel: "Table Form Field | Number of rows",
                         required: true,
                         columns: 6,
                         handleChange: (value: any) => handleStateChange("length", value),
@@ -87,7 +94,9 @@ export default function ImageIcon({ state, reference }: { state: TState, referen
                             { label: "right", value: "right" },
                             { label: "left", value: "left" }
                         ],
-                        label: "text align",
+                        label: "Text Alignment",
+                        ariaLabel: "Table Form Field | Text Alignment",
+                        required: true,
                         columns: 12,
                         handleChange: (value: any) => handleStateChange("textAlign", value),
                         value: tableProps.textAlign
