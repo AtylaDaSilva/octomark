@@ -41,6 +41,7 @@ export default function UploadFileIcon({ state }: { state: TState }) {
                 aria-label="Button | Upload File"
                 color="info"
                 component="label"
+                tabIndex={-1}
 
             >
                 <FileUpload sx={{ fontSize: DEFAULT_ICON_SIZE }} />

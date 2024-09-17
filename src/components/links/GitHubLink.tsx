@@ -19,6 +19,7 @@ export default function GitHubLink() {
                 aria-label="Link to the Developer's GitHub repository"
                 color="info"
                 disableRipple
+                tabIndex={-1}
             >
                 <GitHub fontSize="small" />
             </IconButton>

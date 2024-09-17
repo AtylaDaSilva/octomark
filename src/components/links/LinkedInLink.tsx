@@ -19,6 +19,7 @@ export default function LinkedInLink() {
                 aria-label="Link to the Developer's LinkedIn profile"
                 color="info"
                 disableRipple
+                tabIndex={-1}
             >
                 <LinkedIn fontSize="small" />
             </IconButton>
