@@ -4,7 +4,8 @@ export type TState = {
     markdown?: string, setMarkdown?: Dispatch<SetStateAction<string>>,
     imageAltText?: string, setImageAltText?: Dispatch<SetStateAction<string>>,
     footnoteCount?: number, setFootnoteCount?: Dispatch<SetStateAction<number>>,
-    showPreview?: boolean, setShowPreview?: Dispatch<SetStateAction<boolean>>
+    showPreview?: boolean, setShowPreview?: Dispatch<SetStateAction<boolean>>,
+    charCount?: number, setCharCount?: Dispatch<SetStateAction<number>>
 }
 
 export type TReference = {

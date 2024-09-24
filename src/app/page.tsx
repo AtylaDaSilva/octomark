@@ -56,11 +56,13 @@ export default function Home() {
   // State
   const [markdown, setMarkdown] = useState<string>(() => `# ${capitalize(DEFAULT_MARKDOWN_TITLE)}`);
   const [showPreview, setShowPreview] = useState(true)
+  const [charCount, setCharCount] = useState<number>(markdown.length);
 
   // Constant to pass state around components
   const state: TState = {
     markdown, setMarkdown,
-    showPreview, setShowPreview
+    showPreview, setShowPreview,
+    charCount, setCharCount
   }
 
   // Event Handlers
@@ -97,6 +99,7 @@ export default function Home() {
     const markdownCache = localStorage.getItem(MD_LOCAL_STORAGE_KEY);
     if (markdownCache) {
       setMarkdown(markdownCache);
+      setCharCount(markdownCache.length);
     }
 
     const showPreviewCache = localStorage.getItem(SHOW_PREVIEW_LOCAL_STORAGE_KEY);
@@ -134,6 +137,7 @@ export default function Home() {
               onChange={(editorText?: string) => {
                 setMarkdown(editorText ? editorText : "");
                 localStorage.setItem(MD_LOCAL_STORAGE_KEY, editorText || "");
+                setCharCount(editorText ? editorText.length : 0)
               }}
               value={markdown}
             />
@@ -146,7 +150,7 @@ export default function Home() {
               paddingY={2}
               paddingX={1}
             >
-              <PreviewHeader />
+              <PreviewHeader state={state} />
               <Preview reference={reference} markdown={state.markdown} handleScroll={handlePreviewScrollEvent} />
             </Grid>
           )
