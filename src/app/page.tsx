@@ -1,6 +1,6 @@
 "use client";
 // React
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 
 // MUI Components
 import { Grid } from "@mui/material";
@@ -27,7 +27,7 @@ import { GitHubDark } from "@/themes";
 
 // Utils
 import { capitalize } from "@/functions/capitalize";
-import { DEFAULT_MARKDOWN_TITLE, WINDOW_HEIGHT } from "@/utils/constants";
+import { DEFAULT_MARKDOWN_TITLE, WINDOW_HEIGHT, MD_LOCAL_STORAGE_KEY } from "@/utils/constants";
 
 // Types
 import type {
@@ -88,6 +88,14 @@ export default function Home() {
     }
   }
 
+  useEffect(() => {
+    console.log("useEffect invoked.");
+    const cache = localStorage.getItem(MD_LOCAL_STORAGE_KEY);
+    if (cache) {
+      setMarkdown(cache);
+    }
+  }, [])
+
   return (
     <ThemeProvider theme={GitHubDark}>
       <CssBaseline />
@@ -114,7 +122,10 @@ export default function Home() {
               theme="vs-dark"
               language="markdown"
               onMount={handleEditorDidMount}
-              onChange={(editorText?: string) => setMarkdown(editorText ? editorText : "")}
+              onChange={(editorText?: string) => {
+                setMarkdown(editorText ? editorText : "");
+                localStorage.setItem(MD_LOCAL_STORAGE_KEY, editorText || "");
+              }}
               value={markdown}
             />
           </div>
