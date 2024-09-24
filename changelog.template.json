@@ -1,0 +1,15 @@
+{
+    "1.1.1": [
+        "Some minor adjustments"
+    ],
+    "1.1.0": [
+        "New feature X",
+        "New feature Y",
+        "Adjusted feature z"
+    ],
+    "1.0.0": [
+        "Release",
+        "Changed this",
+        "Added that"
+    ]
+}

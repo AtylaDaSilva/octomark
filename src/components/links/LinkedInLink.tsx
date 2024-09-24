@@ -2,7 +2,7 @@
 import Link from "next/link";
 
 // MUI Components
-import { IconButton } from "@mui/material";
+import { IconButton, Tooltip } from "@mui/material";
 import { LinkedIn } from "@mui/icons-material";
 
 // Constants
@@ -15,14 +15,16 @@ export default function LinkedInLink() {
             target="_blank"
             className="no-text-decor color-inherit"
         >
-            <IconButton
-                aria-label="Link to the Developer's LinkedIn profile"
-                color="info"
-                disableRipple
-                tabIndex={-1}
-            >
-                <LinkedIn fontSize="small" />
-            </IconButton>
+            <Tooltip title='LinkedIn'>
+                <IconButton
+                    aria-label="Link to the Developer's LinkedIn profile"
+                    color="info"
+                    disableRipple
+                    tabIndex={-1}
+                >
+                    <LinkedIn fontSize="small" />
+                </IconButton>
+            </Tooltip>
         </Link>
     );
 }

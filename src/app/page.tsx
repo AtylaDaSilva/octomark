@@ -1,6 +1,6 @@
 "use client";
 // React
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 
 // MUI Components
 import { Grid } from "@mui/material";
@@ -27,7 +27,12 @@ import { GitHubDark } from "@/themes";
 
 // Utils
 import { capitalize } from "@/functions/capitalize";
-import { DEFAULT_MARKDOWN_TITLE, WINDOW_HEIGHT } from "@/utils/constants";
+import {
+  DEFAULT_MARKDOWN_TITLE,
+  WINDOW_HEIGHT,
+  MD_LOCAL_STORAGE_KEY,
+  SHOW_PREVIEW_LOCAL_STORAGE_KEY
+} from "@/utils/constants";
 
 // Types
 import type {
@@ -51,11 +56,13 @@ export default function Home() {
   // State
   const [markdown, setMarkdown] = useState<string>(() => `# ${capitalize(DEFAULT_MARKDOWN_TITLE)}`);
   const [showPreview, setShowPreview] = useState(true)
+  const [charCount, setCharCount] = useState<number>(markdown.length);
 
   // Constant to pass state around components
   const state: TState = {
     markdown, setMarkdown,
-    showPreview, setShowPreview
+    showPreview, setShowPreview,
+    charCount, setCharCount
   }
 
   // Event Handlers
@@ -88,6 +95,19 @@ export default function Home() {
     }
   }
 
+  useEffect(() => {
+    const markdownCache = localStorage.getItem(MD_LOCAL_STORAGE_KEY);
+    if (markdownCache) {
+      setMarkdown(markdownCache);
+      setCharCount(markdownCache.length);
+    }
+
+    const showPreviewCache = localStorage.getItem(SHOW_PREVIEW_LOCAL_STORAGE_KEY);
+    if (showPreviewCache) {
+      setShowPreview(JSON.parse(showPreviewCache))
+    }
+  }, [])
+
   return (
     <ThemeProvider theme={GitHubDark}>
       <CssBaseline />
@@ -96,7 +116,7 @@ export default function Home() {
         height="100%"
         rowSpacing={1}
       >
-        <Grid item xs={12} height="3rem">
+        <Grid item xs={12} height="3.0rem">
           <Appbar />
         </Grid>
         <Grid
@@ -104,7 +124,7 @@ export default function Home() {
           xs={showPreview ? 6 : 12}
           display="flex"
           flexDirection="column"
-          paddingY={2}
+          marginTop={2}
           paddingX={1}
         >
           <EditorHeader state={state} reference={reference} />
@@ -114,7 +134,11 @@ export default function Home() {
               theme="vs-dark"
               language="markdown"
               onMount={handleEditorDidMount}
-              onChange={(editorText?: string) => setMarkdown(editorText ? editorText : "")}
+              onChange={(editorText?: string) => {
+                setMarkdown(editorText ? editorText : "");
+                localStorage.setItem(MD_LOCAL_STORAGE_KEY, editorText || "");
+                setCharCount(editorText ? editorText.length : 0)
+              }}
               value={markdown}
             />
           </div>
@@ -123,15 +147,16 @@ export default function Home() {
           showPreview && (
             <Grid
               item xs={6}
+              marginTop={2}
               paddingY={2}
               paddingX={1}
             >
-              <PreviewHeader />
+              <PreviewHeader state={state} />
               <Preview reference={reference} markdown={state.markdown} handleScroll={handlePreviewScrollEvent} />
             </Grid>
           )
         }
-        <Grid item xs={12} height="1.5rem">
+        <Grid item xs={12} height="2.3rem">
           <Appfooter />
         </Grid>
       </Grid>

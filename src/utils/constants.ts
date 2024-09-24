@@ -6,3 +6,6 @@ export const REPO_LINK = "https://github.com/AtylaDaSilva/octomark"
 export const LINKEDIN_LINK = "https://www.linkedin.com/in/atyla-mendes-da-silva-39a21018b/"
 export const WINDOW_HEIGHT = "78vh";
 export const DEFAULT_ICON_SIZE = "1rem";
+export const MD_LOCAL_STORAGE_KEY="markdown";
+export const SHOW_PREVIEW_LOCAL_STORAGE_KEY="showPreview";
+export const APP_VERSION="2.2.0";

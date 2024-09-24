@@ -1,0 +1,51 @@
+{
+    "2.2.0": [
+        "Minor adjustments to modals",
+        "Implemented changelog",
+        "Adjustments to alert and markdown and anchor rendered HTML.",
+        "Character counter.",
+        "Implemented 'Show Preview' Memoization.",
+        "Implemented Markdown memoization.",
+        "Added social media link tooltips.",
+        "Simplified command tooltips."
+    ],
+    "2.1.0": [
+        "Several improvements to accessibility.",
+        "Reduced modal field and button size.",
+        "More descriptive labels and tooltips.",
+        "Removed ripples from social media links.",
+        "Implemented file download.",
+        "Implemented file import.",
+        "Implemented 'copy raw file' button.",
+        "Added visual feedback on hover over footer link.",
+        "Implemented auto-scrolling."
+    ],
+    "2.0.0": [
+        "Added footer message.",
+        "Several adjustments to editor header, preview and App bar.",
+        "New markdown editor."
+    ],
+    "1.2.1": [
+        "Several minor changes to preview window."
+    ],
+    "1.2.0": [
+        "Adjustments to app layout structure.",
+        "Added a hide/show preview button in the command bar.",
+        "Moved CommandBar to AppBar to fit smaller screens better.",
+        "Improved command bar responsivity.",
+        "Improved Socia Media Links responsivity."
+    ],
+    "1.1.0": [
+        "Changed editor font to match Github's font (Consolas, Courier new).",
+        "Changed metadata app name from default Create Next App to 'OctoMark | Markdown Editor'."
+    ],
+    "1.0.1": [
+        "Added social media links.",
+        "Changed metadata title and description to correctly describe this app.",
+        "Changed Brand to be a link.",
+        "Fixed a bug where the TextField in MDEditor would constantly re-render and lose focus."
+    ],
+    "1.0.0": [
+        "Initial Release."
+    ]
+}

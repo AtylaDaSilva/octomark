@@ -8,6 +8,9 @@ import { DEFAULT_ICON_SIZE } from "@/utils/constants";
 // Types
 import { TState } from "@/types";
 
+// Utils
+import { MD_LOCAL_STORAGE_KEY } from "@/utils/constants";
+
 const VisuallyHiddenInput = styled('input')({
     clip: 'rect(0 0 0 0)',
     clipPath: 'inset(50%)',
@@ -27,7 +30,8 @@ export default function UploadFileIcon({ state }: { state: TState }) {
             reader.onload = async (event) => {
                 const text = event.target?.result;
                 if (state.setMarkdown) {
-                    state.setMarkdown(text as string)
+                    state.setMarkdown(text as string);
+                    localStorage.setItem(MD_LOCAL_STORAGE_KEY, text as string);
                 }
             }
             reader.readAsText(event.target.files[0])

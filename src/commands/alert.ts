@@ -7,5 +7,5 @@ import type { TCommandFuncArgs } from "@/types";
  * @returns string
  */
 export function alert({ selectedText, alertLevel } : TCommandFuncArgs) : string {
-    return `> [!${alertLevel?.toUpperCase()}]\n> ${selectedText}`;
+    return `\n> [!${alertLevel?.toUpperCase()}]\n> ${selectedText}`;
 }
