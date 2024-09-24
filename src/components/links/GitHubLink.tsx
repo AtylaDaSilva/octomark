@@ -2,7 +2,7 @@
 import Link from "next/link";
 
 // MUI Components
-import { IconButton } from "@mui/material";
+import { IconButton, Tooltip } from "@mui/material";
 import { GitHub } from "@mui/icons-material";
 
 // Constants
@@ -15,14 +15,16 @@ export default function GitHubLink() {
             target="_blank"
             className="no-text-decor color-inherit"
         >
-            <IconButton
-                aria-label="Link to the Developer's GitHub repository"
-                color="info"
-                disableRipple
-                tabIndex={-1}
-            >
-                <GitHub fontSize="small" />
-            </IconButton>
+            <Tooltip title='GitHub Repository'>
+                <IconButton
+                    aria-label="Link to the Developer's GitHub repository"
+                    color="info"
+                    disableRipple
+                    tabIndex={-1}
+                >
+                    <GitHub fontSize="small" />
+                </IconButton>
+            </Tooltip>
         </Link>
     );
 }
