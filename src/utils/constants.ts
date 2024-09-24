@@ -7,3 +7,4 @@ export const LINKEDIN_LINK = "https://www.linkedin.com/in/atyla-mendes-da-silva-
 export const WINDOW_HEIGHT = "78vh";
 export const DEFAULT_ICON_SIZE = "1rem";
 export const MD_LOCAL_STORAGE_KEY="markdown";
+export const SHOW_PREVIEW_LOCAL_STORAGE_KEY="showPreview";

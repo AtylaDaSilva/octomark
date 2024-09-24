@@ -27,7 +27,12 @@ import { GitHubDark } from "@/themes";
 
 // Utils
 import { capitalize } from "@/functions/capitalize";
-import { DEFAULT_MARKDOWN_TITLE, WINDOW_HEIGHT, MD_LOCAL_STORAGE_KEY } from "@/utils/constants";
+import {
+  DEFAULT_MARKDOWN_TITLE,
+  WINDOW_HEIGHT,
+  MD_LOCAL_STORAGE_KEY,
+  SHOW_PREVIEW_LOCAL_STORAGE_KEY
+} from "@/utils/constants";
 
 // Types
 import type {
@@ -90,9 +95,14 @@ export default function Home() {
 
   useEffect(() => {
     console.log("useEffect invoked.");
-    const cache = localStorage.getItem(MD_LOCAL_STORAGE_KEY);
-    if (cache) {
-      setMarkdown(cache);
+    const markdownCache = localStorage.getItem(MD_LOCAL_STORAGE_KEY);
+    if (markdownCache) {
+      setMarkdown(markdownCache);
+    }
+
+    const showPreviewCache = localStorage.getItem(SHOW_PREVIEW_LOCAL_STORAGE_KEY);
+    if (showPreviewCache) {
+      setShowPreview(JSON.parse(showPreviewCache))
     }
   }, [])
 
