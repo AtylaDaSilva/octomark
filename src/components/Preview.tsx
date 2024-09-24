@@ -1,5 +1,6 @@
 import { PreviewBox } from "@/components/styled/PreviewBox"
 import Markdown from "react-markdown";
+import Link from "next/link";
 
 // Remark Plugins
 import remarkGfm from "remark-gfm";
@@ -14,7 +15,7 @@ import { WINDOW_HEIGHT } from "@/utils/constants";
 // Types
 import { TPreviewProps } from "@/types";
 
-export default function Preview({ reference, markdown, handleScroll } : TPreviewProps) {
+export default function Preview({ reference, markdown, handleScroll }: TPreviewProps) {
     return (
         <PreviewBox height={WINDOW_HEIGHT} ref={reference.previewRef} onScroll={handleScroll}>
             <Markdown
@@ -24,6 +25,17 @@ export default function Preview({ reference, markdown, handleScroll } : TPreview
                     remarkGemoji,
                     removeComments
                 ]}
+                components={{
+                    a: ({ node, href, children, ...props }) => (
+                        <Link
+                            href={String(href)}
+                            target="_blank"
+                            {...props}
+                        >
+                            {children}
+                        </Link>
+                    )
+                }}
             >
                 {markdown}
             </Markdown>
