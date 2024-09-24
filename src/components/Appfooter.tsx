@@ -1,23 +1,34 @@
-import Link from "next/link";
 import { Box } from "@mui/material";
-import { GITHUB_LINK } from "@/utils/constants";
+import FooterMessage from "./FooterMessage";
+import AppVersion from "./AppVersion";
+import ChangeLog from "./ChangeLog";
+import { DEFAULT_EDITOR_FONT } from "@/utils/constants";
 
 export default function Appfooter() {
-    const me = (
-        <Link
-            href={GITHUB_LINK}
-            target="_blank"
-            className="text-link no-text-decor color-inherit"
-            aria-label="Link to developer's GitHub repository"
-            >
-                AtylaDaSilva
-            </Link>
-    )
     return (
-        <Box fontSize=".8rem" height="100%" display="flex" justifyContent="center" alignItems="center">
-            <p id="footer-message" aria-label="Footer message">
-                Made with <span></span> by { me }
-            </p>
+        <Box
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
+            position="relative"
+            fontSize=".9rem"
+        >
+            <Box>
+                <FooterMessage />
+            </Box>
+            <Box
+                width="175px"
+                display="flex"
+                justifyContent="space-between"
+                alignItems="center"
+                position="absolute"
+                right="0%"
+                marginRight="15px"
+                fontFamily={DEFAULT_EDITOR_FONT}
+            >
+                <AppVersion />
+                <ChangeLog />
+            </Box>
         </Box>
     );
 }

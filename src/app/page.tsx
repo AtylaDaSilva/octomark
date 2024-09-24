@@ -116,7 +116,7 @@ export default function Home() {
         height="100%"
         rowSpacing={1}
       >
-        <Grid item xs={12} height="3rem">
+        <Grid item xs={12} height="3.0rem">
           <Appbar />
         </Grid>
         <Grid
@@ -124,7 +124,7 @@ export default function Home() {
           xs={showPreview ? 6 : 12}
           display="flex"
           flexDirection="column"
-          paddingY={2}
+          marginTop={2}
           paddingX={1}
         >
           <EditorHeader state={state} reference={reference} />
@@ -147,6 +147,7 @@ export default function Home() {
           showPreview && (
             <Grid
               item xs={6}
+              marginTop={2}
               paddingY={2}
               paddingX={1}
             >
@@ -155,7 +156,7 @@ export default function Home() {
             </Grid>
           )
         }
-        <Grid item xs={12} height="1.5rem">
+        <Grid item xs={12} height="2.3rem">
           <Appfooter />
         </Grid>
       </Grid>

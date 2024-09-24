@@ -1,4 +1,5 @@
 import { Dispatch, SetStateAction } from "react"
+import { IFormField } from "@/interfaces"
 
 export type TState = {
     markdown?: string, setMarkdown?: Dispatch<SetStateAction<string>>,
@@ -54,31 +55,4 @@ export type TPreviewProps = {
     handleScroll: (event:any) => void
 }
 
-export type ModalPropsType = {
-    isOpen: boolean,
-    handleSubmit: () => void
-    handleClose: () => void,
-    modalTitle?: string,
-    formFields: FormFieldsType
-}
-
-export type FormField = {
-    type: "text" | "number" | "select",
-    color?: 'primary' | 'secondary' | 'error' | 'info' | 'success' | 'warning';
-    options?: selectOption[]
-    value?: string | number,
-    required?: boolean,
-    label: string,
-    capitalizeLabel?: boolean,
-    ariaLabel?: string,
-    handleChange?: Dispatch<SetStateAction<any>>
-    variant?: "outlined" | "filled" | "standard",
-    columns: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12,
-}
-
-export type selectOption = {
-    value: string | number,
-    label: string
-}
-
-export type FormFieldsType = FormField[];
+export type TFormFields = IFormField[];

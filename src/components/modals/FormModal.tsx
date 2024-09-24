@@ -1,15 +1,12 @@
 // MUI Components
 import { Grid, Modal, Box, Typography, TextField, MenuItem, Button } from "@mui/material";
 
-// Style
-import { defaultStyle } from "./";
-
 // Types
 import {
-    ModalPropsType,
-    FormField,
-    selectOption
-} from "@/types";
+    IFormModal,
+    IFormField,
+    ISelectOption
+} from "@/interfaces";
 
 // Utility functions
 import { capitalize } from "@/functions/capitalize";
@@ -20,8 +17,19 @@ export default function FormModal({
     formFields,
     handleSubmit,
     handleClose
-}: ModalPropsType) {
-    const fields = formFields.map((field: FormField, index) => {
+}: IFormModal) {
+    const defaultStyle = {
+        position: 'absolute' as 'absolute',
+        top: '50%',
+        left: '50%',
+        transform: 'translate(-50%, -50%)',
+        width: 400,
+        bgcolor: 'background.paper',
+        boxShadow: 24,
+        borderRadius: "6px",
+        p: 3,
+    };
+    const fields = formFields.map((field: IFormField, index) => {
         try {
             switch (field.type.toLowerCase()) {
                 case "text":
@@ -74,7 +82,7 @@ export default function FormModal({
                                 fullWidth
                             >
                                 {
-                                    field.options?.map((option: selectOption) => {
+                                    field.options?.map((option: ISelectOption) => {
                                         return (
                                             <MenuItem
                                                 key={option.value}
