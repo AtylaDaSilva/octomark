@@ -24,7 +24,7 @@ export default function ImageIcon({ state, reference }: { state: TState, referen
 
     return (
         <>
-            <Tooltip title="Format selected text as Image">
+            <Tooltip title="Image">
                 <IconButton
                     aria-label="Modal | Format selected text as Image"
                     color="info"

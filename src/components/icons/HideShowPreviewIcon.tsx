@@ -10,7 +10,7 @@ import { DEFAULT_ICON_SIZE } from "@/utils/constants";
 
 export default function HideShowPreviewIcon({ showPreview, setShowPreview }: TState) {
     const PreviewIcon = showPreview ? Visibility : VisibilityOff
-    const label = `Click to ${showPreview ? 'Hide' : 'Show'} Preview Window`
+    const label = `${showPreview ? 'Hide' : 'Show'} Preview Window`
     return (
         <Tooltip title={label}>
             <IconButton

@@ -23,7 +23,7 @@ export default function LinkIcon({ state, reference }: { state: TState, referenc
     const [uri, setUri] = useState("");
     return (
         <>
-            <Tooltip title="Format selected text as Link">
+            <Tooltip title="Link">
                 <IconButton
                     aria-label="Modal | Format selected text as Link"
                     color="info"

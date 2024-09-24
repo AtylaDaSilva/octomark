@@ -12,7 +12,7 @@ import { TReference, } from "@/types";
 import { DEFAULT_ICON_SIZE } from "@/utils/constants";
 
 export default function CopyEditorContentsIcon({ reference }: { reference: TReference }) {
-    const defaultTooltip = "Copy the contents of the editor to the clipboard";
+    const defaultTooltip = "Copy Editor Contents";
     const [tooltip, setTooltip] = useState<string>(defaultTooltip)
     return (
         <Tooltip title={tooltip}>

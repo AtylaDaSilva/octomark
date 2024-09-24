@@ -39,7 +39,7 @@ export default function AlertIcon({ state, reference }: { state: TState, referen
 
     return (
         <>
-            <Tooltip title="Format selected text as a GitHub Alert">
+            <Tooltip title="Alert">
                 <IconButton
                     aria-label="Modal | Format selected text as a GitHub Alert"
                     color="info"

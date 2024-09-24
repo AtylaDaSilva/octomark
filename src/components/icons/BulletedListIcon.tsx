@@ -13,7 +13,7 @@ import { DEFAULT_ICON_SIZE } from "@/utils/constants";
 
 export default function BulletedListIcon({ state, reference }: { state: TState, reference: TReference }) {
     return (
-        <Tooltip title="Format selected text as a Bulleted List">
+        <Tooltip title="Bulleted List">
             <IconButton
                 aria-label="Button | Format selected text as a Bulleted List"
                 color="info"

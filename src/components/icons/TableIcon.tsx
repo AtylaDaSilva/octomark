@@ -42,7 +42,7 @@ export default function ImageIcon({ state, reference }: { state: TState, referen
 
     return (
         <>
-            <Tooltip title="Insert a Table where the cursor is positioned">
+            <Tooltip title="Table">
                 <IconButton
                     aria-label="Modal | Insert a Table where the cursor is positioned"
                     color="info"

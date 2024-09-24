@@ -13,7 +13,7 @@ import { DEFAULT_ICON_SIZE } from "@/utils/constants";
 
 export default function StrikethroughIcon({ state, reference }: { state:TState, reference: TReference }) {
     return (
-        <Tooltip title="Insert a strikethrough line in selected text">
+        <Tooltip title="Strikethrough">
             <IconButton
                 aria-label="Button | Insert a strikethrough line in selection"
                 color="info"
