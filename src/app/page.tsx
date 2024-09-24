@@ -94,7 +94,6 @@ export default function Home() {
   }
 
   useEffect(() => {
-    console.log("useEffect invoked.");
     const markdownCache = localStorage.getItem(MD_LOCAL_STORAGE_KEY);
     if (markdownCache) {
       setMarkdown(markdownCache);
