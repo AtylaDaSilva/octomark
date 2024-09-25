@@ -34,11 +34,11 @@ export default function ChangeLog() {
                 color="info"
                 onClick={() => setIsModalOpen(true)}
             >
-                What's New?
+                What&#39;s New?
             </Button>
             <BasicModal
                 isOpen={isModalOpen}
-                modalTitle="What's New"
+                modalTitle="What&#39;s New"
                 handleClose={() => setIsModalOpen(false)}
                 content={changes}
             />
