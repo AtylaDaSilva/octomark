@@ -10,7 +10,7 @@ import { DEFAULT_ICON_SIZE, SHOW_PREVIEW_LOCAL_STORAGE_KEY } from "@/utils/const
 
 export default function HideShowPreviewIcon({ showPreview, setShowPreview }: TState) {
     const PreviewIcon = showPreview ? Visibility : VisibilityOutlined
-    const label = `${showPreview ? 'Hide' : 'Show'} Preview Window`
+    const label = `${showPreview ? 'Hide' : 'Show'} Preview`
     return (
         <Tooltip title={label}>
             <IconButton
