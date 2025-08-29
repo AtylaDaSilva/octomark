@@ -19,6 +19,10 @@ body {
     flex-grow: 1;
 }
 
+.justify-contents-start {
+    justify-content: flex-start;
+}
+
 .justify-contents-center {
     justify-content: center;
 }
@@ -41,4 +45,8 @@ body {
 
 .color-inherit {
     color: inherit;
+}
+
+.overflow-x-auto {
+    overflow-x: auto;
 }
