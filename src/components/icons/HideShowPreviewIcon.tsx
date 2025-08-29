@@ -1,6 +1,6 @@
 // MUI Components
 import { IconButton, Tooltip } from "@mui/material";
-import { Visibility, VisibilityOff } from "@mui/icons-material";
+import { Visibility, VisibilityOutlined } from "@mui/icons-material";
 
 // Types
 import { TState, } from "@/types";
@@ -9,7 +9,7 @@ import { TState, } from "@/types";
 import { DEFAULT_ICON_SIZE, SHOW_PREVIEW_LOCAL_STORAGE_KEY } from "@/utils/constants";
 
 export default function HideShowPreviewIcon({ showPreview, setShowPreview }: TState) {
-    const PreviewIcon = showPreview ? Visibility : VisibilityOff
+    const PreviewIcon = showPreview ? Visibility : VisibilityOutlined
     const label = `${showPreview ? 'Hide' : 'Show'} Preview Window`
     return (
         <Tooltip title={label}>
