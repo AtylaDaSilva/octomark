@@ -1,5 +1,5 @@
 import { handleCommand } from "./handleCommand";
-import { bold } from "./bold";
+import { bold, isBold, undoBold } from "./bold";
 import { italic } from "./italic";
 import { heading } from "./heading";
 import { strikethrough } from "./strikethrough";
@@ -17,7 +17,7 @@ import { emoji } from "./emoji";
 
 export {
     handleCommand,
-    bold,
+    bold, isBold, undoBold,
     italic,
     heading,
     strikethrough,
