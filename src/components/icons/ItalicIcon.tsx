@@ -16,7 +16,7 @@ export default function ItalicIcon({ state, reference } : { state: TState, refer
         <Tooltip title="Italic">
             <IconButton
                 aria-label="Button | Format selection as Italic"
-                color="info"
+                color="primary"
                 onClick={() => {
                     handleCommand(
                         italic,

@@ -16,7 +16,7 @@ export default function FootnoteIcon({ state, reference }: { state: TState, refe
         <Tooltip title="Footnote">
             <IconButton
                 aria-label="Button | Format selected text as a Footnote"
-                color="info"
+                color="primary"
                 onClick={() => {
                     handleCommand(
                         footnote,

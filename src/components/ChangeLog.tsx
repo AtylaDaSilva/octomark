@@ -31,7 +31,7 @@ export default function ChangeLog() {
         <>
             <Button
                 variant="text"
-                color="info"
+                color="primary"
                 onClick={() => setIsModalOpen(true)}
             >
                 What&#39;s New?

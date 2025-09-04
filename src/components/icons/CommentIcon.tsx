@@ -16,7 +16,7 @@ export default function CommentIcon({ state, reference }: { state: TState, refer
         <Tooltip title="Comment">
             <IconButton
                 aria-label="Button | Format selected text as a Comment"
-                color="info"
+                color="primary"
                 onClick={() => {
                     handleCommand(
                         comment,

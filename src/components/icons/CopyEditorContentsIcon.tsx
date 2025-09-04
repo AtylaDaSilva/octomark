@@ -18,7 +18,7 @@ export default function CopyEditorContentsIcon({ reference }: { reference: TRefe
         <Tooltip title={tooltip}>
             <IconButton
                 aria-label="Button | Copy the contents of the editor to the clipboard"
-                color="info"
+                color="primary"
                 onClick={() => {
                     window.navigator.clipboard.writeText(reference.editorRef.current.getValue())
                     setTooltip("Copied!");

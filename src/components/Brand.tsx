@@ -9,6 +9,8 @@ export default function Brand() {
         <Typography
             variant="h1"
             fontSize="1.5rem"
+            fontWeight="bold"
+            color="primary"
         >
             <Link href="/" className="no-text-decor color-inherit">OctoMark</Link>
         </Typography>

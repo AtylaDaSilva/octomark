@@ -18,7 +18,7 @@ export default function GitHubLink() {
             <Tooltip title='GitHub Repository'>
                 <IconButton
                     aria-label="Link to the Developer's GitHub repository"
-                    color="info"
+                    color="primary"
                     disableRipple
                     tabIndex={-1}
                 >

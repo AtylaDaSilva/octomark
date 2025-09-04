@@ -24,7 +24,7 @@ export default function HideShowPreviewIcon({ showPreview, setShowPreview }: TSt
         >
             <IconButton
                 aria-label={`Button | ${label}`}
-                color="info"
+                color="primary"
                 onClick={() => {
                     if (setShowPreview) {
                         // Save preview state to local storage

@@ -16,7 +16,7 @@ export default function BoldIcon({ state, reference }: { state: TState, referenc
         <Tooltip title="Bold">
             <IconButton
                 aria-label="Button | Format selection as Bold"
-                color="info"
+                color="primary"
                 onClick={() => {
                     handleCommand(
                         bold,

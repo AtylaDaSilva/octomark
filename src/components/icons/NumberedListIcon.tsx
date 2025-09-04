@@ -16,7 +16,7 @@ export default function NumberedListIcon({ state, reference }: { state: TState, 
         <Tooltip title="Numbered List">
             <IconButton
                 aria-label="Button | Format selected text as a Numbered List"
-                color="info"
+                color="primary"
                 onClick={() => {
                     handleCommand(
                         numberedList,

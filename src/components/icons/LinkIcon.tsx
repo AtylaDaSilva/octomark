@@ -26,7 +26,7 @@ export default function LinkIcon({ state, reference }: { state: TState, referenc
             <Tooltip title="Link">
                 <IconButton
                     aria-label="Modal | Format selected text as Link"
-                    color="info"
+                    color="primary"
                     onClick={() => setIsModalOpen(true)}
                 >
                     <Link sx={{ fontSize: DEFAULT_ICON_SIZE }} />

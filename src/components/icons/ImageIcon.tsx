@@ -27,7 +27,7 @@ export default function ImageIcon({ state, reference }: { state: TState, referen
             <Tooltip title="Image">
                 <IconButton
                     aria-label="Modal | Format selected text as Image"
-                    color="info"
+                    color="primary"
                     onClick={() => setIsModalOpen(true)}
                 >
                     <Image sx={{ fontSize: DEFAULT_ICON_SIZE }} />

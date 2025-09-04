@@ -18,7 +18,7 @@ export default function LinkedInLink() {
             <Tooltip title='LinkedIn'>
                 <IconButton
                     aria-label="Link to the Developer's LinkedIn profile"
-                    color="info"
+                    color="primary"
                     disableRipple
                     tabIndex={-1}
                 >

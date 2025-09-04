@@ -3,17 +3,7 @@ import { createTheme } from "@mui/material/styles";
 const GitHubDark = createTheme({
     palette: {
         primary: {
-            main: "#3178c6",
-            contrastText: "#e6edf3",
-        },
-        secondary: {
-            main: "#238636",
-        },
-        info: {
             main: "#e6edf3"
-        },
-        grey: {
-            "700": "#2f353c"
         },
         background: {
             paper: "#010409",
@@ -34,6 +24,17 @@ const GitHubDark = createTheme({
                     border: "1px solid #2f353c",
                     borderRadius: "5px"
                 }
+            }
+        },
+        MuiMenuItem: {
+            styleOverrides: {
+                root: {
+                    borderRadius: "5px",
+                    margin: "5px",
+                    ":hover": {
+                        backgroundColor: "#f0f6fc1a",
+                    }
+                },
             }
         }
     }

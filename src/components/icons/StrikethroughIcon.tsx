@@ -16,7 +16,7 @@ export default function StrikethroughIcon({ state, reference }: { state:TState, 
         <Tooltip title="Strikethrough">
             <IconButton
                 aria-label="Button | Insert a strikethrough line in selection"
-                color="info"
+                color="primary"
                 onClick={() => {
                     handleCommand(
                         strikethrough,

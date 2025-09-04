@@ -42,7 +42,7 @@ export default function AlertIcon({ state, reference }: { state: TState, referen
             <Tooltip title="Alert">
                 <IconButton
                     aria-label="Modal | Format selected text as a GitHub Alert"
-                    color="info"
+                    color="primary"
                     onClick={handleClick}
                 >
                     <PriorityHigh sx={{ fontSize: DEFAULT_ICON_SIZE }} />

@@ -16,7 +16,7 @@ export default function TaskListIcon({ state, reference }: { state: TState, refe
         <Tooltip title="Task List">
             <IconButton
                 aria-label="Button | Format selected text as a Task List"
-                color="info"
+                color="primary"
                 onClick={() => {
                     handleCommand(
                         taskList,

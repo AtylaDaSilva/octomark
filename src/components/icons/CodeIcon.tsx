@@ -16,7 +16,7 @@ export default function CodeIcon({ state, reference }: { state: TState, referenc
         <Tooltip title="Code">
             <IconButton
                 aria-label="Button | Format selected text as Code"
-                color="info"
+                color="primary"
                 onClick={() => {
                     handleCommand(
                         code,

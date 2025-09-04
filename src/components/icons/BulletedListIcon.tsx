@@ -16,7 +16,7 @@ export default function BulletedListIcon({ state, reference }: { state: TState, 
         <Tooltip title="Bulleted List">
             <IconButton
                 aria-label="Button | Format selected text as a Bulleted List"
-                color="info"
+                color="primary"
                 onClick={() => {
                     handleCommand(
                         bulletedList,

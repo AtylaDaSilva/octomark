@@ -45,7 +45,7 @@ export default function ImageIcon({ state, reference }: { state: TState, referen
             <Tooltip title="Table">
                 <IconButton
                     aria-label="Modal | Insert a Table where the cursor is positioned"
-                    color="info"
+                    color="primary"
                     onClick={() => setIsModalOpen(true)}
                 >
                     <GridOn sx={{ fontSize: DEFAULT_ICON_SIZE }} />

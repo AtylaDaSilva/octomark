@@ -2,7 +2,7 @@
 import { useState } from "react";
 
 // MUI Components
-import { IconButton, Menu, MenuItem, Tooltip } from "@mui/material";
+import { IconButton, Menu, MenuItem, Tooltip, Typography } from "@mui/material";
 import { Title } from "@mui/icons-material";
 
 // Commands
@@ -31,14 +31,15 @@ export default function TitleIcon({ state, reference }: { state: TState, referen
             { headingLevel: headingLevel }
         );
     }
+    const maxHeadingSize = "2rem"
 
     return (
         <>
-            <Tooltip title="Title">
+            <Tooltip title="Headings">
                 <IconButton
-                    aria-label="Button | Format selection as Title"
+                    aria-label="Button | Format selection as Heading"
                     onClick={handleClick}
-                    color="info"
+                    color="primary"
                 >
                     <Title sx={{ fontSize: DEFAULT_ICON_SIZE }} />
                 </IconButton>
@@ -54,37 +55,39 @@ export default function TitleIcon({ state, reference }: { state: TState, referen
                     aria-label="Title Menu Option | Level 1"
                     onClick={() => handleMenuItemClick(1)}
                 >
-                    Level 1
+                    <Typography variant="h1" fontSize={maxHeadingSize}>Heading 1</Typography>
                 </MenuItem>
                 <MenuItem
                     aria-label="Title Menu Option | Level 2"
                     onClick={() => handleMenuItemClick(2)}
                 >
-                    Level 2
+                    <Typography variant="h2" fontSize={`calc(${maxHeadingSize} - 0.2rem)`}>Heading 2</Typography>
                 </MenuItem>
                 <MenuItem
                     aria-label="Title Menu Option | Level 3"
                     onClick={() => handleMenuItemClick(3)}
+                    // sx={{fontSize: "inherit"}}
                 >
-                    Level 3
+                    <Typography variant="h3" fontSize={`calc(${maxHeadingSize} - 0.4rem)`}>Heading 3</Typography>
                 </MenuItem>
                 <MenuItem
                     aria-label="Title Menu Option | Level 4"
                     onClick={() => handleMenuItemClick(4)}
+                    // sx={{fontSize: "inherit"}}
                 >
-                    Level 4
+                    <Typography variant="h4" fontSize={`calc(${maxHeadingSize} - 0.6rem)`}>Heading 4</Typography>
                 </MenuItem>
                 <MenuItem
                     aria-label="Title Menu Option | Level 5"
                     onClick={() => handleMenuItemClick(5)}
                 >
-                    Level 5
+                    <Typography variant="h5" fontSize={`calc(${maxHeadingSize} - 0.8rem)`}>Heading 5</Typography>
                 </MenuItem>
                 <MenuItem
                     aria-label="Title Menu Option | Level 6"
                     onClick={() => handleMenuItemClick(6)}
                 >
-                    Level 6
+                    <Typography variant="h6" fontSize={`calc(${maxHeadingSize} - 1rem)`}>Heading 6</Typography>
                 </MenuItem>
             </Menu>
         </>

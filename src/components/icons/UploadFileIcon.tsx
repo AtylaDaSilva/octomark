@@ -43,7 +43,7 @@ export default function UploadFileIcon({ state }: { state: TState }) {
         <Tooltip title="Upload File">
             <IconButton
                 aria-label="Button | Upload File"
-                color="info"
+                color="primary"
                 component="label"
                 tabIndex={-1}
 
